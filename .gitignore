@@ -1,0 +1,15 @@
+build
+dist
+lib
+
+# editor configuration
+.vscode
+.idea
+
+# misc
+.DS_Store
+
+# environment variables file
+.env*
+.env
+*env.
