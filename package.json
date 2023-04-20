@@ -1,5 +1,5 @@
 {
-  "name": "design-language-system",
+  "name": "@linode/design-language-system",
   "version": "0.0.1",
   "main": "index.js",
   "private": false,
@@ -12,6 +12,9 @@
   },
   "keywords": [],
   "author": "",
+  "files": [
+    "build"
+  ],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/linode/design-language-system/issues"

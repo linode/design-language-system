@@ -18,18 +18,17 @@ jobs:
 
       - run: npm ci
       - run: npx style-dictionary build
-      - uses: JS-DevTools/npm-publish@v1
+      - uses: JS-DevTools/npm-publish@v2
         with:
           dry-run: true
           token: ${{ secrets.NPM }}
-          package: ./package.json
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: packages-validation-lib
-          path: |
-            packages/validation/index.js
-            packages/validation/lib
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: packages-validation-lib
+      #     path: |
+      #       packages/validation/index.js
+      #       packages/validation/lib
 
 
   # publish-validation:
