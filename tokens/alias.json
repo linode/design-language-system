@@ -1,0 +1,106 @@
+{
+  "alias": {
+    "color": {
+      "action": {
+        "value": "{primary.blue-05}",
+        "type": "color"
+      },
+      "white": {
+        "value": "{neutrals.white}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{neutrals.gray-05}",
+        "type": "color"
+      },
+      "error": {
+        "value": "{status.red-03}",
+        "type": "color"
+      },
+      "text": {
+        "default": {
+          "value": "{neutrals.gray-09}",
+          "type": "color"
+        },
+        "hint-placeholder": {
+          "value": "{neutrals.gray-07}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{neutrals.gray-05}",
+          "type": "color"
+        },
+        "link": {
+          "value": "{primary.blue-05}",
+          "type": "color"
+        },
+        "link-hover": {
+          "value": "{primary.blue-04}",
+          "type": "color"
+        }
+      },
+      "icon": {
+        "default": {
+          "value": "{neutrals.gray-09}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{neutrals.gray-05}",
+          "type": "color"
+        },
+        "link": {
+          "value": "{primary.blue-05}",
+          "type": "color"
+        },
+        "link-hover": {
+          "value": "{primary.blue-04}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "white": {
+          "value": "{neutrals.white}",
+          "type": "color"
+        },
+        "grey": {
+          "value": "{neutrals.gray-01}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{neutrals.gray-02}",
+          "type": "color"
+        },
+        "button": {
+          "primary-hover": {
+            "value": "{primary.blue-04}",
+            "type": "color"
+          },
+          "launch": {
+            "value": "{neutrals.black}",
+            "type": "color"
+          },
+          "launch-hover": {
+            "value": "{neutrals.gray-10}",
+            "type": "color"
+          }
+        }
+      },
+      "border": {
+        "disabled": {
+          "value": "{neutrals.gray-04}",
+          "type": "color"
+        },
+        "button": {
+          "default": {
+            "value": "{neutrals.gray-06}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{neutrals.gray-09}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}
