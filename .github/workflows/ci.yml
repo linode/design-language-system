@@ -21,7 +21,7 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           dry-run: true
-          token: ${{ secrets.NPM_AUTH_TOKEN }}
+          token: ${{ secrets.NPM }}
           package: ./package.json
 
       - uses: actions/upload-artifact@v3
