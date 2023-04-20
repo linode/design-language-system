@@ -17,7 +17,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - run: npm ci
-      - run: style-dictionary build
+      - run: npx style-dictionary build
       - uses: JS-DevTools/npm-publish@v1
         with:
           dry-run: true
