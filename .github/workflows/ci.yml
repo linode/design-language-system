@@ -1,25 +1,25 @@
-name: ci
+# name: ci
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
 
-jobs:
-  build-design-language-system:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "18.14"
-          registry-url: https://registry.npmjs.org/
+# jobs:
+#   build-design-language-system:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: "18.14"
+#           registry-url: https://registry.npmjs.org/
 
-      - run: npm ci
-      - run: npx style-dictionary build
-      - uses: JS-DevTools/npm-publish@v2
-        with:
-          access: public
-          # dry-run: true
-          token: ${{ secrets.NPM }}
+#       - run: npm ci
+#       - run: npx style-dictionary build
+#       - uses: JS-DevTools/npm-publish@v2
+#         with:
+#           access: public
+#           dry-run: true
+#           token: ${{ secrets.NPM }}
