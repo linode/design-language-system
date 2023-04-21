@@ -1,7 +1,7 @@
 {
   "primary": {
     "blue-05": {
-      "value": "#5bb3ea",
+      "value": "#ebd55b",
       "type": "color"
     },
     "blue-04": {
@@ -605,8 +605,28 @@
       "type": "textDecoration"
     }
   },
-  "none": {
-    "value": "0",
-    "type": "borderRadius"
+  "none": {},
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "primary",
+      "neutrals",
+      "status",
+      "brand",
+      "gradient",
+      "shadows",
+      "fontFamilies",
+      "lineHeights",
+      "fontWeights",
+      "fontSize",
+      "heading",
+      "body-l",
+      "body",
+      "body-s",
+      "special",
+      "textCase",
+      "textDecoration",
+      "none"
+    ]
   }
 }
