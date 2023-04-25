@@ -1,0 +1,92 @@
+{
+    "component": {
+        "table": {
+            "header": {
+                "background": {
+                    "value": "{alias.color.background.table.header}",
+                    "type": "color"
+                },
+                "border": {
+                    "value": "{alias.color.border.table}",
+                    "type": "color"
+                },
+                "text": {
+                    "normal": {
+                        "value": "{alias.color.text.tableHeader}",
+                        "type": "color"
+                    },
+                    "onHover": {
+                        "value": "{alias.color.action.normal}",
+                        "type": "color"
+                    }
+                },
+                "icon": {
+                    "normal": {
+                        "value": "{alias.color.icon.default}",
+                        "type": "color"
+                    },
+                    "onHover": {
+                        "value": "{alias.color.action.normal}",
+                        "type": "color"
+                    }
+                }
+            },
+            "cell": {
+                "border": {
+                    "value": "{alias.color.border.table}",
+                    "type": "color"
+                },
+                "background": {
+                    "default": {
+                        "value": "{alias.color.background.white}",
+                        "type": "color"
+                    },
+                    "onHover": {
+                        "value": "{alias.color.background.table.hover}",
+                        "type": "color"
+                    }
+                },
+                "simpleText": {
+                    "text": {
+                        "value": "{alias.color.text.primary}",
+                        "type": "color"
+                    }
+                },
+                "link": {
+                    "text": {
+                        "normal": {
+                            "value": "{alias.color.action.normal}",
+                            "type": "color"
+                        },
+                        "onHover": {
+                            "value": "{alias.color.action.hover}",
+                            "type": "color"
+                        }
+                    }
+                },
+                "status": {
+                    "text": {
+                        "value": "{alias.color.text.primary}",
+                        "type": "color"
+                    },
+                    "badge": {
+                        "success": {
+                            "value": "{alias.color.brand.status.success}",
+                            "type": "color"
+                        },
+                        "failure": {
+                            "value": "{alias.color.brand.status.danger}",
+                            "type": "color"
+                        }
+                    }
+                },
+                "actionIcon": {
+                    "icon": {
+                        "value": "{alias.color.action.normal}",
+                        "type": "color"
+                    }
+                }
+            }
+        }
+    }
+}

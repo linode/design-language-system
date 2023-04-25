@@ -1,9 +1,13 @@
 {
   "name": "@linode/design-language-system",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "private": false,
   "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "generate": "node ./build.js",
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +24,11 @@
     "url": "https://github.com/linode/design-language-system/issues"
   },
   "homepage": "https://github.com/linode/design-language-system#readme",
-  "devDependencies": {
+  "dependencies": {
     "style-dictionary": "^3.7.2"
+  },
+  "devDependencies": {
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
   }
 }
