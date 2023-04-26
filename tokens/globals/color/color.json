@@ -1,0 +1,65 @@
+{
+  "color": {
+    "primary": {
+      "value": "{alias.color.brand.primary}",
+      "type": "color",
+      "comment": "This maps to theme.primary.blue-01"
+    },
+    "secondary": {
+      "value": "{alias.color.brand.secondary}",
+      "type": "color",
+      "comment": "This maps to theme.primary.blue-02"
+    },
+    "tertiary": {
+      "value": "{alias.color.brand.tertiary}",
+      "type": "color",
+      "comment": "This maps to theme.tertiary.blue-03"
+    },
+    "neutrals": {
+      "grey07": {
+        "value": "{alias.color.brand.neutrals.grey07}",
+        "type": "color"
+      },
+      "grey06": {
+        "value": "{alias.color.brand.neutrals.grey06}",
+        "type": "color"
+      },
+      "grey05": {
+        "value": "{alias.color.brand.neutrals.grey05}",
+        "type": "color"
+      },
+      "grey04": {
+        "value": "{alias.color.brand.neutrals.grey04}",
+        "type": "color"
+      },
+      "grey03": {
+        "value": "{alias.color.brand.neutrals.grey03}",
+        "type": "color"
+      },
+      "grey02": {
+        "value": "{alias.color.brand.neutrals.grey02}",
+        "type": "color"
+      },
+      "grey01": {
+        "value": "{alias.color.brand.neutrals.grey01}",
+        "type": "color"
+      },
+      "white": {
+        "value": "{alias.color.brand.neutrals.white}",
+        "type": "color"
+      }
+    },
+    "status": {
+      "success": {
+        "value": "{alias.color.brand.status.success}",
+        "type": "color",
+        "comment": "This maps to theme.color.teal"
+      },
+      "danger": {
+        "value": "{alias.color.brand.status.danger}",
+        "type": "color",
+        "comment": "This maps to theme.color.red"
+      }
+    }
+  }
+}

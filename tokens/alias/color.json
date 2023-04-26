@@ -1,0 +1,126 @@
+{
+    "alias": {
+        "color": {
+            "action": {
+                "normal": {
+                    "value": "{alias.color.brand.secondary}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "hover": {
+                    "value": "{alias.color.brand.tertiary}",
+                    "type": "color",
+                    "category": "alias"
+                }
+            },
+            "text": {
+                "primary": {
+                    "value": "{alias.color.brand.neutrals.grey06}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "disabled": {
+                    "value": "{alias.color.brand.neutrals.grey04}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "label": {
+                    "value": "{alias.color.brand.neutrals.grey07}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "tableHeader": {
+                    "value": "{alias.color.brand.neutrals.grey05}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "error": {
+                    "value": "{alias.color.brand.status.danger}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "white": {
+                    "value": "{alias.color.brand.neutrals.white}",
+                    "type": "color",
+                    "category": "alias"
+                }
+            },
+            "icon": {
+                "default": {
+                    "value": "{alias.color.brand.neutrals.grey05}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "hint": {
+                    "value": "{alias.color.brand.neutrals.grey03}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "error": {
+                    "value": "{alias.color.brand.status.danger}",
+                    "type": "color",
+                    "category": "alias"
+                }
+            },
+            "background": {
+                "white": {
+                    "value": "{alias.color.brand.neutrals.white}",
+                    "type": "color",
+                    "category": "alias"
+                },
+                "button": {
+                    "disabled": {
+                        "value": "{alias.color.brand.neutrals.grey03}",
+                        "type": "color",
+                        "category": "alias"
+                    }
+                },
+                "table": {
+                    "header": {
+                        "value": "{alias.color.brand.neutrals.grey01}",
+                        "type": "color",
+                        "category": "alias"
+                    },
+                    "hover": {
+                        "value": "{alias.color.brand.primary}",
+                        "type": "color",
+                        "category": "alias"
+                    }
+                }
+            },
+            "border": {
+                "table": {
+                    "value": "{alias.color.brand.neutrals.grey02}",
+                    "type": "color",
+                    "category": "alias"
+                }
+            },
+            "interaction": {
+                "default": {
+                    "normal": {
+                        "value": "{alias.color.brand.secondary}",
+                        "type": "color",
+                        "category": "alias"
+                    }
+                },
+                "border": {
+                    "active": {
+                        "value": "{alias.color.brand.secondary}",
+                        "type": "color",
+                        "category": "alias"
+                    },
+                    "neutralNormal": {
+                        "value": "{alias.color.brand.neutrals.grey04}",
+                        "type": "color",
+                        "category": "alias"
+                    },
+                    "alert": {
+                        "value": "{alias.color.brand.status.danger}",
+                        "type": "color",
+                        "category": "alias"
+                    }
+                }
+            }
+        }
+    }
+}
