@@ -1,49 +1,47 @@
 {
   "color": {
     "primary": {
-      "01": {
-        "value": "{alias.color.brand.primary.01}",
-        "type": "color",
-        "comment": "This maps to theme.primary.blue-01"
-      },
-      "02": {
-        "value": "{alias.color.brand.primary.02}",
-        "type": "color",
-        "comment": "This maps to theme.primary.blue-02"
-      },
-      "03": {
-        "value": "{alias.color.brand.primary.03}",
-        "type": "color",
-        "comment": "This maps to theme.primary.blue-03"
-      }
+      "value": "{alias.color.brand.primary}",
+      "type": "color",
+      "comment": "This maps to theme.primary.blue-01"
+    },
+    "secondary": {
+      "value": "{alias.color.brand.secondary}",
+      "type": "color",
+      "comment": "This maps to theme.primary.blue-02"
+    },
+    "tertiary": {
+      "value": "{alias.color.brand.tertiary}",
+      "type": "color",
+      "comment": "This maps to theme.tertiary.blue-03"
     },
     "neutrals": {
-      "Grey07": {
-        "value": "{alias.color.brand.neutrals.Grey07}",
+      "grey07": {
+        "value": "{alias.color.brand.neutrals.grey07}",
         "type": "color"
       },
-      "Grey06": {
-        "value": "{alias.color.brand.neutrals.Grey06}",
+      "grey06": {
+        "value": "{alias.color.brand.neutrals.grey06}",
         "type": "color"
       },
-      "Grey05": {
-        "value": "{alias.color.brand.neutrals.Grey05}",
+      "grey05": {
+        "value": "{alias.color.brand.neutrals.grey05}",
         "type": "color"
       },
-      "Grey04": {
-        "value": "{alias.color.brand.neutrals.Grey04}",
+      "grey04": {
+        "value": "{alias.color.brand.neutrals.grey04}",
         "type": "color"
       },
-      "Grey03": {
-        "value": "{alias.color.brand.neutrals.Grey03}",
+      "grey03": {
+        "value": "{alias.color.brand.neutrals.grey03}",
         "type": "color"
       },
-      "Grey02": {
-        "value": "{alias.color.brand.neutrals.Grey02}",
+      "grey02": {
+        "value": "{alias.color.brand.neutrals.grey02}",
         "type": "color"
       },
-      "Grey01": {
-        "value": "{alias.color.brand.neutrals.Grey01}",
+      "grey01": {
+        "value": "{alias.color.brand.neutrals.grey01}",
         "type": "color"
       },
       "white": {
