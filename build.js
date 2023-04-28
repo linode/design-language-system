@@ -18,12 +18,12 @@ function getStyleDictionaryConfig(brand, platform) {
         buildPath: `dist/web/${brand}/`,
         files: [
           {
-            destination: 'single-exports.es6.js',
+            destination: 'tokens.es6.js',
             format: 'javascript/es6',
             filter: 'excludeBrand',
           },
           {
-            destination: 'grouped-export.es6.js',
+            destination: 'theme.es6.js',
             format: 'javascript/nested',
             filter: 'excludeBrand',
           },
@@ -103,7 +103,7 @@ StyleDictionaryPackage.registerFormat({
     };
     const flattenedTokens = removeMetadataAndFlatten(tokens);
 
-    return `export default tokens = ${JSON.stringify(flattenedTokens, null, 2)
+    return `export default ${JSON.stringify(flattenedTokens, null, 2)
       .replace(/"([^"]+)":/g, '$1:')
       .replace('alias', 'aliases')
       .replace('component', 'components')
