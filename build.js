@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 const StyleDictionaryPackage = require('style-dictionary');
 
 function getStyleDictionaryConfig(brand, platform) {
@@ -7,7 +10,7 @@ function getStyleDictionaryConfig(brand, platform) {
       'tokens/components/**/*.json',
       `tokens/brands/${brand}/*.json`,
       'tokens/globals/**/*.json',
-      `tokens/platforms/${platform}/*.json`
+      `tokens/platforms/${platform}/*.json`,
     ],
     platforms: {
       'web/js': {
@@ -15,11 +18,16 @@ function getStyleDictionaryConfig(brand, platform) {
         buildPath: `dist/web/${brand}/`,
         files: [
           {
-            destination: 'tokens.es6.js',
+            destination: 'single-exports.es6.js',
             format: 'javascript/es6',
-            filter: 'excludeBrand'
-          }
-        ]
+            filter: 'excludeBrand',
+          },
+          {
+            destination: 'grouped-export.es6.js',
+            format: 'javascript/nested',
+            filter: 'excludeBrand',
+          },
+        ],
       },
       'web/json': {
         transformGroup: 'tokens-json',
@@ -28,9 +36,9 @@ function getStyleDictionaryConfig(brand, platform) {
           {
             destination: 'tokens.json',
             format: 'json/flat',
-            filter: 'excludeBrand'
-          }
-        ]
+            filter: 'excludeBrand',
+          },
+        ],
       },
       'web/scss': {
         transformGroup: 'tokens-scss',
@@ -41,12 +49,12 @@ function getStyleDictionaryConfig(brand, platform) {
             format: 'scss/variables',
             filter: 'excludeBrand',
             options: {
-              outputReferences: false
-            }
-          }
-        ]
-      }
-    }
+              outputReferences: false,
+            },
+          },
+        ],
+      },
+    },
   };
 }
 
@@ -60,14 +68,47 @@ StyleDictionaryPackage.registerFilter({
   name: 'excludeBrand',
   matcher: function (token) {
     return token.category !== 'brand';
-  }
+  },
 });
+
+/**
+ * REGISTER FORMATS
+ * @see https://amzn.github.io/style-dictionary/#/api?id=registerformat
+ */
 
 StyleDictionaryPackage.registerFormat({
   name: 'json/flat',
   formatter: function (dictionary) {
     return JSON.stringify(dictionary.allProperties, null, 2);
-  }
+  },
+});
+
+StyleDictionaryPackage.registerFormat({
+  name: 'javascript/nested',
+  formatter: function (dictionary) {
+    const tokens = dictionary.properties;
+    const removeMetadataAndFlatten = (jsonObj) => {
+      for (var key in jsonObj) {
+        if (typeof jsonObj[key] == 'object') {
+          if (jsonObj[key].hasOwnProperty('value')) {
+            jsonObj[key] = jsonObj[key]['value'];
+          } else {
+            removeMetadataAndFlatten(jsonObj[key]);
+          }
+        } else {
+          continue;
+        }
+      }
+      return jsonObj;
+    };
+    const flattenedTokens = removeMetadataAndFlatten(tokens);
+
+    return `export default tokens = ${JSON.stringify(flattenedTokens, null, 2)
+      .replace(/"([^"]+)":/g, '$1:')
+      .replace('alias', 'aliases')
+      .replace('component', 'components')
+      .replace(/color/g, 'colors')}`;
+  },
 });
 
 /**
@@ -79,25 +120,19 @@ StyleDictionaryPackage.registerFormat({
 StyleDictionaryPackage.registerTransform({
   name: 'name/prefix/kebab',
   type: 'name',
-  matcher: function (prop) {
-    return prop.category !== 'alias';
-  },
   transformer: function (prop) {
     const prefix = 'token-';
     return `${prefix}${prop.name}`;
-  }
+  },
 });
 
 StyleDictionaryPackage.registerTransform({
   name: 'name/prefix/constant',
   type: 'name',
-  matcher: function (prop) {
-    return prop.category !== 'alias';
-  },
   transformer: function (prop) {
     const prefix = 'TOKEN_';
     return `${prefix}${prop.name}`;
-  }
+  },
 });
 
 StyleDictionaryPackage.registerTransform({
@@ -108,7 +143,7 @@ StyleDictionaryPackage.registerTransform({
   },
   transformer: function (prop) {
     return prop.value.replace(/px$/, 'pt');
-  }
+  },
 });
 
 StyleDictionaryPackage.registerTransform({
@@ -119,7 +154,7 @@ StyleDictionaryPackage.registerTransform({
   },
   transformer: function (prop) {
     return prop.value.replace(/px$/, 'dp');
-  }
+  },
 });
 
 /**
@@ -133,13 +168,13 @@ StyleDictionaryPackage.registerTransformGroup({
     'name/cti/constant',
     'name/prefix/constant',
     'size/px',
-    'color/hex'
-  ]
+    'color/hex',
+  ],
 });
 
 StyleDictionaryPackage.registerTransformGroup({
   name: 'tokens-json',
-  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css']
+  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css'],
 });
 
 StyleDictionaryPackage.registerTransformGroup({
@@ -149,8 +184,8 @@ StyleDictionaryPackage.registerTransformGroup({
     'name/prefix/kebab',
     'time/seconds',
     'size/px',
-    'color/css'
-  ]
+    'color/css',
+  ],
 });
 
 /**
