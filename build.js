@@ -1,7 +1,5 @@
-const fs = require('fs');
-const path = require('path');
-
 const StyleDictionaryPackage = require('style-dictionary');
+const PREFIX = 'token';
 
 function getStyleDictionaryConfig(brand, platform) {
   return {
@@ -16,6 +14,7 @@ function getStyleDictionaryConfig(brand, platform) {
       'web/js': {
         transformGroup: 'tokens-js',
         buildPath: `dist/web/${brand}/`,
+        prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.es6.js',
@@ -32,6 +31,7 @@ function getStyleDictionaryConfig(brand, platform) {
       'web/json': {
         transformGroup: 'tokens-json',
         buildPath: `dist/web/${brand}/`,
+        prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.json',
@@ -43,6 +43,7 @@ function getStyleDictionaryConfig(brand, platform) {
       'web/scss': {
         transformGroup: 'tokens-scss',
         buildPath: `dist/web/${brand}/`,
+        prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.scss',
@@ -116,25 +117,6 @@ StyleDictionaryPackage.registerFormat({
  * @see https://amzn.github.io/style-dictionary/#/api?id=registertransform
  * @todo Combine prefix transforms - we Didn't want a prefix on alias tokens, if this changes, we can add `prefix` to each 'platform' config
  */
-
-StyleDictionaryPackage.registerTransform({
-  name: 'name/prefix/kebab',
-  type: 'name',
-  transformer: function (prop) {
-    const prefix = 'token-';
-    return `${prefix}${prop.name}`;
-  },
-});
-
-StyleDictionaryPackage.registerTransform({
-  name: 'name/prefix/constant',
-  type: 'name',
-  transformer: function (prop) {
-    const prefix = 'TOKEN_';
-    return `${prefix}${prop.name}`;
-  },
-});
-
 StyleDictionaryPackage.registerTransform({
   name: 'size/pxToPt',
   type: 'value',
@@ -166,7 +148,6 @@ StyleDictionaryPackage.registerTransformGroup({
   name: 'tokens-js',
   transforms: [
     'name/cti/constant',
-    'name/prefix/constant',
     'size/px',
     'color/hex',
   ],
@@ -181,7 +162,6 @@ StyleDictionaryPackage.registerTransformGroup({
   name: 'tokens-scss',
   transforms: [
     'name/cti/kebab',
-    'name/prefix/kebab',
     'time/seconds',
     'size/px',
     'color/css',
