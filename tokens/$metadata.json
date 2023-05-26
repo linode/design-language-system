@@ -1,6 +1,5 @@
 {
   "tokenSetOrder": [
-    "tokens/global/cloudmanager/light",
-    "tokens/global/akamai/light"
+    "global"
   ]
 }
