@@ -17,7 +17,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - run: npm ci
-      - run: npx style-dictionary build
+      - run: npm run clean
+      - run: npm run generate
       - uses: JS-DevTools/npm-publish@v2
         with:
           access: public
