@@ -1,0 +1,92 @@
+{
+  "component": {
+    "table": {
+      "header": {
+        "background": {
+          "value": "{color.background.table.header}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{color.border.table}",
+          "type": "color"
+        },
+        "text": {
+          "normal": {
+            "value": "{color.content.secondary}",
+            "type": "color"
+          },
+          "onHover": {
+            "value": "{color.action.normal}",
+            "type": "color"
+          }
+        },
+        "icon": {
+          "normal": {
+            "value": "{color.content.secondary}",
+            "type": "color"
+          },
+          "onHover": {
+            "value": "{color.action.normal}",
+            "type": "color"
+          }
+        }
+      },
+      "cell": {
+        "border": {
+          "value": "{color.border.table}",
+          "type": "color"
+        },
+        "background": {
+          "default": {
+            "value": "{color.background.white}",
+            "type": "color"
+          },
+          "onHover": {
+            "value": "{color.background.table.hover}",
+            "type": "color"
+          }
+        },
+        "simpleText": {
+          "text": {
+            "value": "{color.content.primary}",
+            "type": "color"
+          }
+        },
+        "link": {
+          "text": {
+            "normal": {
+              "value": "{color.action.normal}",
+              "type": "color"
+            },
+            "onHover": {
+              "value": "{color.action.hover}",
+              "type": "color"
+            }
+          }
+        },
+        "status": {
+          "text": {
+            "value": "{color.content.primary}",
+            "type": "color"
+          },
+          "badge": {
+            "success": {
+              "value": "{color.background.success}",
+              "type": "color"
+            },
+            "failure": {
+              "value": "{color.background.error}",
+              "type": "color"
+            }
+          }
+        },
+        "actionIcon": {
+          "icon": {
+            "value": "{color.action.normal}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

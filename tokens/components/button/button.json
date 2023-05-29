@@ -1,0 +1,58 @@
+{
+  "component": {
+    "button": {
+      "primary": {
+        "default": {
+          "background": {
+            "value": "{color.action.normal}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{color.content.white}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background": {
+            "value": "{color.action.hover}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{color.content.white}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{color.background.button.disabled}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{color.content.white}",
+            "type": "color"
+          }
+        }
+      },
+      "secondary": {
+        "default": {
+          "text": {
+            "value": "{color.action.normal}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "text": {
+            "value": "{color.action.hover}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "text": {
+            "value": "{color.content.disabled}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}
