@@ -3,86 +3,86 @@
     "table": {
       "header": {
         "background": {
-          "value": "{alias.color.background.table.header}",
+          "value": "{color.background.table.header}",
           "type": "color"
         },
         "border": {
-          "value": "{alias.color.border.table}",
+          "value": "{color.border.table}",
           "type": "color"
         },
         "text": {
           "normal": {
-            "value": "{alias.color.text.tableHeader}",
+            "value": "{color.content.secondary}",
             "type": "color"
           },
           "onHover": {
-            "value": "{alias.color.action.normal}",
+            "value": "{color.action.normal}",
             "type": "color"
           }
         },
         "icon": {
           "normal": {
-            "value": "{alias.color.icon.default}",
+            "value": "{color.content.secondary}",
             "type": "color"
           },
           "onHover": {
-            "value": "{alias.color.action.normal}",
+            "value": "{color.action.normal}",
             "type": "color"
           }
         }
       },
       "cell": {
         "border": {
-          "value": "{alias.color.border.table}",
+          "value": "{color.border.table}",
           "type": "color"
         },
         "background": {
           "default": {
-            "value": "{alias.color.background.white}",
+            "value": "{color.background.white}",
             "type": "color"
           },
           "onHover": {
-            "value": "{alias.color.background.table.hover}",
+            "value": "{color.background.table.hover}",
             "type": "color"
           }
         },
         "simpleText": {
           "text": {
-            "value": "{alias.color.text.primary}",
+            "value": "{color.content.primary}",
             "type": "color"
           }
         },
         "link": {
           "text": {
             "normal": {
-              "value": "{alias.color.action.normal}",
+              "value": "{color.action.normal}",
               "type": "color"
             },
             "onHover": {
-              "value": "{alias.color.action.hover}",
+              "value": "{color.action.hover}",
               "type": "color"
             }
           }
         },
         "status": {
           "text": {
-            "value": "{alias.color.text.primary}",
+            "value": "{color.content.primary}",
             "type": "color"
           },
           "badge": {
             "success": {
-              "value": "{alias.color.brand.status.success}",
+              "value": "{color.background.success}",
               "type": "color"
             },
             "failure": {
-              "value": "{alias.color.brand.status.danger}",
+              "value": "{color.background.error}",
               "type": "color"
             }
           }
         },
         "actionIcon": {
           "icon": {
-            "value": "{alias.color.action.normal}",
+            "value": "{color.action.normal}",
             "type": "color"
           }
         }

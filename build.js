@@ -6,11 +6,10 @@ const BRANDS = ['akamai', 'cloudmanager'];
 function getStyleDictionaryConfig(brand, platform) {
   return {
     source: [
+      'tokens/**/**/*.json',
       'tokens/alias/**/*.json',
       'tokens/components/**/*.json',
-      `tokens/brands/${brand}/*.json`,
-      'tokens/globals/**/*.json',
-      `tokens/platforms/${platform}/*.json`,
+      `tokens/globals/${brand}/*.json`,
     ],
     platforms: {
       'web/js': {

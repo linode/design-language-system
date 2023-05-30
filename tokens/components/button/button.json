@@ -4,31 +4,31 @@
       "primary": {
         "default": {
           "background": {
-            "value": "{alias.color.action.normal}",
+            "value": "{color.action.normal}",
             "type": "color"
           },
           "text": {
-            "value": "{alias.color.text.white}",
+            "value": "{color.content.white}",
             "type": "color"
           }
         },
         "hover": {
           "background": {
-            "value": "{alias.color.action.hover}",
+            "value": "{color.action.hover}",
             "type": "color"
           },
           "text": {
-            "value": "{alias.color.text.white}",
+            "value": "{color.content.white}",
             "type": "color"
           }
         },
         "disabled": {
           "background": {
-            "value": "{alias.color.background.button.disabled}",
+            "value": "{color.background.button.disabled}",
             "type": "color"
           },
           "text": {
-            "value": "{alias.color.text.white}",
+            "value": "{color.content.white}",
             "type": "color"
           }
         }
@@ -36,19 +36,19 @@
       "secondary": {
         "default": {
           "text": {
-            "value": "{alias.color.action.normal}",
+            "value": "{color.action.normal}",
             "type": "color"
           }
         },
         "hover": {
           "text": {
-            "value": "{alias.color.action.hover}",
+            "value": "{color.action.hover}",
             "type": "color"
           }
         },
         "disabled": {
           "text": {
-            "value": "{alias.color.text.disabled}",
+            "value": "{color.content.disabled}",
             "type": "color"
           }
         }
