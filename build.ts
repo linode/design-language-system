@@ -1,4 +1,5 @@
-const StyleDictionaryPackage = require('style-dictionary');
+import StyleDictionaryPackage from 'style-dictionary';
+
 const PREFIX = 'token';
 const PLATFORMS = ['web'];
 const BRANDS = ['akamai', 'cloudmanager'];
@@ -14,42 +15,42 @@ function getStyleDictionaryConfig(brand, platform) {
     platforms: {
       'web/js': {
         transformGroup: 'tokens-js',
-        buildPath: `dist/web/${brand}/`,
+        buildPath: `dist/${brand}/`,
         prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.es6.js',
             format: 'javascript/es6',
-            filter: 'excludeBrand',
+            filter: {},
           },
           {
             destination: 'theme.es6.js',
             format: 'javascript/nested',
-            filter: 'excludeBrand',
+            filter: {},
           },
         ],
       },
       'web/json': {
         transformGroup: 'tokens-json',
-        buildPath: `dist/web/${brand}/`,
+        buildPath: `dist/${brand}/`,
         prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.json',
             format: 'json/flat',
-            filter: 'excludeBrand',
+            filter: {},
           },
         ],
       },
       'web/scss': {
         transformGroup: 'tokens-scss',
-        buildPath: `dist/web/${brand}/`,
+        buildPath: `dist/${brand}/`,
         prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.scss',
             format: 'scss/variables',
-            filter: 'excludeBrand',
+            filter: {},
             options: {
               outputReferences: false,
             },
@@ -66,12 +67,12 @@ function getStyleDictionaryConfig(brand, platform) {
  */
 
 // We want to exlude the brand tokens since they're only used to create global tokens
-StyleDictionaryPackage.registerFilter({
-  name: 'excludeBrand',
-  matcher: function (token) {
-    return token.category !== 'brand';
-  },
-});
+// StyleDictionaryPackage.registerFilter({
+//   name: '',
+//   matcher: function (token) {
+//     return token.category !== 'brand';
+//   },
+// });
 
 /**
  * REGISTER FORMATS
@@ -80,15 +81,15 @@ StyleDictionaryPackage.registerFilter({
 
 StyleDictionaryPackage.registerFormat({
   name: 'json/flat',
-  formatter: function (dictionary) {
-    return JSON.stringify(dictionary.allProperties, null, 2);
+  formatter: function (formatterArguments) {
+    return JSON.stringify(formatterArguments.dictionary.allProperties, null, 2);
   },
 });
 
 StyleDictionaryPackage.registerFormat({
   name: 'javascript/nested',
-  formatter: function (dictionary) {
-    const tokens = dictionary.properties;
+  formatter: function (formatterArguments) {
+    const tokens = formatterArguments.dictionary.properties;
     const removeMetadataAndFlatten = (jsonObj) => {
       for (var key in jsonObj) {
         if (typeof jsonObj[key] == 'object') {
