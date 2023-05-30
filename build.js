@@ -1,5 +1,7 @@
 const StyleDictionaryPackage = require('style-dictionary');
 const PREFIX = 'token';
+const PLATFORMS = ['web'];
+const BRANDS = ['akamai', 'cloudmanager'];
 
 function getStyleDictionaryConfig(brand, platform) {
   return {
@@ -21,6 +23,10 @@ function getStyleDictionaryConfig(brand, platform) {
             format: 'javascript/es6',
             filter: 'excludeBrand',
           },
+          // {
+          //   format: "typescript/es6-declarations",
+          //   destination: "tokens.d.ts"
+          // },
           {
             destination: 'theme.es6.js',
             format: 'javascript/nested',
@@ -175,12 +181,13 @@ StyleDictionaryPackage.registerTransformGroup({
 
 console.log('Build started...');
 
-['web'].map(function (platform) {
-  ['akamai', 'cloudmanager'].map(function (brand) {
+PLATFORMS.map(function (platform) {
+  BRANDS.map(function (brand) {
     console.log('\n==============================================');
     console.log(
       `\nProcessing...\n - Brand: ${brand}\n - Platform: ${platform}`
     );
+
 
     const StyleDictionary = StyleDictionaryPackage.extend(
       getStyleDictionaryConfig(brand, platform)

@@ -1,5 +1,17 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true
+    "module": "ES2020",
+    "esModuleInterop": true,
+    // Read JS files, as they are typically ignored as source files
+    "allowJs": true,
+    // Generate d.ts files
+    "declaration": true,
+    // Only compile and output d.ts files
+    "emitDeclarationOnly": true,
+    // The directory to place types. Removing this would result in the .d.ts files being located alongside the corresponding .js files.
+    // "outDir": "dist",
+    // Navigate to the JavaScript file associated with a specific module or function using IDE functions such as "Go to Definition" in VSCode
+    "declarationMap": true,
+    "moduleResolution": "node"
   }
 }

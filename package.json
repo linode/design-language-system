@@ -6,7 +6,7 @@
   "private": false,
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --minify terser",
-    "generate": "yarn clean && node ./build.js && yarn build",
+    "generate": "yarn clean && ts-node ./build.js && yarn build",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,12 +30,13 @@
   "devDependencies": {
     "@types/node": "^18.16.1",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^34.0.1",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "eslint": "^8.0.1",
     "terser": "^5.17.1",
+    "ts-node": "^10.9.1",
     "tsup": "^6.7.0",
     "typescript": "*"
   }
