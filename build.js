@@ -4,6 +4,7 @@ const PREFIX = 'token';
 function getStyleDictionaryConfig(brand, platform) {
   return {
     source: [
+      'tokens/**/**/*.json',
       'tokens/alias/**/*.json',
       'tokens/components/**/*.json',
       `tokens/globals/${brand}/*.json`,
