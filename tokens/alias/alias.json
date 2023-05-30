@@ -1,0 +1,115 @@
+{
+  "color": {
+    "action": {
+      "normal": {
+        "value": "{color.brand04}",
+        "type": "color",
+        "category": "alias"
+      },
+      "hover": {
+        "value": "{color.brand05}",
+        "type": "color",
+        "category": "alias"
+      }
+    },
+    "content": {
+      "primary": {
+        "value": "{color.neutrals.grey08}",
+        "type": "color",
+        "category": "alias"
+      },
+      "secondary": {
+        "value": "{color.neutrals.grey07}",
+        "type": "color",
+        "category": "alias"
+      },
+      "disabled": {
+        "value": "{color.neutrals.grey05}",
+        "type": "color",
+        "category": "alias"
+      },
+      "error": {
+        "value": "{color.status.danger}",
+        "type": "color",
+        "category": "alias"
+      },
+      "white": {
+        "value": "{color.neutrals.white}",
+        "type": "color",
+        "category": "alias"
+      },
+      "iconHint": {
+        "value": "{color.neutrals.grey04}",
+        "type": "color",
+        "category": "alias"
+      }
+    },
+    "background": {
+      "white": {
+        "value": "{color.neutrals.white}",
+        "type": "color",
+        "category": "alias"
+      },
+      "success": {
+        "value": "{color.status.success}",
+        "type": "color"
+      },
+      "error": {
+        "value": "{color.status.danger}",
+        "type": "color"
+      },
+      "button": {
+        "disabled": {
+          "value": "{color.neutrals.grey05}",
+          "type": "color",
+          "category": "alias"
+        }
+      },
+      "table": {
+        "header": {
+          "value": "{color.neutrals.grey01}",
+          "type": "color",
+          "category": "alias"
+        },
+        "hover": {
+          "value": "{color.brand01}",
+          "type": "color",
+          "category": "alias"
+        }
+      }
+    },
+    "border": {
+      "table": {
+        "value": "{color.neutrals.grey02}",
+        "type": "color",
+        "category": "alias"
+      }
+    },
+    "interaction": {
+      "default": {
+        "normal": {
+          "value": "{color.neutrals.grey05}",
+          "type": "color",
+          "category": "alias"
+        }
+      },
+      "border": {
+        "active": {
+          "value": "{color.brand04}",
+          "type": "color",
+          "category": "alias"
+        },
+        "neutralNormal": {
+          "value": "{color.neutrals.grey05}",
+          "type": "color",
+          "category": "alias"
+        },
+        "alert": {
+          "value": "{color.status.danger}",
+          "type": "color",
+          "category": "alias"
+        }
+      }
+    }
+  }
+}

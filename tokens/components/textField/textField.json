@@ -3,109 +3,109 @@
     "textfield": {
       "empty": {
         "label": {
-          "value": "{alias.color.text.label}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "border": {
-          "value": "{alias.color.interaction.border.neutralNormal}",
+          "value": "{color.interaction.border.neutralNormal}",
           "type": "color"
         },
         "background": {
-          "value": "{alias.color.background.white}",
+          "value": "{color.background.white}",
           "type": "color"
         }
       },
       "placeholder": {
         "label": {
-          "value": "{alias.color.text.label}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "text": {
-          "value": "{alias.color.text.primary}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "border": {
-          "value": "{alias.color.interaction.border.neutralNormal}",
+          "value": "{color.interaction.border.neutralNormal}",
           "type": "color"
         },
         "background": {
-          "value": "{alias.color.background.white}",
+          "value": "{color.background.white}",
           "type": "color"
         }
       },
       "focus": {
         "label": {
-          "value": "{alias.color.text.label}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "text": {
-          "value": "{alias.color.text.primary}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "border": {
-          "value": "{alias.color.interaction.border.active}",
+          "value": "{color.interaction.border.active}",
           "type": "color"
         },
         "background": {
-          "value": "{alias.color.background.white}",
+          "value": "{color.background.white}",
           "type": "color"
         }
       },
       "filled": {
         "label": {
-          "value": "{alias.color.text.label}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "text": {
-          "value": "{alias.color.text.primary}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "border": {
-          "value": "{alias.color.interaction.border.neutralNormal}",
+          "value": "{color.interaction.border.neutralNormal}",
           "type": "color"
         },
         "background": {
-          "value": "{alias.color.background.white}",
+          "value": "{color.background.white}",
           "type": "color"
         }
       },
       "disabled": {
         "label": {
-          "value": "{alias.color.text.label}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "text": {
-          "value": "{alias.color.text.disabled}",
+          "value": "{color.content.disabled}",
           "type": "color"
         },
         "border": {
-          "value": "{alias.color.interaction.border.neutralNormal}",
+          "value": "{color.interaction.border.neutralNormal}",
           "type": "color"
         },
         "background": {
-          "value": "{alias.color.background.white}",
+          "value": "{color.background.white}",
           "type": "color"
         }
       },
       "error": {
         "label": {
-          "value": "{alias.color.text.label}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "text": {
-          "value": "{alias.color.text.primary}",
+          "value": "{color.content.primary}",
           "type": "color"
         },
         "border": {
-          "value": "{alias.color.interaction.border.alert}",
+          "value": "{color.interaction.border.alert}",
           "type": "color"
         },
         "background": {
-          "value": "{alias.color.background.white}",
+          "value": "{color.background.white}",
           "type": "color"
         },
         "hintText": {
-          "value": "{alias.color.text.error}",
+          "value": "{color.content.error}",
           "type": "color"
         }
       }
