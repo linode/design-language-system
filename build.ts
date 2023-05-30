@@ -38,6 +38,14 @@ function getStyleDictionaryConfig(brand, platform) {
             format: 'javascript/nested',
             filter: {},
           },
+          {
+            format: "typescript/es6-declarations",
+            destination: "theme.d.ts"
+          },
+          {
+            format: "typescript/es6-declarations",
+            destination: "tokens.d.ts"
+          }
         ],
       },
       'web/json': {
