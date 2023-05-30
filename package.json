@@ -1,13 +1,11 @@
 {
   "name": "@linode/design-language-system",
   "version": "0.0.3",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
   "private": false,
   "type": "module",
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --minify terser",
-    "generate": "yarn clean && ts-node --esm ./build.ts && yarn build",
+    "generate": "yarn clean && ts-node --esm ./build.ts",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

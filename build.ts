@@ -1,8 +1,18 @@
+import fs from 'fs';
 import StyleDictionaryPackage from 'style-dictionary';
 
 const PREFIX = 'token';
 const PLATFORMS = ['web'];
-const BRANDS = ['akamai', 'cloudmanager'];
+const BRANDS = [
+  {
+    name: 'akamai',
+    outputDir: './dist/akamai',
+  },
+  {
+    name: 'cloudmanager',
+    outputDir: './dist/cloudmanager',
+  }
+]
 
 function getStyleDictionaryConfig(brand, platform) {
   return {
@@ -181,12 +191,12 @@ PLATFORMS.map(function (platform) {
   BRANDS.map(function (brand) {
     console.log('\n==============================================');
     console.log(
-      `\nProcessing...\n - Brand: ${brand}\n - Platform: ${platform}`
+      `\nProcessing...\n - Brand: ${brand.name}\n - Platform: ${platform}`
     );
 
 
     const StyleDictionary = StyleDictionaryPackage.extend(
-      getStyleDictionaryConfig(brand, platform)
+      getStyleDictionaryConfig(brand.name, platform)
     );
 
     if (platform === 'web') {
@@ -194,6 +204,25 @@ PLATFORMS.map(function (platform) {
       StyleDictionary.buildPlatform('web/json');
       StyleDictionary.buildPlatform('web/scss');
     }
+
+    const indexFileContent = `
+      // Auto-generated index file for ${brand.name} tokens
+
+      export * as TOKENS from './tokens.es6.js';
+
+      import * as THEME from './theme.es6.js';
+      const { components, aliases, colors, ...rest } = THEME;
+      export { components, aliases, colors };
+
+      // Import other tokens as needed
+      // export * as TYPOGRAPHY from './typography';
+      // export * as SPACING from './spacing';
+      // ...
+
+    `;
+
+    const indexPath = `${brand.outputDir}/index.js`;
+    fs.writeFileSync(indexPath, indexFileContent);
 
     console.log('\nEnd processing');
   });
