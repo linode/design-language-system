@@ -22,10 +22,6 @@ function getStyleDictionaryConfig(brand, platform) {
             format: 'javascript/es6',
             filter: 'excludeBrand',
           },
-          // {
-          //   format: "typescript/es6-declarations",
-          //   destination: "tokens.d.ts"
-          // },
           {
             destination: 'theme.es6.js',
             format: 'javascript/nested',
