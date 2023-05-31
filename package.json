@@ -4,8 +4,8 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts --minify terser",
-    "generate": "yarn clean && ts-node --esm ./build.ts",
+    "build": "tsup config/index.ts --format esm --dts --minify terser",
+    "generate": "yarn clean && ts-node --esm config/build.ts && yarn build",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

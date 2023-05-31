@@ -2,67 +2,88 @@ import fs from 'fs';
 import StyleDictionaryPackage from 'style-dictionary';
 
 const PREFIX = 'token';
-const PLATFORMS = ['web'];
-const BRANDS = [
+
+type Brands = 'akamai' | 'cloudmanager';
+type Platforms = 'web' | 'ios' | 'android';
+
+export interface BrandTypes {
+  name: Brands;
+  outputDir?: `./dist/${Brands}`;
+}
+
+export interface PlatformTypes {
+  name: Platforms;
+}
+
+export const PLATFORMS: PlatformTypes[] = [
+  {
+    name: 'web'
+  }
+];
+
+export const BRANDS: BrandTypes[] = [
   {
     name: 'akamai',
-    outputDir: './dist/akamai',
+    outputDir: './dist/akamai'
   },
   {
     name: 'cloudmanager',
-    outputDir: './dist/cloudmanager',
+    outputDir: './dist/cloudmanager'
   }
-]
+];
 
-function getStyleDictionaryConfig(brand, platform) {
+export function getStyleDictionaryConfig(
+  brand: BrandTypes,
+  platform: PlatformTypes
+): StyleDictionaryPackage.Config {
   return {
     source: [
       'tokens/**/**/*.json',
       'tokens/alias/**/*.json',
       'tokens/components/**/*.json',
-      `tokens/globals/${brand}/*.json`,
+      `tokens/globals/${brand.name}/*.json`
     ],
     platforms: {
       'web/js': {
         transformGroup: 'tokens-js',
-        buildPath: `dist/${brand}/`,
+        buildPath: `dist/${brand.name}/`,
         prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.es6.js',
             format: 'javascript/es6',
-            filter: {},
+            filter: {}
           },
           {
             destination: 'theme.es6.js',
             format: 'javascript/nested',
-            filter: {},
+            filter: {}
           },
           {
-            format: "typescript/es6-declarations",
-            destination: "theme.d.ts"
+            format: 'typescript/es6-declarations',
+            destination: 'theme.d.ts'
           },
           {
-            format: "typescript/es6-declarations",
-            destination: "tokens.d.ts"
+            format: 'typescript/es6-declarations',
+            destination: 'tokens.d.ts'
           }
-        ],
+        ]
       },
       'web/json': {
         transformGroup: 'tokens-json',
-        buildPath: `dist/${brand}/`,
+        buildPath: `dist/${brand.name}/`,
         prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.json',
             format: 'json/flat',
-            filter: {},
-          },
-        ],
+            filter: {}
+          }
+        ]
       },
       'web/scss': {
         transformGroup: 'tokens-scss',
-        buildPath: `dist/${brand}/`,
+        buildPath: `dist/${brand.name}/`,
         prefix: `${PREFIX}-`,
         files: [
           {
@@ -70,12 +91,12 @@ function getStyleDictionaryConfig(brand, platform) {
             format: 'scss/variables',
             filter: {},
             options: {
-              outputReferences: false,
-            },
-          },
-        ],
-      },
-    },
+              outputReferences: false
+            }
+          }
+        ]
+      }
+    }
   };
 }
 
@@ -101,7 +122,7 @@ StyleDictionaryPackage.registerFormat({
   name: 'json/flat',
   formatter: function (formatterArguments) {
     return JSON.stringify(formatterArguments.dictionary.allProperties, null, 2);
-  },
+  }
 });
 
 StyleDictionaryPackage.registerFormat({
@@ -129,7 +150,7 @@ StyleDictionaryPackage.registerFormat({
       .replace('alias', 'aliases')
       .replace('component', 'components')
       .replace(/color/g, 'colors')}`;
-  },
+  }
 });
 
 /**
@@ -145,7 +166,7 @@ StyleDictionaryPackage.registerTransform({
   },
   transformer: function (prop) {
     return prop.value.replace(/px$/, 'pt');
-  },
+  }
 });
 
 StyleDictionaryPackage.registerTransform({
@@ -156,7 +177,7 @@ StyleDictionaryPackage.registerTransform({
   },
   transformer: function (prop) {
     return prop.value.replace(/px$/, 'dp');
-  },
+  }
 });
 
 /**
@@ -166,32 +187,18 @@ StyleDictionaryPackage.registerTransform({
 
 StyleDictionaryPackage.registerTransformGroup({
   name: 'tokens-js',
-  transforms: [
-    'name/cti/constant',
-    'size/px',
-    'color/hex',
-  ],
+  transforms: ['name/cti/constant', 'size/px', 'color/hex']
 });
 
 StyleDictionaryPackage.registerTransformGroup({
   name: 'tokens-json',
-  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css'],
+  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css']
 });
 
 StyleDictionaryPackage.registerTransformGroup({
   name: 'tokens-scss',
-  transforms: [
-    'name/cti/kebab',
-    'time/seconds',
-    'size/px',
-    'color/css',
-  ],
+  transforms: ['name/cti/kebab', 'time/seconds', 'size/px', 'color/css']
 });
-
-/**
- * BUILD PROCESS
- * As we begin supporting more platforms and brands, we can easily scale this build process
- */
 
 console.log('Build started...');
 
@@ -199,38 +206,43 @@ PLATFORMS.map(function (platform) {
   BRANDS.map(function (brand) {
     console.log('\n==============================================');
     console.log(
-      `\nProcessing...\n - Brand: ${brand.name}\n - Platform: ${platform}`
+      `\nProcessing...\n - Brand: ${brand.name}\n - Platform: ${platform.name}`
     );
-
 
     const StyleDictionary = StyleDictionaryPackage.extend(
-      getStyleDictionaryConfig(brand.name, platform)
+      getStyleDictionaryConfig(brand, platform)
     );
 
-    if (platform === 'web') {
+    if (platform.name === 'web') {
       StyleDictionary.buildPlatform('web/js');
       StyleDictionary.buildPlatform('web/json');
       StyleDictionary.buildPlatform('web/scss');
     }
 
-    const indexFileContent = `
-      // Auto-generated index file for ${brand.name} tokens
+    // const indexFileContent = `
+    // // Auto-generated index file for ${brand.name} tokens
 
-      export * as TOKENS from './tokens.es6.js';
+    // export * as TOKENS from './tokens.es6.js';
 
-      import * as THEME from './theme.es6.js';
-      const { components, aliases, colors, ...rest } = THEME;
-      export { components, aliases, colors };
+    // import * as THEME from './theme.es6.js';
 
-      // Import other tokens as needed
-      // export * as TYPOGRAPHY from './typography';
-      // export * as SPACING from './spacing';
-      // ...
+    // const { components, aliases, colors, ...rest } = THEME;
 
-    `;
+    // export const Colors = {
+    //   ...colors
+    // };
 
-    const indexPath = `${brand.outputDir}/index.js`;
-    fs.writeFileSync(indexPath, indexFileContent);
+    // export const Aliases = {
+    //   ...aliases,
+    // };
+
+    // export const Components = {
+    //   ...components,
+    // };
+    // `;
+
+    // const indexPath = `${brand.outputDir}/index.js`;
+    // fs.writeFileSync(indexPath, indexFileContent);
 
     console.log('\nEnd processing');
   });
