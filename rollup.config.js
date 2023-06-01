@@ -23,7 +23,7 @@ const rollupConfig = (brand) => ({
     typescript({
       tsconfig: `./tsconfig.${brand.name}.json`
     }),
-    terser()
+    // terser()
   ]
 });
 

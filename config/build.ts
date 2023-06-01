@@ -229,6 +229,13 @@ PLATFORMS.map(function (platform) {
 
     // `;
 
+    // const indexDeclarationPath = `${brand.outputDir}/index.d.ts`;
+    // fs.writeFileSync(indexDeclarationPath, indexFileDeclarationContent);
+
+
+
+
+
     // const indexFileContent = `
     // // Auto-generated index file for ${brand.name} tokens
 
@@ -242,8 +249,7 @@ PLATFORMS.map(function (platform) {
     // const indexPath = `${brand.outputDir}/index.js`;
     // fs.writeFileSync(indexPath, indexFileContent);
 
-    // const indexDeclarationPath = `${brand.outputDir}/index.d.ts`;
-    // fs.writeFileSync(indexDeclarationPath, indexFileDeclarationContent);
+
 
     console.log('\nEnd processing');
   });
