@@ -61,10 +61,6 @@ export function getStyleDictionaryConfig(
           },
           {
             format: 'typescript/es6-declarations',
-            destination: 'theme.d.ts'
-          },
-          {
-            format: 'typescript/es6-declarations',
             destination: 'tokens.d.ts'
           }
         ]
@@ -219,30 +215,35 @@ PLATFORMS.map(function (platform) {
       StyleDictionary.buildPlatform('web/scss');
     }
 
+
+
+    // const indexFileDeclarationContent = `
+    // // Auto-generated index file for ${brand.name} tokens
+
+    // declare module '*.es6.js' {
+    //   const tokens: {
+    //     [key: string]: string;
+    //   };
+    //   export default tokens;
+    // }
+
+    // `;
+
     // const indexFileContent = `
     // // Auto-generated index file for ${brand.name} tokens
 
-    // export * as TOKENS from './tokens.es6.js';
+    // import * as TOKENS from './tokens.es6.js';
+    // import * as TOKENS_THEME from './theme.es6.js';
 
-    // import * as THEME from './theme.es6.js';
+    // export {TOKENS, TOKENS_THEME};
 
-    // const { components, aliases, colors, ...rest } = THEME;
-
-    // export const Colors = {
-    //   ...colors
-    // };
-
-    // export const Aliases = {
-    //   ...aliases,
-    // };
-
-    // export const Components = {
-    //   ...components,
-    // };
     // `;
 
     // const indexPath = `${brand.outputDir}/index.js`;
     // fs.writeFileSync(indexPath, indexFileContent);
+
+    // const indexDeclarationPath = `${brand.outputDir}/index.d.ts`;
+    // fs.writeFileSync(indexDeclarationPath, indexFileDeclarationContent);
 
     console.log('\nEnd processing');
   });
