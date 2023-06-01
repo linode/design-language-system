@@ -17,7 +17,9 @@ const rollupConfig = (brand) => ({
   input: `config/${brand.name}/index.ts`,
   output: {
     format: 'esm',
-    dir: `dist/${brand.name}`
+    dir: `dist/${brand.name}`,
+    declaration: true,
+    declarationDir: `dist/${brand.name}/types`
   },
   plugins: [
     typescript({
