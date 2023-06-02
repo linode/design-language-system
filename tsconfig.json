@@ -3,16 +3,7 @@
     "module": "esnext",
     "target": "esnext",
     "esModuleInterop": true,
-    // Read JS files, as they are typically ignored as source files
     "allowJs": true,
-    // Generate d.ts files
-    "declaration": true,
-    // Only compile and output d.ts files
-    "emitDeclarationOnly": true,
-    // The directory to place types. Removing this would result in the .d.ts files being located alongside the corresponding .js files.
-    "outDir": "dist/test",
-    "declarationDir": "dist/test",
-    "declarationMap": true,
     "moduleResolution": "node"
   },
   "exclude": ["config", "dist", "node_modules"]

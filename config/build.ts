@@ -46,11 +46,7 @@ export function getStyleDictionaryConfig(
           {
             destination: 'theme.es6.js',
             format: 'javascript/nested',
-            filter: {}
-          },
-          {
-            format: 'typescript/es6-declarations',
-            destination: 'theme.d.ts'
+            filter: {},
           },
           {
             format: 'typescript/es6-declarations',
@@ -118,27 +114,42 @@ StyleDictionaryPackage.registerFormat({
   name: 'javascript/nested',
   formatter: function (formatterArguments) {
     const tokens = formatterArguments.dictionary.properties;
-    const removeMetadataAndFlatten = (jsonObj) => {
-      for (var key in jsonObj) {
-        if (typeof jsonObj[key] == 'object') {
-          if (jsonObj[key].hasOwnProperty('value')) {
-            jsonObj[key] = jsonObj[key]['value'];
-          } else {
-            removeMetadataAndFlatten(jsonObj[key]);
+
+    // Function to transform tokens by removing metadata, flattening, and capitalizing keys
+    const transformTokens = (obj) => {
+      const transformedObj = {};
+      for (const key in obj) {
+        if (obj.hasOwnProperty(key)) {
+          const value = obj[key];
+          if (typeof value === 'object' && value !== null) {
+            // Recursively transform nested objects
+            const transformedValue = value.hasOwnProperty('value') ? value.value : transformTokens(value);
+
+            // Capitalize the key by splitting, mapping, and joining characters
+            const transformedKey = key
+              .split('')
+              .map((char) => char.toUpperCase())
+              .join('');
+
+            // Assign the transformed key-value pair to the new object
+            transformedObj[transformedKey] = transformedValue;
           }
-        } else {
-          continue;
         }
       }
-      return jsonObj;
+      return transformedObj;
     };
-    const flattenedTokens = removeMetadataAndFlatten(tokens);
 
-    return `export default ${JSON.stringify(flattenedTokens, null, 2)
-      .replace(/"([^"]+)":/g, '$1:')
-      .replace('alias', 'aliases')
-      .replace('component', 'components')
-      .replace(/color/g, 'colors')}`;
+    // Transform the tokens by removing metadata, flattening, and capitalizing keys
+    const transformedTokens = transformTokens(tokens);
+
+    // Convert the transformed tokens to string representation, with necessary replacements
+    const transformedOutput = JSON.stringify(transformedTokens, null, 2)
+      .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
+      .replace(/\balias\b/g, 'aliases')
+      .replace(/\bcomponent\b/g, 'components')
+      .replace(/\bcolor\b/g, 'colors');
+
+    return `export default ${transformedOutput}`;
   }
 });
 
