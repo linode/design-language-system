@@ -1,19 +1,8 @@
 import fs from 'fs';
 import StyleDictionaryPackage from 'style-dictionary';
+import type { BrandTypes, PlatformTypes } from './types';
 
 const PREFIX = 'token';
-
-type Brands = 'akamai' | 'cloudmanager';
-type Platforms = 'web' | 'ios' | 'android';
-
-export interface BrandTypes {
-  name: Brands;
-  outputDir?: `./dist/${Brands}`;
-}
-
-export interface PlatformTypes {
-  name: Platforms;
-}
 
 export const PLATFORMS: PlatformTypes[] = [
   {
@@ -218,31 +207,6 @@ PLATFORMS.map(function (platform) {
       StyleDictionary.buildPlatform('web/json');
       StyleDictionary.buildPlatform('web/scss');
     }
-
-    // const indexFileContent = `
-    // // Auto-generated index file for ${brand.name} tokens
-
-    // export * as TOKENS from './tokens.es6.js';
-
-    // import * as THEME from './theme.es6.js';
-
-    // const { components, aliases, colors, ...rest } = THEME;
-
-    // export const Colors = {
-    //   ...colors
-    // };
-
-    // export const Aliases = {
-    //   ...aliases,
-    // };
-
-    // export const Components = {
-    //   ...components,
-    // };
-    // `;
-
-    // const indexPath = `${brand.outputDir}/index.js`;
-    // fs.writeFileSync(indexPath, indexFileContent);
 
     console.log('\nEnd processing');
   });

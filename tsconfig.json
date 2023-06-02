@@ -12,8 +12,8 @@
     // The directory to place types. Removing this would result in the .d.ts files being located alongside the corresponding .js files.
     "outDir": "dist/test",
     "declarationDir": "dist/test",
-    // Navigate to the JavaScript file associated with a specific module or function using IDE functions such as "Go to Definition" in VSCode
     "declarationMap": true,
     "moduleResolution": "node"
-  }
+  },
+  "exclude": ["config", "dist", "node_modules"]
 }
