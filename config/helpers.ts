@@ -1,4 +1,9 @@
-export const getColors = (color) => {
+import * as TOKENS_THEME from '../dist/akamai/theme.es6.js'; // TODO: Need to find a better way to import this... tehcnically akamai/cloudmanager should have the same structure
+
+type ColorType = typeof TOKENS_THEME.default.COLOR;
+type ComponentType = typeof TOKENS_THEME.default.COMPONENT;
+
+export const getColors = (color: ColorType) => {
   return {
     ACTION: { ...color.ACTION },
     CONTENT: { ...color.CONTENT },
@@ -17,7 +22,7 @@ export const getColors = (color) => {
   };
 };
 
-export const getComponents = (component) => {
+export const getComponents = (component: ComponentType) => {
   return {
     BUTTON: { ...component.BUTTON },
     TABLE: { ...component.TABLE },

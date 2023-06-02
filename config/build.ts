@@ -149,7 +149,8 @@ StyleDictionaryPackage.registerFormat({
       .replace(/\bcomponent\b/g, 'components')
       .replace(/\bcolor\b/g, 'colors');
 
-    return `export default ${transformedOutput}`;
+      return `export default ${transformedOutput}`;
+    // return `export const THEME_TOKEN = ${transformedOutput}`;
   }
 });
 
