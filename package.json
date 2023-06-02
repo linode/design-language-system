@@ -1,6 +1,6 @@
 {
   "name": "@linode/design-language-system",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "",
   "files": [
-    "build"
+    "dist"
   ],
   "license": "Apache-2.0",
   "bugs": {
