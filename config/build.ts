@@ -26,11 +26,13 @@ export function getStyleDictionaryConfig(
   platform: PlatformTypes
 ): StyleDictionaryPackage.Config {
   return {
-    source: [
+    include: [
       'tokens/**/**/*.json',
       'tokens/alias/**/*.json',
       'tokens/components/**/*.json',
-      `tokens/globals/${brand.name}/*.json`
+    ],
+    source: [
+      `tokens/global/${brand.name}/*.json`
     ],
     platforms: {
       'web/js': {
