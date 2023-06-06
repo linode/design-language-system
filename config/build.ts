@@ -167,6 +167,7 @@ StyleDictionaryPackage.registerFormat({
     const tokens = formatterArguments.dictionary.properties;
 
     // Function to transform tokens by removing metadata and generating type declarations
+    // Matches the structure of the tokens generation in the formatter above
     const transformTokens = (obj) => {
       const transformedObj = {};
       try {
@@ -177,7 +178,6 @@ StyleDictionaryPackage.registerFormat({
               ? value.value
               : transformTokens(value);
             if (typeof value === 'object' && value !== null) {
-              // Capitalize the key by splitting, mapping, and joining characters
               const transformedKey = key
                 .split('')
                 .map((char) => char.toUpperCase())
@@ -202,11 +202,11 @@ StyleDictionaryPackage.registerFormat({
         return `Array<${arrayType}>`;
       } else if (typeof value === 'object' && value !== null) {
         const properties = Object.keys(value).map((key) => {
-          if (key.endsWith('Type')) return null; // Skip keys ending with "Type"
+          if (key.endsWith('Type')) return null;
           const propertyValue = generateTypeDeclaration(value[key]);
           return `${key}: ${propertyValue}`;
         });
-        return `{ ${properties.filter(Boolean).join(', ')} }`; // Filter out null values and join with ', '
+        return `{ ${properties.filter(Boolean).join(', ')} }`;
       } else {
         return typeof value;
       }
@@ -215,7 +215,7 @@ StyleDictionaryPackage.registerFormat({
     // Transform the tokens by removing metadata and generating type declarations
     const transformedTokens = transformTokens(tokens) || {};
 
-    // Generate TypeScript declarations for COLORS and COMPONENTS
+    // Generate TypeScript declarations for top level KEYS
     const declarations = Object.keys(transformedTokens).map((key) => {
       const typeName = key.toUpperCase();
       const typeDeclaration = transformedTokens[`${key}Type`];
