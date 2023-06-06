@@ -163,7 +163,7 @@ StyleDictionaryPackage.registerFormat({
 
 StyleDictionaryPackage.registerFormat({
   name: 'typescript/theme-types',
-  formatter: function (formatterArguments) {
+  formatter(formatterArguments) {
     const tokens = formatterArguments.dictionary.properties;
 
     // Function to transform tokens by removing metadata and generating type declarations
