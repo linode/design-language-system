@@ -221,8 +221,7 @@ StyleDictionaryPackage.registerFormat({
       const typeDeclaration = transformedTokens[`${key}Type`];
 
       return (
-        typeDeclaration &&
-        `interface ${typeName + '_TYPES'} ${typeDeclaration};`
+        typeDeclaration && `interface ${typeName}_TYPES ${typeDeclaration};`
       );
     });
 
@@ -232,7 +231,7 @@ StyleDictionaryPackage.registerFormat({
     // Generate the final TypeScript file content
     const exportsOutput = Object.keys(transformedTokens)
       .filter((key) => !key.endsWith('Type'))
-      .map((key) => key + '_TYPES')
+      .map((key) => `${key}_TYPES`)
       .join(', ');
 
     return `\
