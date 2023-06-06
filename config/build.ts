@@ -31,9 +31,7 @@ export function getStyleDictionaryConfig(
       'tokens/alias/**/*.json',
       'tokens/components/**/*.json',
     ],
-    source: [
-      `tokens/global/${brand.name}/*.json`
-    ],
+    source: [`tokens/global/${brand.name}/*.json`],
     platforms: {
       'web/js': {
         transformGroup: 'tokens-js',
@@ -43,7 +41,7 @@ export function getStyleDictionaryConfig(
           {
             destination: 'tokens.es6.js',
             format: 'javascript/es6',
-            filter: {}
+            filter: {},
           },
           {
             destination: 'theme.es6.js',
@@ -51,10 +49,15 @@ export function getStyleDictionaryConfig(
             filter: {},
           },
           {
+            destination: 'theme.d.ts',
+            format: 'typescript/theme-types',
+            filter: {},
+          },
+          {
             format: 'typescript/es6-declarations',
-            destination: 'tokens.d.ts'
-          }
-        ]
+            destination: 'tokens.d.ts',
+          },
+        ],
       },
       'web/json': {
         transformGroup: 'tokens-json',
@@ -64,9 +67,9 @@ export function getStyleDictionaryConfig(
           {
             destination: 'tokens.json',
             format: 'json/flat',
-            filter: {}
-          }
-        ]
+            filter: {},
+          },
+        ],
       },
       'web/scss': {
         transformGroup: 'tokens-scss',
@@ -78,12 +81,12 @@ export function getStyleDictionaryConfig(
             format: 'scss/variables',
             filter: {},
             options: {
-              outputReferences: false
-            }
-          }
-        ]
-      }
-    }
+              outputReferences: false,
+            },
+          },
+        ],
+      },
+    },
   };
 }
 
@@ -109,12 +112,12 @@ StyleDictionaryPackage.registerFormat({
   name: 'json/flat',
   formatter: function (formatterArguments) {
     return JSON.stringify(formatterArguments.dictionary.allProperties, null, 2);
-  }
+  },
 });
 
 StyleDictionaryPackage.registerFormat({
   name: 'javascript/nested',
-  formatter: function (formatterArguments) {
+  formatter(formatterArguments) {
     const tokens = formatterArguments.dictionary.properties;
 
     // Function to transform tokens by removing metadata, flattening, and capitalizing keys
@@ -125,7 +128,9 @@ StyleDictionaryPackage.registerFormat({
           const value = obj[key];
           if (typeof value === 'object' && value !== null) {
             // Recursively transform nested objects
-            const transformedValue = value.hasOwnProperty('value') ? value.value : transformTokens(value);
+            const transformedValue = value.hasOwnProperty('value')
+              ? value.value
+              : transformTokens(value);
 
             // Capitalize the key by splitting, mapping, and joining characters
             const transformedKey = key
@@ -151,9 +156,91 @@ StyleDictionaryPackage.registerFormat({
       .replace(/\bcomponent\b/g, 'components')
       .replace(/\bcolor\b/g, 'colors');
 
-      return `export default ${transformedOutput}`;
+    return `export default ${transformedOutput}`;
     // return `export const THEME_TOKEN = ${transformedOutput}`;
-  }
+  },
+});
+
+StyleDictionaryPackage.registerFormat({
+  name: 'typescript/theme-types',
+  formatter: function (formatterArguments) {
+    const tokens = formatterArguments.dictionary.properties;
+
+    // Function to transform tokens by removing metadata and generating type declarations
+    const transformTokens = (obj) => {
+      const transformedObj = {};
+      try {
+        for (const key in obj) {
+          if (obj.hasOwnProperty(key)) {
+            const value = obj[key];
+            const transformedValue = value.hasOwnProperty('value')
+              ? value.value
+              : transformTokens(value);
+            if (typeof value === 'object' && value !== null) {
+              // Capitalize the key by splitting, mapping, and joining characters
+              const transformedKey = key
+                .split('')
+                .map((char) => char.toUpperCase())
+                .join('');
+
+              transformedObj[transformedKey] = transformedValue;
+              transformedObj[`${transformedKey}Type`] =
+                generateTypeDeclaration(transformedValue);
+            }
+          }
+        }
+        return transformedObj;
+      } catch (e) {
+        console.warn(e);
+      }
+    };
+
+    // Generate TypeScript type declarations for a given token
+    const generateTypeDeclaration = (value) => {
+      if (Array.isArray(value)) {
+        const arrayType = generateTypeDeclaration(value[0]);
+        return `Array<${arrayType}>`;
+      } else if (typeof value === 'object' && value !== null) {
+        const properties = Object.keys(value).map((key) => {
+          if (key.endsWith('Type')) return null; // Skip keys ending with "Type"
+          const propertyValue = generateTypeDeclaration(value[key]);
+          return `${key}: ${propertyValue}`;
+        });
+        return `{ ${properties.filter(Boolean).join(', ')} }`; // Filter out null values and join with ', '
+      } else {
+        return typeof value;
+      }
+    };
+
+    // Transform the tokens by removing metadata and generating type declarations
+    const transformedTokens = transformTokens(tokens) || {};
+
+    // Generate TypeScript declarations for COLORS and COMPONENTS
+    const declarations = Object.keys(transformedTokens).map((key) => {
+      const typeName = key.toUpperCase();
+      const typeDeclaration = transformedTokens[`${key}Type`];
+
+      return (
+        typeDeclaration &&
+        `declare const ${typeName + '_TYPES'}: ${typeDeclaration};`
+      );
+    });
+
+    // Join the declarations with new lines
+    const declarationsOutput = declarations.join('\n');
+
+    // Generate the final TypeScript file content
+    const exportsOutput = Object.keys(transformedTokens)
+      .filter((key) => !key.endsWith('Type'))
+      .map((key) => key + '_TYPES')
+      .join(', ');
+
+    return `\
+${declarationsOutput}
+
+export { ${exportsOutput} };
+`;
+  },
 });
 
 /**
@@ -164,23 +251,23 @@ StyleDictionaryPackage.registerFormat({
 StyleDictionaryPackage.registerTransform({
   name: 'size/pxToPt',
   type: 'value',
-  matcher: function (prop) {
+  matcher(prop) {
     return prop.value.match(/^[\d.]+px$/);
   },
-  transformer: function (prop) {
+  transformer(prop) {
     return prop.value.replace(/px$/, 'pt');
-  }
+  },
 });
 
 StyleDictionaryPackage.registerTransform({
   name: 'size/pxToDp',
   type: 'value',
-  matcher: function (prop) {
+  matcher(prop) {
     return prop.value.match(/^[\d.]+px$/);
   },
-  transformer: function (prop) {
+  transformer(prop) {
     return prop.value.replace(/px$/, 'dp');
-  }
+  },
 });
 
 /**
