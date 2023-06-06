@@ -49,7 +49,7 @@ export function getStyleDictionaryConfig(
             filter: {},
           },
           {
-            destination: 'theme.d.ts',
+            destination: 'theme-types.d.ts',
             format: 'typescript/theme-types',
             filter: {},
           },
@@ -222,7 +222,7 @@ StyleDictionaryPackage.registerFormat({
 
       return (
         typeDeclaration &&
-        `declare const ${typeName + '_TYPES'}: ${typeDeclaration};`
+        `interface ${typeName + '_TYPES'} ${typeDeclaration};`
       );
     });
 
@@ -238,7 +238,7 @@ StyleDictionaryPackage.registerFormat({
     return `\
 ${declarationsOutput}
 
-export { ${exportsOutput} };
+export type { ${exportsOutput} };
 `;
   },
 });
