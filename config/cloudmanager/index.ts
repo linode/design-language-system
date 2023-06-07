@@ -1,12 +1,12 @@
-import * as TOKENS from '../../dist/cloudmanager/tokens.es6.js';
-import * as TOKENS_THEME from '../../dist/cloudmanager/theme.es6.js';
+import * as Tokens from '../../dist/cloudmanager/tokens.es6.js';
+import * as TokensTheme from '../../dist/cloudmanager/theme.es6.js';
 import type {
-  COLOR_TYPES,
-  COMPONENT_TYPES,
-} from '../../dist/cloudmanager/theme-types.d.ts';
+  ColorTypes,
+  ComponentTypes,
+} from '../../dist/cloudmanager/theme.d.ts';
 
-const COLORS: COLOR_TYPES = TOKENS_THEME.default.COLOR;
-const COMPONENTS: COMPONENT_TYPES = TOKENS_THEME.default.COMPONENT;
+const Colors: ColorTypes = TokensTheme.default.Color;
+const Components: ComponentTypes = TokensTheme.default.Component;
 
-export { TOKENS, COLORS, COMPONENTS };
-export type { COLOR_TYPES, COMPONENT_TYPES };
+export { Tokens, Colors, Components };
+export type { ColorTypes, ComponentTypes };
