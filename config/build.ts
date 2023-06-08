@@ -241,58 +241,15 @@ export function toPascalCase(str: string): string {
 }
 
 // Generate TypeScript type declarations for a given token
-/**
-export function generateTypeDeclaration(value: any): string {
-  // If the value is an array, generate an array type declaration
-  if (Array.isArray(value)) {
-    const arrayType = generateTypeDeclaration(value[0]);
-    return `Array<${arrayType}>`;
-  } else if (typeof value === 'object' && value !== null) {
-    // If the value is an object, generate an object type declaration
-    const properties = Object.entries(value)
-      .filter(([key]) => !key.endsWith('Type'))
-      .map(
-        ([key, propertyValue]) =>
-          `${key}: ${generateTypeDeclaration(propertyValue)}`
-      );
-    const joinedProperties = properties.join(', ');
-    return `{ ${joinedProperties} }`;
-  } else {
-    // Otherwise, return the type of the value
-    return typeof value;
-  }
-}
- */
-
-// export function generateTypeDeclaration(value: any): any {
-//   if (Array.isArray(value)) {
-//     const arrayType = generateTypeDeclaration(value[0]);
-//     return {
-//       type: `Array<${arrayType}>`
-//     };
-//   } else if (typeof value === 'object' && value !== null) {
-//     const properties = Object.entries(value)
-//       .filter(([key]) => !key.endsWith('Type'))
-//       .reduce((obj, [key, propertyValue]) => {
-//         obj[key] = generateTypeDeclaration(propertyValue);
-//         return obj;
-//       }, {});
-//     return JSON.stringify(properties, null, 2)
-//       .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
-//       .replace(/\\n/g, '')
-//       .replace(/\\/g, '');
-//   } else {
-//     return typeof value;
-//   }
-// }
-
 export function generateTypeDeclaration(value: any): any {
+  // If the value is an array, generate an array type declaration
   if (Array.isArray(value)) {
     const arrayType = generateTypeDeclaration(value[0]);
     return {
       type: `Array<${arrayType}>`
     };
   } else if (typeof value === 'object' && value !== null) {
+    // If the value is an object, generate an object type declaration
     const properties = Object.entries(value)
       .filter(([key]) => !key.endsWith('Type'))
       .reduce((obj, [key, propertyValue]) => {
@@ -301,6 +258,7 @@ export function generateTypeDeclaration(value: any): any {
       }, {});
     return formatProperties(properties);
   } else {
+    // Otherwise, return the type of the value
     return typeof value;
   }
 }
