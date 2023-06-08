@@ -272,17 +272,20 @@ function formatProperties(properties: Record<string, any>): string {
     {}
   );
   const jsonString = JSON.stringify(formattedProperties, null, 2)
+    // Replace commas with semicolons,
     .replace(/,/g, ';')
+    // Remove quotes from keys and values
     .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
     .replace(/"([^"]+)"/g, (match, value) => value)
+    // Remove newlines,
     .replace(/\\n/g, '')
+    // Add semicolons to the end of each line,
     .replace(/}/g, '};')
+    // Remove backslashes
     .replace(/\\/g, '');
 
   return prettier.format(jsonString, {
-    parser: 'typescript',
-    semi: true,
-    bracketSpacing: true
+    parser: 'typescript'
   });
 }
 
