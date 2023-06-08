@@ -1,0 +1,92 @@
+{
+  "color": {
+    "brand05": {
+      "value": "#0174BC",
+      "type": "color"
+    },
+    "brand04": {
+      "value": "#1F93DB",
+      "type": "color"
+    },
+    "brand03": {
+      "value": "#5BB3EA",
+      "type": "color"
+    },
+    "brand02": {
+      "value": "#AFDEF8",
+      "type": "color"
+    },
+    "brand01": {
+      "value": "#E9F6FF",
+      "type": "color"
+    },
+    "neutrals": {
+      "black": {
+        "value": "#000000",
+        "type": "color"
+      },
+      "grey10": {
+        "value": "#3A3B3F",
+        "type": "color"
+      },
+      "grey09": {
+        "value": "#4B4B51",
+        "type": "color"
+      },
+      "grey08": {
+        "value": "#5F5F65",
+        "type": "color"
+      },
+      "grey07": {
+        "value": "#727278",
+        "type": "color"
+      },
+      "grey06": {
+        "value": "#83838C",
+        "type": "color"
+      },
+      "grey05": {
+        "value": "#A3A3AB",
+        "type": "color"
+      },
+      "grey04": {
+        "value": "#C5C5CA",
+        "type": "color"
+      },
+      "grey03": {
+        "value": "#D8D8DD",
+        "type": "color"
+      },
+      "grey02": {
+        "value": "#E7E7EA",
+        "type": "color"
+      },
+      "grey01": {
+        "value": "#F4F4F4",
+        "type": "color"
+      },
+      "white": {
+        "value": "#ffffff",
+        "type": "color"
+      }
+    },
+    "status": {
+      "danger": {
+        "value": "#BC012E",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#FDC235",
+        "type": "color"
+      },
+      "highlight": {
+        "value": "#FAF232",
+        "type": "color"
+      },
+      "success": {
+        "value": "#00B050",
+        "type": "color"
+      }
+    }
+  }
+}

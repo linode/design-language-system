@@ -1,7 +1,16 @@
 import StyleDictionaryPackage, { TransformedTokens } from 'style-dictionary';
-import type { BrandTypes, PlatformTypes } from './types';
+import { promises } from 'fs';
+import type { PlatformTypes, StyleDictionaryOptions } from './types';
+import prettier from 'prettier';
 
+const readFile = promises.readFile;
+const buffer = await readFile('tokens/$themes.json');
+const content = buffer.toString('utf-8');
+const themes = JSON.parse(content);
 const PREFIX = 'token';
+
+const date = new Date();
+const formattedDate = date.toUTCString();
 
 export const PLATFORMS: PlatformTypes[] = [
   {
@@ -9,32 +18,18 @@ export const PLATFORMS: PlatformTypes[] = [
   }
 ];
 
-export const BRANDS: BrandTypes[] = [
-  {
-    name: 'akamai',
-    outputDir: './dist/akamai'
-  },
-  {
-    name: 'cloudmanager',
-    outputDir: './dist/cloudmanager'
-  }
-];
-
 export function getStyleDictionaryConfig(
-  brand: BrandTypes,
-  platform: PlatformTypes
+  options: StyleDictionaryOptions
 ): StyleDictionaryPackage.Config {
+  const { theme, platform } = options;
   return {
-    include: [
-      'tokens/**/**/*.json',
-      'tokens/alias/**/*.json',
-      'tokens/components/**/*.json'
-    ],
-    source: [`tokens/global/${brand.name}/*.json`],
+    source: Object.entries(theme.selectedTokenSets)
+      .filter(([, val]) => val !== 'disabled')
+      .map(([tokenset]) => `tokens/${tokenset}.json`),
     platforms: {
       'web/js': {
         transformGroup: 'tokens-js',
-        buildPath: `dist/${brand.name}/`,
+        buildPath: `dist/${theme.name}/`,
         prefix: `${PREFIX}-`,
         files: [
           {
@@ -58,21 +53,9 @@ export function getStyleDictionaryConfig(
           }
         ]
       },
-      'web/json': {
-        transformGroup: 'tokens-json',
-        buildPath: `dist/${brand.name}/`,
-        prefix: `${PREFIX}-`,
-        files: [
-          {
-            destination: 'tokens.json',
-            format: 'json/flat',
-            filter: {}
-          }
-        ]
-      },
       'web/scss': {
         transformGroup: 'tokens-scss',
-        buildPath: `dist/${brand.name}/`,
+        buildPath: `dist/${theme.name}/`,
         prefix: `${PREFIX}-`,
         files: [
           {
@@ -123,7 +106,12 @@ StyleDictionaryPackage.registerFormat({
     ).replace(/"([^"]+)":/g, (match, key) => `${key}:`);
 
     return `
-      export default ${transformedOutput};
+/**
+ * Do not edit directly
+ * Generated on ${formattedDate}
+ */
+
+export default ${transformedOutput};
     `;
   }
 });
@@ -146,7 +134,7 @@ StyleDictionaryPackage.registerFormat({
     });
 
     // Join the declarations with new lines
-    const declarationsOutput = declarations.join('\n');
+    const declarationsOutput = declarations.join('');
 
     // Generate the final TypeScript file content
     const exportsOutput = Object.keys(transformedTokens)
@@ -155,9 +143,13 @@ StyleDictionaryPackage.registerFormat({
       .join(', ');
 
     return `\
-${declarationsOutput}
-export type { ${exportsOutput} };
-    `;
+/**
+ * Do not edit directly
+ * Generated on ${formattedDate}
+ */
+
+${prettier.format(declarationsOutput, { parser: 'typescript' })}
+${prettier.format(`export type { ${exportsOutput} }`)}`;
   }
 });
 
@@ -211,19 +203,24 @@ StyleDictionaryPackage.registerTransformGroup({
 console.log('Build started...');
 
 PLATFORMS.map(function (platform) {
-  BRANDS.map(function (brand) {
+  themes.map(function (theme, idx, themes) {
+    const currentIndex = idx + 1;
+    const totalThemes = themes.length;
+
     console.log('\n==============================================');
     console.log(
-      `\nProcessing...\n - Brand: ${brand.name}\n - Platform: ${platform.name}`
+      `\nProcessing... ${currentIndex} of ${totalThemes} \n - theme: ${theme.name}\n - Platform: ${platform.name}`
     );
 
     const StyleDictionary = StyleDictionaryPackage.extend(
-      getStyleDictionaryConfig(brand, platform)
+      getStyleDictionaryConfig({
+        theme,
+        platform
+      })
     );
 
     if (platform.name === 'web') {
       StyleDictionary.buildPlatform('web/js');
-      StyleDictionary.buildPlatform('web/json');
       StyleDictionary.buildPlatform('web/scss');
     }
 
@@ -234,7 +231,6 @@ PLATFORMS.map(function (platform) {
 console.log('\n==============================================');
 console.log('\nBuild completed!');
 
-
 export function toPascalCase(str: string): string {
   const words = str.split(/[-_\s]/).filter(Boolean);
   const capitalizedWords = words.map(
@@ -244,23 +240,53 @@ export function toPascalCase(str: string): string {
 }
 
 // Generate TypeScript type declarations for a given token
-export function generateTypeDeclaration(value: any): string {
+export function generateTypeDeclaration(value: any): any {
   // If the value is an array, generate an array type declaration
   if (Array.isArray(value)) {
     const arrayType = generateTypeDeclaration(value[0]);
-    return `Array<${arrayType}>`;
+    return {
+      type: `Array<${arrayType}>`
+    };
   } else if (typeof value === 'object' && value !== null) {
     // If the value is an object, generate an object type declaration
     const properties = Object.entries(value)
       .filter(([key]) => !key.endsWith('Type'))
-      .map(
-        ([key, propertyValue]) =>
-          `${key}: ${generateTypeDeclaration(propertyValue)}`
-      );
-    return `{ ${properties.join(', ')} }`;
+      .reduce((obj, [key, propertyValue]) => {
+        obj[key] = generateTypeDeclaration(propertyValue);
+        return obj;
+      }, {});
+    return formatProperties(properties);
   } else {
     // Otherwise, return the type of the value
     return typeof value;
+  }
+}
+
+function formatProperties(properties: Record<string, any>): string {
+  const formattedProperties = Object.entries(properties).reduce(
+    (obj, [key, value]) => {
+      obj[key] = formatValue(value);
+      return obj;
+    },
+    {}
+  );
+  const jsonString = JSON.stringify(formattedProperties, null, 2)
+    // Remove quotes from keys and values
+    .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
+    .replace(/"([^"]+)"/g, (match, value) => value)
+    // Remove newlines,
+    .replace(/\\n/g, '');
+
+  return jsonString
+}
+
+function formatValue(value: any): any {
+  if (typeof value === 'string') {
+    return value;
+  } else if (typeof value === 'object') {
+    return formatProperties(value);
+  } else {
+    return String(value);
   }
 }
 

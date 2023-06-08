@@ -1,7 +1,7 @@
 [
   {
     "id": "2d5c6edbf1d1493747e5eeea51163fc65151b887",
-    "name": "Akamai",
+    "name": "akamai",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "global/akamai/light": "source",
@@ -13,10 +13,34 @@
   },
   {
     "id": "63d6e43757c7b47cb99391bbdd9bb1f836d7d762",
-    "name": "Linode",
+    "name": "cloudmanager",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "global/cloudmanager/light": "source",
+      "alias/alias": "enabled",
+      "components/button/button": "enabled",
+      "components/table/table": "enabled",
+      "components/textField/textField": "enabled"
+    }
+  },
+  {
+    "id": "63d6es4757c7b47cb99391bbdd9bb1f836d7d762",
+    "name": "akamai/dark",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "global/akamai/dark": "source",
+      "alias/alias": "enabled",
+      "components/button/button": "enabled",
+      "components/table/table": "enabled",
+      "components/textField/textField": "enabled"
+    }
+  },
+  {
+    "id": "63d6e43747c7b47cb99391bbdd9bb1f836d7d762",
+    "name": "cloudmanager/dark",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "global/cloudmanager/dark": "source",
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
