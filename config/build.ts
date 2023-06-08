@@ -1,6 +1,7 @@
 import StyleDictionaryPackage, { TransformedTokens } from 'style-dictionary';
 import { promises } from 'fs';
 import type { PlatformTypes, StyleDictionaryOptions } from './types';
+import prettier from 'prettier';
 
 const readFile = promises.readFile;
 const buffer = await readFile('tokens/$themes.json');
@@ -203,29 +204,29 @@ StyleDictionaryPackage.registerTransformGroup({
 console.log('Build started...');
 
 PLATFORMS.map(function (platform) {
-    themes.map(function (theme, idx, themes) {
-      const currentIndex = idx + 1;
-      const totalThemes = themes.length;
+  themes.map(function (theme, idx, themes) {
+    const currentIndex = idx + 1;
+    const totalThemes = themes.length;
 
-      console.log('\n==============================================');
-      console.log(
-        `\nProcessing... ${currentIndex} of ${totalThemes} \n - theme: ${theme.name}\n - Platform: ${platform.name}`
-      );
+    console.log('\n==============================================');
+    console.log(
+      `\nProcessing... ${currentIndex} of ${totalThemes} \n - theme: ${theme.name}\n - Platform: ${platform.name}`
+    );
 
-      const StyleDictionary = StyleDictionaryPackage.extend(
-        getStyleDictionaryConfig({
-          theme,
-          platform
-        })
-      );
+    const StyleDictionary = StyleDictionaryPackage.extend(
+      getStyleDictionaryConfig({
+        theme,
+        platform
+      })
+    );
 
-      if (platform.name === 'web') {
-        StyleDictionary.buildPlatform('web/js');
-        StyleDictionary.buildPlatform('web/scss');
-      }
+    if (platform.name === 'web') {
+      StyleDictionary.buildPlatform('web/js');
+      StyleDictionary.buildPlatform('web/scss');
+    }
 
-      console.log('\nEnd processing');
-    });
+    console.log('\nEnd processing');
+  });
 });
 
 console.log('\n==============================================');
@@ -240,6 +241,7 @@ export function toPascalCase(str: string): string {
 }
 
 // Generate TypeScript type declarations for a given token
+/**
 export function generateTypeDeclaration(value: any): string {
   // If the value is an array, generate an array type declaration
   if (Array.isArray(value)) {
@@ -253,10 +255,86 @@ export function generateTypeDeclaration(value: any): string {
         ([key, propertyValue]) =>
           `${key}: ${generateTypeDeclaration(propertyValue)}`
       );
-    return `{ ${properties.join(', ')} }`;
+    const joinedProperties = properties.join(', ');
+    return `{ ${joinedProperties} }`;
   } else {
     // Otherwise, return the type of the value
     return typeof value;
+  }
+}
+ */
+
+// export function generateTypeDeclaration(value: any): any {
+//   if (Array.isArray(value)) {
+//     const arrayType = generateTypeDeclaration(value[0]);
+//     return {
+//       type: `Array<${arrayType}>`
+//     };
+//   } else if (typeof value === 'object' && value !== null) {
+//     const properties = Object.entries(value)
+//       .filter(([key]) => !key.endsWith('Type'))
+//       .reduce((obj, [key, propertyValue]) => {
+//         obj[key] = generateTypeDeclaration(propertyValue);
+//         return obj;
+//       }, {});
+//     return JSON.stringify(properties, null, 2)
+//       .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
+//       .replace(/\\n/g, '')
+//       .replace(/\\/g, '');
+//   } else {
+//     return typeof value;
+//   }
+// }
+
+export function generateTypeDeclaration(value: any): any {
+  if (Array.isArray(value)) {
+    const arrayType = generateTypeDeclaration(value[0]);
+    return {
+      type: `Array<${arrayType}>`
+    };
+  } else if (typeof value === 'object' && value !== null) {
+    const properties = Object.entries(value)
+      .filter(([key]) => !key.endsWith('Type'))
+      .reduce((obj, [key, propertyValue]) => {
+        obj[key] = generateTypeDeclaration(propertyValue);
+        return obj;
+      }, {});
+    return formatProperties(properties);
+  } else {
+    return typeof value;
+  }
+}
+
+function formatProperties(properties: Record<string, any>): string {
+  const formattedProperties = Object.entries(properties).reduce(
+    (obj, [key, value]) => {
+      obj[key] = formatValue(value);
+      return obj;
+    },
+    {}
+  );
+  const jsonString = JSON.stringify(formattedProperties, null, 2)
+    .replace(/,/g, ';')
+    .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
+    .replace(/"([^"]+)"/g, (match, value) => value)
+    .replace(/\\n/g, '')
+    .replace(/}/g, '};')
+    .replace(/\\/g, '');
+
+  return prettier.format(jsonString, {
+    parser: 'typescript',
+    semi: true,
+    bracketSpacing: true
+  });
+}
+
+function formatValue(value: any): any {
+  if (typeof value === 'string') {
+    return value;
+  } else if (typeof value === 'object') {
+    return formatProperties(value);
+  } else {
+    return String(value);
   }
 }
 
