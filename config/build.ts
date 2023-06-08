@@ -148,9 +148,8 @@ StyleDictionaryPackage.registerFormat({
  * Generated on ${formattedDate}
  */
 
-${declarationsOutput}
-export type { ${exportsOutput} };
-    `;
+${prettier.format(declarationsOutput, { parser: 'typescript' })}
+${prettier.format(`export type { ${exportsOutput} }`)}`;
   }
 });
 
