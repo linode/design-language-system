@@ -134,7 +134,7 @@ StyleDictionaryPackage.registerFormat({
     });
 
     // Join the declarations with new lines
-    const declarationsOutput = declarations.join('\n');
+    const declarationsOutput = declarations.join('');
 
     // Generate the final TypeScript file content
     const exportsOutput = Object.keys(transformedTokens)
@@ -271,21 +271,13 @@ function formatProperties(properties: Record<string, any>): string {
     {}
   );
   const jsonString = JSON.stringify(formattedProperties, null, 2)
-    // Replace commas with semicolons,
-    .replace(/,/g, ';')
     // Remove quotes from keys and values
     .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
     .replace(/"([^"]+)"/g, (match, value) => value)
     // Remove newlines,
-    .replace(/\\n/g, '')
-    // Add semicolons to the end of each line,
-    .replace(/}/g, '};')
-    // Remove backslashes
-    .replace(/\\/g, '');
+    .replace(/\\n/g, '');
 
-  return prettier.format(jsonString, {
-    parser: 'typescript'
-  });
+  return jsonString
 }
 
 function formatValue(value: any): any {
