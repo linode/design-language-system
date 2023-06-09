@@ -1,8 +1,18 @@
 {
   "name": "@linode/design-language-system",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": false,
   "type": "module",
+  "exports": {
+    "./*": "./dist/*/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*/index.d.ts"
+      ]
+    }
+  },
   "scripts": {
     "build": "tsup",
     "generate": "yarn clean && ts-node --esm config/build.ts && yarn build",
