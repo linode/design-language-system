@@ -16,7 +16,7 @@ jobs:
           node-version: "18.14"
           registry-url: https://registry.npmjs.org/
 
-      - run: yarn ci
+      - run: npm ci
       - run: yarn run generate
       - uses: JS-DevTools/npm-publish@v2
         with:
