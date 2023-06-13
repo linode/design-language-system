@@ -1,10 +1,12 @@
 {
   "tokenSetOrder": [
     "global/akamai/light",
+    "global/akamai/dark",
     "global/cloudmanager/light",
+    "global/cloudmanager/dark",
     "alias/alias",
     "components/button/button",
     "components/table/table",
-    "components/textField/textField"
+    "components/textfield/textfield"
   ]
 }

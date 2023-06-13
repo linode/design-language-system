@@ -8,7 +8,7 @@
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
-      "components/textField/textField": "enabled"
+      "components/textfield/textfield": "enabled"
     }
   },
   {
@@ -20,7 +20,7 @@
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
-      "components/textField/textField": "enabled"
+      "components/textfield/textfield": "enabled"
     }
   },
   {
@@ -32,7 +32,7 @@
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
-      "components/textField/textField": "enabled"
+      "components/textfield/textfield": "enabled"
     }
   },
   {
@@ -44,7 +44,7 @@
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
-      "components/textField/textField": "enabled"
+      "components/textfield/textfield": "enabled"
     }
   }
 ]

@@ -71,20 +71,64 @@
       }
     },
     "status": {
-      "danger": {
+      "danger03": {
         "value": "#BC012E",
         "type": "color"
       },
-      "warning": {
+      "danger02": {
+        "value": "#FCC7D4",
+        "type": "color"
+      },
+      "danger01": {
+        "value": "#FFEAEF",
+        "type": "color"
+      },
+      "warning03": {
         "value": "#FDC235",
         "type": "color"
       },
-      "highlight": {
+      "warning02": {
+        "value": "#FFE6A9",
+        "type": "color"
+      },
+      "warning01": {
+        "value": "#FFF5E0",
+        "type": "color"
+      },
+      "highlight03": {
         "value": "#FAF232",
         "type": "color"
       },
-      "success": {
+      "highlight02": {
+        "value": "#FBFCA4",
+        "type": "color"
+      },
+      "highlight01": {
+        "value": "#FEFFE0",
+        "type": "color"
+      },
+      "success03": {
         "value": "#00B050",
+        "type": "color"
+      },
+      "success02": {
+        "value": "#C1EFD6",
+        "type": "color"
+      },
+      "success01": {
+        "value": "#E2F5EB",
+        "type": "color"
+      },
+      "information03": {
+        "value": "#4562FA",
+        "type": "color"
+      },
+      "information02": {
+        "value": "#D3DAFF",
+        "type": "color"
+      },
+      "information01": {
+        "value": "#EDF0FF",
         "type": "color"
       }
     }
