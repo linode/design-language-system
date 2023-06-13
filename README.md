@@ -8,71 +8,56 @@ yarn generate
 
 You should see something like this output:
 ```
-Copying starter files...
+==============================================
 
-Source style dictionary starter files created!
+Processing... 1 of 4
+ - theme: akamai
+ - Platform: web
 
-Running `style-dictionary build` for the first time to generate build artifacts.
+web/js
+✔︎ dist/akamai/tokens.es6.js
+✔︎ dist/akamai/theme.es6.js
+✔︎ dist/akamai/theme.d.ts
+✔︎ dist/akamai/tokens.d.ts
 
+web/scss
+✔︎ dist/akamai/tokens.scss
 
-scss
-✔︎  build/scss/_variables.scss
+End processing
 
-js
-✔︎  build/js/variables.js
+==============================================
 ```
 
 Good for you! You have now built your first style dictionary! Moving on, take a look at what we have built. This should have created a build directory and it should look like this:
 ```
-├── README.md
-├── config.json
-├── tokens/
-│   ├── color/
-│       ├── base.json
-│       ├── font.json
-│   ├── size/
-│       ├── font.json
-├── build/
-│   ├── scss/
-│      ├── _variables.scss
-│   ├── js/
-│      ├── variables.js
+├── dist/
+│   ├── akamai/
+│      ├── index.js
+│      ├── theme.es6.js
+│      ├── tokens.es6.js
+│   ├── cloudmanager/
+│      ├── index.js
+│      ├── theme.es6.js
+│      ├── tokens.es6.js
 ```
 
 If you open `config.json` you will see there are 5 platforms defined: scss, android, compose, ios, and ios-swift. Each platform has a transformGroup, buildPath, and files. The buildPath and files of the platform should match up to the files what were built. The files built should look like these:
 
-**SCSS**
-```scss
-// _variables.scss
-$color-base-gray-light: #cccccc;
-$color-base-gray-medium: #999999;
-$color-base-gray-dark: #111111;
-$color-base-red: #ff0000;
-$color-base-green: #00ff00;
-$color-font-base: #ff0000;
-$color-font-secondary: #00ff00;
-$color-font-tertiary: #cccccc;
-$size-font-small: 0.75rem;
-$size-font-medium: 1rem;
-$size-font-large: 2rem;
-$size-font-base: 1rem;
-```
-
 **JS**
 ```js
-// variables.js
-export const colorBaseGrayLight = "#cccccc";
-export const colorBaseGrayMedium = "#999999";
-export const colorBaseGrayDark = "#111111";
-export const colorBaseRed = "#ff0000";
-export const colorBaseGreen = "#00ff00";
-export const colorFontBase = "#ff0000";
-export const colorFontSecondary = "#00ff00";
-export const colorFontTertiary = "#cccccc";
-export const sizeFontSmall = "0.75rem";
-export const sizeFontMedium = "1rem";
-export const sizeFontLarge = "2rem";
-export const sizeFontBase = "1rem";
+// tokens.es6.js
+export const TokenColorNeutralsBlack = "#222222";
+export const TokenColorNeutralsGrey10 = "#32363C";
+export const TokenColorNeutralsGrey09 = "#444444";
+export const TokenColorNeutralsGrey08 = "#606469";
+export const TokenColorNeutralsGrey07 = "#8C929D";
+export const TokenColorNeutralsGrey06 = "#ABADAF";
+export const TokenColorNeutralsGrey05 = "#C9CACB";
+export const TokenColorNeutralsGrey04 = "#E7E7E7";
+export const TokenColorNeutralsGrey03 = "#EEEEEE";
+export const TokenColorNeutralsGrey02 = "#F5F5F5";
+export const TokenColorNeutralsGrey01 = "#FAFAFA";
+export const TokenColorNeutralsWhite = "#ffffff";
 ```
 
 Pretty nifty! This shows a few things happening:
