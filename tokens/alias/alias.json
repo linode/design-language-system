@@ -29,7 +29,7 @@
         "category": "alias"
       },
       "error": {
-        "value": "{color.status.danger}",
+        "value": "{color.status.danger03}",
         "type": "color",
         "category": "alias"
       },
@@ -51,11 +51,11 @@
         "category": "alias"
       },
       "success": {
-        "value": "{color.status.success}",
+        "value": "{color.status.success03}",
         "type": "color"
       },
       "error": {
-        "value": "{color.status.danger}",
+        "value": "{color.status.danger03}",
         "type": "color"
       },
       "button": {
@@ -105,7 +105,7 @@
           "category": "alias"
         },
         "alert": {
-          "value": "{color.status.danger}",
+          "value": "{color.status.danger03}",
           "type": "color",
           "category": "alias"
         }
