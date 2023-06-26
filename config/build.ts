@@ -15,6 +15,12 @@ const formattedDate = date.toUTCString();
 export const PLATFORMS: PlatformTypes[] = [
   {
     name: 'web'
+  },
+  {
+    name: 'ios'
+  },
+  {
+    name: 'android'
   }
 ];
 
@@ -53,8 +59,23 @@ export function getStyleDictionaryConfig(
           }
         ]
       },
+      'web/css': {
+        transformGroup: 'tokens-css',
+        buildPath: `dist/${theme.name}/`,
+        prefix: `${PREFIX}-`,
+        files: [
+          {
+            destination: 'tokens.css',
+            format: 'css/variables',
+            filter: {},
+            options: {
+              outputReferences: false
+            }
+          }
+        ]
+      },
       'web/scss': {
-        transformGroup: 'tokens-scss',
+        transformGroup: 'tokens-css',
         buildPath: `dist/${theme.name}/`,
         prefix: `${PREFIX}-`,
         files: [
@@ -65,6 +86,28 @@ export function getStyleDictionaryConfig(
             options: {
               outputReferences: false
             }
+          }
+        ]
+      },
+      ios: {
+        transformGroup: 'tokens-ios',
+        buildPath: `dist/${theme.name}/`,
+        prefix: `${PREFIX}-`,
+        files: [
+          {
+            destination: 'tokens.plist',
+            format: 'ios-swift/class.swift'
+          }
+        ]
+      },
+      android: {
+        transformGroup: 'tokens-android',
+        buildPath: `dist/${theme.name}/`,
+        prefix: `${PREFIX}-`,
+        files: [
+          {
+            destination: 'tokens.xml',
+            format: 'compose/object'
           }
         ]
       }
@@ -196,8 +239,20 @@ StyleDictionaryPackage.registerTransformGroup({
 });
 
 StyleDictionaryPackage.registerTransformGroup({
-  name: 'tokens-scss',
+  name: 'tokens-css',
   transforms: ['name/cti/kebab', 'time/seconds', 'size/px', 'color/css']
+});
+
+StyleDictionaryPackage.registerTransformGroup({
+  name: 'tokens-ios',
+  // to see the pre-defined "ios" transformation use: console.log(StyleDictionaryPackage.transformGroup['ios']);
+  transforms: ['attribute/cti', 'name/cti/camel', 'size/pxToPt']
+});
+
+StyleDictionaryPackage.registerTransformGroup({
+  name: 'tokens-android',
+  // to see the pre-defined "android" transformation use: console.log(StyleDictionaryPackage.transformGroup['android']);
+  transforms: ['attribute/cti', 'name/cti/camel', 'size/pxToDp']
 });
 
 console.log('Build started...');
@@ -222,6 +277,11 @@ PLATFORMS.map(function (platform) {
     if (platform.name === 'web') {
       StyleDictionary.buildPlatform('web/js');
       StyleDictionary.buildPlatform('web/scss');
+      StyleDictionary.buildPlatform('web/css');
+    } else if (platform.name === 'ios') {
+      StyleDictionary.buildPlatform('ios');
+    } else if (platform.name === 'android') {
+      StyleDictionary.buildPlatform('android');
     }
 
     console.log('\nEnd processing');
@@ -277,7 +337,7 @@ function formatProperties(properties: Record<string, any>): string {
     // Remove newlines,
     .replace(/\\n/g, '');
 
-  return jsonString
+  return jsonString;
 }
 
 function formatValue(value: any): any {
