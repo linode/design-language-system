@@ -1,0 +1,316 @@
+{
+  "content": {
+    "text": {
+      "value": "{color.neutrals.grey10}",
+      "type": "color",
+      "description": "Primary default text color"
+    },
+    "icon": {
+      "value": "{color.neutrals.grey09}",
+      "type": "color",
+      "description": "Default icon color",
+      "$extensions": {}
+    },
+    "brand": {
+      "value": "{color.brand.05}",
+      "type": "color",
+      "description": "Default active content color"
+    },
+    "placeholder": {
+      "value": "{color.neutrals.grey07}",
+      "type": "color",
+      "description": "Color for text/icon placeholders or hints"
+    },
+    "disabled": {
+      "value": "{color.neutrals.grey05}",
+      "type": "color",
+      "description": "Color for disabled elements or text"
+    },
+    "inverted": {
+      "value": "{color.neutrals.white}",
+      "type": "color",
+      "description": "Inverted color for icon/text used on dark background"
+    },
+    "negative": {
+      "value": "{color.negative.03}",
+      "type": "color",
+      "description": "Color for error states"
+    },
+    "warning": {
+      "value": "{color.warning.03}",
+      "type": "color",
+      "description": "Color for warning states"
+    },
+    "positive": {
+      "value": "{color.positive.03}",
+      "type": "color",
+      "description": "Color for successful states"
+    },
+    "informative": {
+      "value": "{color.informative.03}",
+      "type": "color",
+      "description": "Color for informative states"
+    },
+    "inverted50": {
+      "value": "rgba(255,255,255,0.5)",
+      "type": "color",
+      "description": "(description TBD)"
+    }
+  },
+  "border": {
+    "default": {
+      "value": "{color.neutrals.grey03}",
+      "type": "color",
+      "description": "Default border color for non-interactive components"
+    },
+    "brand": {
+      "value": "{color.brand.05}",
+      "type": "color",
+      "description": "Brand color border"
+    },
+    "dark": {
+      "value": "{color.neutrals.grey10}",
+      "type": "color",
+      "description": "Dark border for limited components"
+    },
+    "negative": {
+      "value": "{color.negative.03}",
+      "type": "color",
+      "description": "Non-interactive error border color"
+    },
+    "warning": {
+      "value": "{color.warning.03}",
+      "type": "color",
+      "description": "Non-interactive warning border color"
+    },
+    "positive": {
+      "value": "{color.positive.03}",
+      "type": "color",
+      "description": "Non-interactive success border color"
+    },
+    "informative": {
+      "value": "{color.informative.03}",
+      "type": "color",
+      "description": "Non-interactive informative border color"
+    }
+  },
+  "background": {
+    "default": {
+      "value": "{color.neutrals.white}",
+      "type": "color",
+      "description": "Default background color for non-interactive elements"
+    },
+    "neutral": {
+      "value": "{color.neutrals.grey01}",
+      "type": "color",
+      "description": "Default page background color"
+    },
+    "inverted": {
+      "value": "{color.neutrals.grey10}",
+      "type": "color",
+      "description": "Dark (inverted) background color for some components"
+    },
+    "negative": {
+      "value": "{color.negative.03}",
+      "type": "color",
+      "description": "Non-interactive error bold background color"
+    },
+    "warning": {
+      "value": "{color.warning.03}",
+      "type": "color",
+      "description": "Non-interactive warning bold background color"
+    },
+    "positive": {
+      "value": "{color.positive.03}",
+      "type": "color",
+      "description": "Non-interactive success bold background color"
+    },
+    "informative": {
+      "value": "{color.informative.03}",
+      "type": "color",
+      "description": "Non-interactive informative bold background color"
+    },
+    "black": {
+      "value": "{color.neutrals.black}",
+      "type": "color",
+      "description": "BG color for a Global Header and Footer"
+    },
+    "surface": {
+      "negative": {
+        "value": "{color.negative.01}",
+        "type": "color",
+        "description": "Non-interactive error light background color"
+      },
+      "warning": {
+        "value": "{color.warning.01}",
+        "type": "color",
+        "description": "Non-interactive warning light background color"
+      },
+      "positive": {
+        "value": "{color.positive.01}",
+        "type": "color",
+        "description": "Non-interactive success light background color"
+      },
+      "informative": {
+        "value": "{color.informative.01}",
+        "type": "color",
+        "description": "Non-interactive informative light background color"
+      },
+      "secondary": {
+        "value": "{color.neutrals.grey02}",
+        "type": "color",
+        "description": "Non-interactive secondary light background color"
+      }
+    }
+  },
+  "interaction": {
+    "default": {
+      "normal": {
+        "value": "{color.neutrals.grey06}",
+        "type": "color",
+        "description": "Default color for outline components and elements"
+      },
+      "hover": {
+        "value": "{color.neutrals.grey09}",
+        "type": "color",
+        "description": "Main hover state for interactive components"
+      },
+      "focus": {
+        "value": "{color.brand.05}",
+        "type": "color",
+        "description": "Brand focus (active) color"
+      },
+      "error": {
+        "value": "{color.negative.03}",
+        "type": "color",
+        "description": "Default color for error states"
+      }
+    },
+    "disabled": {
+      "primary": {
+        "value": "{color.neutrals.grey01}",
+        "type": "color",
+        "description": "Main disabled background color"
+      },
+      "secondary": {
+        "value": "{color.neutrals.grey04}",
+        "type": "color",
+        "description": "Disabled color for outline elements"
+      }
+    },
+    "background": {
+      "primary": {
+        "value": "{color.neutrals.white}",
+        "type": "color",
+        "description": "Default white background"
+      },
+      "secondary": {
+        "value": "{color.neutrals.grey01}",
+        "type": "color",
+        "description": "Secondary background color"
+      },
+      "tertiary": {
+        "value": "{color.brand.01}",
+        "type": "color",
+        "description": "Tertiary background color"
+      },
+      "accent": {
+        "value": "{color.brand.02}",
+        "type": "color",
+        "description": "Accent background color (focused states)"
+      },
+      "error": {
+        "value": "{color.negative.01}",
+        "type": "color",
+        "description": "Error background color"
+      },
+      "preset": {
+        "value": "{color.neutrals.grey02}",
+        "type": "color",
+        "description": "Hover background color for calendar presets"
+      }
+    }
+  },
+  "action": {
+    "brand": {
+      "default": {
+        "value": "{color.brand.05}",
+        "type": "color",
+        "description": "Primary color for action components"
+      },
+      "hover": {
+        "value": "{color.brand.04}",
+        "type": "color",
+        "description": "Primary hover color"
+      },
+      "active": {
+        "value": "{color.brand.05}",
+        "type": "color",
+        "description": "Primary active color"
+      },
+      "subsidiary": {
+        "value": "{color.brand.01}",
+        "type": "color",
+        "description": "Additional color for a brand palette"
+      }
+    },
+    "neutral": {
+      "default": {
+        "value": "{color.neutrals.grey06}",
+        "type": "color",
+        "description": "Secondary color for action components"
+      },
+      "hover": {
+        "value": "{color.neutrals.grey05}",
+        "type": "color",
+        "description": "Secondary hover color"
+      },
+      "active": {
+        "value": "{color.neutrals.grey06}",
+        "type": "color",
+        "description": "Secondary active color"
+      }
+    },
+    "launch": {
+      "default": {
+        "value": "{color.neutrals.black}",
+        "type": "color",
+        "description": "Launch color for action components"
+      },
+      "hover": {
+        "value": "{color.neutrals.grey10}",
+        "type": "color",
+        "description": "Launch hover color"
+      },
+      "active": {
+        "value": "{color.neutrals.black}",
+        "type": "color",
+        "description": "Launch active color"
+      }
+    },
+    "inverted": {
+      "default": {
+        "value": "{color.neutrals.white}",
+        "type": "color",
+        "description": "Inverted color for action components"
+      }
+    },
+    "disabled": {
+      "primary": {
+        "value": "{color.neutrals.grey02}",
+        "type": "color",
+        "description": "Primary disabled color"
+      },
+      "secondary": {
+        "value": "{color.neutrals.grey04}",
+        "type": "color",
+        "description": "Secondary disabled color"
+      },
+      "tertiary": {
+        "value": "{color.brand.02}",
+        "type": "color",
+        "description": "Tertiary disabled color"
+      }
+    }
+  }
+}

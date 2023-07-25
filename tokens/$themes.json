@@ -8,7 +8,8 @@
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
-      "components/textfield/textfield": "enabled"
+      "components/textfield/textfield": "enabled",
+      "alias/alias-new": "disabled"
     }
   },
   {
@@ -20,7 +21,8 @@
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
-      "components/textfield/textfield": "enabled"
+      "components/textfield/textfield": "enabled",
+      "alias/alias-new": "disabled"
     }
   },
   {
@@ -32,7 +34,8 @@
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
-      "components/textfield/textfield": "enabled"
+      "components/textfield/textfield": "enabled",
+      "alias/alias-new": "disabled"
     }
   },
   {
@@ -44,7 +47,8 @@
       "alias/alias": "enabled",
       "components/button/button": "enabled",
       "components/table/table": "enabled",
-      "components/textfield/textfield": "enabled"
+      "components/textfield/textfield": "enabled",
+      "alias/alias-new": "disabled"
     }
   }
 ]

@@ -5,6 +5,7 @@
     "global/cloudmanager/light",
     "global/cloudmanager/dark",
     "alias/alias",
+    "alias/alias-new",
     "components/button/button",
     "components/table/table",
     "components/textfield/textfield"
