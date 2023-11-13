@@ -20,7 +20,7 @@ const Border: BorderTypes = TokensTheme.default.Border;
 const Background: BackgroundTypes = TokensTheme.default.Background;
 const Interaction: InteractionTypes = TokensTheme.default.Interaction;
 const Actions: ActionTypes = TokensTheme.default.Action;
-const Buttons: ButtonTypes = TokensTheme.default.Button;
+const Button: ButtonTypes = TokensTheme.default.Button;
 
-export { Tokens, Colors, Elevation, Fonts, Content, Border, Background, Interaction, Actions, Buttons };
+export { Tokens, Colors, Elevation, Fonts, Content, Border, Background, Interaction, Actions, Button };
 export type { ColorTypes, ElevationTypes, FontTypes, ContentTypes, BorderTypes, BackgroundTypes, InteractionTypes, ActionTypes, ButtonTypes };
