@@ -6,9 +6,7 @@
     "selectedTokenSets": {
       "global/akamai/light": "source",
       "alias/alias": "enabled",
-      "components/button/button": "enabled",
-      "components/table/table": "enabled",
-      "components/textfield/textfield": "enabled"
+      "components/button/button": "enabled"
     }
   },
   {
@@ -18,9 +16,7 @@
     "selectedTokenSets": {
       "global/cloudmanager/light": "source",
       "alias/alias": "enabled",
-      "components/button/button": "enabled",
-      "components/table/table": "enabled",
-      "components/textfield/textfield": "enabled"
+      "components/button/button": "enabled"
     }
   },
   {
@@ -30,9 +26,7 @@
     "selectedTokenSets": {
       "global/akamai/dark": "source",
       "alias/alias": "enabled",
-      "components/button/button": "enabled",
-      "components/table/table": "enabled",
-      "components/textfield/textfield": "enabled"
+      "components/button/button": "enabled"
     }
   },
   {
@@ -42,9 +36,7 @@
     "selectedTokenSets": {
       "global/cloudmanager/dark": "source",
       "alias/alias": "enabled",
-      "components/button/button": "enabled",
-      "components/table/table": "enabled",
-      "components/textfield/textfield": "enabled"
+      "components/button/button": "enabled"
     }
   }
 ]
