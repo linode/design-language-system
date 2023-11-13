@@ -2,11 +2,26 @@ import * as Tokens from '../../../dist/akamai/dark/tokens.es6.js';
 import * as TokensTheme from '../../../dist/akamai/dark/theme.es6.js';
 import type {
   ColorTypes,
-  ComponentTypes,
+  ElevationTypes,
+  FontTypes,
+  ContentTypes,
+  BorderTypes,
+  BackgroundTypes,
+  InteractionTypes,
+  ActionTypes,
+  ButtonTypes,
 } from '../../../dist/akamai/dark/theme.js';
 
 const Colors: ColorTypes = TokensTheme.default.Color;
-const Components: ComponentTypes = TokensTheme.default.Component;
+const Elevation: ElevationTypes = TokensTheme.default.Elevation;
+const Fonts: FontTypes = TokensTheme.default.Font;
+const Content: ContentTypes = TokensTheme.default.Content;
+const Border: BorderTypes = TokensTheme.default.Border;
+const Background: BackgroundTypes = TokensTheme.default.Background;
+const Interaction: InteractionTypes = TokensTheme.default.Interaction;
+const Actions: ActionTypes = TokensTheme.default.Action;
+const Buttons: ButtonTypes = TokensTheme.default.Button;
 
-export { Tokens, Colors, Components };
-export type { ColorTypes, ComponentTypes };
+export { Tokens, Colors, Elevation, Fonts, Content, Border, Background, Interaction, Actions, Buttons };
+export type { ColorTypes, ElevationTypes, FontTypes, ContentTypes, BorderTypes, BackgroundTypes, InteractionTypes, ActionTypes, ButtonTypes };
+
