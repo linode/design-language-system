@@ -4,12 +4,12 @@
   "private": false,
   "type": "module",
   "exports": {
-    "./*": "./dist/*/index.js"
+    "./*": "./dist/index.js"
   },
   "typesVersions": {
     "*": {
       "*": [
-        "./dist/*/index.d.ts"
+        "./dist/index.d.ts"
       ]
     }
   },
