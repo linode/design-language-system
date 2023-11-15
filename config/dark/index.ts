@@ -1,5 +1,5 @@
-import * as Tokens from '../../dist/akamai/tokens.es6.js';
-import * as TokensTheme from '../../dist/akamai/theme.es6.js';
+import * as Tokens from '../../dist/dark/tokens.es6.js';
+import * as TokensTheme from '../../dist/dark/theme.es6.js';
 import type {
   ColorTypes,
   ElevationTypes,
@@ -10,7 +10,7 @@ import type {
   InteractionTypes,
   ActionTypes,
   ButtonTypes,
-} from '../../dist/akamai/theme.d.ts';
+} from '../../dist/dark/theme.js';
 
 const Colors: ColorTypes = TokensTheme.default.Color;
 const Elevation: ElevationTypes = TokensTheme.default.Elevation;

@@ -1,0 +1,10 @@
+{
+  "content": {
+    "text": {
+      "base": {
+        "value": "{color.neutrals.black}",
+        "type": "color"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import * as Tokens from '../../dist/cloudmanager/tokens.es6.js';
-import * as TokensTheme from '../../dist/cloudmanager/theme.es6.js';
+import * as Tokens from '../dist/tokens.es6.js';
+import * as TokensTheme from '../dist/theme.es6.js';
 import type {
   ColorTypes,
   ElevationTypes,
@@ -10,7 +10,7 @@ import type {
   InteractionTypes,
   ActionTypes,
   ButtonTypes,
-} from '../../dist/cloudmanager/theme.d.ts';
+} from '../dist/theme.js';
 
 const Colors: ColorTypes = TokensTheme.default.Color;
 const Elevation: ElevationTypes = TokensTheme.default.Elevation;
@@ -24,3 +24,4 @@ const Button: ButtonTypes = TokensTheme.default.Button;
 
 export { Tokens, Colors, Elevation, Fonts, Content, Border, Background, Interaction, Actions, Button };
 export type { ColorTypes, ElevationTypes, FontTypes, ContentTypes, BorderTypes, BackgroundTypes, InteractionTypes, ActionTypes, ButtonTypes };
+

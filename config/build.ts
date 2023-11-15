@@ -22,14 +22,16 @@ export function getStyleDictionaryConfig(
   options: StyleDictionaryOptions
 ): StyleDictionaryPackage.Config {
   const { theme, platform } = options;
+  const buildPath = theme.name ? `dist/${theme.name}/` : 'dist/'
   return {
-    source: Object.entries(theme.selectedTokenSets)
+    // If we want to show collisions, we can change `include` to `source`.
+    include: Object.entries(theme.selectedTokenSets)
       .filter(([, val]) => val !== 'disabled')
       .map(([tokenset]) => `tokens/${tokenset}.json`),
     platforms: {
       'web/js': {
         transformGroup: 'tokens-js',
-        buildPath: `dist/${theme.name}/`,
+        buildPath,
         prefix: `${PREFIX}-`,
         files: [
           {
@@ -55,7 +57,7 @@ export function getStyleDictionaryConfig(
       },
       'web/scss': {
         transformGroup: 'tokens-scss',
-        buildPath: `dist/${theme.name}/`,
+        buildPath,
         prefix: `${PREFIX}-`,
         files: [
           {
@@ -149,7 +151,7 @@ StyleDictionaryPackage.registerFormat({
  */
 
 ${prettier.format(declarationsOutput, { parser: 'typescript' })}
-${prettier.format(`export type { ${exportsOutput} }`)}`;
+${prettier.format(`export type { ${exportsOutput} }`, { parser: 'typescript' })}`;
   }
 });
 
@@ -206,10 +208,11 @@ PLATFORMS.map(function (platform) {
   themes.map(function (theme, idx, themes) {
     const currentIndex = idx + 1;
     const totalThemes = themes.length;
+    const themeName = theme.name ? theme.name : 'default';
 
     console.log('\n==============================================');
     console.log(
-      `\nProcessing... ${currentIndex} of ${totalThemes} \n - theme: ${theme.name}\n - Platform: ${platform.name}`
+      `\nProcessing... ${currentIndex} of ${totalThemes} \n - theme: ${themeName}\n - Platform: ${platform.name}`
     );
 
     const StyleDictionary = StyleDictionaryPackage.extend(
