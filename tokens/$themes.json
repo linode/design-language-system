@@ -1,41 +1,33 @@
 [
   {
     "id": "2d5c6edbf1d1493747e5eeea51163fc65151b887",
-    "name": "akamai",
+    "name": "",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "global/akamai/light": "source",
-      "alias/alias": "enabled",
-      "components/button/button": "enabled"
-    }
-  },
-  {
-    "id": "63d6e43757c7b47cb99391bbdd9bb1f836d7d762",
-    "name": "cloudmanager",
-    "$figmaStyleReferences": {},
-    "selectedTokenSets": {
-      "global/cloudmanager/light": "source",
-      "alias/alias": "enabled",
+      "global/global": "source",
+      "alias/light": "enabled",
       "components/button/button": "enabled"
     }
   },
   {
     "id": "63d6es4757c7b47cb99391bbdd9bb1f836d7d762",
-    "name": "akamai/dark",
+    "name": "dark",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "global/akamai/dark": "source",
-      "alias/alias": "enabled",
+      "global/global": "source",
+      "alias/dark": "enabled",
       "components/button/button": "enabled"
     }
   },
   {
     "id": "63d6e43747c7b47cb99391bbdd9bb1f836d7d762",
-    "name": "cloudmanager/dark",
+    "name": "highContrast",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "global/cloudmanager/dark": "source",
-      "alias/alias": "enabled",
+      "global/global": "source",
+      "global/highContrast": "enabled",
+      "alias/light": "enabled",
+      "alias/highContrast": "enabled",
       "components/button/button": "enabled"
     }
   }
