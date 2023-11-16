@@ -1,6 +1,11 @@
 {
   "color": {
     "neutrals": {
+      "5": {
+        "value": "#F7F7FA",
+        "type": "color",
+        "description": "Page background color, disabled form elements fill (input, text area, etc)"
+      },
       "10": {
         "value": "#EDEDF2",
         "type": "color",
@@ -49,11 +54,6 @@
         "type": "color",
         "description": "Default text color"
       },
-      "5": {
-        "value": "#F7F7FA",
-        "type": "color",
-        "description": "Page background color, disabled form elements fill (input, text area, etc)"
-      },
       "black": {
         "value": "#000000",
         "type": "color",
@@ -65,6 +65,10 @@
       }
     },
     "brand": {
+      "5": {
+        "value": "#F5FBFF",
+        "type": "color"
+      },
       "10": {
         "value": "#EDF8FF",
         "type": "color"
@@ -106,13 +110,13 @@
       "100": {
         "value": "#00314D",
         "type": "color"
-      },
-      "5": {
-        "value": "#F5FBFF",
-        "type": "color"
       }
     },
     "red": {
+      "5": {
+        "value": "#FFF8F8",
+        "type": "color"
+      },
       "10": {
         "value": "#FFEFEF",
         "type": "color"
@@ -154,13 +158,13 @@
       "100": {
         "value": "#381316",
         "type": "color"
-      },
-      "5": {
-        "value": "#FFF8F8",
-        "type": "color"
       }
     },
     "orange": {
+      "5": {
+        "value": "#FEF9F4",
+        "type": "color"
+      },
       "10": {
         "value": "#FFF3E7",
         "type": "color"
@@ -201,13 +205,13 @@
       "100": {
         "value": "#451E11",
         "type": "color"
-      },
-      "5": {
-        "value": "#FEF9F4",
-        "type": "color"
       }
     },
     "amber": {
+      "5": {
+        "value": "#FFF9ED",
+        "type": "color"
+      },
       "10": {
         "value": "#FFF4D5",
         "type": "color"
@@ -248,13 +252,13 @@
       "100": {
         "value": "#403104",
         "type": "color"
-      },
-      "5": {
-        "value": "#FFF9ED",
-        "type": "color"
       }
     },
     "yellow": {
+      "5": {
+        "value": "#FFFFEB",
+        "type": "color"
+      },
       "10": {
         "value": "#FAFADF",
         "type": "color"
@@ -294,13 +298,13 @@
       "100": {
         "value": "#35290F",
         "type": "color"
-      },
-      "5": {
-        "value": "#FFFFEB",
-        "type": "color"
       }
     },
     "lime": {
+      "5": {
+        "value": "#F7FCF0",
+        "type": "color"
+      },
       "10": {
         "value": "#EEFADC",
         "type": "color"
@@ -340,13 +344,13 @@
       "100": {
         "value": "#263209",
         "type": "color"
-      },
-      "5": {
-        "value": "#F7FCF0",
-        "type": "color"
       }
     },
     "green": {
+      "5": {
+        "value": "#F3FCF3",
+        "type": "color"
+      },
       "10": {
         "value": "#EBF9EB",
         "type": "color"
@@ -387,13 +391,13 @@
       "100": {
         "value": "#1B311E",
         "type": "color"
-      },
-      "5": {
-        "value": "#F3FCF3",
-        "type": "color"
       }
     },
     "teal": {
+      "5": {
+        "value": "#F1FCFA",
+        "type": "color"
+      },
       "10": {
         "value": "#E7F9F5",
         "type": "color"
@@ -433,13 +437,13 @@
       "100": {
         "value": "#10302B",
         "type": "color"
-      },
-      "5": {
-        "value": "#F1FCFA",
-        "type": "color"
       }
     },
     "cyan": {
+      "5": {
+        "value": "#F2FCFD",
+        "type": "color"
+      },
       "10": {
         "value": "#E7F9FB",
         "type": "color"
@@ -479,13 +483,13 @@
       "100": {
         "value": "#04313C",
         "type": "color"
-      },
-      "5": {
-        "value": "#F2FCFD",
-        "type": "color"
       }
     },
     "ultramarine": {
+      "5": {
+        "value": "#F8FAFF",
+        "type": "color"
+      },
       "10": {
         "value": "#F0F4FF",
         "type": "color"
@@ -526,13 +530,13 @@
         "value": "#002856",
         "type": "color",
         "description": "Akamai Dark Navy"
-      },
-      "5": {
-        "value": "#F8FAFF",
-        "type": "color"
       }
     },
     "violet": {
+      "5": {
+        "value": "#F8FAFF",
+        "type": "color"
+      },
       "10": {
         "value": "#F5F2FF",
         "type": "color"
@@ -572,13 +576,13 @@
       "100": {
         "value": "#20134B",
         "type": "color"
-      },
-      "5": {
-        "value": "#F8FAFF",
-        "type": "color"
       }
     },
     "purple": {
+      "5": {
+        "value": "#FDFAFF",
+        "type": "color"
+      },
       "10": {
         "value": "#F9F1FE",
         "type": "color"
@@ -619,13 +623,13 @@
       "100": {
         "value": "#2B0E44",
         "type": "color"
-      },
-      "5": {
-        "value": "#FDFAFF",
-        "type": "color"
       }
     },
     "magenta": {
+      "5": {
+        "value": "#FFF8FF",
+        "type": "color"
+      },
       "10": {
         "value": "#FCEFFC",
         "type": "color"
@@ -666,13 +670,13 @@
       "100": {
         "value": "#340C3B",
         "type": "color"
-      },
-      "5": {
-        "value": "#FFF8FF",
-        "type": "color"
       }
     },
     "pink": {
+      "5": {
+        "value": "#FFF7FC",
+        "type": "color"
+      },
       "10": {
         "value": "#FEEEF8",
         "type": "color"
@@ -712,13 +716,13 @@
       "100": {
         "value": "#3B0A2A",
         "type": "color"
-      },
-      "5": {
-        "value": "#FFF7FC",
-        "type": "color"
       }
     },
     "brown": {
+      "5": {
+        "value": "#FBF9F2",
+        "type": "color"
+      },
       "10": {
         "value": "#F5F2E9",
         "type": "color"
@@ -758,10 +762,6 @@
       "100": {
         "value": "#3B352B",
         "type": "color"
-      },
-      "5": {
-        "value": "#FBF9F2",
-        "type": "color"
       }
     }
   },
@@ -800,15 +800,14 @@
       "type": "boxShadow"
     },
     "l": {
-      "value":
-        {
-          "x": "0",
-          "y": "4",
-          "blur": "8",
-          "spread": "0",
-          "color": "rgba(58,59,63,0.08)",
-          "type": "dropShadow"
-        },
+      "value": {
+        "x": "0",
+        "y": "4",
+        "blur": "8",
+        "spread": "0",
+        "color": "rgba(58,59,63,0.08)",
+        "type": "dropShadow"
+      },
       "type": "boxShadow"
     },
     "glow": {
