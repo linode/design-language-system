@@ -15,6 +15,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "global/global": "source",
+      "alias/light": "enabled",
       "alias/dark": "enabled",
       "components/button/button": "enabled"
     }
