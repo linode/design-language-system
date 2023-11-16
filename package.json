@@ -1,22 +1,18 @@
 {
   "name": "@linode/design-language-system",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "private": false,
   "type": "module",
+  "module": "dist/index.js",
   "exports": {
+    ".": "./dist/index.js",
     "./*": "./dist/*/index.js"
   },
   "typesVersions": {
     "*": {
       "*": [
         "./dist/index.d.ts",
-        "./dist/theme.d.ts",
-        "./dist/tokens.d.ts"
-      ],
-      "dark/*": [
-        "./dist/dark/index.d.ts",
-        "./dist/dark/theme.d.ts",
-        "./dist/dark/tokens.d.ts"
+        "./dist/*/index.d.ts"
       ]
     }
   },

@@ -2,7 +2,7 @@
   "content": {
     "text": {
       "base": {
-        "value": "{color.neutrals.black}",
+        "value": "{color.neutrals.50}",
         "type": "color"
       }
     }
