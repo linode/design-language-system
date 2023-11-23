@@ -878,7 +878,7 @@
         "description": "18px"
       },
       "l": {
-        "value": "1.25",
+        "value": "1.25rem",
         "type": "fontSizes",
         "description": "20px"
       },
