@@ -853,78 +853,96 @@
     },
     "font-size": {
       "xxxs": {
-        "value": "12",
-        "type": "fontSizes"
+        "value": "0.75rem",
+        "type": "fontSizes",
+        "description": "12px"
       },
       "xxs": {
-        "value": "13",
-        "type": "fontSizes"
+        "value": "0.813rem",
+        "type": "fontSizes",
+        "description": "13px"
       },
       "xs": {
-        "value": "14",
-        "type": "fontSizes"
+        "value": "0.875rem",
+        "type": "fontSizes",
+        "description": "14px"
       },
       "s": {
-        "value": "16",
-        "type": "fontSizes"
+        "value": "1rem",
+        "type": "fontSizes",
+        "description": "16px"
       },
       "m": {
-        "value": "18",
-        "type": "fontSizes"
+        "value": "1.125rem",
+        "type": "fontSizes",
+        "description": "18px"
       },
       "l": {
-        "value": "20",
-        "type": "fontSizes"
+        "value": "1.25",
+        "type": "fontSizes",
+        "description": "20px"
       },
       "xl": {
-        "value": "24",
-        "type": "fontSizes"
+        "value": "1.5rem",
+        "type": "fontSizes",
+        "description": "24px"
       },
       "xxl": {
-        "value": "28",
-        "type": "fontSizes"
+        "value": "1.75rem",
+        "type": "fontSizes",
+        "description": "28px"
       },
       "xxxl": {
-        "value": "36",
-        "type": "fontSizes"
+        "value": "2.25rem",
+        "type": "fontSizes",
+        "description": "36px"
       }
     },
     "line-height": {
       "xxxs": {
-        "value": "16",
-        "type": "lineHeights"
+        "value": "1rem",
+        "type": "lineHeights",
+        "description": "16px"
       },
       "xxs": {
-        "value": "18",
-        "type": "lineHeights"
+        "value": "1.125rem",
+        "type": "lineHeights",
+        "description": "18px"
       },
       "xs": {
-        "value": "20",
-        "type": "lineHeights"
+        "value": "1.25rem",
+        "type": "lineHeights",
+        "description": "20px"
       },
       "s": {
-        "value": "24",
-        "type": "lineHeights"
+        "value": "1.5rem",
+        "type": "lineHeights",
+        "description": "24px"
       },
       "m": {
-        "value": "26",
-        "type": "lineHeights"
+        "value": "1.625rem",
+        "type": "lineHeights",
+        "description": "26px"
       },
       "l": {
-        "value": "30",
-        "type": "lineHeights"
+        "value": "1.875rem",
+        "type": "lineHeights",
+        "description": "30px"
       },
       "xl": {
-        "value": "32",
-        "type": "lineHeights"
+        "value": "2rem",
+        "type": "lineHeights",
+        "description": "32px"
       },
       "xxl": {
-        "value": "38",
-        "type": "lineHeights"
+        "value": "2.375rem",
+        "type": "lineHeights",
+        "description": "38px"
       },
       "xxxl": {
-        "value": "42",
-        "type": "lineHeights"
+        "value": "2.625rem",
+        "type": "lineHeights",
+        "description": "42px"
       }
     },
     "textcase": {
@@ -932,6 +950,48 @@
         "value": "uppercase",
         "type": "textCase"
       }
+    }
+  },
+  "spacing": {
+    "10": {
+      "value": "0.125rem",
+      "type": "spacing",
+      "description": "2px"
+    },
+    "20": {
+      "value": "0.25rem",
+      "type": "spacing",
+      "description": "4px"
+    },
+    "30": {
+      "value": "0.375rem",
+      "type": "spacing",
+      "description": "6px"
+    },
+    "40": {
+      "value": "0.5rem",
+      "type": "spacing",
+      "description": "8px"
+    },
+    "50": {
+      "value": "0.75rem",
+      "type": "spacing",
+      "description": "12px"
+    },
+    "60": {
+      "value": "1rem",
+      "type": "spacing",
+      "description": "16px"
+    },
+    "70": {
+      "value": "1.5rem",
+      "type": "spacing",
+      "description": "24px"
+    },
+    "80": {
+      "value": "2rem",
+      "type": "spacing",
+      "description": "32px"
     }
   }
 }
