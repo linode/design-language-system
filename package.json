@@ -1,6 +1,6 @@
 {
   "name": "@linode/design-language-system",
-  "version": "0.0.14",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "module": "dist/index.js",
