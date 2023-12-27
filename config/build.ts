@@ -2,6 +2,7 @@ import StyleDictionaryPackage, { TransformedTokens } from 'style-dictionary';
 import { promises } from 'fs';
 import type { PlatformTypes, StyleDictionaryOptions } from './types';
 import prettier from 'prettier';
+import { registerTransforms } from '@tokens-studio/sd-transforms';
 
 const readFile = promises.readFile;
 const buffer = await readFile('tokens/$themes.json');
@@ -11,6 +12,10 @@ const PREFIX = 'token';
 
 const date = new Date();
 const formattedDate = date.toUTCString();
+
+// https://github.com/tokens-studio/sd-transforms
+// Register token studio transforms on style dictionary
+await registerTransforms(StyleDictionaryPackage, {});
 
 export const PLATFORMS: PlatformTypes[] = [
   {
@@ -56,13 +61,28 @@ export function getStyleDictionaryConfig(
         ]
       },
       'web/scss': {
-        transformGroup: 'tokens-scss',
+        transformGroup: 'tokens-css',
         buildPath,
         prefix: `${PREFIX}-`,
         files: [
           {
             destination: 'tokens.scss',
             format: 'scss/variables',
+            filter: {},
+            options: {
+              outputReferences: false
+            }
+          }
+        ]
+      },
+      'web/css': {
+        transformGroup: 'tokens-css',
+        buildPath,
+        prefix: `${PREFIX}-`,
+        files: [
+          {
+            destination: 'tokens.css',
+            format: 'css/variables',
             filter: {},
             options: {
               outputReferences: false
@@ -78,6 +98,7 @@ export function getStyleDictionaryConfig(
  * REGISTER FILTERS
  * @see https://amzn.github.io/style-dictionary/#/api?id=registerfilter
  */
+
 
 /**
  * REGISTER FORMATS
@@ -160,27 +181,6 @@ ${prettier.format(`export type { ${exportsOutput} }`, { parser: 'typescript' })}
  * @see https://amzn.github.io/style-dictionary/#/api?id=registertransform
  * @todo Combine prefix transforms - we Didn't want a prefix on alias tokens, if this changes, we can add `prefix` to each 'platform' config
  */
-StyleDictionaryPackage.registerTransform({
-  name: 'size/pxToPt',
-  type: 'value',
-  matcher(prop) {
-    return prop.value.match(/^[\d.]+px$/);
-  },
-  transformer(prop) {
-    return prop.value.replace(/px$/, 'pt');
-  }
-});
-
-StyleDictionaryPackage.registerTransform({
-  name: 'size/pxToDp',
-  type: 'value',
-  matcher(prop) {
-    return prop.value.match(/^[\d.]+px$/);
-  },
-  transformer(prop) {
-    return prop.value.replace(/px$/, 'dp');
-  }
-});
 
 /**
  * TRANSFORM GROUPS
@@ -189,17 +189,17 @@ StyleDictionaryPackage.registerTransform({
 
 StyleDictionaryPackage.registerTransformGroup({
   name: 'tokens-js',
-  transforms: ['name/cti/pascal', 'size/px', 'color/hex']
+  transforms: ['name/cti/pascal', 'size/px', 'color/hex', 'ts/shadow/css/shorthand']
 });
 
 StyleDictionaryPackage.registerTransformGroup({
   name: 'tokens-json',
-  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css']
+  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css', 'ts/shadow/css/shorthand']
 });
 
 StyleDictionaryPackage.registerTransformGroup({
-  name: 'tokens-scss',
-  transforms: ['name/cti/kebab', 'time/seconds', 'size/px', 'color/css']
+  name: 'tokens-css',
+  transforms: ['name/cti/kebab', 'time/seconds', 'size/px', 'color/css', 'ts/shadow/css/shorthand']
 });
 
 console.log('Build started...');
@@ -225,6 +225,7 @@ PLATFORMS.map(function (platform) {
     if (platform.name === 'web') {
       StyleDictionary.buildPlatform('web/js');
       StyleDictionary.buildPlatform('web/scss');
+      StyleDictionary.buildPlatform('web/css');
     }
 
     console.log('\nEnd processing');
