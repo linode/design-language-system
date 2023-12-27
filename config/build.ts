@@ -2,6 +2,7 @@ import StyleDictionaryPackage, { TransformedTokens } from 'style-dictionary';
 import { promises } from 'fs';
 import type { PlatformTypes, StyleDictionaryOptions } from './types';
 import prettier from 'prettier';
+import { registerTransforms } from '@tokens-studio/sd-transforms';
 
 const readFile = promises.readFile;
 const buffer = await readFile('tokens/$themes.json');
@@ -11,6 +12,11 @@ const PREFIX = 'token';
 
 const date = new Date();
 const formattedDate = date.toUTCString();
+
+await registerTransforms(StyleDictionaryPackage, {
+  // Expand object type tokens
+  expand: { typography: true, border: true, shadow: true, composition: true },
+});
 
 export const PLATFORMS: PlatformTypes[] = [
   {
@@ -78,6 +84,7 @@ export function getStyleDictionaryConfig(
  * REGISTER FILTERS
  * @see https://amzn.github.io/style-dictionary/#/api?id=registerfilter
  */
+
 
 /**
  * REGISTER FORMATS
@@ -160,6 +167,7 @@ ${prettier.format(`export type { ${exportsOutput} }`, { parser: 'typescript' })}
  * @see https://amzn.github.io/style-dictionary/#/api?id=registertransform
  * @todo Combine prefix transforms - we Didn't want a prefix on alias tokens, if this changes, we can add `prefix` to each 'platform' config
  */
+
 StyleDictionaryPackage.registerTransform({
   name: 'size/pxToPt',
   type: 'value',
