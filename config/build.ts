@@ -27,7 +27,14 @@ export function getStyleDictionaryConfig(
   options: StyleDictionaryOptions
 ): StyleDictionaryPackage.Config {
   const { theme, platform } = options;
-  const buildPath = theme.name ? `dist/${theme.name}/` : 'dist/'
+  let buildPath;
+
+  if (theme.name === 'light' || theme.name === '') {
+    buildPath = 'dist/';
+  } else {
+    buildPath = `dist/${theme.name}/`;
+  }
+
   return {
     // If we want to show collisions, we can change `include` to `source`.
     include: Object.entries(theme.selectedTokenSets)

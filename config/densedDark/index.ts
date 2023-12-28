@@ -1,12 +1,12 @@
-import * as Tokens from '../../dist/dark/tokens.es6.js';
-import * as TokensTheme from '../../dist/dark/theme.es6.js';
+import * as Tokens from '../../dist/densedDark/tokens.es6.js';
+import * as TokensTheme from '../../dist/densedDark/theme.es6.js';
 import type {
   AliasTypes,
   ComponentTypes,
   ElevationTypes,
   FontTypes,
   GlobalTypes
-} from '../../dist/dark/theme.js';
+} from '../../dist/densedDark/theme.js';
 
 const {
   Color,

@@ -1,0 +1,44 @@
+{
+  "component": {
+    "table": {
+      "header": {
+        "background": {
+          "value": "{alias.background.base}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.white}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.white}",
+          "type": "color"
+        }
+      },
+      "body": {
+        "background": {
+          "value": "{alias.background.normal}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        },
+        "text": {
+          "default": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          },
+          "placeholder": {
+            "value": "{alias.content.text.secondary.default}",
+            "type": "color"
+          },
+          "link": {
+            "value": "{alias.content.text.link.default}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

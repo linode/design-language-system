@@ -1,0 +1,18 @@
+{
+  "component": {
+    "appbar": {
+      "backround": {
+        "value": "{alias.background.neutral}",
+        "type": "color"
+      },
+      "border": {
+        "value": "{alias.border.normal}",
+        "type": "color"
+      },
+      "text": {
+        "value": "{alias.content.text.primary.default}",
+        "type": "color"
+      }
+    }
+  }
+}
