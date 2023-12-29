@@ -1,16 +1,19 @@
 import React from 'react';
-import { Action } from '../../dist/index.js';
 import { Section } from '../Section.js';
 
-export const AliasColors = () => (
+export const AliasColors = ({ concept, conceptHeading }) => (
   <>
-    {Object.entries(Action).map(([colorName, colorObject]) => (
-      <Section
-        colorName={colorName}
-        colorObject={colorObject}
-        key={colorName}
-        title={`${colorName} Colors`}
-      />
-    ))}
+    {Object.entries(concept).map(([key, colorObject]) => {
+      return (
+        <Section
+          concept={conceptHeading}
+          key={key}
+          title={key}
+          type="alias"
+          value={colorObject}
+          variant={key}
+        />
+      );
+    })}
   </>
 );

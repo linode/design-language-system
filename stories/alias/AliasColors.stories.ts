@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
+import { Action,
+  Background,
+  Border,
+  Content,
+  Interaction, } from '../../dist/index.js';
 import { AliasColors } from './AliasColors';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: 'Colors/Alias',
   component: AliasColors,
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered',
+    layout: 'padded',
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
 
   },
@@ -21,8 +21,37 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {
+export const Actions: Story = {
   args: {
+    concept: Action,
+    conceptHeading: 'Action'
+  },
+};
+
+export const Backgrounds: Story = {
+  args: {
+    concept: Background,
+    conceptHeading: 'Background'
+  },
+};
+
+export const Borders: Story = {
+  args: {
+    concept: Border,
+    conceptHeading: 'Border'
+  },
+};
+
+export const ContentColors: Story = {
+  args: {
+    concept: Content,
+    conceptHeading: 'Content'
+  },
+};
+
+export const Interactions: Story = {
+  args: {
+    concept: Interaction,
+    conceptHeading: 'Interaction'
   },
 };
