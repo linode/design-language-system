@@ -1,12 +1,12 @@
 import * as Tokens from '../../dist/dark/tokens.es6.js';
-import * as TokensTheme from '../../dist/dark/theme.es6.js';
+import * as TokensTheme from '../../dist/dark/nested.es6.js';
 import type {
   AliasTypes,
   ComponentTypes,
   ElevationTypes,
   FontTypes,
   GlobalTypes
-} from '../../dist/dark/theme.js';
+} from '../../dist/dark/nested.d.ts';
 
 const {
   Color,

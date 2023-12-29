@@ -48,22 +48,22 @@ export function getStyleDictionaryConfig(
         files: [
           {
             destination: 'tokens.es6.js',
-            format: 'javascript/es6',
-            filter: {}
+            filter: {},
+            format: 'javascript/es6'
           },
           {
-            destination: 'theme.es6.js',
-            format: 'javascript/nested',
-            filter: {}
+            destination: 'tokens.d.ts',
+            format: 'typescript/es6-declarations'
           },
           {
-            destination: 'theme.d.ts',
-            format: 'typescript/theme-types',
-            filter: {}
+            destination: 'nested.es6.js',
+            filter: {},
+            format: 'javascript/nested'
           },
           {
-            format: 'typescript/es6-declarations',
-            destination: 'tokens.d.ts'
+            destination: 'nested.d.ts',
+            filter: {},
+            format: 'typescript/theme-types'
           }
         ]
       },

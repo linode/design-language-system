@@ -5,7 +5,8 @@ export default defineConfig({
   entry: [
     ...['config/index.ts'],
     ...['config/dark/index.ts'],
-    ...['config/highContast/index.ts']
+    ...['config/densedDark/index.ts'],
+    ...['config/densedLight/index.ts'],
   ],
   format: ['esm'],
   minify: 'terser',

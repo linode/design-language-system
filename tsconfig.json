@@ -4,6 +4,7 @@
     "target": "esnext",
     "esModuleInterop": true,
     "allowJs": true,
+    "checkJs": true,
     "moduleResolution": "node"
   },
   "exclude": ["config", "dist", "node_modules"]

@@ -1,12 +1,12 @@
 import * as Tokens from '../../dist/densedLight/tokens.es6.js';
-import * as TokensTheme from '../../dist/densedLight/theme.es6.js';
+import * as TokensTheme from '../../dist/densedLight/nested.es6.js';
 import type {
   AliasTypes,
   ComponentTypes,
   ElevationTypes,
   FontTypes,
   GlobalTypes
-} from '../../dist/densedLight/theme.js';
+} from '../../dist/densedLight/nested.d.ts';
 
 const {
   Color,
