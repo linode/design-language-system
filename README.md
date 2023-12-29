@@ -1,7 +1,15 @@
 # Installation
 ```bash
 yarn install
+```
+
+## Build
+> [!note]
+You can use `yarn storybook` to view all the tokens we have available
+
+```bash
 yarn generate
+yarn storybook
 ```
 
 You should see something like this output:
@@ -29,7 +37,7 @@ End processing
 ==============================================
 ```
 
-Good for you! You have now built your first style dictionary! Moving on, take a look at what we have built. This should have created a build directory and it should look like this:
+This should have created a build directory and it should look like this:
 ```
 ├── dist/
 │   ├── dark
@@ -120,7 +128,3 @@ $token-color-neutrals-100: #3A3A3F;
 This shows a few things happening:
 1. The build system does a deep merge of all the token JSON files defined in the `source` attribute of `config/build.ts`. This allows you to split up the token JSON files however you want.
 2. The build system resolves references to other design tokens in other files as well. For example in `tokens/alias/light.json` the value `{color.neutrals.white}` gets resolved properly.
-
-**Huzzah!**
-
-Now go forth and create! Take a look at all the built-in [transforms](https://amzn.github.io/style-dictionary/#/transforms?id=pre-defined-transforms) and [formats](https://amzn.github.io/style-dictionary/#/formats?id=pre-defined-formats).
