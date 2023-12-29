@@ -27,7 +27,14 @@ export function getStyleDictionaryConfig(
   options: StyleDictionaryOptions
 ): StyleDictionaryPackage.Config {
   const { theme, platform } = options;
-  const buildPath = theme.name ? `dist/${theme.name}/` : 'dist/'
+  let buildPath;
+
+  if (theme.name === 'light' || theme.name === '') {
+    buildPath = 'dist/';
+  } else {
+    buildPath = `dist/${theme.name}/`;
+  }
+
   return {
     // If we want to show collisions, we can change `include` to `source`.
     include: Object.entries(theme.selectedTokenSets)
@@ -41,22 +48,22 @@ export function getStyleDictionaryConfig(
         files: [
           {
             destination: 'tokens.es6.js',
-            format: 'javascript/es6',
-            filter: {}
+            filter: {},
+            format: 'javascript/es6'
           },
           {
-            destination: 'theme.es6.js',
-            format: 'javascript/nested',
-            filter: {}
+            destination: 'tokens.d.ts',
+            format: 'typescript/es6-declarations'
           },
           {
-            destination: 'theme.d.ts',
-            format: 'typescript/theme-types',
-            filter: {}
+            destination: 'nested.es6.js',
+            filter: {},
+            format: 'javascript/nested'
           },
           {
-            format: 'typescript/es6-declarations',
-            destination: 'tokens.d.ts'
+            destination: 'nested.d.ts',
+            filter: {},
+            format: 'typescript/theme-types'
           }
         ]
       },

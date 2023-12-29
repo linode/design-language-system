@@ -1,27 +1,52 @@
 import * as Tokens from '../dist/tokens.es6.js';
-import * as TokensTheme from '../dist/theme.es6.js';
+import * as TokensTheme from '../dist/nested.es6.js';
 import type {
-  ColorTypes,
-  ElevationTypes,
-  FontTypes,
-  ContentTypes,
-  BorderTypes,
-  BackgroundTypes,
-  InteractionTypes,
-  ActionTypes,
-  ButtonTypes,
-} from '../dist/theme.js';
+  AliasTypes,
+  ComponentTypes,
+  GlobalTypes
+} from '../dist/nested.d.ts';
 
-const Colors: ColorTypes = TokensTheme.default.Color;
-const Elevation: ElevationTypes = TokensTheme.default.Elevation;
-const Fonts: FontTypes = TokensTheme.default.Font;
-const Content: ContentTypes = TokensTheme.default.Content;
-const Border: BorderTypes = TokensTheme.default.Border;
-const Background: BackgroundTypes = TokensTheme.default.Background;
-const Interaction: InteractionTypes = TokensTheme.default.Interaction;
-const Actions: ActionTypes = TokensTheme.default.Action;
-const Button: ButtonTypes = TokensTheme.default.Button;
+const {
+  Color,
+  Elevation,
+  Font,
+  Spacing
+} = TokensTheme.default.Global;
 
-export { Tokens, Colors, Elevation, Fonts, Content, Border, Background, Interaction, Actions, Button };
-export type { ColorTypes, ElevationTypes, FontTypes, ContentTypes, BorderTypes, BackgroundTypes, InteractionTypes, ActionTypes, ButtonTypes };
+const {
+  Action,
+  Background,
+  Border,
+  Content,
+  Interaction,
+} = TokensTheme.default.Alias;
 
+const {
+  Appbar,
+  Button,
+  Container,
+  Table,
+} = TokensTheme.default.Component;
+
+export {
+  Action,
+  Appbar,
+  Background,
+  Border,
+  Button,
+  Color,
+  Container,
+  Content,
+  Elevation,
+  Font,
+  Interaction,
+  Spacing,
+  Table,
+  Tokens
+};
+
+export type {
+  AliasTypes,
+  ComponentTypes,
+  GlobalTypes
+};

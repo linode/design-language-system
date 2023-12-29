@@ -8,11 +8,7 @@ module.exports = {
     '@typescript-eslint',
     'prettier',
   ],
-  extends: [
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',

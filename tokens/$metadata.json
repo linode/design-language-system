@@ -1,10 +1,13 @@
 {
   "tokenSetOrder": [
     "global/global",
-    "global/highContrast",
     "alias/light",
+    "alias/densedLight",
     "alias/dark",
-    "alias/highContrast",
-    "components/button/button"
+    "alias/densedDark",
+    "components/appBar/appBar",
+    "components/button/button",
+    "components/container/container",
+    "components/table/table"
   ]
 }

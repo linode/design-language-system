@@ -1,9 +1,92 @@
 {
-  "content": {
-    "text": {
-      "base": {
-        "value": "{color.neutrals.black}",
-        "type": "color"
+  "alias": {
+    "content": {
+      "text": {
+        "base": {
+          "value": "{global.color.neutrals.100}",
+          "type": "color"
+        },
+        "primary": {
+          "default": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color",
+            "description": "Primary text color"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{global.color.neutrals.50}",
+            "type": "color",
+            "description": "Placeholder text"
+          }
+        },
+        "link": {
+          "default": {
+            "value": "{global.color.brand.60}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{global.color.brand.50}",
+            "type": "color"
+          }
+        }
+      },
+      "icon": {
+        "base": {
+          "value": "{global.color.neutrals.100}",
+          "type": "color"
+        },
+        "primary": {
+          "default": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color",
+            "description": "Default icon color"
+          },
+          "hover": {
+            "value": "{global.color.brand.50}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{global.color.brand.60}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "border": {
+      "normal": {
+        "value": "{global.color.neutrals.80}",
+        "type": "color",
+        "description": "Static component border"
+      }
+    },
+    "background": {
+      "normal": {
+        "value": "{global.color.neutrals.90}",
+        "type": "color",
+        "description": "Default component background"
+      },
+      "neutral": {
+        "value": "{global.color.neutrals.100}",
+        "type": "color",
+        "description": "Default page background"
+      }
+    },
+    "action": {
+      "primary": {
+        "default": {
+          "value": "{global.color.brand.60}",
+          "type": "color",
+          "description": "Brand action color"
+        },
+        "hover": {
+          "value": "{global.color.brand.50}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{global.color.brand.60}",
+          "type": "color"
+        }
       }
     }
   }

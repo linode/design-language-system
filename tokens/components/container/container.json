@@ -1,0 +1,14 @@
+{
+  "component": {
+    "container": {
+      "background": {
+        "value": "{alias.background.normal}",
+        "type": "color"
+      },
+      "border": {
+        "value": "{alias.border.normal}",
+        "type": "color"
+      }
+    }
+  }
+}
