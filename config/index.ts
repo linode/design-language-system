@@ -3,20 +3,15 @@ import * as TokensTheme from '../dist/nested.es6.js';
 import type {
   AliasTypes,
   ComponentTypes,
-  ElevationTypes,
-  FontTypes,
   GlobalTypes
 } from '../dist/nested.d.ts';
 
 const {
   Color,
-  Spacing,
-} = TokensTheme.default.Global;
-
-const {
   Elevation,
-  Font
-} = TokensTheme.default;
+  Font,
+  Spacing
+} = TokensTheme.default.Global;
 
 const {
   Action,
@@ -53,7 +48,5 @@ export {
 export type {
   AliasTypes,
   ComponentTypes,
-  ElevationTypes,
-  FontTypes,
   GlobalTypes
 };
