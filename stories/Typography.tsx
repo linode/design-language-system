@@ -1,7 +1,7 @@
 import React from 'react';
 import { Border, Color, Font, Spacing } from '../dist/index.js';
 
-export const Typography = ({ key, heading, value, isLowerCase = false }) => {
+export const Typography = ({ key, format, value, isLowerCase = false }) => {
   if (isLowerCase) value = value.toLowerCase();
 
   return (
@@ -13,12 +13,12 @@ export const Typography = ({ key, heading, value, isLowerCase = false }) => {
     >
       <span
         style={{
-          fontFamily: 'sans-serif',
+          fontFamily: Font.FontFamily.Code,
           fontSize: Font.FontSize.Xxxs,
-          fontWeight: Font.FontWeight.Bold
+          fontWeight: Font.FontWeight.Semibold
         }}
       >
-        {heading}:
+        {format}:
       </span>{' '}
       <span
         style={{
@@ -26,7 +26,7 @@ export const Typography = ({ key, heading, value, isLowerCase = false }) => {
           border: `1px solid ${Border.Normal}`,
           borderRadius: '0.2rem',
           color: Color.Red[90],
-          fontFamily: 'monospace',
+          fontFamily: Font.FontFamily.Code,
           fontSize: Font.FontSize.Xxxs,
           padding: Spacing[10],
           whiteSpace: 'nowrap'
