@@ -1,16 +1,11 @@
 import React from 'react';
-import { Color, Font, Spacing, Border } from '../../dist/index.js';
+import { Color } from '../../dist/index.js';
 import { Section } from '../Section';
 
 export const GlobalColors = () => (
   <>
-    {Object.entries(Color).map(([colorName, colorObject]) => (
-      <Section
-        colorName={colorName}
-        colorObject={colorObject}
-        key={colorName}
-        title={`${colorName} Colors`}
-      />
+    {Object.entries(Color).map(([key, colorObject]) => (
+      <Section key={key} title={key} value={colorObject} variant={key} />
     ))}
   </>
 );

@@ -8,9 +8,6 @@ interface ColorSwatchProps {
   color: string;
 }
 
-/**
- * A color swatch
- */
 export const ColorSwatch = ({ color }: ColorSwatchProps) => {
   return (
     <div
@@ -18,10 +15,10 @@ export const ColorSwatch = ({ color }: ColorSwatchProps) => {
         backgroundColor: color,
         border: `1px solid ${Border.Normal}`,
         borderRadius: '50%',
-        width: '50px',
+        flexShrink: 0,
         height: '50px',
+        width: '50px'
       }}
     />
   );
-}
-
+};
