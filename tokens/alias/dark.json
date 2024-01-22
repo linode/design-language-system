@@ -53,6 +53,22 @@
           "value": "{global.color.neutrals.100}",
           "type": "color"
         },
+        "negative": {
+          "value": "{global.color.red.60}",
+          "type": "color"
+        },
+        "warning": {
+          "value": "{global.color.amber.60}",
+          "type": "color"
+        },
+        "positive": {
+          "value": "{global.color.green.60}",
+          "type": "color"
+        },
+        "informative": {
+          "value": "{global.color.ultramarine.60}",
+          "type": "color"
+        },
         "primary": {
           "default": {
             "value": "{global.color.neutrals.white}",
@@ -116,6 +132,11 @@
       "neutralsubtle": {
         "value": "{global.color.neutrals.80}",
         "type": "color"
+      },
+      "base": {
+        "value": "{global.color.neutrals.white}",
+        "type": "color",
+        "description": "Tooltip background"
       }
     },
     "interaction": {

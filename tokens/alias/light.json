@@ -158,7 +158,7 @@
       "base": {
         "value": "{global.color.neutrals.100}",
         "type": "color",
-        "description": "Dark bg for table headers, tooltip"
+        "description": "Tooltip background"
       },
       "negative": {
         "value": "{global.color.red.70}",
