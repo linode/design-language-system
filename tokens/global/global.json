@@ -37,21 +37,21 @@
           "description": "Default field border"
         },
         "70": {
-          "value": "#717178",
+          "value": "#696970",
           "type": "color",
           "description": "Color for text placeholder and hints"
         },
         "80": {
-          "value": "#5E5E65",
+          "value": "#515157",
           "type": "color"
         },
         "90": {
-          "value": "#4B4B51",
+          "value": "#3D3D42",
           "type": "color",
           "description": "Default icon color, hover color for fields border"
         },
         "100": {
-          "value": "#3A3A3F",
+          "value": "#343438",
           "type": "color",
           "description": "Default text color"
         },
@@ -840,20 +840,22 @@
         "type": "boxShadow"
       },
       "l": {
-        "value": [{
-          "x": "0",
-          "y": "16",
-          "blur": "32",
-          "spread": "0",
-          "color": "rgba(58,59,63,0.18)"
-        },
-        {
-          "x": "0",
-          "y": "4",
-          "blur": "8",
-          "spread": "0",
-          "color": "rgba(58,59,63,0.08)"
-        }],
+        "value": [
+          {
+            "x": "0",
+            "y": "16",
+            "blur": "32",
+            "spread": "0",
+            "color": "rgba(58,59,63,0.18)"
+          },
+          {
+            "x": "0",
+            "y": "4",
+            "blur": "8",
+            "spread": "0",
+            "color": "rgba(58,59,63,0.08)"
+          }
+        ],
         "type": "boxShadow"
       },
       "glow": {

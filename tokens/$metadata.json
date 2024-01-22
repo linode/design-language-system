@@ -5,9 +5,9 @@
     "alias/densedLight",
     "alias/dark",
     "alias/densedDark",
-    "components/appBar/appBar",
     "components/button/button",
     "components/container/container",
-    "components/table/table"
+    "components/table/table",
+    "components/appbar/appbar"
   ]
 }

@@ -22,12 +22,12 @@
           "value": "{global.color.ultramarine.70}",
           "type": "color"
         },
-        "inverted50": {
-          "value": "rgba(255,255,255,0.5)",
+        "alwaysWhite": {
+          "value": "{global.color.neutrals.white}",
           "type": "color"
         },
-        "white": {
-          "value": "{global.color.neutrals.white}",
+        "alwaysDark": {
+          "value": "{global.color.neutrals.100}",
           "type": "color"
         },
         "primary": {
@@ -88,8 +88,12 @@
           "value": "{global.color.ultramarine.70}",
           "type": "color"
         },
-        "white": {
+        "alwaysWhite": {
           "value": "{global.color.neutrals.white}",
+          "type": "color"
+        },
+        "alwaysDark": {
+          "value": "{global.color.neutrals.100}",
           "type": "color"
         },
         "primary": {
@@ -196,6 +200,16 @@
       "neutralsubtle": {
         "value": "{global.color.neutrals.20}",
         "type": "color"
+      },
+      "alwaysDark": {
+        "value": "{global.color.neutrals.100}",
+        "type": "color",
+        "description": "Always dark table header"
+      },
+      "white50": {
+        "value": "rgba(255,255,255,0.5)",
+        "type": "color",
+        "description": "Transparent disabled switcher circle"
       }
     },
     "interaction": {
@@ -249,6 +263,10 @@
     "action": {
       "base": {
         "value": "{global.color.neutrals.white}",
+        "type": "color"
+      },
+      "neutral": {
+        "value": "{global.color.neutrals.60}",
         "type": "color"
       },
       "primary": {
