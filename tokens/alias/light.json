@@ -304,6 +304,38 @@
           "type": "color"
         }
       }
+    },
+    "elevation": {
+      "s": {
+        "value": {
+          "x": "0",
+          "y": "2",
+          "blur": "6",
+          "spread": "0",
+          "color": "rgba(58,59,63,0.18)",
+          "type": "innerShadow"
+        },
+        "type": "boxShadow"
+      },
+      "l": {
+        "value": [
+          {
+            "x": "0",
+            "y": "16",
+            "blur": "32",
+            "spread": "0",
+            "color": "rgba(58,59,63,0.18)"
+          },
+          {
+            "x": "0",
+            "y": "4",
+            "blur": "8",
+            "spread": "0",
+            "color": "rgba(58,59,63,0.08)"
+          }
+        ],
+        "type": "boxShadow"
+      }
     }
   }
 }

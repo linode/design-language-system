@@ -808,67 +808,6 @@
         "description": "32px"
       }
     },
-    "elevation": {
-      "xs": {
-        "value": {
-          "x": "0",
-          "y": "1",
-          "blur": "4",
-          "spread": "0",
-          "color": "rgba(58,59,63,0.2)"
-        },
-        "type": "boxShadow"
-      },
-      "s": {
-        "value": {
-          "x": "0",
-          "y": "2",
-          "blur": "6",
-          "spread": "0",
-          "color": "rgba(58,59,63,0.2)"
-        },
-        "type": "boxShadow"
-      },
-      "m": {
-        "value": {
-          "x": "0",
-          "y": "4",
-          "blur": "12",
-          "spread": "0",
-          "color": "rgba(58,59,63,0.2)"
-        },
-        "type": "boxShadow"
-      },
-      "l": {
-        "value": [
-          {
-            "x": "0",
-            "y": "16",
-            "blur": "32",
-            "spread": "0",
-            "color": "rgba(58,59,63,0.18)"
-          },
-          {
-            "x": "0",
-            "y": "4",
-            "blur": "8",
-            "spread": "0",
-            "color": "rgba(58,59,63,0.08)"
-          }
-        ],
-        "type": "boxShadow"
-      },
-      "glow": {
-        "value": {
-          "x": "0",
-          "y": "2",
-          "blur": "6",
-          "spread": "0",
-          "color": "rgba(1,116,188,0.16)"
-        },
-        "type": "boxShadow"
-      }
-    },
     "font": {
       "font-family": {
         "brand": {
