@@ -5,9 +5,13 @@
     "alias/densedLight",
     "alias/dark",
     "alias/densedDark",
+    "components/bars/appbar",
+    "components/badge/badge",
     "components/button/button",
+    "components/button/menuButton",
+    "components/button/overflowMenuButton",
+    "components/button/splitMenuButton",
     "components/container/container",
-    "components/table/table",
-    "components/appbar/appbar"
+    "components/table/table"
   ]
 }

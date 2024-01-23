@@ -1,6 +1,6 @@
 {
   "component": {
-    "button": {
+    "menuButton": {
       "primary": {
         "default": {
           "background": {
