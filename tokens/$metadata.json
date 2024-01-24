@@ -7,11 +7,16 @@
     "alias/densedDark",
     "components/bars/appbar",
     "components/badge/badge",
+    "components/breadcrumb/breadcrumb",
     "components/button/button",
     "components/button/menuButton",
     "components/button/overflowMenuButton",
     "components/button/splitMenuButton",
+    "components/calendar/calendar",
+    "components/card/card",
+    "components/checkbox/checkbox",
     "components/container/container",
+    "components/contentPanel/contentPanel",
     "components/table/table"
   ]
 }

@@ -193,7 +193,7 @@
         "type": "color"
       },
       "neutral": {
-        "value": "{global.color.neutrals.80}",
+        "value": "{global.color.neutrals.70}",
         "type": "color"
       },
       "primary": {

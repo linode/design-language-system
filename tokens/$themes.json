@@ -13,7 +13,11 @@
       "components/button/overflowMenuButton": "enabled",
       "components/button/splitMenuButton": "enabled",
       "components/bars/appbar": "enabled",
-      "components/badge/badge": "enabled"
+      "components/badge/badge": "enabled",
+      "components/breadcrumb/breadcrumb": "enabled",
+      "components/card/card": "enabled",
+      "components/checkbox/checkbox": "enabled",
+      "components/contentPanel/contentPanel": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7005:18478",
     "$figmaModeId": "7005:13",
@@ -333,7 +337,11 @@
       "components/button/overflowMenuButton": "enabled",
       "components/button/splitMenuButton": "enabled",
       "components/bars/appbar": "enabled",
-      "components/badge/badge": "enabled"
+      "components/badge/badge": "enabled",
+      "components/breadcrumb/breadcrumb": "enabled",
+      "components/card/card": "enabled",
+      "components/checkbox/checkbox": "enabled",
+      "components/contentPanel/contentPanel": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7005:18478",
     "$figmaModeId": "7005:14",
@@ -653,7 +661,11 @@
       "components/button/overflowMenuButton": "enabled",
       "components/button/splitMenuButton": "enabled",
       "components/bars/appbar": "enabled",
-      "components/badge/badge": "enabled"
+      "components/badge/badge": "enabled",
+      "components/breadcrumb/breadcrumb": "enabled",
+      "components/card/card": "enabled",
+      "components/checkbox/checkbox": "enabled",
+      "components/contentPanel/contentPanel": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7005:18478",
     "$figmaModeId": "7005:15",
@@ -974,7 +986,11 @@
       "components/button/overflowMenuButton": "enabled",
       "components/button/splitMenuButton": "enabled",
       "components/bars/appbar": "enabled",
-      "components/badge/badge": "enabled"
+      "components/badge/badge": "enabled",
+      "components/breadcrumb/breadcrumb": "enabled",
+      "components/card/card": "enabled",
+      "components/checkbox/checkbox": "enabled",
+      "components/contentPanel/contentPanel": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7005:18478",
     "$figmaModeId": "7005:16",

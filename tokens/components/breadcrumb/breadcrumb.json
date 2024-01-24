@@ -1,0 +1,58 @@
+{
+  "component": {
+    "breadcrumb": {
+      "divider": {
+        "value": "{alias.border.normal}",
+        "type": "color"
+      },
+      "appTitle": {
+        "text": {
+          "value": "{alias.content.text.link.default}",
+          "type": "color"
+        }
+      },
+      "default": {
+        "text": {
+          "value": "{alias.content.text.link.default}",
+          "type": "color"
+        }
+      },
+      "truncated": {
+        "text": {
+          "value": "{alias.content.text.link.default}",
+          "type": "color"
+        }
+      },
+      "lastItem": {
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        }
+      },
+      "collapsed": {
+        "background": {
+          "value": "{alias.background.neutralsubtle}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        }
+      },
+      "withDropdown": {
+        "text": {
+          "value": "{alias.content.text.link.default}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
