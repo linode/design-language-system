@@ -26,6 +26,34 @@
           "value": "{alias.action.primary.default}",
           "type": "color"
         }
+      },
+      "hoverItem": {
+        "background": {
+          "value": "{alias.interaction.background.tertiary}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        }
+      },
+      "presetArea": {
+        "background": {
+          "value": "{alias.interaction.background.secondary}",
+          "type": "color"
+        },
+        "hoverPeriod": {
+          "background": {
+            "value": "{alias.interaction.background.tertiary}",
+            "type": "color"
+          }
+        },
+        "activePeriod": {
+          "background": {
+            "value": "{alias.interaction.background.accent}",
+            "type": "color"
+          }
+        }
       }
     }
   }

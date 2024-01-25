@@ -17,7 +17,8 @@
       "components/breadcrumb/breadcrumb": "enabled",
       "components/card/card": "enabled",
       "components/checkbox/checkbox": "enabled",
-      "components/contentPanel/contentPanel": "enabled"
+      "components/contentPanel/contentPanel": "enabled",
+      "components/calendar/calendar": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7005:18478",
     "$figmaModeId": "7005:13",
@@ -341,7 +342,8 @@
       "components/breadcrumb/breadcrumb": "enabled",
       "components/card/card": "enabled",
       "components/checkbox/checkbox": "enabled",
-      "components/contentPanel/contentPanel": "enabled"
+      "components/contentPanel/contentPanel": "enabled",
+      "components/calendar/calendar": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7005:18478",
     "$figmaModeId": "7005:14",
@@ -665,7 +667,8 @@
       "components/breadcrumb/breadcrumb": "enabled",
       "components/card/card": "enabled",
       "components/checkbox/checkbox": "enabled",
-      "components/contentPanel/contentPanel": "enabled"
+      "components/contentPanel/contentPanel": "enabled",
+      "components/calendar/calendar": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7005:18478",
     "$figmaModeId": "7005:15",
@@ -990,7 +993,8 @@
       "components/breadcrumb/breadcrumb": "enabled",
       "components/card/card": "enabled",
       "components/checkbox/checkbox": "enabled",
-      "components/contentPanel/contentPanel": "enabled"
+      "components/contentPanel/contentPanel": "enabled",
+      "components/calendar/calendar": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:7005:18478",
     "$figmaModeId": "7005:16",
