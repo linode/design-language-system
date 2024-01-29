@@ -17,6 +17,14 @@
     "components/checkbox/checkbox",
     "components/container/container",
     "components/contentPanel/contentPanel",
+    "components/dateField/dateField",
+    "components/datePicker/datePicker",
+    "components/dateRangePicker/dateRangePicker",
+    "components/dateRangeField/dateRangeField",
+    "components/dateRangeInput/dateRangeInput",
+    "components/divider/divider",
+    "components/drawer/drawer",
+    "components/dropdown/dropdown",
     "components/table/table"
   ]
 }
