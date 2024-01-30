@@ -1,0 +1,34 @@
+{
+  "component": {
+    "inlineEdit": {
+      "default": {
+        "value": "{alias.content.text.primary.default}",
+        "type": "color"
+      },
+      "icon": {
+        "default": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{alias.content.icon.primary.hover}",
+          "type": "color"
+        }
+      },
+      "acceptIcon": {
+        "default": {
+          "value": "{alias.content.icon.primary.active}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{alias.content.icon.primary.hover}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{alias.content.icon.primary.disabled}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
