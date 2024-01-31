@@ -100,6 +100,22 @@
         "value": "{global.color.neutrals.40}",
         "type": "color",
         "description": "Secondary notification banner border"
+      },
+      "negative": {
+        "value": "{global.color.red.60}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{global.color.amber.60}",
+        "type": "color"
+      },
+      "positive": {
+        "value": "{global.color.green.60}",
+        "type": "color"
+      },
+      "informative": {
+        "value": "{global.color.ultramarine.60}",
+        "type": "color"
       }
     },
     "background": {
@@ -142,7 +158,7 @@
     "interaction": {
       "border": {
         "default": {
-          "value": "{global.color.neutrals.80}",
+          "value": "{global.color.neutrals.70}",
           "type": "color",
           "description": "Default inputs border"
         },

@@ -1,0 +1,22 @@
+{
+  "component": {
+    "masterSwitch": {
+      "contentBackground": {
+        "value": "{alias.background.normal}",
+        "type": "color"
+      },
+      "sideBackground": {
+        "value": "{alias.background.neutral}",
+        "type": "color"
+      },
+      "text": {
+        "value": "{alias.content.text.primary.default}",
+        "type": "color"
+      },
+      "icon": {
+        "value": "{alias.content.icon.primary.default}",
+        "type": "color"
+      }
+    }
+  }
+}

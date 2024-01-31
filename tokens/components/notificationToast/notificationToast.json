@@ -1,0 +1,104 @@
+{
+  "component": {
+    "notificationToast": {
+      "text": {
+        "value": "{alias.content.text.primary.default}",
+        "type": "color"
+      },
+      "icon": {
+        "value": "{alias.content.icon.primary.default}",
+        "type": "color"
+      },
+      "informative": {
+        "background": {
+          "value": "{alias.background.informativesubtle}",
+          "type": "color"
+        },
+        "iconBackground": {
+          "value": "{alias.background.informative}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.informative}",
+          "type": "color"
+        },
+        "statusIcon": {
+          "value": "{alias.content.icon.alwaysWhite}",
+          "type": "color"
+        }
+      },
+      "tip": {
+        "background": {
+          "value": "{alias.background.informativesubtle}",
+          "type": "color"
+        },
+        "iconBackground": {
+          "value": "{alias.background.informative}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.informative}",
+          "type": "color"
+        },
+        "statusIcon": {
+          "value": "{alias.content.icon.alwaysWhite}",
+          "type": "color"
+        }
+      },
+      "warning": {
+        "background": {
+          "value": "{alias.background.warningsubtle}",
+          "type": "color"
+        },
+        "iconBackground": {
+          "value": "{alias.background.warning}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.warning}",
+          "type": "color"
+        },
+        "statusIcon": {
+          "value": "{alias.content.icon.alwaysDark}",
+          "type": "color"
+        }
+      },
+      "success": {
+        "background": {
+          "value": "{alias.background.positivesubtle}",
+          "type": "color"
+        },
+        "iconBackground": {
+          "value": "{alias.background.positive}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.positive}",
+          "type": "color"
+        },
+        "statusIcon": {
+          "value": "{alias.content.icon.alwaysWhite}",
+          "type": "color"
+        }
+      },
+      "error": {
+        "background": {
+          "value": "{alias.background.negativesubtle}",
+          "type": "color"
+        },
+        "iconBackground": {
+          "value": "{alias.background.negative}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.negative}",
+          "type": "color"
+        },
+        "statusIcon": {
+          "value": "{alias.content.icon.alwaysWhite}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
