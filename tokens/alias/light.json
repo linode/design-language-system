@@ -205,11 +205,56 @@
         "value": "{global.color.neutrals.100}",
         "type": "color",
         "description": "Always dark table header"
+      }
+    },
+    "action": {
+      "base": {
+        "value": "{global.color.neutrals.white}",
+        "type": "color"
+      },
+      "neutral": {
+        "value": "{global.color.neutrals.60}",
+        "type": "color"
       },
       "white50": {
         "value": "rgba(255,255,255,0.5)",
         "type": "color",
         "description": "Transparent disabled switcher circle"
+      },
+      "primary": {
+        "default": {
+          "value": "{global.color.brand.90}",
+          "type": "color",
+          "description": "Brand action color"
+        },
+        "hover": {
+          "value": "{global.color.brand.70}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{global.color.brand.90}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.neutrals.20}",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "hover": {
+          "value": "{global.color.brand.10}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.neutrals.40}",
+          "type": "color"
+        }
+      },
+      "tertiary": {
+        "disabled": {
+          "value": "{global.color.brand.40}",
+          "type": "color"
+        }
       }
     },
     "interaction": {
@@ -256,51 +301,6 @@
         },
         "disabled": {
           "value": "{global.color.neutrals.10}",
-          "type": "color"
-        }
-      }
-    },
-    "action": {
-      "base": {
-        "value": "{global.color.neutrals.white}",
-        "type": "color"
-      },
-      "neutral": {
-        "value": "{global.color.neutrals.60}",
-        "type": "color"
-      },
-      "primary": {
-        "default": {
-          "value": "{global.color.brand.90}",
-          "type": "color",
-          "description": "Brand action color"
-        },
-        "hover": {
-          "value": "{global.color.brand.70}",
-          "type": "color"
-        },
-        "active": {
-          "value": "{global.color.brand.90}",
-          "type": "color"
-        },
-        "disabled": {
-          "value": "{global.color.neutrals.20}",
-          "type": "color"
-        }
-      },
-      "secondary": {
-        "hover": {
-          "value": "{global.color.brand.10}",
-          "type": "color"
-        },
-        "disabled": {
-          "value": "{global.color.neutrals.40}",
-          "type": "color"
-        }
-      },
-      "tertiary": {
-        "disabled": {
-          "value": "{global.color.brand.40}",
           "type": "color"
         }
       }

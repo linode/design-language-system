@@ -32,7 +32,6 @@
     "components/inlineEdit/inlineEdit",
     "components/kpiBar/kpiBar",
     "components/label/label",
-    "components/table/table",
     "components/list/list",
     "components/masterSwitch/masterSwitch",
     "components/modal/modal",
@@ -43,6 +42,17 @@
     "components/popover/popover",
     "components/progressBar/progressBar",
     "components/radioButton/radioButton",
-    "components/search/search"
+    "components/search/search",
+    "components/sideNavigation/sideNavigation",
+    "components/select/select",
+    "components/sidePanel/sidePanel",
+    "components/switch/switch",
+    "components/tabs/tabs",
+    "components/table/table",
+    "components/tagInput/tag",
+    "components/tagInput/tagInput",
+    "components/textArea/textArea",
+    "components/textField/textField",
+    "components/timePicker/timePicker"
   ]
 }
