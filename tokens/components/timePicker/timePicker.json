@@ -1,6 +1,6 @@
 {
   "component": {
-    "select": {
+    "timePicker": {
       "default": {
         "background": {
           "value": "{alias.interaction.background.primary}",

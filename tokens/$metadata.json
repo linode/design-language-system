@@ -46,6 +46,7 @@
     "components/sideNavigation/sideNavigation",
     "components/select/select",
     "components/sidePanel/sidePanel",
+    "components/stepper/stepper",
     "components/switch/switch",
     "components/tabs/tabs",
     "components/table/table",
@@ -53,6 +54,10 @@
     "components/tagInput/tagInput",
     "components/textArea/textArea",
     "components/textField/textField",
-    "components/timePicker/timePicker"
+    "components/timePicker/timePicker",
+    "components/tooltip/tooltip",
+    "components/tree/tree",
+    "components/widgets/upload",
+    "components/widgets/download"
   ]
 }

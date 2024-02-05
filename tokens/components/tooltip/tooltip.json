@@ -1,0 +1,14 @@
+{
+  "component": {
+    "tooltip": {
+      "background": {
+        "value": "{alias.background.base}",
+        "type": "color"
+      },
+      "text": {
+        "value": "{alias.content.text.base}",
+        "type": "color"
+      }
+    }
+  }
+}

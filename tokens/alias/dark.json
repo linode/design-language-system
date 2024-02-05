@@ -197,6 +197,10 @@
           "value": "{global.color.brand.70}",
           "type": "color"
         },
+        "active": {
+          "value": "{global.color.brand.70}",
+          "type": "color"
+        },
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
