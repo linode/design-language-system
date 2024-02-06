@@ -51,7 +51,7 @@
           "type": "color"
         },
         "border": {
-          "value": "{alias.interaction.border.hover}",
+          "value": "{alias.interaction.border.default}",
           "type": "color"
         },
         "text": {
