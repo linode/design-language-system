@@ -14,6 +14,10 @@
           "circle": {
             "value": "{global.color.neutrals.white}",
             "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
           }
         },
         "hover": {
@@ -27,6 +31,10 @@
           },
           "circle": {
             "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
             "type": "color"
           }
         },
@@ -42,6 +50,10 @@
           "circle": {
             "value": "{global.color.neutrals.white}",
             "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
           }
         },
         "disabled": {
@@ -55,6 +67,10 @@
           },
           "circle": {
             "value": "{alias.action.white50}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.disabled}",
             "type": "color"
           }
         }
@@ -72,6 +88,10 @@
           "circle": {
             "value": "{global.color.neutrals.white}",
             "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
           }
         },
         "hover": {
@@ -85,6 +105,10 @@
           },
           "circle": {
             "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
             "type": "color"
           }
         },
@@ -100,6 +124,10 @@
           "circle": {
             "value": "{global.color.neutrals.white}",
             "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
           }
         },
         "disabled": {
@@ -113,6 +141,10 @@
           },
           "circle": {
             "value": "{alias.action.white50}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.disabled}",
             "type": "color"
           }
         }

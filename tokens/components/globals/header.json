@@ -5,6 +5,10 @@
         "value": "{alias.background.black}",
         "type": "color"
       },
+      "border": {
+        "value": "{global.color.neutrals.90}",
+        "type": "color"
+      },
       "icon": {
         "default": {
           "value": "{global.color.neutrals.30}",

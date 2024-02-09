@@ -125,7 +125,7 @@
           "type": "color"
         },
         "icon": {
-          "value": "{alias.content.icon.primary.active}",
+          "value": "{alias.content.icon.primary.default}",
           "type": "color"
         },
         "hintText": {
@@ -147,7 +147,7 @@
           "type": "color"
         },
         "icon": {
-          "value": "{alias.content.icon.primary.active}",
+          "value": "{alias.content.icon.primary.default}",
           "type": "color"
         },
         "hintText": {

@@ -1,7 +1,7 @@
 {
   "component": {
     "inlineEdit": {
-      "default": {
+      "text": {
         "value": "{alias.content.text.primary.default}",
         "type": "color"
       },
