@@ -194,11 +194,11 @@
           "type": "color"
         },
         "accent": {
-          "value": "{global.color.brand.70}",
+          "value": "{global.color.brand.60}",
           "type": "color"
         },
         "active": {
-          "value": "{global.color.brand.70}",
+          "value": "{global.color.brand.60}",
           "type": "color"
         },
         "disabled": {

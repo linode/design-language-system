@@ -81,11 +81,11 @@
           "type": "color"
         },
         "icon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{global.color.neutrals.90}",
           "type": "color"
         },
         "text": {
-          "value": "{alias.content.text.primary.default}",
+          "value": "{global.color.neutrals.100}",
           "type": "color"
         },
         "label": {

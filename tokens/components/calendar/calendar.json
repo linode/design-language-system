@@ -23,7 +23,7 @@
           "type": "color"
         },
         "background": {
-          "value": "{alias.action.primary.default}",
+          "value": "{alias.interaction.background.active}",
           "type": "color"
         }
       },
@@ -51,6 +51,10 @@
         "activePeriod": {
           "background": {
             "value": "{alias.interaction.background.accent}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.100}",
             "type": "color"
           }
         }
