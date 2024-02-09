@@ -154,6 +154,12 @@
           "value": "{alias.content.text.secondary.default}",
           "type": "color"
         }
+      },
+      "readOnly": {
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        }
       }
     }
   }

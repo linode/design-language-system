@@ -126,7 +126,7 @@
             "type": "color"
           },
           "icon": {
-            "value": "{alias.content.icon.alwaysWhite}",
+            "value": "{global.color.neutrals.white}",
             "type": "color"
           }
         },
@@ -202,7 +202,7 @@
             "type": "color"
           },
           "icon": {
-            "value": "{alias.content.icon.alwaysWhite}",
+            "value": "{global.color.neutrals.white}",
             "type": "color"
           }
         },

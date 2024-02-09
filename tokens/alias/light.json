@@ -22,14 +22,6 @@
           "value": "{global.color.ultramarine.70}",
           "type": "color"
         },
-        "alwaysWhite": {
-          "value": "{global.color.neutrals.white}",
-          "type": "color"
-        },
-        "alwaysDark": {
-          "value": "{global.color.neutrals.100}",
-          "type": "color"
-        },
         "primary": {
           "default": {
             "value": "{global.color.neutrals.100}",
@@ -86,14 +78,6 @@
         },
         "informative": {
           "value": "{global.color.ultramarine.70}",
-          "type": "color"
-        },
-        "alwaysWhite": {
-          "value": "{global.color.neutrals.white}",
-          "type": "color"
-        },
-        "alwaysDark": {
-          "value": "{global.color.neutrals.100}",
           "type": "color"
         },
         "primary": {
@@ -200,11 +184,6 @@
       "neutralsubtle": {
         "value": "{global.color.neutrals.20}",
         "type": "color"
-      },
-      "alwaysDark": {
-        "value": "{global.color.neutrals.100}",
-        "type": "color",
-        "description": "Always dark table header"
       }
     },
     "action": {

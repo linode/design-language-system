@@ -111,7 +111,7 @@
           "type": "color"
         },
         "text": {
-          "value": "{alias.content.text.primary.default}",
+          "value": "{alias.content.text.secondary.default}",
           "type": "color"
         },
         "hintText": {
@@ -128,8 +128,8 @@
           "value": "{alias.interaction.border.focus}",
           "type": "color"
         },
-        "icon": {
-          "value": "{alias.content.icon.primary.default}",
+        "text": {
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         },
         "hintText": {

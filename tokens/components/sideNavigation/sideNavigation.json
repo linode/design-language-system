@@ -90,7 +90,7 @@
         },
         "label": {
           "text": {
-            "value": "{alias.content.text.alwaysWhite}",
+            "value": "{global.color.neutrals.white}",
             "type": "color"
           },
           "background": {
