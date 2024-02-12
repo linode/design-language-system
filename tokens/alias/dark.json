@@ -186,12 +186,17 @@
           "description": "Default component background color"
         },
         "secondary": {
-          "value": "{global.color.neutrals.80}",
+          "value": "{global.color.neutrals.100}",
           "type": "color"
         },
         "tertiary": {
           "value": "{global.color.neutrals.90}",
           "type": "color"
+        },
+        "elevated": {
+          "value": "{global.color.neutrals.80}",
+          "type": "color",
+          "description": "Calendar range background, table row hover "
         },
         "accent": {
           "value": "{global.color.brand.60}",

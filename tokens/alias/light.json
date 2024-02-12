@@ -274,6 +274,11 @@
           "value": "{global.color.brand.10}",
           "type": "color"
         },
+        "elevated": {
+          "value": "{global.color.brand.10}",
+          "type": "color",
+          "description": "Calendar range background, table row hover "
+        },
         "accent": {
           "value": "{global.color.brand.30}",
           "type": "color"

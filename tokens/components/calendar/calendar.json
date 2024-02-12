@@ -29,7 +29,7 @@
       },
       "hoverItem": {
         "background": {
-          "value": "{alias.interaction.background.tertiary}",
+          "value": "{alias.interaction.background.elevated}",
           "type": "color"
         },
         "text": {

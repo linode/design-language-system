@@ -1,9 +1,9 @@
 {
   "component": {
     "table": {
-      "header": {
+      "headerFilled": {
         "background": {
-          "value": "{alias.background.base}",
+          "value": "{global.color.neutrals.100}",
           "type": "color"
         },
         "text": {
@@ -15,14 +15,42 @@
           "type": "color"
         }
       },
-      "body": {
-        "background": {
-          "value": "{alias.background.normal}",
+      "headerOutlined": {
+        "border": {
+          "value": "{alias.border.neutral}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         },
         "icon": {
           "value": "{alias.content.icon.primary.default}",
           "type": "color"
+        }
+      },
+      "row": {
+        "icon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.normal}",
+          "type": "color"
+        },
+        "background": {
+          "default": {
+            "value": "{alias.background.normal}",
+            "type": "color"
+          },
+          "zebra": {
+            "value": "{alias.background.neutral}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.interaction.background.elevated}",
+            "type": "color"
+          }
         },
         "text": {
           "default": {
