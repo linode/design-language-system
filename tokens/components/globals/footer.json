@@ -1,0 +1,20 @@
+{
+  "component": {
+    "globalFooter": {
+      "background": {
+        "value": "{alias.background.black}",
+        "type": "color"
+      },
+      "text": {
+        "default": {
+          "value": "{global.color.neutrals.30}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{global.color.neutrals.white}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

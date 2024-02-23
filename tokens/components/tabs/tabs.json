@@ -1,0 +1,46 @@
+{
+  "component": {
+    "tab": {
+      "default": {
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.interaction.border.disabled}",
+          "type": "color"
+        }
+      },
+      "hover": {
+        "text": {
+          "value": "{alias.content.text.link.hover}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.interaction.border.disabled}",
+          "type": "color"
+        }
+      },
+      "active": {
+        "text": {
+          "value": "{alias.content.text.link.default}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.interaction.border.focus}",
+          "type": "color"
+        }
+      },
+      "disabled": {
+        "text": {
+          "value": "{alias.content.text.primary.disabled}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.interaction.border.disabled}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

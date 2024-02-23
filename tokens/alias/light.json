@@ -22,14 +22,6 @@
           "value": "{global.color.ultramarine.70}",
           "type": "color"
         },
-        "inverted50": {
-          "value": "rgba(255,255,255,0.5)",
-          "type": "color"
-        },
-        "white": {
-          "value": "{global.color.neutrals.white}",
-          "type": "color"
-        },
         "primary": {
           "default": {
             "value": "{global.color.neutrals.100}",
@@ -73,7 +65,7 @@
           "type": "color"
         },
         "negative": {
-          "value": "{global.color.red.90}",
+          "value": "{global.color.red.70}",
           "type": "color"
         },
         "warning": {
@@ -86,10 +78,6 @@
         },
         "informative": {
           "value": "{global.color.ultramarine.70}",
-          "type": "color"
-        },
-        "white": {
-          "value": "{global.color.neutrals.white}",
           "type": "color"
         },
         "primary": {
@@ -154,7 +142,7 @@
       "base": {
         "value": "{global.color.neutrals.100}",
         "type": "color",
-        "description": "Dark bg for table headers, tooltip"
+        "description": "Tooltip background"
       },
       "negative": {
         "value": "{global.color.red.70}",
@@ -198,6 +186,56 @@
         "type": "color"
       }
     },
+    "action": {
+      "base": {
+        "value": "{global.color.neutrals.white}",
+        "type": "color"
+      },
+      "neutral": {
+        "value": "{global.color.neutrals.60}",
+        "type": "color"
+      },
+      "white50": {
+        "value": "rgba(255,255,255,0.5)",
+        "type": "color",
+        "description": "Transparent disabled switcher circle"
+      },
+      "primary": {
+        "default": {
+          "value": "{global.color.brand.90}",
+          "type": "color",
+          "description": "Brand action color"
+        },
+        "hover": {
+          "value": "{global.color.brand.70}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{global.color.brand.90}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.neutrals.20}",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "hover": {
+          "value": "{global.color.brand.10}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.neutrals.40}",
+          "type": "color"
+        }
+      },
+      "tertiary": {
+        "disabled": {
+          "value": "{global.color.brand.40}",
+          "type": "color"
+        }
+      }
+    },
     "interaction": {
       "border": {
         "default": {
@@ -236,8 +274,17 @@
           "value": "{global.color.brand.10}",
           "type": "color"
         },
+        "elevated": {
+          "value": "{global.color.brand.10}",
+          "type": "color",
+          "description": "Calendar range background, table row hover "
+        },
         "accent": {
           "value": "{global.color.brand.30}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{global.color.brand.90}",
           "type": "color"
         },
         "disabled": {
@@ -246,45 +293,36 @@
         }
       }
     },
-    "action": {
-      "base": {
-        "value": "{global.color.neutrals.white}",
-        "type": "color"
+    "elevation": {
+      "s": {
+        "value": {
+          "x": "0",
+          "y": "2",
+          "blur": "6",
+          "spread": "0",
+          "color": "rgba(58,59,63,0.18)",
+          "type": "innerShadow"
+        },
+        "type": "boxShadow"
       },
-      "primary": {
-        "default": {
-          "value": "{global.color.brand.90}",
-          "type": "color",
-          "description": "Brand action color"
-        },
-        "hover": {
-          "value": "{global.color.brand.70}",
-          "type": "color"
-        },
-        "active": {
-          "value": "{global.color.brand.90}",
-          "type": "color"
-        },
-        "disabled": {
-          "value": "{global.color.neutrals.20}",
-          "type": "color"
-        }
-      },
-      "secondary": {
-        "hover": {
-          "value": "{global.color.brand.10}",
-          "type": "color"
-        },
-        "disabled": {
-          "value": "{global.color.neutrals.40}",
-          "type": "color"
-        }
-      },
-      "tertiary": {
-        "disabled": {
-          "value": "{global.color.brand.40}",
-          "type": "color"
-        }
+      "l": {
+        "value": [
+          {
+            "x": "0",
+            "y": "16",
+            "blur": "32",
+            "spread": "0",
+            "color": "rgba(58,59,63,0.18)"
+          },
+          {
+            "x": "0",
+            "y": "4",
+            "blur": "8",
+            "spread": "0",
+            "color": "rgba(58,59,63,0.08)"
+          }
+        ],
+        "type": "boxShadow"
       }
     }
   }

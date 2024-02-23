@@ -1,0 +1,36 @@
+{
+  "component": {
+    "dateRangePicker": {
+      "default": {
+        "icon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        }
+      },
+      "hover": {
+        "icon": {
+          "value": "{alias.content.icon.primary.hover}",
+          "type": "color"
+        }
+      },
+      "filled": {
+        "icon": {
+          "value": "{alias.content.icon.primary.active}",
+          "type": "color"
+        }
+      },
+      "disabled": {
+        "icon": {
+          "value": "{alias.content.icon.primary.disabled}",
+          "type": "color"
+        }
+      },
+      "focus": {
+        "icon": {
+          "value": "{alias.content.icon.primary.active}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

@@ -4,8 +4,9 @@ import { Typography } from './Typography';
 import { formatValue } from './utils';
 
 interface TokenInfoProps {
-  concept?: string;
   color: string;
+  concept?: string;
+  shape?: 'circle' | 'square';
   state?: string;
   type?: string;
   value?: string;
@@ -13,12 +14,13 @@ interface TokenInfoProps {
 }
 
 export const TokenInfo = ({
-  concept,
   color,
+  concept,
+  shape = 'circle',
   state = '',
   type = 'global',
   value,
-  variant
+  variant,
 }: TokenInfoProps) => {
   const hasCategory = type !== 'global';
   const jsConcept = concept ? `${concept}.` : '';
@@ -36,7 +38,7 @@ export const TokenInfo = ({
         padding: '.5rem'
       }}
     >
-      <ColorSwatch color={color} />
+      <ColorSwatch color={color} shape={shape} elevation={variant === 'Elevation' ? color : undefined}/>
       <div>
         <Typography key={value} format={'Hex'} value={color} />
         <Typography

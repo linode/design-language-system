@@ -8,7 +8,6 @@ import type {
 
 const {
   Color,
-  Elevation,
   Font,
   Spacing
 } = TokensTheme.default.Global;
@@ -18,6 +17,7 @@ const {
   Background,
   Border,
   Content,
+  Elevation,
   Interaction,
 } = TokensTheme.default.Alias;
 

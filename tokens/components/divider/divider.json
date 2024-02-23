@@ -1,0 +1,10 @@
+{
+  "component": {
+    "divider": {
+      "border": {
+        "value": "{alias.border.normal}",
+        "type": "color"
+      }
+    }
+  }
+}

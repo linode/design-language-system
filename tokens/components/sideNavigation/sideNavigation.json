@@ -1,0 +1,104 @@
+{
+  "component": {
+    "sideNavigation": {
+      "icon": {
+        "value": "{alias.content.icon.primary.default}",
+        "type": "color"
+      },
+      "border": {
+        "value": "{alias.border.normal}",
+        "type": "color"
+      },
+      "background": {
+        "default": {
+          "value": "{alias.interaction.background.secondary}",
+          "type": "color"
+        },
+        "secondLevel": {
+          "value": "{alias.interaction.background.primary}",
+          "type": "color"
+        }
+      },
+      "defaultMenuItem": {
+        "background": {
+          "value": "{alias.interaction.background.secondary}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "label": {
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.interaction.background.secondary}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.border.normal}",
+            "type": "color"
+          }
+        }
+      },
+      "hoverMenuItem": {
+        "background": {
+          "value": "{alias.interaction.background.tertiary}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "label": {
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.interaction.background.secondary}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.border.normal}",
+            "type": "color"
+          }
+        }
+      },
+      "selectedMenuItem": {
+        "background": {
+          "value": "{alias.interaction.background.accent}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{global.color.neutrals.90}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{global.color.neutrals.100}",
+          "type": "color"
+        },
+        "label": {
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{global.color.brand.90}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}
