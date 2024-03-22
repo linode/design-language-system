@@ -13,6 +13,10 @@
         "hintText": {
           "value": "{alias.content.text.secondary.default}",
           "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
         }
       },
       "placeholder": {
@@ -30,6 +34,10 @@
         },
         "hintText": {
           "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
           "type": "color"
         }
       },
@@ -53,6 +61,10 @@
         "hintText": {
           "value": "{alias.content.text.secondary.default}",
           "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
         }
       },
       "hoverEmpty": {
@@ -71,6 +83,10 @@
         "hintText": {
           "value": "{alias.content.text.secondary.default}",
           "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
         }
       },
       "filled": {
@@ -88,6 +104,10 @@
         },
         "hintText": {
           "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
           "type": "color"
         },
         "icon": {
@@ -121,6 +141,10 @@
         "hintText": {
           "value": "{alias.content.text.secondary.default}",
           "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
         }
       },
       "error": {
@@ -138,6 +162,10 @@
         },
         "hintText": {
           "value": "{alias.content.text.negative}",
+          "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
           "type": "color"
         },
         "icon": {
@@ -166,6 +194,10 @@
         },
         "hintText": {
           "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
           "type": "color"
         },
         "icon": {
@@ -198,6 +230,10 @@
         },
         "hintText": {
           "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        },
+        "infoIcon": {
+          "value": "{alias.content.icon.primary.default}",
           "type": "color"
         },
         "icon": {
