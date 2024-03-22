@@ -298,7 +298,6 @@
       "component.table.headerOutlined.border": "80baca34134b2d7fb69bd74d8e234695acf98ab0",
       "component.table.headerOutlined.text": "8b3e21f373e189824633fad8bd922e0847480165",
       "component.table.headerOutlined.icon": "c4e46c298c67628a69dfa74088dceec97181a825",
-      "component.table.row.icon": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b",
       "component.table.row.border": "7b93ce5e98c6b235d977a2cf7da00501726792ef",
       "component.table.row.background.default": "3e8fcc16b695b6123d30db73b4bf03b5f7c52b02",
       "component.table.row.background.zebra": "40bbff44ecca4178a88e774d7c44b7ad5ac50d75",
@@ -1353,7 +1352,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.table.row.icon.default": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b"
     },
     "group": "CDS"
   },
@@ -1657,7 +1657,6 @@
       "component.table.headerOutlined.border": "80baca34134b2d7fb69bd74d8e234695acf98ab0",
       "component.table.headerOutlined.text": "8b3e21f373e189824633fad8bd922e0847480165",
       "component.table.headerOutlined.icon": "c4e46c298c67628a69dfa74088dceec97181a825",
-      "component.table.row.icon": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b",
       "component.table.row.border": "7b93ce5e98c6b235d977a2cf7da00501726792ef",
       "component.table.row.background.default": "3e8fcc16b695b6123d30db73b4bf03b5f7c52b02",
       "component.table.row.background.zebra": "40bbff44ecca4178a88e774d7c44b7ad5ac50d75",
@@ -2712,7 +2711,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.table.row.icon.default": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b"
     },
     "group": "CDS"
   },
@@ -3016,7 +3016,6 @@
       "component.table.headerOutlined.border": "80baca34134b2d7fb69bd74d8e234695acf98ab0",
       "component.table.headerOutlined.text": "8b3e21f373e189824633fad8bd922e0847480165",
       "component.table.headerOutlined.icon": "c4e46c298c67628a69dfa74088dceec97181a825",
-      "component.table.row.icon": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b",
       "component.table.row.border": "7b93ce5e98c6b235d977a2cf7da00501726792ef",
       "component.table.row.background.default": "3e8fcc16b695b6123d30db73b4bf03b5f7c52b02",
       "component.table.row.background.zebra": "40bbff44ecca4178a88e774d7c44b7ad5ac50d75",
@@ -4071,7 +4070,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.table.row.icon.default": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b"
     },
     "group": "CDS"
   },
@@ -4376,7 +4376,6 @@
       "component.table.headerOutlined.border": "80baca34134b2d7fb69bd74d8e234695acf98ab0",
       "component.table.headerOutlined.text": "8b3e21f373e189824633fad8bd922e0847480165",
       "component.table.headerOutlined.icon": "c4e46c298c67628a69dfa74088dceec97181a825",
-      "component.table.row.icon": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b",
       "component.table.row.border": "7b93ce5e98c6b235d977a2cf7da00501726792ef",
       "component.table.row.background.default": "3e8fcc16b695b6123d30db73b4bf03b5f7c52b02",
       "component.table.row.background.zebra": "40bbff44ecca4178a88e774d7c44b7ad5ac50d75",
@@ -5431,7 +5430,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.table.row.icon.default": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b"
     },
     "group": "CDS"
   }
