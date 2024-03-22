@@ -1,0 +1,34 @@
+{
+  "component": {
+    "popover": {
+      "background": {
+        "value": "{alias.background.normal}",
+        "type": "color"
+      },
+      "border": {
+        "value": "{alias.border.normal}",
+        "type": "color"
+      },
+      "icon": {
+        "value": "{alias.content.icon.primary.default}",
+        "type": "color"
+      },
+      "text": {
+        "default": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "link": {
+          "default": {
+            "value": "{alias.content.text.link.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.content.text.link.hover}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

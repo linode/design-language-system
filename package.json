@@ -1,6 +1,6 @@
 {
   "name": "@linode/design-language-system",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "type": "module",
   "module": "dist/index.js",
   "exports": {
@@ -76,5 +76,6 @@
   },
   "volta": {
     "node": "18.14.1"
-  }
+  },
+  "packageManager": "yarn@4.1.0"
 }

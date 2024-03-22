@@ -1,0 +1,36 @@
+{
+  "component": {
+    "progressBar": {
+      "text": {
+        "default": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "link": {
+          "default": {
+            "value": "{alias.content.text.link.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.content.text.link.hover}",
+            "type": "color"
+          }
+        }
+      },
+      "statusLine": {
+        "default": {
+          "value": "{alias.background.neutralsubtle}",
+          "type": "color"
+        },
+        "success": {
+          "value": "{alias.background.positive}",
+          "type": "color"
+        },
+        "error": {
+          "value": "{alias.background.negative}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

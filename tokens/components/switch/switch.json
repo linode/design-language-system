@@ -1,0 +1,154 @@
+{
+  "component": {
+    "switch": {
+      "active": {
+        "default": {
+          "background": {
+            "value": "{alias.action.primary.default}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          },
+          "circle": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background": {
+            "value": "{alias.action.primary.hover}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          },
+          "circle": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          }
+        },
+        "focus": {
+          "background": {
+            "value": "{alias.action.primary.active}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          },
+          "circle": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{alias.action.tertiary.disabled}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          },
+          "circle": {
+            "value": "{alias.action.white50}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.disabled}",
+            "type": "color"
+          }
+        }
+      },
+      "inactive": {
+        "default": {
+          "background": {
+            "value": "{alias.action.neutral}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          },
+          "circle": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background": {
+            "value": "{global.color.neutrals.50}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          },
+          "circle": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          }
+        },
+        "focus": {
+          "background": {
+            "value": "{alias.action.neutral}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          },
+          "circle": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{alias.action.primary.disabled}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          },
+          "circle": {
+            "value": "{alias.action.white50}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.disabled}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

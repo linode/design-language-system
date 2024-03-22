@@ -1,0 +1,170 @@
+{
+  "component": {
+    "badge": {
+      "bold": {
+        "ultramarine": {
+          "background": {
+            "value": "{global.color.ultramarine.80}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          }
+        },
+        "neutral": {
+          "background": {
+            "value": "{global.color.neutrals.90}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          }
+        },
+        "amber": {
+          "background": {
+            "value": "{global.color.orange.70}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.orange.100}",
+            "type": "color"
+          }
+        },
+        "red": {
+          "background": {
+            "value": "{global.color.red.80}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          }
+        },
+        "green": {
+          "background": {
+            "value": "{global.color.green.80}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          }
+        },
+        "purple": {
+          "background": {
+            "value": "{global.color.purple.80}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          }
+        },
+        "violet": {
+          "background": {
+            "value": "{global.color.violet.70}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          }
+        },
+        "pink": {
+          "background": {
+            "value": "{global.color.pink.80}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color"
+          }
+        }
+      },
+      "subtle": {
+        "ultramarine": {
+          "background": {
+            "value": "{global.color.ultramarine.30}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.ultramarine.90}",
+            "type": "color"
+          }
+        },
+        "neutral": {
+          "background": {
+            "value": "{global.color.neutrals.30}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.neutrals.100}",
+            "type": "color"
+          }
+        },
+        "amber": {
+          "background": {
+            "value": "{global.color.amber.20}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.orange.90}",
+            "type": "color"
+          }
+        },
+        "red": {
+          "background": {
+            "value": "{global.color.red.20}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.red.90}",
+            "type": "color"
+          }
+        },
+        "green": {
+          "background": {
+            "value": "{global.color.green.20}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.green.90}",
+            "type": "color"
+          }
+        },
+        "purple": {
+          "background": {
+            "value": "{global.color.purple.30}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.purple.90}",
+            "type": "color"
+          }
+        },
+        "violet": {
+          "background": {
+            "value": "{global.color.violet.30}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.violet.90}",
+            "type": "color"
+          }
+        },
+        "pink": {
+          "background": {
+            "value": "{global.color.pink.20}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{global.color.pink.90}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

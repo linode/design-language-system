@@ -1,0 +1,246 @@
+{
+  "component": {
+    "splitMenuButton": {
+      "primary": {
+        "default": {
+          "background": {
+            "value": "{alias.action.primary.default}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "hoverLeft": {
+          "backgroundLeft": {
+            "value": "{alias.action.primary.hover}",
+            "type": "color"
+          },
+          "backgroundRight": {
+            "value": "{alias.action.primary.default}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "hoverRight": {
+          "backgroundLeft": {
+            "value": "{alias.action.primary.default}",
+            "type": "color"
+          },
+          "backgroundRight": {
+            "value": "{alias.action.primary.hover}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "active": {
+          "background": {
+            "value": "{alias.action.primary.active}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{alias.action.primary.disabled}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.disabled}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          }
+        },
+        "loading": {
+          "backgroundLeft": {
+            "value": "{alias.action.primary.active}",
+            "type": "color"
+          },
+          "backgroundRight": {
+            "value": "{alias.action.primary.default}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        }
+      },
+      "secondary": {
+        "default": {
+          "background": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.primary.default}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.link.default}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.active}",
+            "type": "color"
+          }
+        },
+        "hoverLeft": {
+          "backgroundLeft": {
+            "value": "{alias.action.secondary.hover}",
+            "type": "color"
+          },
+          "backgroundRight": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "borderLeft": {
+            "value": "{alias.action.primary.hover}",
+            "type": "color"
+          },
+          "borderRight": {
+            "value": "{alias.action.primary.default}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.link.default}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.active}",
+            "type": "color"
+          }
+        },
+        "hoverRight": {
+          "backgroundLeft": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "backgroundRight": {
+            "value": "{alias.action.secondary.hover}",
+            "type": "color"
+          },
+          "borderLeft": {
+            "value": "{alias.action.primary.default}",
+            "type": "color"
+          },
+          "borderRight": {
+            "value": "{alias.action.primary.hover}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.link.default}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.active}",
+            "type": "color"
+          }
+        },
+        "active": {
+          "background": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.primary.active}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.link.default}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.active}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.secondary.disabled}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.link.disabled}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          }
+        },
+        "loading": {
+          "background": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.primary.active}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.active}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

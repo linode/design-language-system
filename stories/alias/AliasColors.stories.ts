@@ -1,9 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Action,
+import {
+  Action,
   Background,
   Border,
   Content,
-  Interaction, } from '../../dist/index.js';
+  Interaction,
+  Elevation
+} from '../../dist/index.js';
 import { AliasColors } from './AliasColors';
 
 const meta = {
@@ -53,5 +56,12 @@ export const Interactions: Story = {
   args: {
     concept: Interaction,
     conceptHeading: 'Interaction'
+  },
+};
+
+export const Elevations: Story = {
+  args: {
+    concept: Elevation,
+    conceptHeading: 'Elevation'
   },
 };

@@ -4,6 +4,7 @@ import { Border, Font } from '../dist/index.js';
 
 interface SectionProps {
   concept?: string;
+  shape?: 'circle' | 'square';
   stacked?: boolean;
   state?: string;
   title: string;
@@ -25,7 +26,13 @@ export const Section = ({
   const isColorValueString = typeof value === 'string';
 
   const renderValue = (
-    <TokenInfo type={type} color={value} variant={concept} value={variant} />
+    <TokenInfo
+      color={value}
+      shape={concept === 'Elevation' ? 'square' : 'circle'}
+      type={type}
+      value={variant}
+      variant={concept}
+    />
   );
 
   const renderInfo = isColorValueString
@@ -36,6 +43,7 @@ export const Section = ({
             <Section
               concept={concept}
               key={key}
+              shape={concept === 'Elevation' ? 'square' : 'circle'}
               stacked
               state={key}
               title={key}
@@ -50,6 +58,7 @@ export const Section = ({
             color={value as string}
             concept={concept}
             key={state}
+            shape={concept === 'Elevation' ? 'square' : 'circle'}
             state={state}
             type={type}
             value={key}
