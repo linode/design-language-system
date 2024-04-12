@@ -22,6 +22,10 @@
           "hintText": {
             "value": "{alias.content.text.secondary.default}",
             "type": "color"
+          },
+          "infoIcon": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
           }
         },
         "hover": {
@@ -43,6 +47,10 @@
           },
           "hintText": {
             "value": "{alias.content.text.secondary.default}",
+            "type": "color"
+          },
+          "infoIcon": {
+            "value": "{alias.content.icon.primary.default}",
             "type": "color"
           }
         },
@@ -66,6 +74,10 @@
           "hintText": {
             "value": "{alias.content.text.secondary.default}",
             "type": "color"
+          },
+          "infoIcon": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
           }
         },
         "disabled": {
@@ -88,6 +100,10 @@
           "hintText": {
             "value": "{alias.content.text.secondary.default}",
             "type": "color"
+          },
+          "infoIcon": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
           }
         },
         "readOnly": {
@@ -101,6 +117,10 @@
           },
           "hintText": {
             "value": "{alias.content.text.secondary.default}",
+            "type": "color"
+          },
+          "infoIcon": {
+            "value": "{alias.content.icon.primary.default}",
             "type": "color"
           }
         },
@@ -124,6 +144,10 @@
           "hintText": {
             "value": "{alias.content.text.negative}",
             "type": "color"
+          },
+          "infoIcon": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
           }
         },
         "focus": {
@@ -145,6 +169,10 @@
           },
           "hintText": {
             "value": "{alias.content.text.secondary.default}",
+            "type": "color"
+          },
+          "infoIcon": {
+            "value": "{alias.content.icon.primary.default}",
             "type": "color"
           }
         }

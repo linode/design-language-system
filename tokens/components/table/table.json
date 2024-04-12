@@ -30,13 +30,23 @@
         }
       },
       "row": {
-        "icon": {
-          "value": "{alias.content.icon.primary.default}",
-          "type": "color"
-        },
         "border": {
           "value": "{alias.border.normal}",
           "type": "color"
+        },
+        "icon": {
+          "default": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.content.icon.primary.hover}",
+            "type": "color"
+          }
         },
         "background": {
           "default": {
