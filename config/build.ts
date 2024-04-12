@@ -53,7 +53,7 @@ export function getStyleDictionaryConfig(
           },
           {
             destination: 'tokens.d.ts',
-            format: 'typescript/es6-declarations'
+            format: 'javascript/es6'
           },
           {
             destination: 'nested.es6.js',
@@ -252,44 +252,30 @@ export function toPascalCase(str: string): string {
 
 // Generate TypeScript type declarations for a given token
 export function generateTypeDeclaration(value: any): any {
-  // If the value is an array, generate an array type declaration
   if (Array.isArray(value)) {
     const arrayType = generateTypeDeclaration(value[0]);
-    return {
-      type: `Array<${arrayType}>`
-    };
+    return `Array<${arrayType}>`;
   } else if (typeof value === 'object' && value !== null) {
-    // If the value is an object, generate an object type declaration
     const properties = Object.entries(value)
       .filter(([key]) => !key.endsWith('Type'))
       .reduce((obj, [key, propertyValue]) => {
         obj[key] = generateTypeDeclaration(propertyValue);
         return obj;
       }, {});
-    return formatProperties(properties);
+    return `{ ${formatProperties(properties)} }`;
   } else {
-    // Otherwise, return the type of the value
-    return typeof value;
+    // Return the actual value as a string literal for TypeScript
+    return `"${value}"`;
   }
 }
 
 function formatProperties(properties: Record<string, any>): string {
-  const formattedProperties = Object.entries(properties).reduce(
-    (obj, [key, value]) => {
-      obj[key] = formatValue(value);
-      return obj;
-    },
-    {}
-  );
-  const jsonString = JSON.stringify(formattedProperties, null, 2)
-    // Remove quotes from keys and values
-    .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
-    .replace(/"([^"]+)"/g, (match, value) => value)
-    // Remove newlines,
-    .replace(/\\n/g, '');
-
-  return jsonString
+  // Proper formatting of properties within the object type
+  return Object.entries(properties)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join(', ');
 }
+
 
 function formatValue(value: any): any {
   if (typeof value === 'string') {
@@ -297,7 +283,8 @@ function formatValue(value: any): any {
   } else if (typeof value === 'object') {
     return formatProperties(value);
   } else {
-    return String(value);
+    // Convert numerical and other types into string literals as well
+    return `"${value}"`;
   }
 }
 
