@@ -38,10 +38,10 @@
   },
   "homepage": "https://github.com/linode/design-language-system#readme",
   "dependencies": {
-    "@tokens-studio/sd-transforms": "^0.12.2",
+    "@tokens-studio/sd-transforms": "^0.15.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "style-dictionary": "^3.7.2"
+    "style-dictionary": "4.0.0-prerelease.25"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.6",

@@ -1,8 +1,8 @@
-import StyleDictionaryPackage, { TransformedTokens } from 'style-dictionary';
+import StyleDictionary, { TransformedTokens } from 'style-dictionary';
 import { promises } from 'fs';
 import type { PlatformTypes, StyleDictionaryOptions } from './types';
 import prettier from 'prettier';
-import { registerTransforms } from '@tokens-studio/sd-transforms';
+import { registerTransforms, permutateThemes } from '@tokens-studio/sd-transforms';
 
 const readFile = promises.readFile;
 const buffer = await readFile('tokens/$themes.json');
@@ -15,7 +15,7 @@ const formattedDate = date.toUTCString();
 
 // https://github.com/tokens-studio/sd-transforms
 // Register token studio transforms on style dictionary
-await registerTransforms(StyleDictionaryPackage, {});
+await registerTransforms(StyleDictionary, {});
 
 export const PLATFORMS: PlatformTypes[] = [
   {
@@ -25,7 +25,7 @@ export const PLATFORMS: PlatformTypes[] = [
 
 export function getStyleDictionaryConfig(
   options: StyleDictionaryOptions
-): StyleDictionaryPackage.Config {
+) {
   const { theme, platform } = options;
   let buildPath;
 
@@ -42,7 +42,8 @@ export function getStyleDictionaryConfig(
       .map(([tokenset]) => `tokens/${tokenset}.json`),
     platforms: {
       'web/js': {
-        transformGroup: 'tokens-js',
+        // transformGroup: 'tokens-js',
+        transforms: ['name/pascal', 'size/px', 'color/hex', 'ts/shadow/css/shorthand', 'ts/typography/css/shorthand'],
         buildPath,
         prefix: `${PREFIX}-`,
         files: [
@@ -68,7 +69,8 @@ export function getStyleDictionaryConfig(
         ]
       },
       'web/scss': {
-        transformGroup: 'tokens-css',
+        // transformGroup: 'tokens-css',
+        transforms: ['name/kebab', 'time/seconds', 'size/px', 'color/css', 'ts/shadow/css/shorthand', 'ts/typography/css/shorthand'],
         buildPath,
         prefix: `${PREFIX}-`,
         files: [
@@ -83,7 +85,8 @@ export function getStyleDictionaryConfig(
         ]
       },
       'web/css': {
-        transformGroup: 'tokens-css',
+        // transformGroup: 'tokens-css',
+        transforms: ['name/kebab', 'time/seconds', 'size/px', 'color/css', 'ts/shadow/css/shorthand', 'ts/typography/css/shorthand'],
         buildPath,
         prefix: `${PREFIX}-`,
         files: [
@@ -112,17 +115,17 @@ export function getStyleDictionaryConfig(
  * @see https://amzn.github.io/style-dictionary/#/api?id=registerformat
  */
 
-StyleDictionaryPackage.registerFormat({
+StyleDictionary.registerFormat({
   name: 'json/flat',
   formatter: function (formatterArguments) {
-    return JSON.stringify(formatterArguments.dictionary.allProperties, null, 2);
+    return JSON.stringify(formatterArguments.dictionary.allTokens, null, 2);
   }
 });
 
-StyleDictionaryPackage.registerFormat({
+StyleDictionary.registerFormat({
   name: 'javascript/nested',
   formatter(formatterArguments) {
-    const tokens = formatterArguments.dictionary.properties;
+    const tokens = formatterArguments.dictionary.tokens;
 
     // Transform the tokens by removing metadata, flattening, and capitalizing keys
     const transformedTokens: TransformedTokens =
@@ -146,10 +149,10 @@ export default ${transformedOutput};
   }
 });
 
-StyleDictionaryPackage.registerFormat({
+StyleDictionary.registerFormat({
   name: 'typescript/theme-types',
   formatter(formatterArguments) {
-    const tokens = formatterArguments.dictionary.properties;
+    const tokens = formatterArguments.dictionary.tokens;
 
     const transformedTokens: TransformedTokens = convertTokensToFlatObject(
       tokens,
@@ -194,53 +197,39 @@ ${prettier.format(`export type { ${exportsOutput} }`, { parser: 'typescript' })}
  * @see https://amzn.github.io/style-dictionary/#/transform_groups?id=pre-defined-transform-groups
  */
 
-StyleDictionaryPackage.registerTransformGroup({
-  name: 'tokens-js',
-  transforms: ['name/cti/pascal', 'size/px', 'color/hex', 'ts/shadow/css/shorthand']
-});
+// StyleDictionary.registerTransformGroup({
+//   name: 'tokens-js',
+//   transforms: ['name/cti/pascal', 'size/px', 'color/hex', 'ts/shadow/css/shorthand']
+// });
 
-StyleDictionaryPackage.registerTransformGroup({
-  name: 'tokens-json',
-  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css', 'ts/shadow/css/shorthand']
-});
+// StyleDictionary.registerTransformGroup({
+//   name: 'tokens-json',
+//   transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css', 'ts/shadow/css/shorthand']
+// });
 
-StyleDictionaryPackage.registerTransformGroup({
-  name: 'tokens-css',
-  transforms: ['name/cti/kebab', 'time/seconds', 'size/px', 'color/css', 'ts/shadow/css/shorthand']
-});
+// StyleDictionary.registerTransformGroup({
+//   name: 'tokens-css',
+//   transforms: ['name/cti/kebab', 'time/seconds', 'size/px', 'color/css', 'ts/shadow/css/shorthand']
+// });
 
 console.log('Build started...');
 
 PLATFORMS.map(function (platform) {
-  themes.map(function (theme, idx, themes) {
-    const currentIndex = idx + 1;
-    const totalThemes = themes.length;
-    const themeName = theme.name ? theme.name : 'default';
-
-    console.log('\n==============================================');
-    console.log(
-      `\nProcessing... ${currentIndex} of ${totalThemes} \n - theme: ${themeName}\n - Platform: ${platform.name}`
-    );
-
-    const StyleDictionary = StyleDictionaryPackage.extend(
+  themes.map(async function (theme) {
+    const sd = new StyleDictionary(
       getStyleDictionaryConfig({
         theme,
         platform
       })
     );
 
-    if (platform.name === 'web') {
-      StyleDictionary.buildPlatform('web/js');
-      StyleDictionary.buildPlatform('web/scss');
-      StyleDictionary.buildPlatform('web/css');
-    }
-
-    console.log('\nEnd processing');
+    await sd.cleanAllPlatforms();
+    await sd.buildAllPlatforms();
   });
 });
 
-console.log('\n==============================================');
-console.log('\nBuild completed!');
+// console.log('\n==============================================');
+// console.log('\nBuild completed!');
 
 export function toPascalCase(str: string): string {
   const words = str.split(/[-_\s]/).filter(Boolean);
