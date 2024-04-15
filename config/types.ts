@@ -6,5 +6,5 @@ export interface PlatformTypes {
 
 export interface StyleDictionaryOptions {
   theme: any;
-  platform: PlatformTypes;
+  // platform: PlatformTypes;
 }
