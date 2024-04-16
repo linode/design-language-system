@@ -1,128 +1,38 @@
-import StyleDictionaryPackage, { TransformedTokens } from 'style-dictionary';
+import StyleDictionary, { TransformedTokens } from 'style-dictionary';
 import { promises } from 'fs';
 import type { PlatformTypes, StyleDictionaryOptions } from './types';
 import prettier from 'prettier';
-import { registerTransforms } from '@tokens-studio/sd-transforms';
+import { registerTransforms, permutateThemes } from '@tokens-studio/sd-transforms';
 
 const readFile = promises.readFile;
 const buffer = await readFile('tokens/$themes.json');
 const content = buffer.toString('utf-8');
-const themes = JSON.parse(content);
+const $themes = JSON.parse(content);
 const PREFIX = 'token';
-
 const date = new Date();
 const formattedDate = date.toUTCString();
 
 // https://github.com/tokens-studio/sd-transforms
-// Register token studio transforms on style dictionary
-await registerTransforms(StyleDictionaryPackage, {});
-
-export const PLATFORMS: PlatformTypes[] = [
-  {
-    name: 'web'
-  }
-];
-
-export function getStyleDictionaryConfig(
-  options: StyleDictionaryOptions
-): StyleDictionaryPackage.Config {
-  const { theme, platform } = options;
-  let buildPath;
-
-  if (theme.name === 'light' || theme.name === '') {
-    buildPath = 'dist/';
-  } else {
-    buildPath = `dist/${theme.name}/`;
-  }
-
-  return {
-    // If we want to show collisions, we can change `include` to `source`.
-    include: Object.entries(theme.selectedTokenSets)
-      .filter(([, val]) => val !== 'disabled')
-      .map(([tokenset]) => `tokens/${tokenset}.json`),
-    platforms: {
-      'web/js': {
-        transformGroup: 'tokens-js',
-        buildPath,
-        prefix: `${PREFIX}-`,
-        files: [
-          {
-            destination: 'tokens.es6.js',
-            filter: {},
-            format: 'javascript/es6'
-          },
-          {
-            destination: 'tokens.d.ts',
-            format: 'typescript/es6-declarations'
-          },
-          {
-            destination: 'nested.es6.js',
-            filter: {},
-            format: 'javascript/nested'
-          },
-          {
-            destination: 'nested.d.ts',
-            filter: {},
-            format: 'typescript/theme-types'
-          }
-        ]
-      },
-      'web/scss': {
-        transformGroup: 'tokens-css',
-        buildPath,
-        prefix: `${PREFIX}-`,
-        files: [
-          {
-            destination: 'tokens.scss',
-            format: 'scss/variables',
-            filter: {},
-            options: {
-              outputReferences: false
-            }
-          }
-        ]
-      },
-      'web/css': {
-        transformGroup: 'tokens-css',
-        buildPath,
-        prefix: `${PREFIX}-`,
-        files: [
-          {
-            destination: 'tokens.css',
-            format: 'css/variables',
-            filter: {},
-            options: {
-              outputReferences: false
-            }
-          }
-        ]
-      }
-    }
-  };
-}
+registerTransforms(StyleDictionary);
 
 /**
- * REGISTER FILTERS
- * @see https://amzn.github.io/style-dictionary/#/api?id=registerfilter
- */
-
-
-/**
+ * ================================
  * REGISTER FORMATS
  * @see https://amzn.github.io/style-dictionary/#/api?id=registerformat
+ * ================================
  */
 
-StyleDictionaryPackage.registerFormat({
+StyleDictionary.registerFormat({
   name: 'json/flat',
   formatter: function (formatterArguments) {
-    return JSON.stringify(formatterArguments.dictionary.allProperties, null, 2);
+    return JSON.stringify(formatterArguments.dictionary.allTokens, null, 2);
   }
 });
 
-StyleDictionaryPackage.registerFormat({
+StyleDictionary.registerFormat({
   name: 'javascript/nested',
   formatter(formatterArguments) {
-    const tokens = formatterArguments.dictionary.properties;
+    const tokens = formatterArguments.dictionary.tokens;
 
     // Transform the tokens by removing metadata, flattening, and capitalizing keys
     const transformedTokens: TransformedTokens =
@@ -146,10 +56,10 @@ export default ${transformedOutput};
   }
 });
 
-StyleDictionaryPackage.registerFormat({
+StyleDictionary.registerFormat({
   name: 'typescript/theme-types',
   formatter(formatterArguments) {
-    const tokens = formatterArguments.dictionary.properties;
+    const tokens = formatterArguments.dictionary.tokens;
 
     const transformedTokens: TransformedTokens = convertTokensToFlatObject(
       tokens,
@@ -184,63 +94,115 @@ ${prettier.format(`export type { ${exportsOutput} }`, { parser: 'typescript' })}
 });
 
 /**
- * REGISTER TRANSFORMS
- * @see https://amzn.github.io/style-dictionary/#/api?id=registertransform
- * @todo Combine prefix transforms - we Didn't want a prefix on alias tokens, if this changes, we can add `prefix` to each 'platform' config
+ * ================================
+ * CONFIGURATIONS
+ * ================================
  */
+
+export function getStyleDictionaryConfig(
+  options: StyleDictionaryOptions
+) {
+  const { theme } = options;
+  let buildPath;
+
+  if (theme.name === 'light' || theme.name === '') {
+    buildPath = 'dist/';
+  } else {
+    buildPath = `dist/${theme.name}/`;
+  }
+
+  return {
+    // If we want to show collisions, we can change `include` to `source`.
+    include: theme.selectedTokenSets.map(tokenset => `tokens/${tokenset}.json`),
+    platforms: {
+      js: {
+        transforms: ['name/pascal', 'size/px', 'color/hex', 'ts/shadow/css/shorthand', 'ts/typography/css/shorthand'],
+        buildPath,
+        prefix: `${PREFIX}-`,
+        files: [
+          {
+            destination: 'tokens.es6.js',
+            format: 'javascript/es6'
+          },
+          {
+            destination: 'tokens.d.ts',
+            format: 'javascript/es6'
+          },
+          {
+            destination: 'nested.es6.js',
+            format: 'javascript/nested'
+          },
+          {
+            destination: 'nested.d.ts',
+            format: 'typescript/theme-types'
+          }
+        ]
+      },
+      scss: {
+        transforms: ['name/kebab', 'time/seconds', 'size/px', 'color/css', 'ts/shadow/css/shorthand', 'ts/typography/css/shorthand'],
+        buildPath,
+        prefix: `${PREFIX}-`,
+        files: [
+          {
+            destination: 'tokens.scss',
+            format: 'scss/variables',
+          }
+        ]
+      },
+      css: {
+        transforms: ['name/kebab', 'time/seconds', 'size/px', 'color/css', 'ts/shadow/css/shorthand', 'ts/typography/css/shorthand'],
+        buildPath,
+        prefix: `${PREFIX}-`,
+        files: [
+          {
+            destination: 'tokens.css',
+            format: 'css/variables',
+          }
+        ]
+      }
+    }
+  };
+}
 
 /**
- * TRANSFORM GROUPS
- * @see https://amzn.github.io/style-dictionary/#/transform_groups?id=pre-defined-transform-groups
+ * ================================
+ * BUILD TOKENS
+ * ================================
  */
 
-StyleDictionaryPackage.registerTransformGroup({
-  name: 'tokens-js',
-  transforms: ['name/cti/pascal', 'size/px', 'color/hex', 'ts/shadow/css/shorthand']
-});
-
-StyleDictionaryPackage.registerTransformGroup({
-  name: 'tokens-json',
-  transforms: ['attribute/cti', 'name/cti/kebab', 'size/px', 'color/css', 'ts/shadow/css/shorthand']
-});
-
-StyleDictionaryPackage.registerTransformGroup({
-  name: 'tokens-css',
-  transforms: ['name/cti/kebab', 'time/seconds', 'size/px', 'color/css', 'ts/shadow/css/shorthand']
-});
-
-console.log('Build started...');
-
-PLATFORMS.map(function (platform) {
-  themes.map(function (theme, idx, themes) {
-    const currentIndex = idx + 1;
-    const totalThemes = themes.length;
-    const themeName = theme.name ? theme.name : 'default';
-
-    console.log('\n==============================================');
-    console.log(
-      `\nProcessing... ${currentIndex} of ${totalThemes} \n - theme: ${themeName}\n - Platform: ${platform.name}`
-    );
-
-    const StyleDictionary = StyleDictionaryPackage.extend(
-      getStyleDictionaryConfig({
-        theme,
-        platform
+async function buildTokens() {
+  const themes = permutateThemes($themes, { separator: '_' });
+  const themesKeys = Object.entries(themes);
+  const configs = themesKeys.map(([name, selectedTokenSets]) => {
+      return getStyleDictionaryConfig({
+        theme: {
+          name,
+          selectedTokenSets
+        }
       })
-    );
-
-    if (platform.name === 'web') {
-      StyleDictionary.buildPlatform('web/js');
-      StyleDictionary.buildPlatform('web/scss');
-      StyleDictionary.buildPlatform('web/css');
-    }
-
-    console.log('\nEnd processing');
   });
-});
 
-console.log('\n==============================================');
-console.log('\nBuild completed!');
+  for (let i=0; i < configs.length; i++) {
+    console.log('\n==============================================');
+    console.log(`Theme: ${Object.keys(themes)[i]}`);
+
+    const cfg = configs[i];
+    const sd = new StyleDictionary(cfg);
+    await sd.buildPlatform('js');
+    await sd.buildPlatform('scss');
+    await sd.buildPlatform('css');
+  }
+
+  console.log('\n==============================================');
+  console.log('\nBuild completed!');
+  console.log('\n==============================================');
+}
+
+/**
+ * ================================
+ * UTILITIES
+ * ================================
+ */
 
 export function toPascalCase(str: string): string {
   const words = str.split(/[-_\s]/).filter(Boolean);
@@ -252,52 +214,39 @@ export function toPascalCase(str: string): string {
 
 // Generate TypeScript type declarations for a given token
 export function generateTypeDeclaration(value: any): any {
-  // If the value is an array, generate an array type declaration
   if (Array.isArray(value)) {
     const arrayType = generateTypeDeclaration(value[0]);
-    return {
-      type: `Array<${arrayType}>`
-    };
+    return `Array<${arrayType}>`;
   } else if (typeof value === 'object' && value !== null) {
-    // If the value is an object, generate an object type declaration
     const properties = Object.entries(value)
       .filter(([key]) => !key.endsWith('Type'))
       .reduce((obj, [key, propertyValue]) => {
         obj[key] = generateTypeDeclaration(propertyValue);
         return obj;
       }, {});
-    return formatProperties(properties);
+    return `{ ${formatProperties(properties)} }`;
   } else {
-    // Otherwise, return the type of the value
-    return typeof value;
+    // Return the actual value as a string literal for TypeScript
+    return `"${value}"`;
   }
 }
 
-function formatProperties(properties: Record<string, any>): string {
-  const formattedProperties = Object.entries(properties).reduce(
-    (obj, [key, value]) => {
-      obj[key] = formatValue(value);
-      return obj;
-    },
-    {}
-  );
-  const jsonString = JSON.stringify(formattedProperties, null, 2)
-    // Remove quotes from keys and values
-    .replace(/"([^"]+)":/g, (match, key) => `${key}:`)
-    .replace(/"([^"]+)"/g, (match, value) => value)
-    // Remove newlines,
-    .replace(/\\n/g, '');
-
-  return jsonString
+export function formatProperties(properties: Record<string, any>): string {
+  // Proper formatting of properties within the object type
+  return Object.entries(properties)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join(', ');
 }
 
-function formatValue(value: any): any {
+
+export function formatValue(value: any): any {
   if (typeof value === 'string') {
     return value;
   } else if (typeof value === 'object') {
     return formatProperties(value);
   } else {
-    return String(value);
+    // Convert numerical and other types into string literals as well
+    return `"${value}"`;
   }
 }
 
@@ -331,3 +280,5 @@ export function convertTokensToFlatObject(obj?: any, options?: any) {
   }
   return transformedObj;
 }
+
+buildTokens();
