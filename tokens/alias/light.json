@@ -324,6 +324,243 @@
         ],
         "type": "boxShadow"
       }
+    },
+    "font": {
+      "heading": {
+        "xxxl": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.xxxl}",
+            "lineHeight": "{global.font.line-height.xxxl}"
+          },
+          "type": "typography",
+          "description": "Promo banners, KPIs"
+        },
+        "xxl": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.extrabold}",
+            "fontSize": "{global.font.font-size.xxl}",
+            "lineHeight": "{global.font.line-height.xl}"
+          },
+          "type": "typography",
+          "description": "Main titles - h1"
+        },
+        "xl": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.xl}",
+            "lineHeight": "{global.font.line-height.l}"
+          },
+          "type": "typography",
+          "description": "Second level title - h2"
+        },
+        "l": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.l}",
+            "lineHeight": "{global.font.line-height.m}"
+          },
+          "type": "typography",
+          "description": "Third level title - h3"
+        },
+        "m": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.m}",
+            "lineHeight": "{global.font.line-height.s}"
+          },
+          "type": "typography",
+          "description": "Drawer, modal title - h4"
+        },
+        "s": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.s}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Advanced search, bars, master switch titles - h5"
+        },
+        "xs": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xxs}"
+          },
+          "type": "typography",
+          "description": "Low level headings - h6"
+        },
+        "overline": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.extrabold}",
+            "fontSize": "{global.font.font-size.xxxs}",
+            "lineHeight": "{global.font.line-height.xxxs}",
+            "textCase": "{global.font.textcase.uppercase}",
+            "letterSpacing": "3%"
+          },
+          "type": "typography",
+          "description": "Custom labels for content blocks"
+        }
+      },
+      "body": {
+        "regular": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.regular}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Main body text"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.semibold}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Light emphasis"
+        },
+        "bold": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Emphasis"
+        },
+        "extrabold": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.extrabold}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Max emphasis"
+        },
+        "list": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.regular}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}",
+            "paragraphSpacing": "8"
+          },
+          "type": "typography",
+          "description": "For list items"
+        }
+      },
+      "label": {
+        "semibold": {
+          "l": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.semibold}",
+              "fontSize": "{global.font.font-size.s}",
+              "lineHeight": "{global.font.line-height.xs}"
+            },
+            "type": "typography",
+            "description": "Large tabs"
+          },
+          "s": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.semibold}",
+              "fontSize": "{global.font.font-size.xs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Large buttons, list, segmented buttons, side navigation, small tabls"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.semibold}",
+              "fontSize": "{global.font.font-size.xxxs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Small buttons, tags, warning message under field"
+          }
+        },
+        "bold": {
+          "l": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.bold}",
+              "fontSize": "{global.font.font-size.s}",
+              "lineHeight": "{global.font.line-height.xs}"
+            },
+            "type": "typography",
+            "description": "Card, content panel, vertical stepper"
+          },
+          "s": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.bold}",
+              "fontSize": "{global.font.font-size.xs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Field labels, table header, date&time pickers"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.bold}",
+              "fontSize": "{global.font.font-size.xxxs}",
+              "lineHeight": "14px"
+            },
+            "type": "typography",
+            "description": "Badge number"
+          }
+        },
+        "regular": {
+          "s": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.regular}",
+              "fontSize": "{global.font.font-size.xs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Field entered text, dropdown item, table cell, pagination"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.regular}",
+              "fontSize": "{global.font.font-size.xxxs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Optional text, small dropdown item"
+          }
+        }
+      },
+      "code": {
+        "value": {
+          "fontFamily": "{global.font.font-family.code}",
+          "fontWeight": "{global.font.font-weight.regular}",
+          "fontSize": "{global.font.font-size.xxs}",
+          "lineHeight": "{global.font.line-height.xs}"
+        },
+        "type": "typography",
+        "description": "Code samples"
+      }
     }
   }
 }
