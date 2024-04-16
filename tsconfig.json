@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "allowJs": true,
     "checkJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "Bundler"
   },
   "exclude": ["config", "dist", "node_modules"]
 }
