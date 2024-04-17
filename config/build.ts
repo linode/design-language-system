@@ -129,11 +129,11 @@ export function getStyleDictionaryConfig(
             format: 'javascript/es6'
           },
           {
-            destination: 'nested.es6.js',
+            destination: 'tokens-nested.es6.js',
             format: 'javascript/nested'
           },
           {
-            destination: 'nested.d.ts',
+            destination: 'tokens-nested.d.ts',
             format: 'typescript/theme-types'
           }
         ]

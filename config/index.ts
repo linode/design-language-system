@@ -1,18 +1,18 @@
 import * as Tokens from '../dist/tokens.es6.js';
-import * as TokensTheme from '../dist/nested.es6.js';
+import * as TokensNested from '../dist/tokens-nested.es6.js';
 import type {
   AliasTypes,
   ComponentTypes,
   GlobalTypes
-} from '../dist/nested.d.ts';
+} from '../dist/tokens-nested.d.ts';
 
-const allGlobals = TokensTheme.default.Global as GlobalTypes;
+const allGlobals = TokensNested.default.Global as GlobalTypes;
 const Globals = { ...allGlobals };
 
-const allAliases = TokensTheme.default.Alias as AliasTypes;
+const allAliases = TokensNested.default.Alias as AliasTypes;
 const Aliases = { ...allAliases };
 
-const allComponents = TokensTheme.default.Component as ComponentTypes;
+const allComponents = TokensNested.default.Component as ComponentTypes;
 const Components = { ...allComponents };
 
 export {
