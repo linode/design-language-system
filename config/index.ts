@@ -6,47 +6,20 @@ import type {
   GlobalTypes
 } from '../dist/nested.d.ts';
 
-const {
-  Color,
-  Font,
-  Spacing
-} = TokensTheme.default.Global;
+const allGlobals = TokensTheme.default.Global as GlobalTypes;
+const Globals = { ...allGlobals };
 
-const {
-  Action,
-  Background,
-  Border,
-  Content,
-  Elevation,
-  Interaction,
-} = TokensTheme.default.Alias;
+const allAliases = TokensTheme.default.Alias as AliasTypes;
+const Aliases = { ...allAliases };
 
-const {
-  Appbar,
-  Button,
-  Container,
-  Table,
-} = TokensTheme.default.Component;
+const allComponents = TokensTheme.default.Component as ComponentTypes;
+const Components = { ...allComponents };
 
 export {
-  Action,
-  Appbar,
-  Background,
-  Border,
-  Button,
-  Color,
-  Container,
-  Content,
-  Elevation,
-  Font,
-  Interaction,
-  Spacing,
-  Table,
+  Globals,
+  Aliases,
+  Components,
   Tokens
 };
 
-export type {
-  AliasTypes,
-  ComponentTypes,
-  GlobalTypes
-};
+export type { AliasTypes, ComponentTypes, GlobalTypes };
