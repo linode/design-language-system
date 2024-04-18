@@ -108,8 +108,10 @@ export function getStyleDictionaryConfig(
   if (theme.name === 'light' || theme.name === '') {
     buildPath = 'dist/';
   } else {
-    buildPath = `dist/${theme.name}/`;
+    buildPath = `dist/themes/${theme.name}/`;
   }
+
+  console.log({tokens: theme.selectedTokenSets})
 
   return {
     // If we want to show collisions, we can change `include` to `source`.
