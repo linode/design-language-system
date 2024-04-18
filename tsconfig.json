@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
     "jsx": "react",
-    "module": "esnext",
-    "target": "esnext",
     "esModuleInterop": true,
     "allowJs": true,
     "checkJs": true,
-    "moduleResolution": "Bundler"
+    "moduleResolution": "bundler",
   },
-  "exclude": ["config", "dist", "node_modules"]
+  "include": [
+    "config/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

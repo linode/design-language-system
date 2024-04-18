@@ -3,38 +3,10 @@
   "version": "2.1.1",
   "type": "module",
   "module": "dist/index.js",
-  "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*/index.js",
-    "./themes/*": "./dist/themes/*/index.js",
-    "./themes/*/components/": "./dist/themes/*/components/index.js",
-    "./themes/*/globals/": "./dist/themes/*/globals/index.js",
-    "./themes/*/aliases/": "./dist/themes/*/aliases/index.js"
-  },
-  "typesVersions": {
-    "*": {
-      "*": ["./dist/index.d.ts"],
-      "./components/*": ["./dist/components/*"],
-      "./globals/*": ["./dist/globals/*"],
-      "./aliases/*": ["./dist/aliases/*"],
-      "themes/dark": ["./dist/themes/dark/index.d.ts"],
-      "themes/dark/components": ["./dist/themes/dark/components/index.d.ts"],
-      "themes/dark/globals": ["./dist/themes/dark/globals/index.d.ts"],
-      "themes/dark/aliases": ["./dist/themes/dark/aliases/index.d.ts"],
-      "themes/densedDark": ["./dist/themes/densedDark/index.d.ts"],
-      "themes/densedDark/components": ["./dist/themes/densedDark/components/index.d.ts"],
-      "themes/densedDark/globals": ["./dist/themes/densedDark/globals/index.d.ts"],
-      "themes/densedDark/aliases": ["./dist/themes/densedDark/aliases/index.d.ts"],
-      "themes/densedLight": ["./dist/themes/densedLight/index.d.ts"],
-      "themes/densedLight/components": ["./dist/themes/densedLight/components/index.d.ts"],
-      "themes/densedLight/globals": ["./dist/themes/densedLight/globals/index.d.ts"],
-      "themes/densedLight/aliases": ["./dist/themes/densedLight/aliases/index.d.ts"]
-    }
-  },
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup",
     "clean": "rm -rf dist",
-    "generate": "yarn clean && ts-node --esm config/build.ts && yarn build",
+    "generate": "yarn clean && ts-node --project tsconfig.json --esm config/build.ts",
     "storybook": "storybook dev -p 6007",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-storybook": "storybook build"
