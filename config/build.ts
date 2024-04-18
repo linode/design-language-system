@@ -111,8 +111,6 @@ export function getStyleDictionaryConfig(
     buildPath = `dist/themes/${theme.name}/`;
   }
 
-  console.log({tokens: theme.selectedTokenSets})
-
   return {
     // If we want to show collisions, we can change `include` to `source`.
     include: theme.selectedTokenSets.map(tokenset => `tokens/${tokenset}.json`),
