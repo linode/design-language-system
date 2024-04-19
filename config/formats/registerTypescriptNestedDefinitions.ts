@@ -8,12 +8,11 @@ export const registerTypescriptNestedDefinitions = () =>
     formatter(formatterArguments) {
       const tokens = formatterArguments.dictionary.tokens;
       const transformedTokens = convertTokensToFlatObject(tokens);
-      const transformedOutputParts = generateNestedOutput({
+      const transformedOutput = generateNestedOutput({
         transformedTokens,
         formatterType: 'typescript'
       });
 
-      const transformedOutput = transformedOutputParts.join('\n\n');
       return `
   /**
    * Do not edit directly
