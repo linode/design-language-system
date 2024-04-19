@@ -10,10 +10,18 @@
   },
   "typesVersions": {
     "*": {
-      "*": ["./dist/index.d.ts"],
-      "themes/dark": ["./dist/themes/dark/index.d.ts"],
-      "themes/densedDark": ["./dist/themes/densedDark/index.d.ts"],
-      "themes/densedLight": ["./dist/themes/densedLight/index.d.ts"]
+      "*": [
+        "./dist/index.d.ts"
+      ],
+      "themes/dark": [
+        "./dist/themes/dark/index.d.ts"
+      ],
+      "themes/densedDark": [
+        "./dist/themes/densedDark/index.d.ts"
+      ],
+      "themes/densedLight": [
+        "./dist/themes/densedLight/index.d.ts"
+      ]
     }
   },
   "scripts": {
@@ -76,5 +84,6 @@
   },
   "volta": {
     "node": "18.14.1"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }

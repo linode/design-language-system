@@ -1,4 +1,4 @@
-import { formatProperties } from './formatProperties.js';
+import { formatProperties } from './formatProperties.ts';
 
 // Generate TypeScript type declarations for a given token
 export function generateTypeDeclaration(value: any): any {

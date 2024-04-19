@@ -1,5 +1,5 @@
 import React from 'react';
-import { TokenInfo } from './Info';
+import { TokenInfo } from './Info.tsx';
 import { Border, Font } from '../dist/index.js';
 
 interface SectionProps {
@@ -76,7 +76,7 @@ export const Section = ({
     >
       <HeadingElement
         style={{
-          borderBottom: !stacked && `1px solid ${Border.Normal}`,
+          borderBottom: !stacked ? `1px solid ${Border.Normal}`: 'none',
           fontFamily: Font.FontFamily.Brand
         }}
       >

@@ -1,10 +1,10 @@
 import StyleDictionary from 'style-dictionary';
 import { promises } from 'fs';
 import { registerTransforms, permutateThemes } from '@tokens-studio/sd-transforms';
-import { registerJavascriptNested } from './formats/registerJavascriptNested.js';
-import { registerTypescriptNestedDefinitions } from './formats/registerTypescriptNestedDefinitions.js';
-import { registerJsonFlat } from './formats/registerJsonFlat.js';
-import { getStyleDictionaryConfig } from './configs/getStyleDictionaryConfig.js'
+import { registerJavascriptNested } from './formats/registerJavascriptNested.ts';
+import { registerTypescriptNestedDefinitions } from './formats/registerTypescriptNestedDefinitions.ts';
+import { registerJsonFlat } from './formats/registerJsonFlat.ts';
+import { getStyleDictionaryConfig } from './configs/getStyleDictionaryConfig.ts'
 
 const readFile = promises.readFile;
 const buffer = await readFile('tokens/$themes.json');

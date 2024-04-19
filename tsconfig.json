@@ -1,19 +1,12 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
-    "jsx": "react",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "outDir": "./dist",
-    "target": "ESNext",
-    "paths": {
-      // Hoping this get's resolved when 4x is released
-      "style-dictionary": [
-        "./node_modules/style-dictionary/lib/StyleDictionary.d.js"
-      ]
-    }
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
   },
   "include": [
     "style-dictionary/**/*"

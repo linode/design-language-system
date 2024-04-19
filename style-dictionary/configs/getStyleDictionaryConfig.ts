@@ -1,6 +1,6 @@
 import type { Config } from "style-dictionary/types";
 
-import type { StyleDictionaryOptions } from '../types';
+import type { StyleDictionaryOptions } from '../types.ts';
 
 const PREFIX = 'token';
 

@@ -9,7 +9,7 @@ interface ColorSwatchProps {
   /**
    * The elevation to display
    */
-  elevation: string;
+  elevation: string | undefined;
   /**
    * The shape of the swatch
    */

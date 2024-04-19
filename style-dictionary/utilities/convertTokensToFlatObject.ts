@@ -1,5 +1,5 @@
-import { generateTypeDeclaration } from './generateTypeDeclaration.js';
-import { toPascalCase } from './toPascalCase.js';
+import { generateTypeDeclaration } from './generateTypeDeclaration.ts';
+import { toPascalCase } from './toPascalCase.ts';
 
 // Transform a nested object of tokens into a flat object
 export function convertTokensToFlatObject(obj?: any, options?: any) {
