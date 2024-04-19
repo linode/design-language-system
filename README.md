@@ -123,13 +123,24 @@ This shows a few things happening:
 1. The build system does a deep merge of all the token JSON files defined in the `source` attribute of `config/build.ts`. This allows you to split up the token JSON files however you want.
 2. The build system resolves references to other design tokens in other files as well. For example in `tokens/alias/light.json` the value `{color.neutrals.white}` gets resolved properly.
 
-## Usage in Apps
+## Example Usage in Apps
 
-Example:
+You may import each tier of tokens: `Global, Alias, Component`
 ```
-import { Aliases, Components, Globals } from '@linode/design-language-system';
+import { Global, Alias, Component } from '@linode/design-language-system';
+```
 
-const { Color } = Globals;
-const { Border, Interaction } = Aliases;
-const { Button } = Components;
+You may alternately access any token set under each tier:
+```
+import { Color, Interaction, Button } from '@linode/design-language-system';
+```
+
+You selectively import tokens by extending the path:
+```
+import { Button } from '@linode/design-language-system/components';
+```
+
+All of the above applies to themes:
+```
+import { Global, Alias, Component } from '@linode/design-language-system/themes/dark';
 ```
