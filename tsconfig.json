@@ -16,7 +16,7 @@
     }
   },
   "include": [
-    "config/**/*"
+    "style-dictionary/**/*"
   ],
   "exclude": [
     "node_modules",

@@ -48,7 +48,7 @@ This should have created a build directory and it should look like this:
 │   ├── tokens.scss
 ```
 
-If you open `config/build.ts` you will see there is 1 platforms defined for web (however, we can build for android, compose, ios, and ios-swift). Each platform has a transformGroup, buildPath, and files. The buildPath and files of the platform should match up to the files what were built. The files built should look like these:
+If you open `style-dictionary/build.ts` you will see there is 1 platforms defined for web (however, we can build for android, compose, ios, and ios-swift). Each platform has a transformGroup, buildPath, and files. The buildPath and files of the platform should match up to the files what were built. The files built should look like these:
 
 **JS**
 ```js
@@ -120,7 +120,7 @@ $token-color-neutrals-100: #3A3A3F;
 ```
 
 This shows a few things happening:
-1. The build system does a deep merge of all the token JSON files defined in the `source` attribute of `config/build.ts`. This allows you to split up the token JSON files however you want.
+1. The build system does a deep merge of all the token JSON files defined in the `source` attribute of `style-dictionary/build.ts`. This allows you to split up the token JSON files however you want.
 2. The build system resolves references to other design tokens in other files as well. For example in `tokens/alias/light.json` the value `{color.neutrals.white}` gets resolved properly.
 
 ## Example Usage in Apps
