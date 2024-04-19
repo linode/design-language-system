@@ -3,7 +3,19 @@
   "version": "2.1.1",
   "type": "module",
   "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*/index.js",
+    "./themes/*": "./dist/themes/*/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": ["./dist/index.d.ts"],
+      "themes/dark": ["./dist/themes/dark/index.d.ts"],
+      "themes/densedDark": ["./dist/themes/densedDark/index.d.ts"],
+      "themes/densedLight": ["./dist/themes/densedLight/index.d.ts"]
+    }
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "generate": "yarn clean && ts-node --esm config/build.ts",
