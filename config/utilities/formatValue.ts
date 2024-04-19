@@ -1,4 +1,4 @@
-import { formatProperties } from './formatProperties';
+import { formatProperties } from './formatProperties.js';
 
 export function formatValue(value: any): any {
   if (typeof value === 'string') {

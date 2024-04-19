@@ -1,12 +1,20 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
-    "jsx": "react",
-    "esModuleInterop": true,
     "allowJs": true,
     "checkJs": true,
-    "moduleResolution": "bundler",
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "target": "ESNext",
+    "paths": {
+      // Hoping this get's resolved when 4x is released
+      "style-dictionary": [
+        "./node_modules/style-dictionary/lib/StyleDictionary.d.js"
+      ]
+    }
   },
   "include": [
     "config/**/*"

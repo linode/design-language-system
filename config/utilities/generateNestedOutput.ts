@@ -9,7 +9,7 @@ export function generateNestedOutput({transformedTokens, formatterType}) {
 
     const exports: string[] = [];
     const isInterface = formatterType === 'typescript';
-    const declarationOrExport = formatterType === 'typescript' ? `interface ${key}Types` : `export const ${key} =`;
+    const declarationOrExport = formatterType === 'typescript' ? `export interface ${key}Types` : `export const ${key} =`;
     exports.push(`${declarationOrExport} ${topLevelObjectString}${isInterface ? '' : ';'}`);
 
     // Handling one level deeper
@@ -20,7 +20,7 @@ export function generateNestedOutput({transformedTokens, formatterType}) {
         2
       ).replace(/"([^"]+)":/g, (match, key) => `${key}:`);
 
-      const subDeclarationOrExport = formatterType === 'typescript' ? `interface ${subKey}Types` : `export const ${subKey} =`;
+      const subDeclarationOrExport = formatterType === 'typescript' ? `export interface ${subKey}Types` : `export const ${subKey} =`;
       exports.push(`${subDeclarationOrExport} ${subObjectString}${isInterface ? '' : ';'}`);
     });
 

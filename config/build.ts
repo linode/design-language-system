@@ -4,6 +4,9 @@ import { promises } from 'fs';
 import type { StyleDictionaryOptions } from './types';
 import prettier from 'prettier';
 import { registerTransforms, permutateThemes } from '@tokens-studio/sd-transforms';
+import { registerJavascriptNested } from './formats/registerJavascriptNested.js';
+import { registerTypescriptNestedDefinitions } from './formats/registerTypescriptNestedDefinitions.js';
+import { registerJsonFlat } from './formats/registerJsonFlat.js';
 
 const readFile = promises.readFile;
 const buffer = await readFile('tokens/$themes.json');
@@ -15,10 +18,6 @@ const formattedDate = date.toUTCString();
 
 // https://github.com/tokens-studio/sd-transforms
 registerTransforms(StyleDictionary);
-
-import { registerJavascriptNested } from './formats/registerJavascriptNested';
-import { registerTypescriptNestedDefinitions } from './formats/registerTypescriptNestedDefinitions';
-import { registerJsonFlat } from './formats/registerJsonFlat';
 
 registerJavascriptNested();
 registerTypescriptNestedDefinitions();

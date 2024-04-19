@@ -1,6 +1,6 @@
 import StyleDictionary from 'style-dictionary';
-import { generateNestedOutput } from '../utilities/generateNestedOutput';
-import { convertTokensToFlatObject } from '../utilities/convertTokensToFlatObject';
+import { generateNestedOutput } from '../utilities/generateNestedOutput.js';
+import { convertTokensToFlatObject } from '../utilities/convertTokensToFlatObject.js';
 
 export const registerTypescriptNestedDefinitions = () =>
   StyleDictionary.registerFormat({

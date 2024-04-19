@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist",
-    "generate": "yarn clean && ts-node --project tsconfig.json --esm config/build.ts",
+    "generate": "yarn clean && ts-node --esm config/build.ts",
     "storybook": "storybook dev -p 6007",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-storybook": "storybook build"
