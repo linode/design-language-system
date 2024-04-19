@@ -26,7 +26,7 @@ export function getStyleDictionaryConfig(
         prefix: `${PREFIX}-`,
         files: [
           {
-            destination: 'tokens.es6.js',
+            destination: 'tokens.js',
             format: 'javascript/es6'
           },
           {
