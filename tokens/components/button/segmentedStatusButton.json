@@ -131,11 +131,11 @@
           "type": "color"
         },
         "text": {
-          "value": "{alias.content.text.base}",
+          "value": "{global.color.neutrals.white}",
           "type": "color"
         },
         "icon": {
-          "value": "{alias.content.icon.base}",
+          "value": "{global.color.neutrals.white}",
           "type": "color"
         }
       }
