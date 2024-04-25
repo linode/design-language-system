@@ -14,6 +14,7 @@
     "components/button/overflowMenuButton",
     "components/button/splitMenuButton",
     "components/button/segmentedButton",
+    "components/button/segmentedStatusButton",
     "components/calendar/calendar",
     "components/card/card",
     "components/checkbox/checkbox",
