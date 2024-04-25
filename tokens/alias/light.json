@@ -325,7 +325,7 @@
         "type": "boxShadow"
       }
     },
-    "font": {
+    "typography": {
       "heading": {
         "xxxl": {
           "value": {
