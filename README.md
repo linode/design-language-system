@@ -4,7 +4,7 @@ yarn install
 ```
 
 ## Build
-> [!note]
+>[!note]
 You can use `yarn storybook` to view all the tokens we have available
 
 ```bash
@@ -15,25 +15,19 @@ yarn storybook
 You should see something like this output:
 ```
 ==============================================
+Theme: light
 
-Processing... 1 of 3
- - theme: default
- - Platform: web
-
-web/js
-✔︎ dist/tokens.es6.js
-✔︎ dist/theme.es6.js
-✔︎ dist/theme.d.ts
+js
+✔︎ dist/tokens-nested.es6.js
+✔︎ dist/tokens-nested.d.ts
 ✔︎ dist/tokens.d.ts
+✔︎ dist/tokens.es6.js
 
-web/scss
+scss
 ✔︎ dist/tokens.scss
 
-web/css
+css
 ✔︎ dist/tokens.css
-
-End processing
-
 ==============================================
 ```
 
@@ -54,7 +48,7 @@ This should have created a build directory and it should look like this:
 │   ├── tokens.scss
 ```
 
-If you open `config/build.ts` you will see there is 1 platforms defined for web (however, we can build for android, compose, ios, and ios-swift). Each platform has a transformGroup, buildPath, and files. The buildPath and files of the platform should match up to the files what were built. The files built should look like these:
+If you open `style-dictionary/build.ts` you will see there is 1 platforms defined for web (however, we can build for android, compose, ios, and ios-swift). Each platform has a transformGroup, buildPath, and files. The buildPath and files of the platform should match up to the files what were built. The files built should look like these:
 
 **JS**
 ```js
@@ -126,5 +120,27 @@ $token-color-neutrals-100: #3A3A3F;
 ```
 
 This shows a few things happening:
-1. The build system does a deep merge of all the token JSON files defined in the `source` attribute of `config/build.ts`. This allows you to split up the token JSON files however you want.
+1. The build system does a deep merge of all the token JSON files defined in the `source` attribute of `style-dictionary/build.ts`. This allows you to split up the token JSON files however you want.
 2. The build system resolves references to other design tokens in other files as well. For example in `tokens/alias/light.json` the value `{color.neutrals.white}` gets resolved properly.
+
+## Example Usage in Apps
+
+You may import each tier of tokens: `Global, Alias, Component`
+```
+import { Global, Alias, Component } from '@linode/design-language-system';
+```
+
+You may alternately access any token set under each tier:
+```
+import { Color, Interaction, Button } from '@linode/design-language-system';
+```
+
+You selectively import tokens by extending the path:
+```
+import { Button } from '@linode/design-language-system/components';
+```
+
+All of the above applies to themes:
+```
+import { Global, Alias, Component } from '@linode/design-language-system/themes/dark';
+```
