@@ -1,7 +1,7 @@
 import React from 'react';
-import { ColorSwatch } from './ColorSwatch';
-import { Typography } from './Typography';
-import { formatValue } from './utils';
+import { ColorSwatch } from './ColorSwatch.tsx';
+import { Typography } from './Typography.tsx';
+import { formatValue } from './utils.ts';
 
 interface TokenInfoProps {
   color: string;
@@ -10,7 +10,7 @@ interface TokenInfoProps {
   state?: string;
   type?: string;
   value?: string;
-  variant: string;
+  variant: string | undefined;
 }
 
 export const TokenInfo = ({

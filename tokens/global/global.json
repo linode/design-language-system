@@ -820,10 +820,6 @@
         }
       },
       "font-weight": {
-        "regular": {
-          "value": "400",
-          "type": "fontWeights"
-        },
         "semibold": {
           "value": "600",
           "type": "fontWeights"
@@ -835,6 +831,16 @@
         "extrabold": {
           "value": "800",
           "type": "fontWeights"
+        },
+        "regular": {
+          "normal": {
+            "value": "400",
+            "type": "fontWeights"
+          },
+          "italic": {
+            "value": "400",
+            "type": "fontWeights"
+          }
         }
       },
       "font-size": {

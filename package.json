@@ -1,24 +1,32 @@
 {
   "name": "@linode/design-language-system",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "type": "module",
   "module": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
-    "./*": "./dist/*/index.js"
+    "./*": "./dist/*/index.js",
+    "./themes/*": "./dist/themes/*/index.js"
   },
   "typesVersions": {
     "*": {
       "*": [
-        "./dist/index.d.ts",
-        "./dist/*/index.d.ts"
+        "./dist/index.d.ts"
+      ],
+      "themes/dark": [
+        "./dist/themes/dark/index.d.ts"
+      ],
+      "themes/densedDark": [
+        "./dist/themes/densedDark/index.d.ts"
+      ],
+      "themes/densedLight": [
+        "./dist/themes/densedLight/index.d.ts"
       ]
     }
   },
   "scripts": {
-    "build": "tsup",
     "clean": "rm -rf dist",
-    "generate": "yarn clean && ts-node --esm config/build.ts && yarn build",
+    "generate": "yarn clean && ts-node --esm style-dictionary/build.ts",
     "storybook": "storybook dev -p 6007",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-storybook": "storybook build"
@@ -38,10 +46,10 @@
   },
   "homepage": "https://github.com/linode/design-language-system#readme",
   "dependencies": {
-    "@tokens-studio/sd-transforms": "^0.12.2",
+    "@tokens-studio/sd-transforms": "^0.15.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "style-dictionary": "^3.7.2"
+    "style-dictionary": "4.0.0-prerelease.25"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.6",
@@ -77,5 +85,5 @@
   "volta": {
     "node": "18.14.1"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.1.1"
 }

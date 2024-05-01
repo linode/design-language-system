@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { GlobalColors } from './Colors';
+import { GlobalColors } from './Colors.tsx';
 
 const meta = {
   title: 'Colors/Global',
