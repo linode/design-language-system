@@ -98,6 +98,16 @@
             "value": "{global.color.neutrals.50}",
             "type": "color"
           }
+        },
+        "secondary": {
+          "default": {
+            "value": "{global.color.neutrals.70}",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "{global.color.neutrals.50}",
+            "type": "color"
+          }
         }
       }
     },
@@ -232,6 +242,26 @@
       "tertiary": {
         "disabled": {
           "value": "{global.color.brand.40}",
+          "type": "color"
+        }
+      },
+      "positive": {
+        "default": {
+          "value": "{global.color.green.80}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.green.40}",
+          "type": "color"
+        }
+      },
+      "negative": {
+        "default": {
+          "value": "{global.color.red.80}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.red.40}",
           "type": "color"
         }
       }
@@ -414,7 +444,7 @@
         "regular": {
           "value": {
             "fontFamily": "{global.font.font-family.brand}",
-            "fontWeight": "{global.font.font-weight.regular}",
+            "fontWeight": "{global.font.font-weight.regular.normal}",
             "fontSize": "{global.font.font-size.xs}",
             "lineHeight": "{global.font.line-height.xs}"
           },
@@ -454,13 +484,22 @@
         "list": {
           "value": {
             "fontFamily": "{global.font.font-family.brand}",
-            "fontWeight": "{global.font.font-weight.regular}",
+            "fontWeight": "{global.font.font-weight.regular.normal}",
             "fontSize": "{global.font.font-size.xs}",
             "lineHeight": "{global.font.line-height.xs}",
             "paragraphSpacing": "8"
           },
           "type": "typography",
           "description": "For list items"
+        },
+        "italic": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.regular.italic}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography"
         }
       },
       "label": {
@@ -532,7 +571,7 @@
           "s": {
             "value": {
               "fontFamily": "{global.font.font-family.brand}",
-              "fontWeight": "{global.font.font-weight.regular}",
+              "fontWeight": "{global.font.font-weight.regular.normal}",
               "fontSize": "{global.font.font-size.xs}",
               "lineHeight": "{global.font.line-height.xxxs}"
             },
@@ -542,19 +581,28 @@
           "xs": {
             "value": {
               "fontFamily": "{global.font.font-family.brand}",
-              "fontWeight": "{global.font.font-weight.regular}",
+              "fontWeight": "{global.font.font-weight.regular.normal}",
               "fontSize": "{global.font.font-size.xxxs}",
               "lineHeight": "{global.font.line-height.xxxs}"
             },
             "type": "typography",
             "description": "Optional text, small dropdown item"
+          },
+          "placeholder": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.regular.italic}",
+              "fontSize": "{global.font.font-size.xs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography"
           }
         }
       },
       "code": {
         "value": {
           "fontFamily": "{global.font.font-family.code}",
-          "fontWeight": "{global.font.font-weight.regular}",
+          "fontWeight": "{global.font.font-weight.regular.normal}",
           "fontSize": "{global.font.font-size.xxs}",
           "lineHeight": "{global.font.line-height.xs}"
         },
