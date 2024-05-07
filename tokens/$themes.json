@@ -923,7 +923,6 @@
       "component.card.icon": "7ddd89132a89a0dfd8d46bed6f445bd26ec8f4b9",
       "component.calendar.background": "606c220251eaf69a1b77afd63564c9fbf45cea46",
       "component.calendar.border": "5ec91dccd162d8a00dcdce33e32be5745a4b7b7d",
-      "component.calendar.text": "db3b28b40f83fe091f9990f3e4037b852d039297",
       "component.calendar.icon": "d65f2396f09f79e5d294db3bf6c58a2a19a1a32f",
       "component.calendar.selectedItem.text": "ced254d26a11d9fcefd4270d255f053bed36d342",
       "component.calendar.selectedItem.background": "30c1fba78f48c8b10623f20796104e9ff11913b0",
@@ -1437,7 +1436,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297"
     },
     "group": "CDS"
   },
@@ -2366,7 +2366,6 @@
       "component.card.icon": "7ddd89132a89a0dfd8d46bed6f445bd26ec8f4b9",
       "component.calendar.background": "606c220251eaf69a1b77afd63564c9fbf45cea46",
       "component.calendar.border": "5ec91dccd162d8a00dcdce33e32be5745a4b7b7d",
-      "component.calendar.text": "db3b28b40f83fe091f9990f3e4037b852d039297",
       "component.calendar.icon": "d65f2396f09f79e5d294db3bf6c58a2a19a1a32f",
       "component.calendar.selectedItem.text": "ced254d26a11d9fcefd4270d255f053bed36d342",
       "component.calendar.selectedItem.background": "30c1fba78f48c8b10623f20796104e9ff11913b0",
@@ -2880,7 +2879,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297"
     },
     "group": "CDS"
   },
@@ -3809,7 +3809,6 @@
       "component.card.icon": "7ddd89132a89a0dfd8d46bed6f445bd26ec8f4b9",
       "component.calendar.background": "606c220251eaf69a1b77afd63564c9fbf45cea46",
       "component.calendar.border": "5ec91dccd162d8a00dcdce33e32be5745a4b7b7d",
-      "component.calendar.text": "db3b28b40f83fe091f9990f3e4037b852d039297",
       "component.calendar.icon": "d65f2396f09f79e5d294db3bf6c58a2a19a1a32f",
       "component.calendar.selectedItem.text": "ced254d26a11d9fcefd4270d255f053bed36d342",
       "component.calendar.selectedItem.background": "30c1fba78f48c8b10623f20796104e9ff11913b0",
@@ -4323,7 +4322,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297"
     },
     "group": "CDS"
   },
@@ -5253,7 +5253,6 @@
       "component.card.icon": "7ddd89132a89a0dfd8d46bed6f445bd26ec8f4b9",
       "component.calendar.background": "606c220251eaf69a1b77afd63564c9fbf45cea46",
       "component.calendar.border": "5ec91dccd162d8a00dcdce33e32be5745a4b7b7d",
-      "component.calendar.text": "db3b28b40f83fe091f9990f3e4037b852d039297",
       "component.calendar.icon": "d65f2396f09f79e5d294db3bf6c58a2a19a1a32f",
       "component.calendar.selectedItem.text": "ced254d26a11d9fcefd4270d255f053bed36d342",
       "component.calendar.selectedItem.background": "30c1fba78f48c8b10623f20796104e9ff11913b0",
@@ -5767,7 +5766,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297"
     },
     "group": "CDS"
   }
