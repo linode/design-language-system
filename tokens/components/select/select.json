@@ -182,6 +182,16 @@
           "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         }
+      },
+      "readOnly": {
+        "background": {
+          "value": "{alias.interaction.background.primary}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        }
       }
     }
   }

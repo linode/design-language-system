@@ -47,6 +47,7 @@
     "components/search/search",
     "components/sideNavigation/sideNavigation",
     "components/select/select",
+    "components/select/linkSelect",
     "components/sidePanel/sidePanel",
     "components/stepper/stepper",
     "components/switch/switch",
