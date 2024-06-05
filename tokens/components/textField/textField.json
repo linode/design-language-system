@@ -15,7 +15,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         }
       },
@@ -37,7 +37,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         }
       },
@@ -63,7 +63,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         }
       },
@@ -85,7 +85,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         }
       },
@@ -107,7 +107,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         },
         "icon": {
@@ -143,7 +143,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         }
       },
@@ -165,7 +165,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         },
         "icon": {
@@ -197,7 +197,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         },
         "icon": {
@@ -233,7 +233,7 @@
           "type": "color"
         },
         "infoIcon": {
-          "value": "{alias.content.icon.primary.default}",
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         },
         "icon": {
