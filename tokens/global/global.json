@@ -56,7 +56,7 @@
           "description": "Default text color"
         },
         "black": {
-          "value": "#000000",
+          "value": "#232326",
           "type": "color",
           "description": "Global header and footer"
         },
