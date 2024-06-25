@@ -5,6 +5,8 @@ const config: StorybookConfig = {
     "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
 
+  staticDirs: ['../public', '../static'],
+
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -17,8 +19,6 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
-
-  docs: {},
 
   typescript: {
     reactDocgen: "react-docgen-typescript"

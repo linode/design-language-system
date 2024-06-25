@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ColorSwatch } from './ColorSwatch.tsx';
 
 const meta = {
-  title: 'Example/ColorSwatch',
+  title: 'Tokens/ColorSwatch',
   component: ColorSwatch,
   parameters: {
     layout: 'centered',

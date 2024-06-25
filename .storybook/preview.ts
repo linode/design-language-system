@@ -14,6 +14,11 @@ const preview: Preview = {
         inline: true,
       },
     },
+    options: {
+      storySort: {
+        order: ['Documentation', 'Tokens', 'Components'],
+      },
+    },
   },
 };
 
