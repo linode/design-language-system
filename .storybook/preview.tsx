@@ -1,6 +1,14 @@
+import React from 'react';
+
 import type { Preview } from "@storybook/react";
 
+import './global.css';
+
 const preview: Preview = {
+  decorators: [
+    (Story) => 
+      <div id="page-layout"><Story /></div>
+  ],
   parameters: {
     controls: {
       expanded: true,
