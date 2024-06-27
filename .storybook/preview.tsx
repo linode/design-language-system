@@ -24,7 +24,14 @@ const preview: Preview = {
     },
     options: {
       storySort: {
-        order: ['Documentation', 'Tokens', 'Components'],
+        order: [
+          'Documentation',
+            ['Welcome', 'Get Started'],
+          'Foundations',
+            ['Accessibility', 'Colors'],
+          'Tokens',
+            ['Globals', 'Aliases'],
+          'Components'],
       },
     },
   },

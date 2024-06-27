@@ -1,7 +1,7 @@
 import React from 'react';
-import { Section } from '../Section.js';
+import { Section } from '../reusable/Section';
 
-export const AliasColors = ({ concept, conceptHeading }) => (
+export const Aliases = ({ concept, conceptHeading }) => (
   <>
     {Object.entries(concept).map(([key, colorObject]) => {
       return (

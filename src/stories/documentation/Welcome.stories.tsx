@@ -20,7 +20,7 @@ export const Welcome = () => (
       <div>
         <h3>Get Started</h3>
         <p>Instructions and welcome to Akamai's OS design system</p>
-        <a href='/'>Read more</a>
+        <a href='../?path=/story/documentation-get-started--get-started'>Read more</a>
       </div>
       <div>
         <h3>Tokens</h3>

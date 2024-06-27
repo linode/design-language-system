@@ -11,8 +11,7 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
-    "@storybook/addon-interactions",
-    "@chromatic-com/storybook"
+    "@storybook/addon-interactions"
   ],
 
   framework: {

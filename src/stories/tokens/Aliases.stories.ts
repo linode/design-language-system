@@ -7,11 +7,11 @@ import {
   Interaction,
   Elevation
 } from '../../../dist/index.js';
-import { AliasColors } from './AliasColors';
+import { Aliases } from './Aliases.js';
 
 const meta = {
-  title: 'Colors/Alias',
-  component: AliasColors,
+  title: 'Tokens/Aliases',
+  component: Aliases,
   parameters: {
     layout: 'padded',
   },
@@ -19,9 +19,8 @@ const meta = {
   argTypes: {
 
   },
-} satisfies Meta<typeof AliasColors>;
+} satisfies Meta<typeof Aliases>;
 
-export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Actions: Story = {
@@ -65,3 +64,5 @@ export const Elevations: Story = {
     conceptHeading: 'Elevation'
   },
 };
+
+export default meta;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { TokenInfo } from './Info.tsx';
-import { Border, Font } from '../../dist/index.js';
+import { Border, Font } from '../../../dist/index.js';
 
 interface SectionProps {
   concept?: string;

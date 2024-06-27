@@ -1,7 +1,7 @@
 import React from 'react';
 import { ColorSwatch } from './ColorSwatch.tsx';
 import { Typography } from './Typography.tsx';
-import { formatValue } from './utils.ts';
+import { formatValue } from '../utils.ts';
 
 interface TokenInfoProps {
   color: string;
@@ -38,7 +38,11 @@ export const TokenInfo = ({
         padding: '.5rem'
       }}
     >
-      <ColorSwatch color={color} shape={shape} elevation={variant === 'Elevation' ? color : undefined}/>
+      <ColorSwatch 
+        color={color}
+        shape={shape}
+        elevation={variant === 'Elevation' ? color : undefined}
+      />
       <div>
         <Typography key={value} format={'Hex'} value={color} />
         <Typography

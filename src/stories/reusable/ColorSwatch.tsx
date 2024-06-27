@@ -1,5 +1,5 @@
 import React from 'react';
-import { Border, Elevation } from '../../dist/index.js';
+import { Border, Elevation } from '../../../dist/index.js';
 
 interface ColorSwatchProps {
   /**
@@ -25,6 +25,7 @@ export const ColorSwatch = ({ color, elevation, shape }: ColorSwatchProps) => {
         border: `1px solid ${Border.Normal}`,
         borderRadius: shape === 'square' ? '0' : '50%',
         flexShrink: 0,
+        marginTop: 8,
         height: '50px',
         width: '50px',
         boxShadow: elevation

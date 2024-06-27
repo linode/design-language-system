@@ -3,21 +3,18 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { GlobalColors } from './Colors.tsx';
 
 const meta = {
-  title: 'Colors/Global',
+  title: 'Foundations/Colors',
   component: GlobalColors,
   parameters: {
     layout: 'padded',
   },
-  tags: ['autodocs'],
-  argTypes: {
-
-  },
+  argTypes: {},
 } satisfies Meta<typeof GlobalColors>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
-  args: {
-  },
+export const Colors: Story = {
+  args: {},
 };
