@@ -4,4 +4,8 @@ a {
 
 #page-layout {
   padding: 2rem 8rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import { CopyToClipboardIcon } from './CopyToClipboard.tsx';
+
 import { Border, Color, Font, Spacing } from '../../../dist/index.js';
 
 export const Typography = ({ key, format, value, isLowerCase = false }) => {
@@ -37,6 +39,7 @@ export const Typography = ({ key, format, value, isLowerCase = false }) => {
       >
         {value}
       </span>
+      <CopyToClipboardIcon text={value} />
     </div>
   );
 };

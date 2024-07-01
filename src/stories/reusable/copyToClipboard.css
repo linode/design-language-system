@@ -1,0 +1,36 @@
+.copy-to-clipboard {
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+
+  svg {
+    width: 18px;
+    height: 18px;
+
+    &:hover {
+      #cti {
+        fill:  #009cde;
+      }
+    }
+  }
+
+  #cti {
+    fill: #bbb;
+    transition: fill 0.2s ease-in-out;
+  }
+
+  .copied {
+    position: absolute;
+    top: -8px;
+    background-color: #eee;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 122px;
+    font-size: 0.75rem;
+    font-size: 0.875rem;
+    left: 20px;
+    z-index: 10;
+  }
+}

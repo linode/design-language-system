@@ -17,7 +17,6 @@ interface ColorSwatchProps {
 }
 
 export const ColorSwatch = ({ color, elevation, shape }: ColorSwatchProps) => {
-  console.log(elevation)
   return (
     <div
       style={{
