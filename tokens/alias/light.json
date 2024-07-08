@@ -4,11 +4,13 @@
       "text": {
         "base": {
           "value": "{global.color.neutrals.white}",
-          "type": "color"
+          "type": "color",
+          "description": "Use as color for text on a dark surface"
         },
         "negative": {
           "value": "{global.color.red.90}",
-          "type": "color"
+          "type": "color",
+          "description": "Use to indicate error messages"
         },
         "warning": {
           "value": "{global.color.amber.70}",
@@ -26,77 +28,102 @@
           "default": {
             "value": "{global.color.neutrals.100}",
             "type": "color",
-            "description": "Primary text color"
+            "description": "Primary color for text"
           },
           "disabled": {
             "value": "{global.color.neutrals.50}",
-            "type": "color"
+            "type": "color",
+            "description": "Use only to indicate a disabled state of a primary text color"
           }
         },
         "secondary": {
           "default": {
             "value": "{global.color.neutrals.70}",
             "type": "color",
-            "description": "Placeholder text"
+            "description": "Secondary color for text (placeholders, hints)"
           },
           "disabled": {
             "value": "{global.color.neutrals.50}",
-            "type": "color"
+            "type": "color",
+            "description": "Use only to indicate a disabled state of a secondary text color"
           }
         },
         "link": {
           "default": {
             "value": "{global.color.brand.90}",
-            "type": "color"
+            "type": "color",
+            "description": "Use only for links"
           },
           "hover": {
             "value": "{global.color.brand.70}",
-            "type": "color"
+            "type": "color",
+            "description": "Use only as a hover on links"
           },
           "disabled": {
             "value": "{global.color.neutrals.50}",
-            "type": "color"
+            "type": "color",
+            "description": "Use only to indicate a disabled state for links"
           }
         }
       },
       "icon": {
         "base": {
           "value": "{global.color.neutrals.white}",
-          "type": "color"
+          "type": "color",
+          "description": "Use as color for icons on a dark surface"
         },
         "negative": {
           "value": "{global.color.red.70}",
-          "type": "color"
+          "type": "color",
+          "description": "Use only for icons to indicate an error state"
         },
         "warning": {
           "value": "{global.color.amber.70}",
-          "type": "color"
+          "type": "color",
+          "description": "Use only for icons to indicate a warning state"
         },
         "positive": {
           "value": "{global.color.green.70}",
-          "type": "color"
+          "type": "color",
+          "description": "Use only for icons to indicate a success state"
         },
         "informative": {
           "value": "{global.color.ultramarine.70}",
-          "type": "color"
+          "type": "color",
+          "description": "Use only for icons to indicate an info state"
         },
         "primary": {
           "default": {
             "value": "{global.color.neutrals.90}",
             "type": "color",
-            "description": "Default icon color"
+            "description": "Default color for icons"
           },
           "hover": {
             "value": "{global.color.brand.70}",
-            "type": "color"
+            "type": "color",
+            "description": "Use only as a hover state for icons"
           },
           "active": {
             "value": "{global.color.brand.90}",
-            "type": "color"
+            "type": "color",
+            "description": "Use only as a selected/active state for icons"
           },
           "disabled": {
             "value": "{global.color.neutrals.50}",
-            "type": "color"
+            "type": "color",
+            "description": "Use only as a disabled state for icons"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{global.color.neutrals.70}",
+            "type": "color",
+            "description": "Secondary icon color (placeholder, etc)"
+          },
+          "disabled": {
+            "value": "{global.color.neutrals.50}",
+            "type": "color",
+            "description": "Use only as a disabled state for a secondary icon color"
           }
         }
       }
@@ -105,7 +132,7 @@
       "normal": {
         "value": "{global.color.neutrals.30}",
         "type": "color",
-        "description": "Static component border"
+        "description": "Border color for static ui elements and components"
       },
       "neutral": {
         "value": "{global.color.neutrals.100}",
@@ -113,31 +140,35 @@
       },
       "negative": {
         "value": "{global.color.red.70}",
-        "type": "color"
+        "type": "color",
+        "description": "Use only for borders to indicate an error state"
       },
       "warning": {
         "value": "{global.color.amber.70}",
-        "type": "color"
+        "type": "color",
+        "description": "Use only for borders to indicate a warning state"
       },
       "positive": {
         "value": "{global.color.green.70}",
-        "type": "color"
+        "type": "color",
+        "description": "Use only for borders to indicate a success state"
       },
       "informative": {
         "value": "{global.color.ultramarine.70}",
-        "type": "color"
+        "type": "color",
+        "description": "Use only for borders to indicate an info state"
       }
     },
     "background": {
       "normal": {
         "value": "{global.color.neutrals.white}",
         "type": "color",
-        "description": "Default component background"
+        "description": "Primary background color"
       },
       "neutral": {
         "value": "{global.color.neutrals.5}",
         "type": "color",
-        "description": "Default page background"
+        "description": "Page background color"
       },
       "base": {
         "value": "{global.color.neutrals.100}",
@@ -163,7 +194,7 @@
       "black": {
         "value": "{global.color.neutrals.black}",
         "type": "color",
-        "description": "Global header and footer background"
+        "description": "Use only for a global header and global footer background"
       },
       "negativesubtle": {
         "value": "{global.color.red.10}",
@@ -232,6 +263,26 @@
       "tertiary": {
         "disabled": {
           "value": "{global.color.brand.40}",
+          "type": "color"
+        }
+      },
+      "positive": {
+        "default": {
+          "value": "{global.color.green.80}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.green.40}",
+          "type": "color"
+        }
+      },
+      "negative": {
+        "default": {
+          "value": "{global.color.red.80}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.red.40}",
           "type": "color"
         }
       }
@@ -323,6 +374,261 @@
           }
         ],
         "type": "boxShadow"
+      }
+    },
+    "typography": {
+      "heading": {
+        "xxxl": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.xxxl}",
+            "lineHeight": "{global.font.line-height.xxxl}"
+          },
+          "type": "typography",
+          "description": "Promo banners, KPIs"
+        },
+        "xxl": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.extrabold}",
+            "fontSize": "{global.font.font-size.xxl}",
+            "lineHeight": "{global.font.line-height.xl}"
+          },
+          "type": "typography",
+          "description": "Main titles - h1"
+        },
+        "xl": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.xl}",
+            "lineHeight": "{global.font.line-height.l}"
+          },
+          "type": "typography",
+          "description": "Second level title - h2"
+        },
+        "l": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.l}",
+            "lineHeight": "{global.font.line-height.m}"
+          },
+          "type": "typography",
+          "description": "Third level title - h3"
+        },
+        "m": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.m}",
+            "lineHeight": "{global.font.line-height.s}"
+          },
+          "type": "typography",
+          "description": "Drawer, modal title - h4"
+        },
+        "s": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.s}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Advanced search, bars, master switch titles - h5"
+        },
+        "xs": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xxs}"
+          },
+          "type": "typography",
+          "description": "Low level headings - h6"
+        },
+        "overline": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.extrabold}",
+            "fontSize": "{global.font.font-size.xxxs}",
+            "lineHeight": "{global.font.line-height.xxxs}",
+            "textCase": "{global.font.textcase.uppercase}",
+            "letterSpacing": "3%"
+          },
+          "type": "typography",
+          "description": "Custom labels for content blocks"
+        }
+      },
+      "body": {
+        "regular": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.regular.normal}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Main body text"
+        },
+        "semibold": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.semibold}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Light emphasis"
+        },
+        "bold": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.bold}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Emphasis"
+        },
+        "extrabold": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.extrabold}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography",
+          "description": "Max emphasis"
+        },
+        "list": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.regular.normal}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}",
+            "paragraphSpacing": "8"
+          },
+          "type": "typography",
+          "description": "For list items"
+        },
+        "italic": {
+          "value": {
+            "fontFamily": "{global.font.font-family.brand}",
+            "fontWeight": "{global.font.font-weight.regular.italic}",
+            "fontSize": "{global.font.font-size.xs}",
+            "lineHeight": "{global.font.line-height.xs}"
+          },
+          "type": "typography"
+        }
+      },
+      "label": {
+        "semibold": {
+          "l": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.semibold}",
+              "fontSize": "{global.font.font-size.s}",
+              "lineHeight": "{global.font.line-height.xs}"
+            },
+            "type": "typography",
+            "description": "Large tabs"
+          },
+          "s": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.semibold}",
+              "fontSize": "{global.font.font-size.xs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Large buttons, list, segmented buttons, side navigation, small tabls"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.semibold}",
+              "fontSize": "{global.font.font-size.xxxs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Small buttons, tags, warning message under field"
+          }
+        },
+        "bold": {
+          "l": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.bold}",
+              "fontSize": "{global.font.font-size.s}",
+              "lineHeight": "{global.font.line-height.xs}"
+            },
+            "type": "typography",
+            "description": "Card, content panel, vertical stepper"
+          },
+          "s": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.bold}",
+              "fontSize": "{global.font.font-size.xs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Field labels, table header, date&time pickers"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.bold}",
+              "fontSize": "{global.font.font-size.xxxs}",
+              "lineHeight": "14px"
+            },
+            "type": "typography",
+            "description": "Badge number"
+          }
+        },
+        "regular": {
+          "s": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.regular.normal}",
+              "fontSize": "{global.font.font-size.xs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Field entered text, dropdown item, table cell, pagination"
+          },
+          "xs": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.regular.normal}",
+              "fontSize": "{global.font.font-size.xxxs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography",
+            "description": "Optional text, small dropdown item"
+          },
+          "placeholder": {
+            "value": {
+              "fontFamily": "{global.font.font-family.brand}",
+              "fontWeight": "{global.font.font-weight.regular.italic}",
+              "fontSize": "{global.font.font-size.xs}",
+              "lineHeight": "{global.font.line-height.xxxs}"
+            },
+            "type": "typography"
+          }
+        }
+      },
+      "code": {
+        "value": {
+          "fontFamily": "{global.font.font-family.code}",
+          "fontWeight": "{global.font.font-weight.regular.normal}",
+          "fontSize": "{global.font.font-size.xxs}",
+          "lineHeight": "{global.font.line-height.xs}"
+        },
+        "type": "typography",
+        "description": "Code samples"
       }
     }
   }

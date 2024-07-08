@@ -1,0 +1,144 @@
+{
+  "component": {
+    "segmentedStatusButton": {
+      "default": {
+        "background": {
+          "value": "{alias.action.base}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.action.neutral}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.secondary.default}",
+          "type": "color"
+        }
+      },
+      "hover": {
+        "background": {
+          "value": "{alias.action.secondary.hover}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.action.neutral}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.secondary.default}",
+          "type": "color"
+        }
+      },
+      "disabled": {
+        "background": {
+          "value": "{alias.action.base}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.action.secondary.disabled}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.secondary.disabled}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.secondary.disabled}",
+          "type": "color"
+        }
+      },
+      "disabledPositive": {
+        "background": {
+          "value": "{alias.action.positive.disabled}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.secondary.disabled}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.secondary.disabled}",
+          "type": "color"
+        }
+      },
+      "activePositive": {
+        "background": {
+          "value": "{alias.action.positive.default}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.base}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.base}",
+          "type": "color"
+        }
+      },
+      "disabledNegative": {
+        "background": {
+          "value": "{alias.action.negative.disabled}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.secondary.disabled}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.secondary.disabled}",
+          "type": "color"
+        }
+      },
+      "activeNegative": {
+        "background": {
+          "value": "{alias.action.negative.default}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.base}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.base}",
+          "type": "color"
+        }
+      },
+      "disabledNeutral": {
+        "background": {
+          "value": "{alias.action.secondary.disabled}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.secondary.disabled}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.secondary.disabled}",
+          "type": "color"
+        }
+      },
+      "activeNeutral": {
+        "background": {
+          "value": "{alias.action.neutral}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{global.color.neutrals.white}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{global.color.neutrals.white}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Color } from '../../dist/index.js';
-import { Section } from '../Section';
+import { Section } from '../Section.tsx';
 
 export const GlobalColors = () => (
   <>

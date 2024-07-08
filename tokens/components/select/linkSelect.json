@@ -1,17 +1,13 @@
 {
   "component": {
-    "tab": {
+    "linkSelect": {
       "default": {
         "text": {
-          "value": "{alias.content.text.primary.default}",
+          "value": "{alias.content.text.link.default}",
           "type": "color"
         },
         "icon": {
           "value": "{alias.content.icon.primary.default}",
-          "type": "color"
-        },
-        "border": {
-          "value": "{alias.interaction.border.disabled}",
           "type": "color"
         }
       },
@@ -23,23 +19,15 @@
         "icon": {
           "value": "{alias.content.icon.primary.hover}",
           "type": "color"
-        },
-        "border": {
-          "value": "{alias.interaction.border.disabled}",
-          "type": "color"
         }
       },
-      "active": {
+      "filled": {
         "text": {
           "value": "{alias.content.text.link.default}",
           "type": "color"
         },
         "icon": {
-          "value": "{alias.content.icon.primary.active}",
-          "type": "color"
-        },
-        "border": {
-          "value": "{alias.interaction.border.focus}",
+          "value": "{alias.content.icon.primary.default}",
           "type": "color"
         }
       },
@@ -51,9 +39,21 @@
         "icon": {
           "value": "{alias.content.icon.primary.disabled}",
           "type": "color"
+        }
+      },
+      "focus": {
+        "text": {
+          "value": "{alias.content.text.link.default}",
+          "type": "color"
         },
-        "border": {
-          "value": "{alias.interaction.border.disabled}",
+        "icon": {
+          "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        }
+      },
+      "readOnly": {
+        "text": {
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         }
       }

@@ -8,7 +8,7 @@
             "type": "color"
           },
           "icon": {
-            "value": "{alias.content.icon.base}",
+            "value": "{global.color.neutrals.white}",
             "type": "color"
           },
           "circle": {
@@ -26,7 +26,7 @@
             "type": "color"
           },
           "icon": {
-            "value": "{alias.content.icon.base}",
+            "value": "{global.color.neutrals.white}",
             "type": "color"
           },
           "circle": {
@@ -44,7 +44,7 @@
             "type": "color"
           },
           "icon": {
-            "value": "{alias.content.icon.base}",
+            "value": "{global.color.neutrals.white}",
             "type": "color"
           },
           "circle": {
@@ -81,10 +81,6 @@
             "value": "{alias.action.neutral}",
             "type": "color"
           },
-          "icon": {
-            "value": "{alias.content.icon.base}",
-            "type": "color"
-          },
           "circle": {
             "value": "{global.color.neutrals.white}",
             "type": "color"
@@ -97,10 +93,6 @@
         "hover": {
           "background": {
             "value": "{global.color.neutrals.50}",
-            "type": "color"
-          },
-          "icon": {
-            "value": "{alias.content.icon.base}",
             "type": "color"
           },
           "circle": {
@@ -117,10 +109,6 @@
             "value": "{alias.action.neutral}",
             "type": "color"
           },
-          "icon": {
-            "value": "{alias.content.icon.base}",
-            "type": "color"
-          },
           "circle": {
             "value": "{global.color.neutrals.white}",
             "type": "color"
@@ -133,10 +121,6 @@
         "disabled": {
           "background": {
             "value": "{alias.action.primary.disabled}",
-            "type": "color"
-          },
-          "icon": {
-            "value": "{alias.content.icon.primary.disabled}",
             "type": "color"
           },
           "circle": {
