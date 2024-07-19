@@ -287,6 +287,141 @@
         }
       }
     },
+    "accent": {
+      "info": {
+        "primary": {
+          "value": "{global.color.ultramarine.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.ultramarine.50}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "neutral": {
+        "primary": {
+          "value": "{global.color.neutrals.40}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.neutrals.40}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "warning": {
+        "primary": {
+          "value": "{global.color.orange.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.amber.50}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "negative": {
+        "primary": {
+          "value": "{global.color.red.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.red.50}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "positive": {
+        "primary": {
+          "value": "{global.color.green.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.green.50}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "important": {
+        "primary": {
+          "value": "{global.color.purple.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.purple.50}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "pink": {
+        "primary": {
+          "value": "{global.color.pink.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.pink.50}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      }
+    },
     "elevation": {
       "s": {
         "value": {
@@ -317,6 +452,12 @@
           }
         ],
         "type": "boxShadow"
+      }
+    },
+    "chart": {
+      "neutral": {
+        "value": "{global.color.neutrals.80}",
+        "type": "color"
       }
     }
   }
