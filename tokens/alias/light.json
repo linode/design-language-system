@@ -1281,6 +1281,10 @@
       },
       "monochromatic": {
         "default": {
+          "5": {
+            "value": "{global.color.ultramarine.5}",
+            "type": "color"
+          },
           "10": {
             "value": "{global.color.ultramarine.10}",
             "type": "color"
@@ -1316,13 +1320,13 @@
           "100": {
             "value": "{global.color.ultramarine.100}",
             "type": "color"
-          },
-          "05": {
-            "value": "{global.color.ultramarine.5}",
-            "type": "color"
           }
         },
         "danger": {
+          "5": {
+            "value": "{global.color.red.5}",
+            "type": "color"
+          },
           "10": {
             "value": "{global.color.red.10}",
             "type": "color"
@@ -1357,10 +1361,6 @@
           },
           "100": {
             "value": "{global.color.red.100}",
-            "type": "color"
-          },
-          "05": {
-            "value": "{global.color.red.5}",
             "type": "color"
           }
         }
