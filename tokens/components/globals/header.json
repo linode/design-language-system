@@ -31,7 +31,7 @@
       },
       "search": {
         "background": {
-          "value": "{global.color.neutrals.100}",
+          "value": "{global.color.neutrals.90}",
           "type": "color"
         },
         "text": {
