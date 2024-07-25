@@ -1,6 +1,6 @@
 import StyleDictionary from 'style-dictionary';
 import { promises } from 'fs';
-import { registerTransforms, permutateThemes } from '@tokens-studio/sd-transforms';
+import { register, permutateThemes } from '@tokens-studio/sd-transforms';
 import { registerJavascriptNested } from './formats/registerJavascriptNested.ts';
 import { registerTypescriptNestedDefinitions } from './formats/registerTypescriptNestedDefinitions.ts';
 import { registerJsonFlat } from './formats/registerJsonFlat.ts';
@@ -12,7 +12,7 @@ const content = buffer.toString('utf-8');
 const $themes = JSON.parse(content);
 
 // https://github.com/tokens-studio/sd-transforms
-registerTransforms(StyleDictionary);
+register(StyleDictionary);
 
 registerJavascriptNested();
 registerTypescriptNestedDefinitions();
