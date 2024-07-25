@@ -1134,7 +1134,6 @@
       "component.badge.bold.violet.text": "2efb6dcdfb13949c3caf5588d455094f56220d99",
       "component.badge.bold.pink.background": "c21e2cfec5956eb00ae0ffe90f43cff0b8ac4541",
       "component.badge.bold.pink.text": "fe45eada9022ab227d30fe5b8534709dae0438ed",
-      "component.badge.subtle.ultramarine.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17",
       "component.badge.subtle.ultramarine.text": "9227a0a536aee81aca0d28199ce8050ea380d288",
       "component.badge.subtle.neutral.background": "7470c807eaa293546d2fae2cb7f18e82f4ec5cc8",
       "component.badge.subtle.neutral.text": "e496e13eec856bd0ddae5323f0a3503d1f8880ac",
@@ -1427,7 +1426,8 @@
       "global.spacing.50": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
-      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d"
+      "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
+      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17"
     },
     "group": "CDS"
   },
@@ -2567,7 +2567,6 @@
       "component.badge.bold.violet.text": "2efb6dcdfb13949c3caf5588d455094f56220d99",
       "component.badge.bold.pink.background": "c21e2cfec5956eb00ae0ffe90f43cff0b8ac4541",
       "component.badge.bold.pink.text": "fe45eada9022ab227d30fe5b8534709dae0438ed",
-      "component.badge.subtle.ultramarine.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17",
       "component.badge.subtle.ultramarine.text": "9227a0a536aee81aca0d28199ce8050ea380d288",
       "component.badge.subtle.neutral.background": "7470c807eaa293546d2fae2cb7f18e82f4ec5cc8",
       "component.badge.subtle.neutral.text": "e496e13eec856bd0ddae5323f0a3503d1f8880ac",
@@ -2861,7 +2860,8 @@
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
       "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
-      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297"
+      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297",
+      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17"
     },
     "group": "CDS"
   },
@@ -4001,7 +4001,6 @@
       "component.badge.bold.violet.text": "2efb6dcdfb13949c3caf5588d455094f56220d99",
       "component.badge.bold.pink.background": "c21e2cfec5956eb00ae0ffe90f43cff0b8ac4541",
       "component.badge.bold.pink.text": "fe45eada9022ab227d30fe5b8534709dae0438ed",
-      "component.badge.subtle.ultramarine.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17",
       "component.badge.subtle.ultramarine.text": "9227a0a536aee81aca0d28199ce8050ea380d288",
       "component.badge.subtle.neutral.background": "7470c807eaa293546d2fae2cb7f18e82f4ec5cc8",
       "component.badge.subtle.neutral.text": "e496e13eec856bd0ddae5323f0a3503d1f8880ac",
@@ -4295,7 +4294,8 @@
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
       "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
-      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297"
+      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297",
+      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17"
     },
     "group": "CDS"
   },
@@ -5436,7 +5436,6 @@
       "component.badge.bold.violet.text": "2efb6dcdfb13949c3caf5588d455094f56220d99",
       "component.badge.bold.pink.background": "c21e2cfec5956eb00ae0ffe90f43cff0b8ac4541",
       "component.badge.bold.pink.text": "fe45eada9022ab227d30fe5b8534709dae0438ed",
-      "component.badge.subtle.ultramarine.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17",
       "component.badge.subtle.ultramarine.text": "9227a0a536aee81aca0d28199ce8050ea380d288",
       "component.badge.subtle.neutral.background": "7470c807eaa293546d2fae2cb7f18e82f4ec5cc8",
       "component.badge.subtle.neutral.text": "e496e13eec856bd0ddae5323f0a3503d1f8880ac",
@@ -5730,7 +5729,8 @@
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
       "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
-      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297"
+      "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297",
+      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17"
     },
     "group": "CDS"
   }
