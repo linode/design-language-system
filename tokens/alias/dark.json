@@ -420,6 +420,25 @@
             }
           }
         }
+      },
+      "violet": {
+        "primary": {
+          "value": "{global.color.violet.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.violet.50}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
       }
     },
     "elevation": {
