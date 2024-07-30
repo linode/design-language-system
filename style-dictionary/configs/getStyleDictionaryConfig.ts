@@ -20,13 +20,17 @@ export function getStyleDictionaryConfig(
     // If we want to show collisions, we can change `include` to `source`.
     include: theme.selectedTokenSets.map(tokenset => `tokens/${tokenset}.json`),
     preprocessors: ["tokens-studio"],
-    expand: {
-      typesMap: expandTypesMap,
+    log: {
+      warnings: 'warn',
+      verbosity: 'verbose',
+      errors: {
+        brokenReferences: 'throw',
+      },
     },
     platforms: {
       js: {
         transformGroup: 'tokens-studio',
-        transforms: ['name/pascal', 'size/px', 'color/hex', 'shadow/css/shorthand', 'typography/css/shorthand'],
+        transforms: ['name/pascal', 'color/hex', 'shadow/css/shorthand', 'typography/css/shorthand'],
         buildPath,
         prefix: `${PREFIX}-`,
         files: [
@@ -50,7 +54,7 @@ export function getStyleDictionaryConfig(
       },
       scss: {
         transformGroup: 'tokens-studio',
-        transforms: ['name/kebab', 'time/seconds', 'size/px', 'color/css', 'shadow/css/shorthand', 'typography/css/shorthand'],
+        transforms: ['name/kebab', 'time/seconds', 'color/css', 'shadow/css/shorthand', 'typography/css/shorthand'],
         buildPath,
         prefix: `${PREFIX}-`,
         files: [
@@ -62,7 +66,7 @@ export function getStyleDictionaryConfig(
       },
       css: {
         transformGroup: 'tokens-studio',
-        transforms: ['name/kebab', 'time/seconds', 'size/px', 'color/css', 'shadow/css/shorthand', 'typography/css/shorthand'],
+        transforms: ['name/kebab', 'time/seconds', 'color/css', 'shadow/css/shorthand', 'typography/css/shorthand'],
         buildPath,
         prefix: `${PREFIX}-`,
         files: [

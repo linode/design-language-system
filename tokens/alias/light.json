@@ -453,13 +453,21 @@
             "fontFamily": "{global.font.font-family.brand}",
             "fontWeight": "{global.font.font-weight.extrabold}",
             "fontSize": "{global.font.font-size.xxxs}",
-            "lineHeight": "{global.font.line-height.xxxs}",
-            "textCase": "{global.font.textcase.uppercase}",
-            "letterSpacing": "3%"
+            "lineHeight": "{global.font.line-height.xxxs}"
           },
           "type": "typography",
           "description": "Custom labels for content blocks"
-        }
+        },
+        "overline-letter-spacing": {
+          "value": "0.023rem",
+          "type": "typography",
+          "description": "Overline letter spacing"
+        },
+        "overline-text-case": {
+          "value": "{global.font.textcase.uppercase}",
+          "type": "typography",
+          "description": "Overline text case"
+        },
       },
       "body": {
         "regular": {
@@ -507,8 +515,7 @@
             "fontFamily": "{global.font.font-family.brand}",
             "fontWeight": "{global.font.font-weight.regular.normal}",
             "fontSize": "{global.font.font-size.xs}",
-            "lineHeight": "{global.font.line-height.xs}",
-            "paragraphSpacing": "8"
+            "lineHeight": "{global.font.line-height.xs}"
           },
           "type": "typography",
           "description": "For list items"
@@ -543,7 +550,7 @@
               "lineHeight": "{global.font.line-height.xxxs}"
             },
             "type": "typography",
-            "description": "Large buttons, list, segmented buttons, side navigation, small tabls"
+            "description": "Large buttons, list, segmented buttons, side navigation, small tables"
           },
           "xs": {
             "value": {
