@@ -63,11 +63,11 @@
       },
       "violet": {
         "background": {
-          "value": "{global.color.violet.30}",
+          "value": "{alias.accent.violet.secondary}",
           "type": "color"
         },
         "text": {
-          "value": "{global.color.violet.90}",
+          "value": "{alias.accent.violet.primary}",
           "type": "color"
         }
       },

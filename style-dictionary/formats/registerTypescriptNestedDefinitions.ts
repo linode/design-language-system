@@ -5,7 +5,7 @@ import { convertTokensToFlatObject } from '../utilities/convertTokensToFlatObjec
 export const registerTypescriptNestedDefinitions = () =>
   StyleDictionary.registerFormat({
     name: 'typescript/nested/definitions',
-    formatter(formatterArguments) {
+    format(formatterArguments) {
       const tokens = formatterArguments.dictionary.tokens;
       const transformedTokens = convertTokensToFlatObject(tokens);
       const transformedOutput = generateNestedOutput({
