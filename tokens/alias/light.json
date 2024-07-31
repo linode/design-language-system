@@ -467,7 +467,7 @@
           "value": "{global.font.textcase.uppercase}",
           "type": "typography",
           "description": "Overline text case"
-        },
+        }
       },
       "body": {
         "regular": {
@@ -589,7 +589,7 @@
               "fontFamily": "{global.font.font-family.brand}",
               "fontWeight": "{global.font.font-weight.bold}",
               "fontSize": "{global.font.font-size.xxxs}",
-              "lineHeight": "14px"
+              "lineHeight": "0.875rem"
             },
             "type": "typography",
             "description": "Badge number"
