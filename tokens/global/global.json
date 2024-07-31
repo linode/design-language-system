@@ -952,6 +952,12 @@
           "type": "textCase"
         }
       }
+    },
+    "borderRadius": {
+      "none": {
+        "value": "0",
+        "type": "borderRadius"
+      }
     }
   }
 }
