@@ -215,6 +215,20 @@
       "neutralsubtle": {
         "value": "{global.color.neutrals.20}",
         "type": "color"
+      },
+      "overlay": {
+        "value": "{global.color.neutrals.black}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.24",
+              "space": "lch"
+            }
+          }
+        },
+        "description": "Page dimming when the modal component is active"
       }
     },
     "action": {
@@ -352,9 +366,22 @@
           "blur": "6",
           "spread": "0",
           "color": "rgba(58,59,63,0.18)",
-          "type": "innerShadow"
+          "type": "dropShadow"
         },
-        "type": "boxShadow"
+        "type": "boxShadow",
+        "description": "Default shadow for components, like notification banners, dropdowns, popups;"
+      },
+      "s-inverted": {
+        "value": {
+          "x": "0",
+          "y": "-2",
+          "blur": "6",
+          "spread": "0",
+          "color": "rgba(58,59,63,0.18)",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "Inverted shadow for elements that appear above the component"
       },
       "l": {
         "value": [
@@ -363,17 +390,20 @@
             "y": "16",
             "blur": "32",
             "spread": "0",
-            "color": "rgba(58,59,63,0.18)"
+            "color": "rgba(58,59,63,0.18)",
+            "type": "dropShadow"
           },
           {
             "x": "0",
             "y": "4",
             "blur": "8",
             "spread": "0",
-            "color": "rgba(58,59,63,0.08)"
+            "color": "rgba(58,59,63,0.08)",
+            "type": "dropShadow"
           }
         ],
-        "type": "boxShadow"
+        "type": "boxShadow",
+        "description": "Shadow for modals"
       }
     },
     "typography": {
