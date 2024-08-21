@@ -1435,6 +1435,13 @@
           "type": "color"
         }
       }
+    },
+    "borderRadius": {
+      "default": {
+        "value": "{global.borderRadius.none}",
+        "type": "borderRadius",
+        "description": "Default border radius value"
+      }
     }
   }
 }
