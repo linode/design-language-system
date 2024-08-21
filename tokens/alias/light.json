@@ -363,7 +363,7 @@
         "value": {
           "x": "0",
           "y": "2",
-          "blur": "6",
+          "blur": "8",
           "spread": "0",
           "color": "rgba(58,59,63,0.18)",
           "type": "dropShadow"
@@ -375,7 +375,7 @@
         "value": {
           "x": "0",
           "y": "-2",
-          "blur": "6",
+          "blur": "8",
           "spread": "0",
           "color": "rgba(58,59,63,0.18)",
           "type": "dropShadow"
