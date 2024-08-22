@@ -355,6 +355,16 @@
         "disabled": {
           "value": "{global.color.neutrals.10}",
           "type": "color"
+        },
+        "rangeHover": {
+          "value": "{global.color.brand.30}",
+          "type": "color",
+          "description": "Hover color for a calendar date range"
+        },
+        "activeDateHover": {
+          "value": "{global.color.brand.80}",
+          "type": "color",
+          "description": "Hover color for an active calendar date"
         }
       }
     },

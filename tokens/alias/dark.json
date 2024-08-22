@@ -232,6 +232,14 @@
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
+        },
+        "rangeHover": {
+          "value": "{global.color.neutrals.70}",
+          "type": "color"
+        },
+        "activeDateHover": {
+          "value": "{global.color.brand.50}",
+          "type": "color"
         }
       }
     },
