@@ -235,11 +235,13 @@
         },
         "rangeHover": {
           "value": "{global.color.neutrals.70}",
-          "type": "color"
+          "type": "color",
+          "description": "Hover color for a calendar date range"
         },
         "activeDateHover": {
           "value": "{global.color.brand.50}",
-          "type": "color"
+          "type": "color",
+          "description": "Hover color for an active calendar date"
         }
       }
     },
