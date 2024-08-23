@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2024-08-21
+   * Generated on 2024-08-23
    */
   export interface GlobalTypes {
   Color: {
@@ -214,6 +214,9 @@
       80: "#8c795d",
       90: "#776750",
       100: "#3b352b"
+    },
+    Gradient: {
+      Default: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
     }
   },
   Spacing: {
@@ -485,6 +488,9 @@ export interface ColorTypes {
     80: "#8c795d",
     90: "#776750",
     100: "#3b352b"
+  },
+  Gradient: {
+    Default: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   }
 }
 
@@ -600,7 +606,10 @@ export interface AliasTypes {
     Negative: "#eb9091",
     Warning: "#edb016",
     Positive: "#65ba75",
-    Informative: "#8da4ef"
+    Informative: "#8da4ef",
+    BorderRadius: {
+      Default: "0rem"
+    }
   },
   Background: {
     Normal: "#3d3d42",
@@ -659,7 +668,9 @@ export interface AliasTypes {
       Elevated: "#515157",
       Accent: "#5bb3ea",
       Active: "#5bb3ea",
-      Disabled: "#515157"
+      Disabled: "#515157",
+      RangeHover: "#696970",
+      ActiveDateHover: "#96cff0"
     }
   },
   Elevation: {
@@ -939,7 +950,10 @@ export interface BorderTypes {
   Negative: "#eb9091",
   Warning: "#edb016",
   Positive: "#65ba75",
-  Informative: "#8da4ef"
+  Informative: "#8da4ef",
+  BorderRadius: {
+    Default: "0rem"
+  }
 }
 
 declare const Border: BorderTypes;
@@ -1007,7 +1021,9 @@ export interface InteractionTypes {
     Elevated: "#515157",
     Accent: "#5bb3ea",
     Active: "#5bb3ea",
-    Disabled: "#515157"
+    Disabled: "#515157",
+    RangeHover: "#696970",
+    ActiveDateHover: "#96cff0"
   }
 }
 
@@ -1324,6 +1340,31 @@ export interface ComponentTypes {
         Text: "#83838c",
         Icon: "#83838c"
       }
+    },
+    Launch: {
+      Default: {
+        Background: "#232326",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Hover: {
+        Background: "#343438",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Pressed: {
+        Background: "#232326",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Disabled: {
+        Background: "#e5e5ea",
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
+      },
+      Loading: {
+        Background: "#232326"
+      }
     }
   },
   Container: {
@@ -1530,13 +1571,54 @@ export interface ComponentTypes {
         Border: "#5bb3ea",
         Icon: "#5bb3ea"
       }
+    },
+    Launch: {
+      Default: {
+        Background: "#232326",
+        Border: "#3d3d42",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      HoverLeft: {
+        BackgroundLeft: "#343438",
+        BackgroundRight: "#232326",
+        Border: "#3d3d42",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      HoverRight: {
+        BackgroundLeft: "#232326",
+        BackgroundRight: "#343438",
+        Border: "#3d3d42",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Active: {
+        Background: "#232326",
+        Border: "#3d3d42",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Disabled: {
+        Background: "#e5e5ea",
+        Border: "#3d3d42",
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
+      },
+      Loading: {
+        BackgroundLeft: "#232326",
+        BackgroundRight: "#232326",
+        Border: "#3d3d42",
+        Icon: "#ffffff"
+      }
     }
   },
   Appbar: {
     Background: "#343438",
     Border: "#515157",
     Text: "#ffffff",
-    Icon: "#ffffff"
+    Icon: "#ffffff",
+    TopGradient: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   },
   Badge: {
     Informative: {
@@ -1703,11 +1785,21 @@ export interface ComponentTypes {
     },
     SelectedItem: {
       Text: "#343438",
-      Background: "#5bb3ea"
+      Background: {
+        Default: "#5bb3ea",
+        Hover: "#96cff0"
+      }
     },
     HoverItem: {
       Background: "#515157",
       Text: "#ffffff"
+    },
+    DateRange: {
+      Text: "#ffffff",
+      Background: {
+        Default: "#515157",
+        Hover: "#696970"
+      }
     },
     PresetArea: {
       Background: "#343438",
@@ -2340,7 +2432,8 @@ export interface ComponentTypes {
     StatusLine: {
       Default: "#515157",
       Success: "#00b050",
-      Error: "#d63c42"
+      Error: "#d63c42",
+      InProgress: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
     }
   },
   NumericSpinner: {
@@ -3391,6 +3484,31 @@ export interface ButtonTypes {
       Text: "#83838c",
       Icon: "#83838c"
     }
+  },
+  Launch: {
+    Default: {
+      Background: "#232326",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Hover: {
+      Background: "#343438",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Pressed: {
+      Background: "#232326",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Disabled: {
+      Background: "#e5e5ea",
+      Text: "#a3a3ab",
+      Icon: "#a3a3ab"
+    },
+    Loading: {
+      Background: "#232326"
+    }
   }
 }
 
@@ -3612,6 +3730,46 @@ export interface SplitMenuButtonTypes {
       Border: "#5bb3ea",
       Icon: "#5bb3ea"
     }
+  },
+  Launch: {
+    Default: {
+      Background: "#232326",
+      Border: "#3d3d42",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    HoverLeft: {
+      BackgroundLeft: "#343438",
+      BackgroundRight: "#232326",
+      Border: "#3d3d42",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    HoverRight: {
+      BackgroundLeft: "#232326",
+      BackgroundRight: "#343438",
+      Border: "#3d3d42",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Active: {
+      Background: "#232326",
+      Border: "#3d3d42",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Disabled: {
+      Background: "#e5e5ea",
+      Border: "#3d3d42",
+      Text: "#a3a3ab",
+      Icon: "#a3a3ab"
+    },
+    Loading: {
+      BackgroundLeft: "#232326",
+      BackgroundRight: "#232326",
+      Border: "#3d3d42",
+      Icon: "#ffffff"
+    }
   }
 }
 
@@ -3621,7 +3779,8 @@ export interface AppbarTypes {
   Background: "#343438",
   Border: "#515157",
   Text: "#ffffff",
-  Icon: "#ffffff"
+  Icon: "#ffffff",
+  TopGradient: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
 }
 
 declare const Appbar: AppbarTypes;
@@ -3806,11 +3965,21 @@ export interface CalendarTypes {
   },
   SelectedItem: {
     Text: "#343438",
-    Background: "#5bb3ea"
+    Background: {
+      Default: "#5bb3ea",
+      Hover: "#96cff0"
+    }
   },
   HoverItem: {
     Background: "#515157",
     Text: "#ffffff"
+  },
+  DateRange: {
+    Text: "#ffffff",
+    Background: {
+      Default: "#515157",
+      Hover: "#696970"
+    }
   },
   PresetArea: {
     Background: "#343438",
@@ -4509,7 +4678,8 @@ export interface ProgressBarTypes {
   StatusLine: {
     Default: "#515157",
     Success: "#00b050",
-    Error: "#d63c42"
+    Error: "#d63c42",
+    InProgress: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   }
 }
 

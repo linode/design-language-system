@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2024-08-21
+   * Generated on 2024-08-23
    */
   export const Global = {
   Color: {
@@ -214,6 +214,9 @@
       80: "#8c795d",
       90: "#776750",
       100: "#3b352b"
+    },
+    Gradient: {
+      Default: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
     }
   },
   Spacing: {
@@ -483,6 +486,9 @@ export const Color = {
     80: "#8c795d",
     90: "#776750",
     100: "#3b352b"
+  },
+  Gradient: {
+    Default: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   }
 };
 
@@ -590,7 +596,10 @@ export const Alias = {
     Negative: "#d63c42",
     Warning: "#fecb34",
     Positive: "#00b050",
-    Informative: "#4067e5"
+    Informative: "#4067e5",
+    BorderRadius: {
+      Default: "0rem"
+    }
   },
   Background: {
     Normal: "#ffffff",
@@ -649,12 +658,14 @@ export const Alias = {
       Elevated: "#edf8ff",
       Accent: "#ceedfe",
       Active: "#0174bc",
-      Disabled: "#ededf2"
+      Disabled: "#ededf2",
+      RangeHover: "#ceedfe",
+      ActiveDateHover: "#108ad6"
     }
   },
   Elevation: {
-    S: "0 2px 6px 0 rgba(58,59,63,0.18)",
-    SInverted: "0 -2px 6px 0 rgba(58,59,63,0.18)",
+    S: "0 2px 8px 0 rgba(58,59,63,0.18)",
+    SInverted: "0 -2px 8px 0 rgba(58,59,63,0.18)",
     L: "0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08)"
   },
   Typography: {
@@ -925,7 +936,10 @@ export const Border = {
   Negative: "#d63c42",
   Warning: "#fecb34",
   Positive: "#00b050",
-  Informative: "#4067e5"
+  Informative: "#4067e5",
+  BorderRadius: {
+    Default: "0rem"
+  }
 };
 
 export const Background = {
@@ -987,13 +1001,15 @@ export const Interaction = {
     Elevated: "#edf8ff",
     Accent: "#ceedfe",
     Active: "#0174bc",
-    Disabled: "#ededf2"
+    Disabled: "#ededf2",
+    RangeHover: "#ceedfe",
+    ActiveDateHover: "#108ad6"
   }
 };
 
 export const Elevation = {
-  S: "0 2px 6px 0 rgba(58,59,63,0.18)",
-  SInverted: "0 -2px 6px 0 rgba(58,59,63,0.18)",
+  S: "0 2px 8px 0 rgba(58,59,63,0.18)",
+  SInverted: "0 -2px 8px 0 rgba(58,59,63,0.18)",
   L: "0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08)"
 };
 
@@ -1294,6 +1310,31 @@ export const Component = {
         Text: "#a3a3ab",
         Icon: "#a3a3ab"
       }
+    },
+    Launch: {
+      Default: {
+        Background: "#232326",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Hover: {
+        Background: "#343438",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Pressed: {
+        Background: "#232326",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Disabled: {
+        Background: "#e5e5ea",
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
+      },
+      Loading: {
+        Background: "#232326"
+      }
     }
   },
   Container: {
@@ -1500,13 +1541,54 @@ export const Component = {
         Border: "#0174bc",
         Icon: "#0174bc"
       }
+    },
+    Launch: {
+      Default: {
+        Background: "#232326",
+        Border: "#ffffff",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      HoverLeft: {
+        BackgroundLeft: "#343438",
+        BackgroundRight: "#232326",
+        Border: "#ffffff",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      HoverRight: {
+        BackgroundLeft: "#232326",
+        BackgroundRight: "#343438",
+        Border: "#ffffff",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Active: {
+        Background: "#232326",
+        Border: "#ffffff",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Disabled: {
+        Background: "#e5e5ea",
+        Border: "#ffffff",
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
+      },
+      Loading: {
+        BackgroundLeft: "#232326",
+        BackgroundRight: "#232326",
+        Border: "#ffffff",
+        Icon: "#ffffff"
+      }
     }
   },
   Appbar: {
     Background: "#f7f7fa",
     Border: "#d6d6dd",
     Text: "#343438",
-    Icon: "#3d3d42"
+    Icon: "#3d3d42",
+    TopGradient: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   },
   Badge: {
     Informative: {
@@ -1673,11 +1755,21 @@ export const Component = {
     },
     SelectedItem: {
       Text: "#ffffff",
-      Background: "#0174bc"
+      Background: {
+        Default: "#0174bc",
+        Hover: "#108ad6"
+      }
     },
     HoverItem: {
       Background: "#edf8ff",
       Text: "#343438"
+    },
+    DateRange: {
+      Text: "#343438",
+      Background: {
+        Default: "#edf8ff",
+        Hover: "#ceedfe"
+      }
     },
     PresetArea: {
       Background: "#f7f7fa",
@@ -2310,7 +2402,8 @@ export const Component = {
     StatusLine: {
       Default: "#e5e5ea",
       Success: "#00b050",
-      Error: "#d63c42"
+      Error: "#d63c42",
+      InProgress: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
     }
   },
   NumericSpinner: {
@@ -3359,6 +3452,31 @@ export const Button = {
       Text: "#a3a3ab",
       Icon: "#a3a3ab"
     }
+  },
+  Launch: {
+    Default: {
+      Background: "#232326",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Hover: {
+      Background: "#343438",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Pressed: {
+      Background: "#232326",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Disabled: {
+      Background: "#e5e5ea",
+      Text: "#a3a3ab",
+      Icon: "#a3a3ab"
+    },
+    Loading: {
+      Background: "#232326"
+    }
   }
 };
 
@@ -3570,6 +3688,46 @@ export const SplitMenuButton = {
       Border: "#0174bc",
       Icon: "#0174bc"
     }
+  },
+  Launch: {
+    Default: {
+      Background: "#232326",
+      Border: "#ffffff",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    HoverLeft: {
+      BackgroundLeft: "#343438",
+      BackgroundRight: "#232326",
+      Border: "#ffffff",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    HoverRight: {
+      BackgroundLeft: "#232326",
+      BackgroundRight: "#343438",
+      Border: "#ffffff",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Active: {
+      Background: "#232326",
+      Border: "#ffffff",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Disabled: {
+      Background: "#e5e5ea",
+      Border: "#ffffff",
+      Text: "#a3a3ab",
+      Icon: "#a3a3ab"
+    },
+    Loading: {
+      BackgroundLeft: "#232326",
+      BackgroundRight: "#232326",
+      Border: "#ffffff",
+      Icon: "#ffffff"
+    }
   }
 };
 
@@ -3577,7 +3735,8 @@ export const Appbar = {
   Background: "#f7f7fa",
   Border: "#d6d6dd",
   Text: "#343438",
-  Icon: "#3d3d42"
+  Icon: "#3d3d42",
+  TopGradient: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
 };
 
 export const Badge = {
@@ -3750,11 +3909,21 @@ export const Calendar = {
   },
   SelectedItem: {
     Text: "#ffffff",
-    Background: "#0174bc"
+    Background: {
+      Default: "#0174bc",
+      Hover: "#108ad6"
+    }
   },
   HoverItem: {
     Background: "#edf8ff",
     Text: "#343438"
+  },
+  DateRange: {
+    Text: "#343438",
+    Background: {
+      Default: "#edf8ff",
+      Hover: "#ceedfe"
+    }
   },
   PresetArea: {
     Background: "#f7f7fa",
@@ -4409,7 +4578,8 @@ export const ProgressBar = {
   StatusLine: {
     Default: "#e5e5ea",
     Success: "#00b050",
-    Error: "#d63c42"
+    Error: "#d63c42",
+    InProgress: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   }
 };
 

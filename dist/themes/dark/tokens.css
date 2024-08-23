@@ -181,6 +181,7 @@
   --token-global-color-brown-80: #8c795d;
   --token-global-color-brown-90: #776750;
   --token-global-color-brown-100: #3b352b;
+  --token-global-color-gradient-default: linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%); /* Default gradient */
   --token-global-spacing-0: 0rem;
   --token-global-spacing-10: 0.125rem; /* 2px */
   --token-global-spacing-20: 0.25rem; /* 4px */
@@ -247,6 +248,7 @@
   --token-alias-border-warning: #edb016;
   --token-alias-border-positive: #65ba75;
   --token-alias-border-informative: #8da4ef;
+  --token-alias-border-border-radius-default: 0rem; /* Default border radius value */
   --token-alias-background-normal: #3d3d42; /* Default component background */
   --token-alias-background-neutral: #343438; /* Default page background */
   --token-alias-background-base: #ffffff; /* Tooltip background */
@@ -287,6 +289,8 @@
   --token-alias-interaction-background-accent: #5bb3ea;
   --token-alias-interaction-background-active: #5bb3ea;
   --token-alias-interaction-background-disabled: #515157;
+  --token-alias-interaction-background-range-hover: #696970; /* Hover color for a calendar date range */
+  --token-alias-interaction-background-active-date-hover: #96cff0; /* Hover color for an active calendar date */
   --token-alias-elevation-s: 0 2px 6px 0 rgba(0,0,0,0.18); /* Default shadow for components, like notification banners, dropdowns, popups; */
   --token-alias-elevation-s-inverted: 0 -2px 6px 0 rgba(0,0,0,0.18); /* Inverted shadow for elements that appear above the component */
   --token-alias-elevation-l: 0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08); /* Shadow for modals */
@@ -461,6 +465,19 @@
   --token-component-button-link-pressed-icon: #5bb3ea;
   --token-component-button-link-disabled-text: #83838c;
   --token-component-button-link-disabled-icon: #83838c;
+  --token-component-button-launch-default-background: #232326; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-default-text: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-default-icon: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-hover-background: #343438; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-hover-text: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-hover-icon: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-pressed-background: #232326; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-pressed-text: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-pressed-icon: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-disabled-background: #e5e5ea; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-disabled-text: #a3a3ab; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-disabled-icon: #a3a3ab; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-loading-background: #232326; /* This component token is considered unstable and in development. */
   --token-component-container-background: #3d3d42;
   --token-component-container-border: #515157;
   --token-component-table-header-filled-background: #343438;
@@ -575,10 +592,37 @@
   --token-component-split-menu-button-secondary-loading-background: #3d3d42;
   --token-component-split-menu-button-secondary-loading-border: #5bb3ea;
   --token-component-split-menu-button-secondary-loading-icon: #5bb3ea;
+  --token-component-split-menu-button-launch-default-background: #232326;
+  --token-component-split-menu-button-launch-default-border: #3d3d42;
+  --token-component-split-menu-button-launch-default-text: #ffffff;
+  --token-component-split-menu-button-launch-default-icon: #ffffff;
+  --token-component-split-menu-button-launch-hover-left-background-left: #343438;
+  --token-component-split-menu-button-launch-hover-left-background-right: #232326;
+  --token-component-split-menu-button-launch-hover-left-border: #3d3d42;
+  --token-component-split-menu-button-launch-hover-left-text: #ffffff;
+  --token-component-split-menu-button-launch-hover-left-icon: #ffffff;
+  --token-component-split-menu-button-launch-hover-right-background-left: #232326;
+  --token-component-split-menu-button-launch-hover-right-background-right: #343438;
+  --token-component-split-menu-button-launch-hover-right-border: #3d3d42;
+  --token-component-split-menu-button-launch-hover-right-text: #ffffff;
+  --token-component-split-menu-button-launch-hover-right-icon: #ffffff;
+  --token-component-split-menu-button-launch-active-background: #232326;
+  --token-component-split-menu-button-launch-active-border: #3d3d42;
+  --token-component-split-menu-button-launch-active-text: #ffffff;
+  --token-component-split-menu-button-launch-active-icon: #ffffff;
+  --token-component-split-menu-button-launch-disabled-background: #e5e5ea;
+  --token-component-split-menu-button-launch-disabled-border: #3d3d42;
+  --token-component-split-menu-button-launch-disabled-text: #a3a3ab;
+  --token-component-split-menu-button-launch-disabled-icon: #a3a3ab;
+  --token-component-split-menu-button-launch-loading-background-left: #232326;
+  --token-component-split-menu-button-launch-loading-background-right: #232326;
+  --token-component-split-menu-button-launch-loading-border: #3d3d42;
+  --token-component-split-menu-button-launch-loading-icon: #ffffff;
   --token-component-appbar-background: #343438;
   --token-component-appbar-border: #515157;
   --token-component-appbar-text: #ffffff;
   --token-component-appbar-icon: #ffffff;
+  --token-component-appbar-top-gradient: linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%);
   --token-component-badge-informative-background: lch(77.7 28.7 275 / 0.12);
   --token-component-badge-informative-text: #aec0f5;
   --token-component-badge-neutral-background: lch(78.6 4.18 286 / 0.12);
@@ -666,9 +710,13 @@
   --token-component-calendar-text-default: #ffffff;
   --token-component-calendar-text-disabled: #83838c;
   --token-component-calendar-selected-item-text: #343438;
-  --token-component-calendar-selected-item-background: #5bb3ea;
+  --token-component-calendar-selected-item-background-default: #5bb3ea;
+  --token-component-calendar-selected-item-background-hover: #96cff0;
   --token-component-calendar-hover-item-background: #515157;
   --token-component-calendar-hover-item-text: #ffffff;
+  --token-component-calendar-date-range-text: #ffffff;
+  --token-component-calendar-date-range-background-default: #515157;
+  --token-component-calendar-date-range-background-hover: #696970;
   --token-component-calendar-preset-area-background: #343438;
   --token-component-calendar-preset-area-hover-period-background: #3d3d42;
   --token-component-calendar-preset-area-active-period-background: #5bb3ea;
@@ -1028,6 +1076,7 @@
   --token-component-progress-bar-status-line-default: #515157;
   --token-component-progress-bar-status-line-success: #00b050;
   --token-component-progress-bar-status-line-error: #d63c42;
+  --token-component-progress-bar-status-line-in-progress: linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%);
   --token-component-numeric-spinner-default-background: #343438;
   --token-component-numeric-spinner-default-border: #696970;
   --token-component-numeric-spinner-default-text: #a3a3ab;

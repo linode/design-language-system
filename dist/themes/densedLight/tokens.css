@@ -181,6 +181,7 @@
   --token-global-color-brown-80: #8c795d;
   --token-global-color-brown-90: #776750;
   --token-global-color-brown-100: #3b352b;
+  --token-global-color-gradient-default: linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%); /* Default gradient */
   --token-global-spacing-0: 0rem;
   --token-global-spacing-10: 0.125rem; /* 2px */
   --token-global-spacing-20: 0.25rem; /* 4px */
@@ -247,6 +248,7 @@
   --token-alias-border-warning: #fecb34; /* Use only for borders to indicate a warning state */
   --token-alias-border-positive: #00b050; /* Use only for borders to indicate a success state */
   --token-alias-border-informative: #4067e5; /* Use only for borders to indicate an info state */
+  --token-alias-border-border-radius-default: 0rem; /* Default border radius value */
   --token-alias-background-normal: #ffffff; /* Primary background color */
   --token-alias-background-neutral: #f7f7fa; /* Page background color */
   --token-alias-background-base: #343438; /* Tooltip background */
@@ -287,8 +289,10 @@
   --token-alias-interaction-background-accent: #ceedfe;
   --token-alias-interaction-background-active: #0174bc;
   --token-alias-interaction-background-disabled: #ededf2;
-  --token-alias-elevation-s: 0 2px 6px 0 rgba(58,59,63,0.18); /* Default shadow for components, like notification banners, dropdowns, popups; */
-  --token-alias-elevation-s-inverted: 0 -2px 6px 0 rgba(58,59,63,0.18); /* Inverted shadow for elements that appear above the component */
+  --token-alias-interaction-background-range-hover: #ceedfe; /* Hover color for a calendar date range */
+  --token-alias-interaction-background-active-date-hover: #108ad6; /* Hover color for an active calendar date */
+  --token-alias-elevation-s: 0 2px 8px 0 rgba(58,59,63,0.18); /* Default shadow for components, like notification banners, dropdowns, popups; */
+  --token-alias-elevation-s-inverted: 0 -2px 8px 0 rgba(58,59,63,0.18); /* Inverted shadow for elements that appear above the component */
   --token-alias-elevation-l: 0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08); /* Shadow for modals */
   --token-alias-typography-heading-xxxl: 700 2.25rem/2.625rem 'Nunito Sans'; /* Promo banners, KPIs */
   --token-alias-typography-heading-xxl: 800 1.75rem/2rem 'Nunito Sans'; /* Main titles - h1 */
@@ -461,6 +465,19 @@
   --token-component-button-link-pressed-icon: #0174bc;
   --token-component-button-link-disabled-text: #a3a3ab;
   --token-component-button-link-disabled-icon: #a3a3ab;
+  --token-component-button-launch-default-background: #232326; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-default-text: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-default-icon: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-hover-background: #343438; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-hover-text: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-hover-icon: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-pressed-background: #232326; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-pressed-text: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-pressed-icon: #ffffff; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-disabled-background: #e5e5ea; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-disabled-text: #a3a3ab; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-disabled-icon: #a3a3ab; /* This component token is considered unstable and in development. */
+  --token-component-button-launch-loading-background: #232326; /* This component token is considered unstable and in development. */
   --token-component-container-background: #ffffff;
   --token-component-container-border: #d6d6dd;
   --token-component-table-header-filled-background: #343438;
@@ -575,10 +592,37 @@
   --token-component-split-menu-button-secondary-loading-background: #ffffff;
   --token-component-split-menu-button-secondary-loading-border: #0174bc;
   --token-component-split-menu-button-secondary-loading-icon: #0174bc;
+  --token-component-split-menu-button-launch-default-background: #232326;
+  --token-component-split-menu-button-launch-default-border: #ffffff;
+  --token-component-split-menu-button-launch-default-text: #ffffff;
+  --token-component-split-menu-button-launch-default-icon: #ffffff;
+  --token-component-split-menu-button-launch-hover-left-background-left: #343438;
+  --token-component-split-menu-button-launch-hover-left-background-right: #232326;
+  --token-component-split-menu-button-launch-hover-left-border: #ffffff;
+  --token-component-split-menu-button-launch-hover-left-text: #ffffff;
+  --token-component-split-menu-button-launch-hover-left-icon: #ffffff;
+  --token-component-split-menu-button-launch-hover-right-background-left: #232326;
+  --token-component-split-menu-button-launch-hover-right-background-right: #343438;
+  --token-component-split-menu-button-launch-hover-right-border: #ffffff;
+  --token-component-split-menu-button-launch-hover-right-text: #ffffff;
+  --token-component-split-menu-button-launch-hover-right-icon: #ffffff;
+  --token-component-split-menu-button-launch-active-background: #232326;
+  --token-component-split-menu-button-launch-active-border: #ffffff;
+  --token-component-split-menu-button-launch-active-text: #ffffff;
+  --token-component-split-menu-button-launch-active-icon: #ffffff;
+  --token-component-split-menu-button-launch-disabled-background: #e5e5ea;
+  --token-component-split-menu-button-launch-disabled-border: #ffffff;
+  --token-component-split-menu-button-launch-disabled-text: #a3a3ab;
+  --token-component-split-menu-button-launch-disabled-icon: #a3a3ab;
+  --token-component-split-menu-button-launch-loading-background-left: #232326;
+  --token-component-split-menu-button-launch-loading-background-right: #232326;
+  --token-component-split-menu-button-launch-loading-border: #ffffff;
+  --token-component-split-menu-button-launch-loading-icon: #ffffff;
   --token-component-appbar-background: #f7f7fa;
   --token-component-appbar-border: #d6d6dd;
   --token-component-appbar-text: #343438;
   --token-component-appbar-icon: #3d3d42;
+  --token-component-appbar-top-gradient: linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%);
   --token-component-badge-informative-background: lch(36.7 58.2 286 / 0.12);
   --token-component-badge-informative-text: #3451b2;
   --token-component-badge-neutral-background: lch(34.6 3.66 286 / 0.12);
@@ -666,9 +710,13 @@
   --token-component-calendar-text-default: #343438;
   --token-component-calendar-text-disabled: #a3a3ab;
   --token-component-calendar-selected-item-text: #ffffff;
-  --token-component-calendar-selected-item-background: #0174bc;
+  --token-component-calendar-selected-item-background-default: #0174bc;
+  --token-component-calendar-selected-item-background-hover: #108ad6;
   --token-component-calendar-hover-item-background: #edf8ff;
   --token-component-calendar-hover-item-text: #343438;
+  --token-component-calendar-date-range-text: #343438;
+  --token-component-calendar-date-range-background-default: #edf8ff;
+  --token-component-calendar-date-range-background-hover: #ceedfe;
   --token-component-calendar-preset-area-background: #f7f7fa;
   --token-component-calendar-preset-area-hover-period-background: #edf8ff;
   --token-component-calendar-preset-area-active-period-background: #ceedfe;
@@ -1028,6 +1076,7 @@
   --token-component-progress-bar-status-line-default: #e5e5ea;
   --token-component-progress-bar-status-line-success: #00b050;
   --token-component-progress-bar-status-line-error: #d63c42;
+  --token-component-progress-bar-status-line-in-progress: linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%);
   --token-component-numeric-spinner-default-background: #ffffff;
   --token-component-numeric-spinner-default-border: #83838c;
   --token-component-numeric-spinner-default-text: #696970;
