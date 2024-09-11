@@ -311,6 +311,10 @@
       }
     },
     "accent": {
+      "disabled": {
+        "value": "{global.color.neutrals.70}",
+        "type": "color"
+      },
       "info": {
         "primary": {
           "value": "{global.color.ultramarine.50}",

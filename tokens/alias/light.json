@@ -686,6 +686,10 @@
       }
     },
     "accent": {
+      "disabled": {
+        "value": "{global.color.neutrals.40}",
+        "type": "color"
+      },
       "info": {
         "primary": {
           "value": "{global.color.ultramarine.90}",
