@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2024-08-21
+   * Generated on 2024-09-13
    */
   export interface GlobalTypes {
   Color: {
@@ -214,6 +214,9 @@
       80: "#8c795d",
       90: "#776750",
       100: "#3b352b"
+    },
+    Gradient: {
+      Default: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
     }
   },
   Spacing: {
@@ -485,6 +488,9 @@ export interface ColorTypes {
     80: "#8c795d",
     90: "#776750",
     100: "#3b352b"
+  },
+  Gradient: {
+    Default: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   }
 }
 
@@ -659,12 +665,14 @@ export interface AliasTypes {
       Elevated: "#edf8ff",
       Accent: "#ceedfe",
       Active: "#0174bc",
-      Disabled: "#ededf2"
+      Disabled: "#ededf2",
+      RangeHover: "#ceedfe",
+      ActiveDateHover: "#108ad6"
     }
   },
   Elevation: {
-    S: "0 2px 6px 0 rgba(58,59,63,0.18)",
-    SInverted: "0 -2px 6px 0 rgba(58,59,63,0.18)",
+    S: "0 2px 8px 0 rgba(58,59,63,0.18)",
+    SInverted: "0 -2px 8px 0 rgba(58,59,63,0.18)",
     L: "0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08)"
   },
   Typography: {
@@ -708,6 +716,7 @@ export interface AliasTypes {
     Code: "400 0.813rem/1.25rem 'Fira Code'"
   },
   Accent: {
+    Disabled: "#c2c2ca",
     Info: {
       Primary: "#3451b2",
       Secondary: "lch(36.7 58.2 286 / 0.12)"
@@ -886,6 +895,9 @@ export interface AliasTypes {
       Warning: "#fecb34",
       Positive: "#00b050"
     }
+  },
+  Radius: {
+    Default: "0rem"
   }
 }
 
@@ -1007,15 +1019,17 @@ export interface InteractionTypes {
     Elevated: "#edf8ff",
     Accent: "#ceedfe",
     Active: "#0174bc",
-    Disabled: "#ededf2"
+    Disabled: "#ededf2",
+    RangeHover: "#ceedfe",
+    ActiveDateHover: "#108ad6"
   }
 }
 
 declare const Interaction: InteractionTypes;
 
 export interface ElevationTypes {
-  S: "0 2px 6px 0 rgba(58,59,63,0.18)",
-  SInverted: "0 -2px 6px 0 rgba(58,59,63,0.18)",
+  S: "0 2px 8px 0 rgba(58,59,63,0.18)",
+  SInverted: "0 -2px 8px 0 rgba(58,59,63,0.18)",
   L: "0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08)"
 }
 
@@ -1065,6 +1079,7 @@ export interface TypographyTypes {
 declare const Typography: TypographyTypes;
 
 export interface AccentTypes {
+  Disabled: "#c2c2ca",
   Info: {
     Primary: "#3451b2",
     Secondary: "lch(36.7 58.2 286 / 0.12)"
@@ -1250,6 +1265,12 @@ export interface ChartTypes {
 
 declare const Chart: ChartTypes;
 
+export interface RadiusTypes {
+  Default: "0rem"
+}
+
+declare const Radius: RadiusTypes;
+
 export interface ComponentTypes {
   Button: {
     Primary: {
@@ -1323,6 +1344,31 @@ export interface ComponentTypes {
       Disabled: {
         Text: "#a3a3ab",
         Icon: "#a3a3ab"
+      }
+    },
+    Launch: {
+      Default: {
+        Background: "#232326",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Hover: {
+        Background: "#343438",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Pressed: {
+        Background: "#232326",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Disabled: {
+        Background: "#e5e5ea",
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
+      },
+      Loading: {
+        Background: "#232326"
       }
     }
   },
@@ -1530,13 +1576,54 @@ export interface ComponentTypes {
         Border: "#0174bc",
         Icon: "#0174bc"
       }
+    },
+    Launch: {
+      Default: {
+        Background: "#232326",
+        Border: "#ffffff",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      HoverLeft: {
+        BackgroundLeft: "#343438",
+        BackgroundRight: "#232326",
+        Border: "#ffffff",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      HoverRight: {
+        BackgroundLeft: "#232326",
+        BackgroundRight: "#343438",
+        Border: "#ffffff",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Active: {
+        Background: "#232326",
+        Border: "#ffffff",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Disabled: {
+        Background: "#e5e5ea",
+        Border: "#ffffff",
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
+      },
+      Loading: {
+        BackgroundLeft: "#232326",
+        BackgroundRight: "#232326",
+        Border: "#ffffff",
+        Icon: "#ffffff"
+      }
     }
   },
   Appbar: {
     Background: "#f7f7fa",
     Border: "#d6d6dd",
     Text: "#343438",
-    Icon: "#3d3d42"
+    Icon: "#3d3d42",
+    TopGradient: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   },
   Badge: {
     Informative: {
@@ -1703,11 +1790,21 @@ export interface ComponentTypes {
     },
     SelectedItem: {
       Text: "#ffffff",
-      Background: "#0174bc"
+      Background: {
+        Default: "#0174bc",
+        Hover: "#108ad6"
+      }
     },
     HoverItem: {
       Background: "#edf8ff",
       Text: "#343438"
+    },
+    DateRange: {
+      Text: "#343438",
+      Background: {
+        Default: "#edf8ff",
+        Hover: "#ceedfe"
+      }
     },
     PresetArea: {
       Background: "#f7f7fa",
@@ -2078,6 +2175,7 @@ export interface ComponentTypes {
   KpiBar: {
     Text: "#3d3d42",
     Border: "#d6d6dd",
+    Background: "#ffffff",
     Icon: {
       Default: "#3d3d42",
       Hover: "#009cde",
@@ -2101,6 +2199,12 @@ export interface ComponentTypes {
           Text: "#343438",
           Border: "#515157",
           Icon: "#515157"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca",
+          Icon: "#a3a3ab"
         }
       },
       Green: {
@@ -2117,6 +2221,11 @@ export interface ComponentTypes {
           Label: "#138246",
           Text: "#343438",
           Border: "#138246"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Orange: {
@@ -2133,6 +2242,11 @@ export interface ComponentTypes {
           Label: "#c25d05",
           Text: "#343438",
           Border: "#c25d05"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Purple: {
@@ -2149,6 +2263,11 @@ export interface ComponentTypes {
           Label: "#753bbd",
           Text: "#343438",
           Border: "#753bbd"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Red: {
@@ -2165,6 +2284,11 @@ export interface ComponentTypes {
           Label: "#b82329",
           Text: "#343438",
           Border: "#b82329"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Ultramarine: {
@@ -2181,6 +2305,11 @@ export interface ComponentTypes {
           Label: "#3451b2",
           Text: "#343438",
           Border: "#3451b2"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Pink: {
@@ -2197,6 +2326,11 @@ export interface ComponentTypes {
           Label: "#cd1d8d",
           Text: "#343438",
           Border: "#cd1d8d"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       }
     }
@@ -2340,7 +2474,8 @@ export interface ComponentTypes {
     StatusLine: {
       Default: "#e5e5ea",
       Success: "#00b050",
-      Error: "#d63c42"
+      Error: "#d63c42",
+      InProgress: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
     }
   },
   NumericSpinner: {
@@ -2354,7 +2489,7 @@ export interface ComponentTypes {
     Hover: {
       Background: "#ffffff",
       Border: "#3d3d42",
-      Text: "#696970",
+      Text: "#343438",
       Icon: "#3d3d42",
       HintText: "#696970"
     },
@@ -2387,7 +2522,7 @@ export interface ComponentTypes {
     Focus: {
       Background: "#ffffff",
       Border: "#0174bc",
-      Text: "#696970",
+      Text: "#343438",
       Icon: "#3d3d42",
       HintText: "#696970"
     }
@@ -2750,7 +2885,7 @@ export interface ComponentTypes {
       }
     },
     Error: {
-      Background: "#f7f7fa",
+      Background: "#ffefef",
       Border: "#d63c42",
       Text: "#343438",
       Icon: {
@@ -3116,10 +3251,19 @@ export interface ComponentTypes {
       Line: "#d6d6dd",
       PastItem: {
         Circle: {
-          Background: "#edf8ff",
           Border: "#0174bc",
-          Text: "#0174bc",
-          Icon: "#0174bc"
+          Background: {
+            Default: "#edf8ff",
+            Hover: "#0174bc"
+          },
+          Icon: {
+            Default: "#0174bc",
+            Hover: "#ffffff"
+          },
+          Text: {
+            Default: "#0174bc",
+            Hover: "#ffffff"
+          }
         },
         Text: {
           Default: "#343438",
@@ -3391,6 +3535,31 @@ export interface ButtonTypes {
       Text: "#a3a3ab",
       Icon: "#a3a3ab"
     }
+  },
+  Launch: {
+    Default: {
+      Background: "#232326",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Hover: {
+      Background: "#343438",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Pressed: {
+      Background: "#232326",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Disabled: {
+      Background: "#e5e5ea",
+      Text: "#a3a3ab",
+      Icon: "#a3a3ab"
+    },
+    Loading: {
+      Background: "#232326"
+    }
   }
 }
 
@@ -3612,6 +3781,46 @@ export interface SplitMenuButtonTypes {
       Border: "#0174bc",
       Icon: "#0174bc"
     }
+  },
+  Launch: {
+    Default: {
+      Background: "#232326",
+      Border: "#ffffff",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    HoverLeft: {
+      BackgroundLeft: "#343438",
+      BackgroundRight: "#232326",
+      Border: "#ffffff",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    HoverRight: {
+      BackgroundLeft: "#232326",
+      BackgroundRight: "#343438",
+      Border: "#ffffff",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Active: {
+      Background: "#232326",
+      Border: "#ffffff",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Disabled: {
+      Background: "#e5e5ea",
+      Border: "#ffffff",
+      Text: "#a3a3ab",
+      Icon: "#a3a3ab"
+    },
+    Loading: {
+      BackgroundLeft: "#232326",
+      BackgroundRight: "#232326",
+      Border: "#ffffff",
+      Icon: "#ffffff"
+    }
   }
 }
 
@@ -3621,7 +3830,8 @@ export interface AppbarTypes {
   Background: "#f7f7fa",
   Border: "#d6d6dd",
   Text: "#343438",
-  Icon: "#3d3d42"
+  Icon: "#3d3d42",
+  TopGradient: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
 }
 
 declare const Appbar: AppbarTypes;
@@ -3806,11 +4016,21 @@ export interface CalendarTypes {
   },
   SelectedItem: {
     Text: "#ffffff",
-    Background: "#0174bc"
+    Background: {
+      Default: "#0174bc",
+      Hover: "#108ad6"
+    }
   },
   HoverItem: {
     Background: "#edf8ff",
     Text: "#343438"
+  },
+  DateRange: {
+    Text: "#343438",
+    Background: {
+      Default: "#edf8ff",
+      Hover: "#ceedfe"
+    }
   },
   PresetArea: {
     Background: "#f7f7fa",
@@ -4220,6 +4440,7 @@ declare const InlineEdit: InlineEditTypes;
 export interface KpiBarTypes {
   Text: "#3d3d42",
   Border: "#d6d6dd",
+  Background: "#ffffff",
   Icon: {
     Default: "#3d3d42",
     Hover: "#009cde",
@@ -4243,6 +4464,12 @@ export interface KpiBarTypes {
         Text: "#343438",
         Border: "#515157",
         Icon: "#515157"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca",
+        Icon: "#a3a3ab"
       }
     },
     Green: {
@@ -4259,6 +4486,11 @@ export interface KpiBarTypes {
         Label: "#138246",
         Text: "#343438",
         Border: "#138246"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Orange: {
@@ -4275,6 +4507,11 @@ export interface KpiBarTypes {
         Label: "#c25d05",
         Text: "#343438",
         Border: "#c25d05"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Purple: {
@@ -4291,6 +4528,11 @@ export interface KpiBarTypes {
         Label: "#753bbd",
         Text: "#343438",
         Border: "#753bbd"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Red: {
@@ -4307,6 +4549,11 @@ export interface KpiBarTypes {
         Label: "#b82329",
         Text: "#343438",
         Border: "#b82329"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Ultramarine: {
@@ -4323,6 +4570,11 @@ export interface KpiBarTypes {
         Label: "#3451b2",
         Text: "#343438",
         Border: "#3451b2"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Pink: {
@@ -4339,6 +4591,11 @@ export interface KpiBarTypes {
         Label: "#cd1d8d",
         Text: "#343438",
         Border: "#cd1d8d"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     }
   }
@@ -4509,7 +4766,8 @@ export interface ProgressBarTypes {
   StatusLine: {
     Default: "#e5e5ea",
     Success: "#00b050",
-    Error: "#d63c42"
+    Error: "#d63c42",
+    InProgress: "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"
   }
 }
 
@@ -4526,7 +4784,7 @@ export interface NumericSpinnerTypes {
   Hover: {
     Background: "#ffffff",
     Border: "#3d3d42",
-    Text: "#696970",
+    Text: "#343438",
     Icon: "#3d3d42",
     HintText: "#696970"
   },
@@ -4559,7 +4817,7 @@ export interface NumericSpinnerTypes {
   Focus: {
     Background: "#ffffff",
     Border: "#0174bc",
-    Text: "#696970",
+    Text: "#343438",
     Icon: "#3d3d42",
     HintText: "#696970"
   }
@@ -4949,7 +5207,7 @@ export interface TagTypes {
     }
   },
   Error: {
-    Background: "#f7f7fa",
+    Background: "#ffefef",
     Border: "#d63c42",
     Text: "#343438",
     Icon: {
@@ -5339,10 +5597,19 @@ export interface StepperTypes {
     Line: "#d6d6dd",
     PastItem: {
       Circle: {
-        Background: "#edf8ff",
         Border: "#0174bc",
-        Text: "#0174bc",
-        Icon: "#0174bc"
+        Background: {
+          Default: "#edf8ff",
+          Hover: "#0174bc"
+        },
+        Icon: {
+          Default: "#0174bc",
+          Hover: "#ffffff"
+        },
+        Text: {
+          Default: "#0174bc",
+          Hover: "#ffffff"
+        }
       },
       Text: {
         Default: "#343438",

@@ -87,7 +87,7 @@
       },
       "error": {
         "background": {
-          "value": "{alias.interaction.background.secondary}",
+          "value": "{alias.background.negativesubtle}",
           "type": "color"
         },
         "border": {

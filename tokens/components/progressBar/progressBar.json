@@ -29,6 +29,10 @@
         "error": {
           "value": "{alias.background.negative}",
           "type": "color"
+        },
+        "inProgress": {
+          "value": "{global.color.gradient.default}",
+          "type": "color"
         }
       }
     }

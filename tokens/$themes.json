@@ -365,10 +365,7 @@
       "component.switch.inactive.disabled.circle": "78a4ef3a9c278028ded8cce5df9861940e8d630e",
       "component.switch.inactive.disabled.text": "2ea594ab01b39c808fb8252d8a2e4039dd1f370d",
       "component.stepper.horizontal.line": "2b5e767672a3b6ec2ffdc7bf8418f5310b04cab1",
-      "component.stepper.horizontal.pastItem.circle.background": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
       "component.stepper.horizontal.pastItem.circle.border": "06dee734b518b11733c2f59292ffb25bd97433ad",
-      "component.stepper.horizontal.pastItem.circle.text": "68a3f771d9992aabe9513674ef8423b03c61e259",
-      "component.stepper.horizontal.pastItem.circle.icon": "97d4ba57fbbbe2008763a42831573b68a62eb90f",
       "component.stepper.horizontal.pastItem.text.default": "da55eab0d1ea26b4c0feec797b202041ade6a460",
       "component.stepper.horizontal.pastItem.text.hover": "cb9cb9c2b6abd99a0c70e00c4df365799ac957d2",
       "component.stepper.horizontal.currentItem.circle.background": "5a8ff3f54f4f042ffe0ffd9ede2d9cba89a6027a",
@@ -916,7 +913,6 @@
       "component.calendar.border": "5ec91dccd162d8a00dcdce33e32be5745a4b7b7d",
       "component.calendar.icon": "d65f2396f09f79e5d294db3bf6c58a2a19a1a32f",
       "component.calendar.selectedItem.text": "ced254d26a11d9fcefd4270d255f053bed36d342",
-      "component.calendar.selectedItem.background": "30c1fba78f48c8b10623f20796104e9ff11913b0",
       "component.calendar.hoverItem.background": "064b4925c17995fa3b6d48dcccebfaf40eea9da2",
       "component.calendar.hoverItem.text": "cdb70bec5834e382331afe4c1c7f01283e67583a",
       "component.calendar.presetArea.background": "a09ecdebf160c7045c5ffc26ee80a751dd072c7c",
@@ -1427,7 +1423,11 @@
       "global.spacing.60": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
       "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
-      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17"
+      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17",
+      "component.calendar.selectedItem.background.default": "30c1fba78f48c8b10623f20796104e9ff11913b0",
+      "component.stepper.horizontal.pastItem.circle.background.default": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
+      "component.stepper.horizontal.pastItem.circle.text.default": "68a3f771d9992aabe9513674ef8423b03c61e259",
+      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f"
     },
     "group": "CDS"
   },
@@ -1798,10 +1798,7 @@
       "component.switch.inactive.disabled.circle": "78a4ef3a9c278028ded8cce5df9861940e8d630e",
       "component.switch.inactive.disabled.text": "2ea594ab01b39c808fb8252d8a2e4039dd1f370d",
       "component.stepper.horizontal.line": "2b5e767672a3b6ec2ffdc7bf8418f5310b04cab1",
-      "component.stepper.horizontal.pastItem.circle.background": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
       "component.stepper.horizontal.pastItem.circle.border": "06dee734b518b11733c2f59292ffb25bd97433ad",
-      "component.stepper.horizontal.pastItem.circle.text": "68a3f771d9992aabe9513674ef8423b03c61e259",
-      "component.stepper.horizontal.pastItem.circle.icon": "97d4ba57fbbbe2008763a42831573b68a62eb90f",
       "component.stepper.horizontal.pastItem.text.default": "da55eab0d1ea26b4c0feec797b202041ade6a460",
       "component.stepper.horizontal.pastItem.text.hover": "cb9cb9c2b6abd99a0c70e00c4df365799ac957d2",
       "component.stepper.horizontal.currentItem.circle.background": "5a8ff3f54f4f042ffe0ffd9ede2d9cba89a6027a",
@@ -2349,7 +2346,6 @@
       "component.calendar.border": "5ec91dccd162d8a00dcdce33e32be5745a4b7b7d",
       "component.calendar.icon": "d65f2396f09f79e5d294db3bf6c58a2a19a1a32f",
       "component.calendar.selectedItem.text": "ced254d26a11d9fcefd4270d255f053bed36d342",
-      "component.calendar.selectedItem.background": "30c1fba78f48c8b10623f20796104e9ff11913b0",
       "component.calendar.hoverItem.background": "064b4925c17995fa3b6d48dcccebfaf40eea9da2",
       "component.calendar.hoverItem.text": "cdb70bec5834e382331afe4c1c7f01283e67583a",
       "component.calendar.presetArea.background": "a09ecdebf160c7045c5ffc26ee80a751dd072c7c",
@@ -2861,7 +2857,11 @@
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
       "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
       "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297",
-      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17"
+      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17",
+      "component.calendar.selectedItem.background.default": "30c1fba78f48c8b10623f20796104e9ff11913b0",
+      "component.stepper.horizontal.pastItem.circle.background.default": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
+      "component.stepper.horizontal.pastItem.circle.text.default": "68a3f771d9992aabe9513674ef8423b03c61e259",
+      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f"
     },
     "group": "CDS"
   },
@@ -3232,10 +3232,7 @@
       "component.switch.inactive.disabled.circle": "78a4ef3a9c278028ded8cce5df9861940e8d630e",
       "component.switch.inactive.disabled.text": "2ea594ab01b39c808fb8252d8a2e4039dd1f370d",
       "component.stepper.horizontal.line": "2b5e767672a3b6ec2ffdc7bf8418f5310b04cab1",
-      "component.stepper.horizontal.pastItem.circle.background": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
       "component.stepper.horizontal.pastItem.circle.border": "06dee734b518b11733c2f59292ffb25bd97433ad",
-      "component.stepper.horizontal.pastItem.circle.text": "68a3f771d9992aabe9513674ef8423b03c61e259",
-      "component.stepper.horizontal.pastItem.circle.icon": "97d4ba57fbbbe2008763a42831573b68a62eb90f",
       "component.stepper.horizontal.pastItem.text.default": "da55eab0d1ea26b4c0feec797b202041ade6a460",
       "component.stepper.horizontal.pastItem.text.hover": "cb9cb9c2b6abd99a0c70e00c4df365799ac957d2",
       "component.stepper.horizontal.currentItem.circle.background": "5a8ff3f54f4f042ffe0ffd9ede2d9cba89a6027a",
@@ -3783,7 +3780,6 @@
       "component.calendar.border": "5ec91dccd162d8a00dcdce33e32be5745a4b7b7d",
       "component.calendar.icon": "d65f2396f09f79e5d294db3bf6c58a2a19a1a32f",
       "component.calendar.selectedItem.text": "ced254d26a11d9fcefd4270d255f053bed36d342",
-      "component.calendar.selectedItem.background": "30c1fba78f48c8b10623f20796104e9ff11913b0",
       "component.calendar.hoverItem.background": "064b4925c17995fa3b6d48dcccebfaf40eea9da2",
       "component.calendar.hoverItem.text": "cdb70bec5834e382331afe4c1c7f01283e67583a",
       "component.calendar.presetArea.background": "a09ecdebf160c7045c5ffc26ee80a751dd072c7c",
@@ -4295,7 +4291,11 @@
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
       "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
       "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297",
-      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17"
+      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17",
+      "component.calendar.selectedItem.background.default": "30c1fba78f48c8b10623f20796104e9ff11913b0",
+      "component.stepper.horizontal.pastItem.circle.background.default": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
+      "component.stepper.horizontal.pastItem.circle.text.default": "68a3f771d9992aabe9513674ef8423b03c61e259",
+      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f"
     },
     "group": "CDS"
   },
@@ -4667,10 +4667,7 @@
       "component.switch.inactive.disabled.circle": "78a4ef3a9c278028ded8cce5df9861940e8d630e",
       "component.switch.inactive.disabled.text": "2ea594ab01b39c808fb8252d8a2e4039dd1f370d",
       "component.stepper.horizontal.line": "2b5e767672a3b6ec2ffdc7bf8418f5310b04cab1",
-      "component.stepper.horizontal.pastItem.circle.background": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
       "component.stepper.horizontal.pastItem.circle.border": "06dee734b518b11733c2f59292ffb25bd97433ad",
-      "component.stepper.horizontal.pastItem.circle.text": "68a3f771d9992aabe9513674ef8423b03c61e259",
-      "component.stepper.horizontal.pastItem.circle.icon": "97d4ba57fbbbe2008763a42831573b68a62eb90f",
       "component.stepper.horizontal.pastItem.text.default": "da55eab0d1ea26b4c0feec797b202041ade6a460",
       "component.stepper.horizontal.pastItem.text.hover": "cb9cb9c2b6abd99a0c70e00c4df365799ac957d2",
       "component.stepper.horizontal.currentItem.circle.background": "5a8ff3f54f4f042ffe0ffd9ede2d9cba89a6027a",
@@ -5218,7 +5215,6 @@
       "component.calendar.border": "5ec91dccd162d8a00dcdce33e32be5745a4b7b7d",
       "component.calendar.icon": "d65f2396f09f79e5d294db3bf6c58a2a19a1a32f",
       "component.calendar.selectedItem.text": "ced254d26a11d9fcefd4270d255f053bed36d342",
-      "component.calendar.selectedItem.background": "30c1fba78f48c8b10623f20796104e9ff11913b0",
       "component.calendar.hoverItem.background": "064b4925c17995fa3b6d48dcccebfaf40eea9da2",
       "component.calendar.hoverItem.text": "cdb70bec5834e382331afe4c1c7f01283e67583a",
       "component.calendar.presetArea.background": "a09ecdebf160c7045c5ffc26ee80a751dd072c7c",
@@ -5730,7 +5726,11 @@
       "global.spacing.70": "fcfd1090d30c71d7c647a1048f49a9b240f08bb4",
       "global.spacing.80": "d36813c2828b1cf7511a16bb09c9fbf3efd21d5d",
       "component.calendar.text.default": "db3b28b40f83fe091f9990f3e4037b852d039297",
-      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17"
+      "component.badge.subtle.info.background": "53dd68ea94bea64a5e0dc03b47f1ff14db210c17",
+      "component.calendar.selectedItem.background.default": "30c1fba78f48c8b10623f20796104e9ff11913b0",
+      "component.stepper.horizontal.pastItem.circle.background.default": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
+      "component.stepper.horizontal.pastItem.circle.text.default": "68a3f771d9992aabe9513674ef8423b03c61e259",
+      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f"
     },
     "group": "CDS"
   }

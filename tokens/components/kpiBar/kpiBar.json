@@ -9,6 +9,10 @@
         "value": "{alias.border.normal}",
         "type": "color"
       },
+      "background": {
+        "value": "{alias.background.normal}",
+        "type": "color"
+      },
       "icon": {
         "default": {
           "value": "{alias.content.icon.primary.default}",
@@ -74,6 +78,24 @@
               "value": "{alias.accent.neutral.primary}",
               "type": "color"
             }
+          },
+          "disabled": {
+            "label": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            },
+            "text": {
+              "value": "{alias.content.text.primary.disabled}",
+              "type": "color"
+            },
+            "border": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            },
+            "icon": {
+              "value": "{alias.content.icon.primary.disabled}",
+              "type": "color"
+            }
           }
         },
         "green": {
@@ -112,6 +134,20 @@
             },
             "border": {
               "value": "{alias.accent.positive.primary}",
+              "type": "color"
+            }
+          },
+          "disabled": {
+            "label": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            },
+            "text": {
+              "value": "{alias.content.text.primary.disabled}",
+              "type": "color"
+            },
+            "border": {
+              "value": "{alias.accent.disabled}",
               "type": "color"
             }
           }
@@ -154,6 +190,20 @@
               "value": "{alias.accent.warning.primary}",
               "type": "color"
             }
+          },
+          "disabled": {
+            "label": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            },
+            "text": {
+              "value": "{alias.content.text.primary.disabled}",
+              "type": "color"
+            },
+            "border": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            }
           }
         },
         "purple": {
@@ -192,6 +242,20 @@
             },
             "border": {
               "value": "{alias.accent.important.primary}",
+              "type": "color"
+            }
+          },
+          "disabled": {
+            "label": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            },
+            "text": {
+              "value": "{alias.content.text.primary.disabled}",
+              "type": "color"
+            },
+            "border": {
+              "value": "{alias.accent.disabled}",
               "type": "color"
             }
           }
@@ -234,6 +298,20 @@
               "value": "{alias.accent.negative.primary}",
               "type": "color"
             }
+          },
+          "disabled": {
+            "label": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            },
+            "text": {
+              "value": "{alias.content.text.primary.disabled}",
+              "type": "color"
+            },
+            "border": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            }
           }
         },
         "ultramarine": {
@@ -274,6 +352,20 @@
               "value": "{alias.accent.info.primary}",
               "type": "color"
             }
+          },
+          "disabled": {
+            "label": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            },
+            "text": {
+              "value": "{alias.content.text.primary.disabled}",
+              "type": "color"
+            },
+            "border": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            }
           }
         },
         "pink": {
@@ -312,6 +404,20 @@
             },
             "border": {
               "value": "{alias.accent.pink.primary}",
+              "type": "color"
+            }
+          },
+          "disabled": {
+            "label": {
+              "value": "{alias.accent.disabled}",
+              "type": "color"
+            },
+            "text": {
+              "value": "{alias.content.text.primary.disabled}",
+              "type": "color"
+            },
+            "border": {
+              "value": "{alias.accent.disabled}",
               "type": "color"
             }
           }

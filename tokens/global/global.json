@@ -764,6 +764,13 @@
           "value": "#3B352B",
           "type": "color"
         }
+      },
+      "gradient": {
+        "default": {
+          "value": "linear-gradient(270deg, {global.color.green.70} 0%, {global.color.teal.70} 51%, {global.color.brand.70} 100%)",
+          "type": "color",
+          "description": "Default gradient"
+        }
       }
     },
     "spacing": {
