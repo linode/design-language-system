@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2024-08-23
+   * Generated on 2024-09-13
    */
   export const Global = {
   Color: {
@@ -596,10 +596,7 @@ export const Alias = {
     Negative: "#eb9091",
     Warning: "#edb016",
     Positive: "#65ba75",
-    Informative: "#8da4ef",
-    BorderRadius: {
-      Default: "0rem"
-    }
+    Informative: "#8da4ef"
   },
   Background: {
     Normal: "#3d3d42",
@@ -709,6 +706,7 @@ export const Alias = {
     Code: "400 0.813rem/1.25rem 'Fira Code'"
   },
   Accent: {
+    Disabled: "#696970",
     Info: {
       Primary: "#aec0f5",
       Secondary: "lch(77.7 28.7 275 / 0.12)"
@@ -887,6 +885,9 @@ export const Alias = {
       Warning: "#fecb34",
       Positive: "#00b050"
     }
+  },
+  Radius: {
+    Default: "0rem"
   }
 };
 
@@ -936,10 +937,7 @@ export const Border = {
   Negative: "#eb9091",
   Warning: "#edb016",
   Positive: "#65ba75",
-  Informative: "#8da4ef",
-  BorderRadius: {
-    Default: "0rem"
-  }
+  Informative: "#8da4ef"
 };
 
 export const Background = {
@@ -1055,6 +1053,7 @@ export const Typography = {
 };
 
 export const Accent = {
+  Disabled: "#696970",
   Info: {
     Primary: "#aec0f5",
     Secondary: "lch(77.7 28.7 275 / 0.12)"
@@ -1234,6 +1233,10 @@ export const Chart = {
     Warning: "#fecb34",
     Positive: "#00b050"
   }
+};
+
+export const Radius = {
+  Default: "0rem"
 };
 
 export const Component = {
@@ -2140,6 +2143,7 @@ export const Component = {
   KpiBar: {
     Text: "#ffffff",
     Border: "#515157",
+    Background: "#3d3d42",
     Icon: {
       Default: "#ffffff",
       Hover: "#96cff0",
@@ -2163,6 +2167,12 @@ export const Component = {
           Text: "#ffffff",
           Border: "#c2c2ca",
           Icon: "#c2c2ca"
+        },
+        Disabled: {
+          Label: "#696970",
+          Text: "#83838c",
+          Border: "#696970",
+          Icon: "#83838c"
         }
       },
       Green: {
@@ -2179,6 +2189,11 @@ export const Component = {
           Label: "#97cf9c",
           Text: "#ffffff",
           Border: "#97cf9c"
+        },
+        Disabled: {
+          Label: "#696970",
+          Text: "#83838c",
+          Border: "#696970"
         }
       },
       Orange: {
@@ -2195,6 +2210,11 @@ export const Component = {
           Label: "#f2b67b",
           Text: "#ffffff",
           Border: "#f2b67b"
+        },
+        Disabled: {
+          Label: "#696970",
+          Text: "#83838c",
+          Border: "#696970"
         }
       },
       Purple: {
@@ -2211,6 +2231,11 @@ export const Component = {
           Label: "#d3b4ed",
           Text: "#ffffff",
           Border: "#d3b4ed"
+        },
+        Disabled: {
+          Label: "#696970",
+          Text: "#83838c",
+          Border: "#696970"
         }
       },
       Red: {
@@ -2227,6 +2252,11 @@ export const Component = {
           Label: "#f3aeaf",
           Text: "#ffffff",
           Border: "#f3aeaf"
+        },
+        Disabled: {
+          Label: "#696970",
+          Text: "#83838c",
+          Border: "#696970"
         }
       },
       Ultramarine: {
@@ -2243,6 +2273,11 @@ export const Component = {
           Label: "#aec0f5",
           Text: "#ffffff",
           Border: "#aec0f5"
+        },
+        Disabled: {
+          Label: "#696970",
+          Text: "#83838c",
+          Border: "#696970"
         }
       },
       Pink: {
@@ -2259,6 +2294,11 @@ export const Component = {
           Label: "#ecadd4",
           Text: "#ffffff",
           Border: "#ecadd4"
+        },
+        Disabled: {
+          Label: "#696970",
+          Text: "#83838c",
+          Border: "#696970"
         }
       }
     }
@@ -2417,7 +2457,7 @@ export const Component = {
     Hover: {
       Background: "#343438",
       Border: "#c2c2ca",
-      Text: "#a3a3ab",
+      Text: "#ffffff",
       Icon: "#ffffff",
       HintText: "#a3a3ab"
     },
@@ -2450,7 +2490,7 @@ export const Component = {
     Focus: {
       Background: "#343438",
       Border: "#5bb3ea",
-      Text: "#a3a3ab",
+      Text: "#ffffff",
       Icon: "#ffffff",
       HintText: "#a3a3ab"
     }
@@ -2813,7 +2853,7 @@ export const Component = {
       }
     },
     Error: {
-      Background: "#343438",
+      Background: "#515157",
       Border: "#eb9091",
       Text: "#ffffff",
       Icon: {
@@ -3179,10 +3219,19 @@ export const Component = {
       Line: "#515157",
       PastItem: {
         Circle: {
-          Background: "#3d3d42",
           Border: "#5bb3ea",
-          Text: "#5bb3ea",
-          Icon: "#5bb3ea"
+          Background: {
+            Default: "#3d3d42",
+            Hover: "#5bb3ea"
+          },
+          Icon: {
+            Default: "#5bb3ea",
+            Hover: "#ffffff"
+          },
+          Text: {
+            Default: "#5bb3ea",
+            Hover: "#ffffff"
+          }
         },
         Text: {
           Default: "#ffffff",
@@ -4307,6 +4356,7 @@ export const InlineEdit = {
 export const KpiBar = {
   Text: "#ffffff",
   Border: "#515157",
+  Background: "#3d3d42",
   Icon: {
     Default: "#ffffff",
     Hover: "#96cff0",
@@ -4330,6 +4380,12 @@ export const KpiBar = {
         Text: "#ffffff",
         Border: "#c2c2ca",
         Icon: "#c2c2ca"
+      },
+      Disabled: {
+        Label: "#696970",
+        Text: "#83838c",
+        Border: "#696970",
+        Icon: "#83838c"
       }
     },
     Green: {
@@ -4346,6 +4402,11 @@ export const KpiBar = {
         Label: "#97cf9c",
         Text: "#ffffff",
         Border: "#97cf9c"
+      },
+      Disabled: {
+        Label: "#696970",
+        Text: "#83838c",
+        Border: "#696970"
       }
     },
     Orange: {
@@ -4362,6 +4423,11 @@ export const KpiBar = {
         Label: "#f2b67b",
         Text: "#ffffff",
         Border: "#f2b67b"
+      },
+      Disabled: {
+        Label: "#696970",
+        Text: "#83838c",
+        Border: "#696970"
       }
     },
     Purple: {
@@ -4378,6 +4444,11 @@ export const KpiBar = {
         Label: "#d3b4ed",
         Text: "#ffffff",
         Border: "#d3b4ed"
+      },
+      Disabled: {
+        Label: "#696970",
+        Text: "#83838c",
+        Border: "#696970"
       }
     },
     Red: {
@@ -4394,6 +4465,11 @@ export const KpiBar = {
         Label: "#f3aeaf",
         Text: "#ffffff",
         Border: "#f3aeaf"
+      },
+      Disabled: {
+        Label: "#696970",
+        Text: "#83838c",
+        Border: "#696970"
       }
     },
     Ultramarine: {
@@ -4410,6 +4486,11 @@ export const KpiBar = {
         Label: "#aec0f5",
         Text: "#ffffff",
         Border: "#aec0f5"
+      },
+      Disabled: {
+        Label: "#696970",
+        Text: "#83838c",
+        Border: "#696970"
       }
     },
     Pink: {
@@ -4426,6 +4507,11 @@ export const KpiBar = {
         Label: "#ecadd4",
         Text: "#ffffff",
         Border: "#ecadd4"
+      },
+      Disabled: {
+        Label: "#696970",
+        Text: "#83838c",
+        Border: "#696970"
       }
     }
   }
@@ -4594,7 +4680,7 @@ export const NumericSpinner = {
   Hover: {
     Background: "#343438",
     Border: "#c2c2ca",
-    Text: "#a3a3ab",
+    Text: "#ffffff",
     Icon: "#ffffff",
     HintText: "#a3a3ab"
   },
@@ -4627,7 +4713,7 @@ export const NumericSpinner = {
   Focus: {
     Background: "#343438",
     Border: "#5bb3ea",
-    Text: "#a3a3ab",
+    Text: "#ffffff",
     Icon: "#ffffff",
     HintText: "#a3a3ab"
   }
@@ -4999,7 +5085,7 @@ export const Tag = {
     }
   },
   Error: {
-    Background: "#343438",
+    Background: "#515157",
     Border: "#eb9091",
     Text: "#ffffff",
     Icon: {
@@ -5373,10 +5459,19 @@ export const Stepper = {
     Line: "#515157",
     PastItem: {
       Circle: {
-        Background: "#3d3d42",
         Border: "#5bb3ea",
-        Text: "#5bb3ea",
-        Icon: "#5bb3ea"
+        Background: {
+          Default: "#3d3d42",
+          Hover: "#5bb3ea"
+        },
+        Icon: {
+          Default: "#5bb3ea",
+          Hover: "#ffffff"
+        },
+        Text: {
+          Default: "#5bb3ea",
+          Hover: "#ffffff"
+        }
       },
       Text: {
         Default: "#ffffff",

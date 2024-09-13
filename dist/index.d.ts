@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2024-08-23
+   * Generated on 2024-09-13
    */
   export interface GlobalTypes {
   Color: {
@@ -606,10 +606,7 @@ export interface AliasTypes {
     Negative: "#d63c42",
     Warning: "#fecb34",
     Positive: "#00b050",
-    Informative: "#4067e5",
-    BorderRadius: {
-      Default: "0rem"
-    }
+    Informative: "#4067e5"
   },
   Background: {
     Normal: "#ffffff",
@@ -719,6 +716,7 @@ export interface AliasTypes {
     Code: "400 0.813rem/1.25rem 'Fira Code'"
   },
   Accent: {
+    Disabled: "#c2c2ca",
     Info: {
       Primary: "#3451b2",
       Secondary: "lch(36.7 58.2 286 / 0.12)"
@@ -897,6 +895,9 @@ export interface AliasTypes {
       Warning: "#fecb34",
       Positive: "#00b050"
     }
+  },
+  Radius: {
+    Default: "0rem"
   }
 }
 
@@ -950,10 +951,7 @@ export interface BorderTypes {
   Negative: "#d63c42",
   Warning: "#fecb34",
   Positive: "#00b050",
-  Informative: "#4067e5",
-  BorderRadius: {
-    Default: "0rem"
-  }
+  Informative: "#4067e5"
 }
 
 declare const Border: BorderTypes;
@@ -1081,6 +1079,7 @@ export interface TypographyTypes {
 declare const Typography: TypographyTypes;
 
 export interface AccentTypes {
+  Disabled: "#c2c2ca",
   Info: {
     Primary: "#3451b2",
     Secondary: "lch(36.7 58.2 286 / 0.12)"
@@ -1265,6 +1264,12 @@ export interface ChartTypes {
 }
 
 declare const Chart: ChartTypes;
+
+export interface RadiusTypes {
+  Default: "0rem"
+}
+
+declare const Radius: RadiusTypes;
 
 export interface ComponentTypes {
   Button: {
@@ -2170,6 +2175,7 @@ export interface ComponentTypes {
   KpiBar: {
     Text: "#3d3d42",
     Border: "#d6d6dd",
+    Background: "#ffffff",
     Icon: {
       Default: "#3d3d42",
       Hover: "#009cde",
@@ -2193,6 +2199,12 @@ export interface ComponentTypes {
           Text: "#343438",
           Border: "#515157",
           Icon: "#515157"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca",
+          Icon: "#a3a3ab"
         }
       },
       Green: {
@@ -2209,6 +2221,11 @@ export interface ComponentTypes {
           Label: "#138246",
           Text: "#343438",
           Border: "#138246"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Orange: {
@@ -2225,6 +2242,11 @@ export interface ComponentTypes {
           Label: "#c25d05",
           Text: "#343438",
           Border: "#c25d05"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Purple: {
@@ -2241,6 +2263,11 @@ export interface ComponentTypes {
           Label: "#753bbd",
           Text: "#343438",
           Border: "#753bbd"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Red: {
@@ -2257,6 +2284,11 @@ export interface ComponentTypes {
           Label: "#b82329",
           Text: "#343438",
           Border: "#b82329"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Ultramarine: {
@@ -2273,6 +2305,11 @@ export interface ComponentTypes {
           Label: "#3451b2",
           Text: "#343438",
           Border: "#3451b2"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       },
       Pink: {
@@ -2289,6 +2326,11 @@ export interface ComponentTypes {
           Label: "#cd1d8d",
           Text: "#343438",
           Border: "#cd1d8d"
+        },
+        Disabled: {
+          Label: "#c2c2ca",
+          Text: "#a3a3ab",
+          Border: "#c2c2ca"
         }
       }
     }
@@ -2447,7 +2489,7 @@ export interface ComponentTypes {
     Hover: {
       Background: "#ffffff",
       Border: "#3d3d42",
-      Text: "#696970",
+      Text: "#343438",
       Icon: "#3d3d42",
       HintText: "#696970"
     },
@@ -2480,7 +2522,7 @@ export interface ComponentTypes {
     Focus: {
       Background: "#ffffff",
       Border: "#0174bc",
-      Text: "#696970",
+      Text: "#343438",
       Icon: "#3d3d42",
       HintText: "#696970"
     }
@@ -2843,7 +2885,7 @@ export interface ComponentTypes {
       }
     },
     Error: {
-      Background: "#f7f7fa",
+      Background: "#ffefef",
       Border: "#d63c42",
       Text: "#343438",
       Icon: {
@@ -3209,10 +3251,19 @@ export interface ComponentTypes {
       Line: "#d6d6dd",
       PastItem: {
         Circle: {
-          Background: "#edf8ff",
           Border: "#0174bc",
-          Text: "#0174bc",
-          Icon: "#0174bc"
+          Background: {
+            Default: "#edf8ff",
+            Hover: "#0174bc"
+          },
+          Icon: {
+            Default: "#0174bc",
+            Hover: "#ffffff"
+          },
+          Text: {
+            Default: "#0174bc",
+            Hover: "#ffffff"
+          }
         },
         Text: {
           Default: "#343438",
@@ -4389,6 +4440,7 @@ declare const InlineEdit: InlineEditTypes;
 export interface KpiBarTypes {
   Text: "#3d3d42",
   Border: "#d6d6dd",
+  Background: "#ffffff",
   Icon: {
     Default: "#3d3d42",
     Hover: "#009cde",
@@ -4412,6 +4464,12 @@ export interface KpiBarTypes {
         Text: "#343438",
         Border: "#515157",
         Icon: "#515157"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca",
+        Icon: "#a3a3ab"
       }
     },
     Green: {
@@ -4428,6 +4486,11 @@ export interface KpiBarTypes {
         Label: "#138246",
         Text: "#343438",
         Border: "#138246"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Orange: {
@@ -4444,6 +4507,11 @@ export interface KpiBarTypes {
         Label: "#c25d05",
         Text: "#343438",
         Border: "#c25d05"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Purple: {
@@ -4460,6 +4528,11 @@ export interface KpiBarTypes {
         Label: "#753bbd",
         Text: "#343438",
         Border: "#753bbd"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Red: {
@@ -4476,6 +4549,11 @@ export interface KpiBarTypes {
         Label: "#b82329",
         Text: "#343438",
         Border: "#b82329"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Ultramarine: {
@@ -4492,6 +4570,11 @@ export interface KpiBarTypes {
         Label: "#3451b2",
         Text: "#343438",
         Border: "#3451b2"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     },
     Pink: {
@@ -4508,6 +4591,11 @@ export interface KpiBarTypes {
         Label: "#cd1d8d",
         Text: "#343438",
         Border: "#cd1d8d"
+      },
+      Disabled: {
+        Label: "#c2c2ca",
+        Text: "#a3a3ab",
+        Border: "#c2c2ca"
       }
     }
   }
@@ -4696,7 +4784,7 @@ export interface NumericSpinnerTypes {
   Hover: {
     Background: "#ffffff",
     Border: "#3d3d42",
-    Text: "#696970",
+    Text: "#343438",
     Icon: "#3d3d42",
     HintText: "#696970"
   },
@@ -4729,7 +4817,7 @@ export interface NumericSpinnerTypes {
   Focus: {
     Background: "#ffffff",
     Border: "#0174bc",
-    Text: "#696970",
+    Text: "#343438",
     Icon: "#3d3d42",
     HintText: "#696970"
   }
@@ -5119,7 +5207,7 @@ export interface TagTypes {
     }
   },
   Error: {
-    Background: "#f7f7fa",
+    Background: "#ffefef",
     Border: "#d63c42",
     Text: "#343438",
     Icon: {
@@ -5509,10 +5597,19 @@ export interface StepperTypes {
     Line: "#d6d6dd",
     PastItem: {
       Circle: {
-        Background: "#edf8ff",
         Border: "#0174bc",
-        Text: "#0174bc",
-        Icon: "#0174bc"
+        Background: {
+          Default: "#edf8ff",
+          Hover: "#0174bc"
+        },
+        Icon: {
+          Default: "#0174bc",
+          Hover: "#ffffff"
+        },
+        Text: {
+          Default: "#0174bc",
+          Hover: "#ffffff"
+        }
       },
       Text: {
         Default: "#343438",

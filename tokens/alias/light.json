@@ -158,13 +158,6 @@
         "type": "color",
         "description": "Use only for borders to indicate an info state"
       },
-      "borderRadius": {
-        "default": {
-          "value": "{global.borderRadius.none}",
-          "type": "borderRadius",
-          "description": "Default border radius value"
-        }
-      }
     },
     "background": {
       "normal": {
@@ -1455,6 +1448,13 @@
           "value": "{global.color.green.70}",
           "type": "color"
         }
+      }
+    },
+    "radius": {
+      "default": {
+        "value": "{global.borderRadius.none}",
+        "type": "borderRadius",
+        "description": "Default border radius value"
       }
     }
   }
