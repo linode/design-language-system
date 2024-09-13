@@ -157,7 +157,7 @@
         "value": "{global.color.ultramarine.70}",
         "type": "color",
         "description": "Use only for borders to indicate an info state"
-      },
+      }
     },
     "background": {
       "normal": {
