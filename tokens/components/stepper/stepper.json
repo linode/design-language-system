@@ -8,21 +8,39 @@
         },
         "pastItem": {
           "circle": {
-            "background": {
-              "value": "{alias.interaction.background.tertiary}",
-              "type": "color"
-            },
             "border": {
               "value": "{alias.interaction.border.focus}",
               "type": "color"
             },
-            "text": {
-              "value": "{alias.content.text.link.default}",
-              "type": "color"
+            "background": {
+              "default": {
+                "value": "{alias.interaction.background.tertiary}",
+                "type": "color"
+              },
+              "hover": {
+                "value": "{alias.interaction.background.active}",
+                "type": "color"
+              }
             },
             "icon": {
-              "value": "{alias.content.icon.primary.active}",
-              "type": "color"
+              "default": {
+                "value": "{alias.content.icon.primary.active}",
+                "type": "color"
+              },
+              "hover": {
+                "value": "{global.color.neutrals.white}",
+                "type": "color"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{alias.content.text.link.default}",
+                "type": "color"
+              },
+              "hover": {
+                "value": "{global.color.neutrals.white}",
+                "type": "color"
+              }
             }
           },
           "text": {
