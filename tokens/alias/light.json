@@ -355,6 +355,16 @@
         "disabled": {
           "value": "{global.color.neutrals.10}",
           "type": "color"
+        },
+        "rangeHover": {
+          "value": "{global.color.brand.30}",
+          "type": "color",
+          "description": "Hover color for a calendar date range"
+        },
+        "activeDateHover": {
+          "value": "{global.color.brand.80}",
+          "type": "color",
+          "description": "Hover color for an active calendar date"
         }
       }
     },
@@ -363,7 +373,7 @@
         "value": {
           "x": "0",
           "y": "2",
-          "blur": "6",
+          "blur": "8",
           "spread": "0",
           "color": "rgba(58,59,63,0.18)",
           "type": "dropShadow"
@@ -375,7 +385,7 @@
         "value": {
           "x": "0",
           "y": "-2",
-          "blur": "6",
+          "blur": "8",
           "spread": "0",
           "color": "rgba(58,59,63,0.18)",
           "type": "dropShadow"
@@ -669,6 +679,10 @@
       }
     },
     "accent": {
+      "disabled": {
+        "value": "{global.color.neutrals.40}",
+        "type": "color"
+      },
       "info": {
         "primary": {
           "value": "{global.color.ultramarine.90}",
@@ -1434,6 +1448,13 @@
           "value": "{global.color.green.70}",
           "type": "color"
         }
+      }
+    },
+    "radius": {
+      "default": {
+        "value": "{global.borderRadius.none}",
+        "type": "borderRadius",
+        "description": "Default border radius value"
       }
     }
   }
