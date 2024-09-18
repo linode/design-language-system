@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2024-09-13
+   * Generated on 2024-09-18
    */
   export const Global = {
   Color: {
