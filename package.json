@@ -85,9 +85,5 @@
   "volta": {
     "node": "18.18.0"
   },
-  "packageManager": "yarn@4.1.1",
-  "resolutions": {
-    "micromatch": "^4.0.8",
-    "express": "^4.20.0"
-  }
+  "packageManager": "yarn@4.1.1"
 }
