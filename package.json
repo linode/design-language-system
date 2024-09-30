@@ -78,12 +78,16 @@
     "style-dictionary": "4.0.1",
     "terser": "^5.32.0",
     "ts-node": "^10.9.2",
-    "tsup": "^8.2.4",
+    "tsup": "^8.3.0",
     "typescript": "^5.6.2",
-    "vite": "^5.4.5"
+    "vite": "^5.4.6"
   },
   "volta": {
     "node": "18.18.0"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "resolutions": {
+    "micromatch": "^4.0.8",
+    "express": "^4.20.0"
+  }
 }
