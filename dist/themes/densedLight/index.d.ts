@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2024-09-13
+   * Generated on 2024-09-30
    */
   export interface GlobalTypes {
   Color: {
@@ -1499,40 +1499,40 @@ export interface ComponentTypes {
     Primary: {
       Default: {
         Background: "#0174bc",
-        Border: "#ffffff",
+        Border: "#0174bc",
         Text: "#ffffff",
         Icon: "#ffffff"
       },
       HoverLeft: {
         BackgroundLeft: "#009cde",
         BackgroundRight: "#0174bc",
-        Border: "#ffffff",
+        Border: "#009cde",
         Text: "#ffffff",
         Icon: "#ffffff"
       },
       HoverRight: {
         BackgroundLeft: "#0174bc",
         BackgroundRight: "#009cde",
-        Border: "#ffffff",
+        Border: "#009cde",
         Text: "#ffffff",
         Icon: "#ffffff"
       },
       Active: {
         Background: "#0174bc",
-        Border: "#ffffff",
+        Border: "#0174bc",
         Text: "#ffffff",
         Icon: "#ffffff"
       },
       Disabled: {
         Background: "#e5e5ea",
-        Border: "#ffffff",
+        Border: "#e5e5ea",
         Text: "#a3a3ab",
         Icon: "#a3a3ab"
       },
       Loading: {
         BackgroundLeft: "#0174bc",
         BackgroundRight: "#0174bc",
-        Border: "#ffffff",
+        Border: "#0174bc",
         Icon: "#ffffff"
       }
     },
@@ -1580,40 +1580,40 @@ export interface ComponentTypes {
     Launch: {
       Default: {
         Background: "#232326",
-        Border: "#ffffff",
+        Border: "#232326",
         Text: "#ffffff",
         Icon: "#ffffff"
       },
       HoverLeft: {
         BackgroundLeft: "#343438",
         BackgroundRight: "#232326",
-        Border: "#ffffff",
+        Border: "#343438",
         Text: "#ffffff",
         Icon: "#ffffff"
       },
       HoverRight: {
         BackgroundLeft: "#232326",
         BackgroundRight: "#343438",
-        Border: "#ffffff",
+        Border: "#343438",
         Text: "#ffffff",
         Icon: "#ffffff"
       },
       Active: {
         Background: "#232326",
-        Border: "#ffffff",
+        Border: "#232326",
         Text: "#ffffff",
         Icon: "#ffffff"
       },
       Disabled: {
         Background: "#e5e5ea",
-        Border: "#ffffff",
+        Border: "#e5e5ea",
         Text: "#a3a3ab",
         Icon: "#a3a3ab"
       },
       Loading: {
         BackgroundLeft: "#232326",
         BackgroundRight: "#232326",
-        Border: "#ffffff",
+        Border: "#232326",
         Icon: "#ffffff"
       }
     }
@@ -3284,7 +3284,8 @@ export interface ComponentTypes {
         Circle: {
           Background: "#ffffff",
           Border: "#d6d6dd",
-          Text: "#a3a3ab"
+          Text: "#a3a3ab",
+          Icon: "#a3a3ab"
         },
         Text: "#a3a3ab"
       }
@@ -3331,7 +3332,8 @@ export interface ComponentTypes {
         Circle: {
           Background: "#ffffff",
           Border: "#d6d6dd",
-          Text: "#a3a3ab"
+          Text: "#a3a3ab",
+          Icon: "#a3a3ab"
         },
         Text: "#a3a3ab"
       }
@@ -3704,40 +3706,40 @@ export interface SplitMenuButtonTypes {
   Primary: {
     Default: {
       Background: "#0174bc",
-      Border: "#ffffff",
+      Border: "#0174bc",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     HoverLeft: {
       BackgroundLeft: "#009cde",
       BackgroundRight: "#0174bc",
-      Border: "#ffffff",
+      Border: "#009cde",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     HoverRight: {
       BackgroundLeft: "#0174bc",
       BackgroundRight: "#009cde",
-      Border: "#ffffff",
+      Border: "#009cde",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     Active: {
       Background: "#0174bc",
-      Border: "#ffffff",
+      Border: "#0174bc",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     Disabled: {
       Background: "#e5e5ea",
-      Border: "#ffffff",
+      Border: "#e5e5ea",
       Text: "#a3a3ab",
       Icon: "#a3a3ab"
     },
     Loading: {
       BackgroundLeft: "#0174bc",
       BackgroundRight: "#0174bc",
-      Border: "#ffffff",
+      Border: "#0174bc",
       Icon: "#ffffff"
     }
   },
@@ -3785,40 +3787,40 @@ export interface SplitMenuButtonTypes {
   Launch: {
     Default: {
       Background: "#232326",
-      Border: "#ffffff",
+      Border: "#232326",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     HoverLeft: {
       BackgroundLeft: "#343438",
       BackgroundRight: "#232326",
-      Border: "#ffffff",
+      Border: "#343438",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     HoverRight: {
       BackgroundLeft: "#232326",
       BackgroundRight: "#343438",
-      Border: "#ffffff",
+      Border: "#343438",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     Active: {
       Background: "#232326",
-      Border: "#ffffff",
+      Border: "#232326",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     Disabled: {
       Background: "#e5e5ea",
-      Border: "#ffffff",
+      Border: "#e5e5ea",
       Text: "#a3a3ab",
       Icon: "#a3a3ab"
     },
     Loading: {
       BackgroundLeft: "#232326",
       BackgroundRight: "#232326",
-      Border: "#ffffff",
+      Border: "#232326",
       Icon: "#ffffff"
     }
   }
@@ -5630,7 +5632,8 @@ export interface StepperTypes {
       Circle: {
         Background: "#ffffff",
         Border: "#d6d6dd",
-        Text: "#a3a3ab"
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
       },
       Text: "#a3a3ab"
     }
@@ -5677,7 +5680,8 @@ export interface StepperTypes {
       Circle: {
         Background: "#ffffff",
         Border: "#d6d6dd",
-        Text: "#a3a3ab"
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
       },
       Text: "#a3a3ab"
     }
