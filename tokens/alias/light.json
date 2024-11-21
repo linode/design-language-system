@@ -197,19 +197,19 @@
         "description": "Use only for a global header and global footer background"
       },
       "negativesubtle": {
-        "value": "{global.color.red.10}",
+        "value": "{global.color.red.20}",
         "type": "color"
       },
       "warningsubtle": {
-        "value": "{global.color.amber.10}",
+        "value": "{global.color.amber.20}",
         "type": "color"
       },
       "positivesubtle": {
-        "value": "{global.color.green.10}",
+        "value": "{global.color.green.20}",
         "type": "color"
       },
       "informativesubtle": {
-        "value": "{global.color.ultramarine.10}",
+        "value": "{global.color.ultramarine.20}",
         "type": "color"
       },
       "neutralsubtle": {
