@@ -896,9 +896,9 @@
           "description": "24px"
         },
         "xxl": {
-          "value": "1.75rem",
+          "value": "1.625rem",
           "type": "fontSizes",
-          "description": "28px"
+          "description": "26px"
         },
         "xxxl": {
           "value": "2.25rem",
