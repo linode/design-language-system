@@ -454,11 +454,11 @@
           "type": "color"
         },
         "30": {
-          "value": "#AADEE6",
+          "value": "#C4EAEF",
           "type": "color"
         },
         "40": {
-          "value": "#84CDDA",
+          "value": "#AADEE6",
           "type": "color"
         },
         "50": {
@@ -896,9 +896,9 @@
           "description": "24px"
         },
         "xxl": {
-          "value": "1.75rem",
+          "value": "1.625rem",
           "type": "fontSizes",
-          "description": "28px"
+          "description": "26px"
         },
         "xxxl": {
           "value": "2.25rem",
