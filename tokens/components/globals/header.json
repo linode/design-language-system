@@ -17,6 +17,10 @@
         "hover": {
           "value": "{global.color.neutrals.white}",
           "type": "color"
+        },
+        "active": {
+          "value": "{global.color.brand.60}",
+          "type": "color"
         }
       },
       "text": {
@@ -55,6 +59,20 @@
           },
           "hover": {
             "value": "{global.color.neutrals.white}",
+            "type": "color"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{global.color.neutrals.90}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{global.color.neutrals.70}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{global.color.neutrals.50}",
             "type": "color"
           }
         }

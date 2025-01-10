@@ -294,6 +294,14 @@
           "value": "{global.color.green.60}",
           "type": "color"
         },
+        "hover": {
+          "value": "{global.color.green.50}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{global.color.green.60}",
+          "type": "color"
+        },
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
@@ -301,6 +309,14 @@
       },
       "negative": {
         "default": {
+          "value": "{global.color.red.60}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{global.color.red.50}",
+          "type": "color"
+        },
+        "active": {
           "value": "{global.color.red.60}",
           "type": "color"
         },

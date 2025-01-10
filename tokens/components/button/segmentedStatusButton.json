@@ -113,7 +113,7 @@
       },
       "disabledNeutral": {
         "background": {
-          "value": "{alias.action.secondary.disabled}",
+          "value": "{alias.action.primary.disabled}",
           "type": "color"
         },
         "text": {
