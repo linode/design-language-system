@@ -267,6 +267,70 @@
             "description": "This component token is considered unstable and in development."
           }
         }
+      },
+      "danger": {
+        "default": {
+          "background": {
+            "value": "{alias.action.negative.default}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background": {
+            "value": "{alias.action.negative.hover}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "pressed": {
+          "background": {
+            "value": "{alias.action.negative.active}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{alias.action.negative.disabled}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.disabled}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          }
+        },
+        "loading": {
+          "background": {
+            "value": "{alias.action.negative.active}",
+            "type": "color"
+          }
+        }
       }
     }
   }
