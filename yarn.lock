@@ -902,7 +902,7 @@ __metadata:
     react-copy-to-clipboard: "npm:^5.1.0"
     react-dom: "npm:^18.3.1"
     storybook: "npm:^8.4.7"
-    style-dictionary: "npm:4.0.1"
+    style-dictionary: "npm:4.3.0"
     terser: "npm:^5.32.0"
     ts-node: "npm:^10.9.2"
     tsup: "npm:^8.3.0"
@@ -2833,18 +2833,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.3":
-  version: 7.0.3
-  resolution: "cross-spawn@npm:7.0.3"
-  dependencies:
-    path-key: "npm:^3.1.0"
-    shebang-command: "npm:^2.0.0"
-    which: "npm:^2.0.1"
-  checksum: 10c0/5738c312387081c98d69c98e105b6327b069197f864a60593245d64c8089c8a0a744e16349281210d56835bb9274130d825a78b2ad6853ca13cfbeffc0c31750
-  languageName: node
-  linkType: hard
-
-"cross-spawn@npm:^7.0.6":
+"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.3, cross-spawn@npm:^7.0.6":
   version: 7.0.6
   resolution: "cross-spawn@npm:7.0.6"
   dependencies:
@@ -4987,10 +4976,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-unified@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "path-unified@npm:0.1.0"
-  checksum: 10c0/26c314221bcc0ca3ce59b67f50dffb6f37214d294fd9dfeb0219e9f12b93d8852c8525d32be9387011d902d361669a43e22ec419d522055794790222665b2de9
+"path-unified@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "path-unified@npm:0.2.0"
+  checksum: 10c0/5229bbcbb093b1c76e7a8f568dd7d362bae6bd9348099968252aa17b1ffd86ef845d560a6b483bb2e6a3b2c25a5e8288707b03e41b66b2761aa1e2ba67b07d5b
   languageName: node
   linkType: hard
 
@@ -5838,9 +5827,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"style-dictionary@npm:4.0.1":
-  version: 4.0.1
-  resolution: "style-dictionary@npm:4.0.1"
+"style-dictionary@npm:4.3.0":
+  version: 4.3.0
+  resolution: "style-dictionary@npm:4.3.0"
   dependencies:
     "@bundled-es-modules/deepmerge": "npm:^4.3.1"
     "@bundled-es-modules/glob": "npm:^10.4.2"
@@ -5852,11 +5841,12 @@ __metadata:
     is-plain-obj: "npm:^4.1.0"
     json5: "npm:^2.2.2"
     patch-package: "npm:^8.0.0"
-    path-unified: "npm:^0.1.0"
+    path-unified: "npm:^0.2.0"
+    prettier: "npm:^3.3.3"
     tinycolor2: "npm:^1.6.0"
   bin:
     style-dictionary: bin/style-dictionary.js
-  checksum: 10c0/7d8fd94eaba4ce1cc72bad1906c0cf82aa48c357ec37eda0f0b50186fbdc3eadd9c8f8a13d0eb7b0bb24e259e24175a6077521aa1d16c3139eb445cfa066a331
+  checksum: 10c0/1fceba59fd9b765842d2d45ea7625d572347a1bc3d8f28509223dcd992dacc8730f242b813fd9e19f6e6c9fb22866776cd05943b256426108a0fd735705d021d
   languageName: node
   linkType: hard
 
