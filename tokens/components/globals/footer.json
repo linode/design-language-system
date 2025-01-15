@@ -2,16 +2,20 @@
   "component": {
     "globalFooter": {
       "background": {
-        "value": "{alias.background.black}",
+        "value": "{alias.background.neutral}",
+        "type": "color"
+      },
+      "border": {
+        "value": "{alias.border.normal}",
         "type": "color"
       },
       "text": {
         "default": {
-          "value": "{global.color.neutrals.30}",
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         },
         "hover": {
-          "value": "{global.color.neutrals.white}",
+          "value": "{alias.content.text.link.hover}",
           "type": "color"
         }
       }
