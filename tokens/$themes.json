@@ -694,8 +694,6 @@
       "component.groupSelect.dropdown.background.default": "c3999f3a1ae2e5fbce55eea617acc0f0bc764a41",
       "component.groupSelect.dropdown.background.hover": "4321971015bbd57e6ec4ede189e02a68fa566e0b",
       "component.globalFooter.background": "bbc01a981c48073690a6fc28da680ecdd8655b95",
-      "component.globalFooter.text.default": "bf7aed96a9d3cbe9c7abfbd23f35b2348ce44c6f",
-      "component.globalFooter.text.hover": "c621a6ea1e8401f04ad8022dbc0436a66854c18a",
       "component.globalHeader.background": "af9010a9cf0293a9c8833fdfd8bb8f160e8fbac1",
       "component.globalHeader.border": "c00361941c81b661048f2bf8e410b452812ae464",
       "component.globalHeader.icon.default": "454771f3958b8a53956cb603be7cbf19f99bbb67",
@@ -1427,7 +1425,8 @@
       "component.calendar.selectedItem.background.default": "30c1fba78f48c8b10623f20796104e9ff11913b0",
       "component.stepper.horizontal.pastItem.circle.background.default": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
       "component.stepper.horizontal.pastItem.circle.text.default": "68a3f771d9992aabe9513674ef8423b03c61e259",
-      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f"
+      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f",
+      "component.globalFooter.text": "bf7aed96a9d3cbe9c7abfbd23f35b2348ce44c6f"
     },
     "group": "CDS"
   },
@@ -2127,8 +2126,6 @@
       "component.groupSelect.dropdown.background.default": "c3999f3a1ae2e5fbce55eea617acc0f0bc764a41",
       "component.groupSelect.dropdown.background.hover": "4321971015bbd57e6ec4ede189e02a68fa566e0b",
       "component.globalFooter.background": "bbc01a981c48073690a6fc28da680ecdd8655b95",
-      "component.globalFooter.text.default": "bf7aed96a9d3cbe9c7abfbd23f35b2348ce44c6f",
-      "component.globalFooter.text.hover": "c621a6ea1e8401f04ad8022dbc0436a66854c18a",
       "component.globalHeader.background": "af9010a9cf0293a9c8833fdfd8bb8f160e8fbac1",
       "component.globalHeader.border": "c00361941c81b661048f2bf8e410b452812ae464",
       "component.globalHeader.icon.default": "454771f3958b8a53956cb603be7cbf19f99bbb67",
@@ -2861,7 +2858,8 @@
       "component.calendar.selectedItem.background.default": "30c1fba78f48c8b10623f20796104e9ff11913b0",
       "component.stepper.horizontal.pastItem.circle.background.default": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
       "component.stepper.horizontal.pastItem.circle.text.default": "68a3f771d9992aabe9513674ef8423b03c61e259",
-      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f"
+      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f",
+      "component.globalFooter.text": "bf7aed96a9d3cbe9c7abfbd23f35b2348ce44c6f"
     },
     "group": "CDS"
   },
@@ -3561,8 +3559,6 @@
       "component.groupSelect.dropdown.background.default": "c3999f3a1ae2e5fbce55eea617acc0f0bc764a41",
       "component.groupSelect.dropdown.background.hover": "4321971015bbd57e6ec4ede189e02a68fa566e0b",
       "component.globalFooter.background": "bbc01a981c48073690a6fc28da680ecdd8655b95",
-      "component.globalFooter.text.default": "bf7aed96a9d3cbe9c7abfbd23f35b2348ce44c6f",
-      "component.globalFooter.text.hover": "c621a6ea1e8401f04ad8022dbc0436a66854c18a",
       "component.globalHeader.background": "af9010a9cf0293a9c8833fdfd8bb8f160e8fbac1",
       "component.globalHeader.border": "c00361941c81b661048f2bf8e410b452812ae464",
       "component.globalHeader.icon.default": "454771f3958b8a53956cb603be7cbf19f99bbb67",
@@ -4295,7 +4291,8 @@
       "component.calendar.selectedItem.background.default": "30c1fba78f48c8b10623f20796104e9ff11913b0",
       "component.stepper.horizontal.pastItem.circle.background.default": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
       "component.stepper.horizontal.pastItem.circle.text.default": "68a3f771d9992aabe9513674ef8423b03c61e259",
-      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f"
+      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f",
+      "component.globalFooter.text": "bf7aed96a9d3cbe9c7abfbd23f35b2348ce44c6f"
     },
     "group": "CDS"
   },
@@ -4996,8 +4993,6 @@
       "component.groupSelect.dropdown.background.default": "c3999f3a1ae2e5fbce55eea617acc0f0bc764a41",
       "component.groupSelect.dropdown.background.hover": "4321971015bbd57e6ec4ede189e02a68fa566e0b",
       "component.globalFooter.background": "bbc01a981c48073690a6fc28da680ecdd8655b95",
-      "component.globalFooter.text.default": "bf7aed96a9d3cbe9c7abfbd23f35b2348ce44c6f",
-      "component.globalFooter.text.hover": "c621a6ea1e8401f04ad8022dbc0436a66854c18a",
       "component.globalHeader.background": "af9010a9cf0293a9c8833fdfd8bb8f160e8fbac1",
       "component.globalHeader.border": "c00361941c81b661048f2bf8e410b452812ae464",
       "component.globalHeader.icon.default": "454771f3958b8a53956cb603be7cbf19f99bbb67",
@@ -5730,7 +5725,8 @@
       "component.calendar.selectedItem.background.default": "30c1fba78f48c8b10623f20796104e9ff11913b0",
       "component.stepper.horizontal.pastItem.circle.background.default": "38d2fb4346b32c3f0cb7fab84b4e1e782f4fe355",
       "component.stepper.horizontal.pastItem.circle.text.default": "68a3f771d9992aabe9513674ef8423b03c61e259",
-      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f"
+      "component.stepper.horizontal.pastItem.circle.icon.default": "97d4ba57fbbbe2008763a42831573b68a62eb90f",
+      "component.globalFooter.text": "bf7aed96a9d3cbe9c7abfbd23f35b2348ce44c6f"
     },
     "group": "CDS"
   }

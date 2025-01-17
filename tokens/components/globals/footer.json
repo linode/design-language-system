@@ -10,8 +10,12 @@
         "type": "color"
       },
       "text": {
+        "value": "{alias.content.text.primary.default}",
+        "type": "color"
+      },
+      "link": {
         "default": {
-          "value": "{alias.content.text.primary.default}",
+          "value": "{alias.content.text.link.default}",
           "type": "color"
         },
         "hover": {

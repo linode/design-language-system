@@ -33,6 +33,20 @@
           "type": "color"
         }
       },
+      "badge": {
+        "background": {
+          "value": "{global.color.red.70}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{global.color.neutrals.white}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{global.color.neutrals.white}",
+          "type": "color"
+        }
+      },
       "search": {
         "background": {
           "value": "{global.color.neutrals.90}",
