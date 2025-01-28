@@ -1428,7 +1428,7 @@
       "global.spacing.s12": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7"
     },
-    "group": "CDS"
+    "group": "Core"
   },
   {
     "id": "63d6es4757c7b47cb99391bbdd9bb1f836d7d762",
@@ -2861,7 +2861,7 @@
       "global.spacing.s12": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7"
     },
-    "group": "CDS"
+    "group": "Core"
   },
   {
     "id": "9620f6ff912c9f29adee4c46df434a201a562546",
@@ -4294,7 +4294,7 @@
       "global.spacing.s12": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7"
     },
-    "group": "CDS"
+    "group": "Core"
   },
   {
     "id": "ccf09ad86f8b0ef7d0e0c4e6947724c9cc96a049",
@@ -5728,6 +5728,6 @@
       "global.spacing.s12": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
       "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7"
     },
-    "group": "CDS"
+    "group": "Core"
   }
 ]
