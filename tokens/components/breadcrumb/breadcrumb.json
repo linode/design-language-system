@@ -52,10 +52,6 @@
           "value": "{alias.background.neutralsubtle}",
           "type": "color"
         },
-        "border": {
-          "value": "{alias.border.normal}",
-          "type": "color"
-        },
         "text": {
           "default": {
             "value": "{alias.content.text.primary.default}",

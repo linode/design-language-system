@@ -2,13 +2,25 @@
   "component": {
     "badge": {
       "informative": {
-        "background": {
-          "value": "{alias.accent.info.secondary}",
-          "type": "color"
+        "subtle": {
+          "background": {
+            "value": "{alias.accent.info.secondary}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.accent.info.primary}",
+            "type": "color"
+          }
         },
-        "text": {
-          "value": "{alias.accent.info.primary}",
-          "type": "color"
+        "accent": {
+          "background": {
+            "value": "{alias.accent.info.primary}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          }
         }
       },
       "neutral": {

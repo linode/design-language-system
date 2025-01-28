@@ -107,7 +107,7 @@
         "description": "Static component border"
       },
       "neutral": {
-        "value": "{global.color.neutrals.40}",
+        "value": "{global.color.neutrals.50}",
         "type": "color",
         "description": "Secondary notification banner border"
       },
