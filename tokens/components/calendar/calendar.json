@@ -29,8 +29,14 @@
           "type": "color"
         },
         "background": {
-          "value": "{alias.interaction.background.active}",
-          "type": "color"
+          "default": {
+            "value": "{alias.interaction.background.active}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.interaction.background.activeDateHover}",
+            "type": "color"
+          }
         }
       },
       "hoverItem": {
@@ -41,6 +47,22 @@
         "text": {
           "value": "{alias.content.text.primary.default}",
           "type": "color"
+        }
+      },
+      "dateRange": {
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "background": {
+          "default": {
+            "value": "{alias.interaction.background.elevated}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.interaction.background.rangeHover}",
+            "type": "color"
+          }
         }
       },
       "presetArea": {

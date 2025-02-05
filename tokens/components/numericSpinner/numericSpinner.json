@@ -33,7 +33,7 @@
           "type": "color"
         },
         "text": {
-          "value": "{alias.content.text.secondary.default}",
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         },
         "icon": {
@@ -135,7 +135,7 @@
           "type": "color"
         },
         "text": {
-          "value": "{alias.content.text.secondary.default}",
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         },
         "icon": {

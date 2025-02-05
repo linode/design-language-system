@@ -7,25 +7,25 @@
       },
       "appTitle": {
         "text": {
-          "value": "{alias.content.text.link.default}",
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         }
       },
       "default": {
         "text": {
-          "value": "{alias.content.text.link.default}",
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         }
       },
       "truncated": {
         "text": {
-          "value": "{alias.content.text.link.default}",
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         }
       },
       "lastItem": {
         "text": {
-          "value": "{alias.content.text.primary.default}",
+          "value": "{alias.content.text.secondary.default}",
           "type": "color"
         }
       },
@@ -45,7 +45,7 @@
       },
       "withDropdown": {
         "text": {
-          "value": "{alias.content.text.link.default}",
+          "value": "{alias.content.text.primary.default}",
           "type": "color"
         },
         "icon": {
