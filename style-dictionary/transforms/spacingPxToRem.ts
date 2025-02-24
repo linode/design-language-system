@@ -1,12 +1,11 @@
-import type { TransformedToken, PreprocessedTokens } from 'style-dictionary/types';
+import type { TransformedToken } from 'style-dictionary/types';
 
 // Custom transformer that only converts px to rem for Spacing tokens
 export const spacingPxToRem = {
   name: 'size/spacingPxToRem',
   type: 'value' as const,
-  matcher: function(token: PreprocessedTokens): boolean {
-    // Use Array.some() for better type safety when checking paths
-    return Array.isArray(token.path) && token.path.some(segment => segment === 'Spacing');
+  matcher: function(token: TransformedToken): boolean {
+    return token.path.includes('spacing');
   },
   transform: function(token: TransformedToken): unknown {
     const baseFont = 16;
