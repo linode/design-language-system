@@ -1,6 +1,11 @@
 {
   "component": {
     "segmentedButton": {
+      "divider": {
+        "value": "{alias.action.base}",
+        "type": "color",
+        "description": "A divider for multi-selected items"
+      },
       "default": {
         "background": {
           "value": "{alias.action.base}",
@@ -80,6 +85,24 @@
         },
         "border": {
           "value": "{alias.action.primary.default}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.base}",
+          "type": "color"
+        },
+        "icon": {
+          "value": "{alias.content.icon.base}",
+          "type": "color"
+        }
+      },
+      "activeHover": {
+        "background": {
+          "value": "{alias.action.primary.hover}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.action.primary.hover}",
           "type": "color"
         },
         "text": {
