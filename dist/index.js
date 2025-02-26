@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2024-09-30
+   * Generated on 2025-02-24
    */
   export const Global = {
   Color: {
@@ -27,6 +27,7 @@
       30: "#ceedfe",
       40: "#afdef8",
       50: "#96cff0",
+      55: "#7dcdff",
       60: "#5bb3ea",
       70: "#009cde",
       80: "#108ad6",
@@ -128,8 +129,8 @@
       5: "#f2fcfd",
       10: "#e7f9fb",
       20: "#d8f3f6",
-      30: "#aadee6",
-      40: "#84cdda",
+      30: "#c4eaef",
+      40: "#aadee6",
       50: "#84cdda",
       60: "#3db9cf",
       70: "#05a2c2",
@@ -220,16 +221,23 @@
     }
   },
   Spacing: {
-    0: "0rem",
-    10: "0.125rem",
-    20: "0.25rem",
-    30: "0.375rem",
-    40: "0.5rem",
-    50: "0.75rem",
-    60: "1rem",
-    70: "1.5rem",
-    80: "2rem",
-    90: "3rem"
+    S0: "0",
+    S2: "0.125rem",
+    S4: "0.25rem",
+    S6: "0.375rem",
+    S8: "0.5rem",
+    S12: "0.75rem",
+    S16: "1rem",
+    S20: "1.25rem",
+    S24: "1.5rem",
+    S28: "1.75rem",
+    S32: "2rem",
+    S36: "2.25rem",
+    S40: "2.5rem",
+    S48: "3rem",
+    S64: "4rem",
+    S72: "4.5rem",
+    S96: "6rem"
   },
   Font: {
     FontFamily: {
@@ -253,7 +261,7 @@
       M: "1.125rem",
       L: "1.25rem",
       Xl: "1.5rem",
-      Xxl: "1.75rem",
+      Xxl: "1.625rem",
       Xxxl: "2.25rem"
     },
     LineHeight: {
@@ -272,7 +280,7 @@
     }
   },
   BorderRadius: {
-    None: "0rem"
+    None: "0"
   }
 };
 
@@ -299,6 +307,7 @@ export const Color = {
     30: "#ceedfe",
     40: "#afdef8",
     50: "#96cff0",
+    55: "#7dcdff",
     60: "#5bb3ea",
     70: "#009cde",
     80: "#108ad6",
@@ -400,8 +409,8 @@ export const Color = {
     5: "#f2fcfd",
     10: "#e7f9fb",
     20: "#d8f3f6",
-    30: "#aadee6",
-    40: "#84cdda",
+    30: "#c4eaef",
+    40: "#aadee6",
     50: "#84cdda",
     60: "#3db9cf",
     70: "#05a2c2",
@@ -493,16 +502,23 @@ export const Color = {
 };
 
 export const Spacing = {
-  0: "0rem",
-  10: "0.125rem",
-  20: "0.25rem",
-  30: "0.375rem",
-  40: "0.5rem",
-  50: "0.75rem",
-  60: "1rem",
-  70: "1.5rem",
-  80: "2rem",
-  90: "3rem"
+  S0: "0",
+  S2: "0.125rem",
+  S4: "0.25rem",
+  S6: "0.375rem",
+  S8: "0.5rem",
+  S12: "0.75rem",
+  S16: "1rem",
+  S20: "1.25rem",
+  S24: "1.5rem",
+  S28: "1.75rem",
+  S32: "2rem",
+  S36: "2.25rem",
+  S40: "2.5rem",
+  S48: "3rem",
+  S64: "4rem",
+  S72: "4.5rem",
+  S96: "6rem"
 };
 
 export const Font = {
@@ -527,7 +543,7 @@ export const Font = {
     M: "1.125rem",
     L: "1.25rem",
     Xl: "1.5rem",
-    Xxl: "1.75rem",
+    Xxl: "1.625rem",
     Xxxl: "2.25rem"
   },
   LineHeight: {
@@ -547,7 +563,7 @@ export const Font = {
 };
 
 export const BorderRadius = {
-  None: "0rem"
+  None: "0"
 };
 
 export const Alias = {
@@ -592,7 +608,7 @@ export const Alias = {
   },
   Border: {
     Normal: "#d6d6dd",
-    Neutral: "#343438",
+    Neutral: "#a3a3ab",
     Negative: "#d63c42",
     Warning: "#fecb34",
     Positive: "#00b050",
@@ -607,10 +623,10 @@ export const Alias = {
     Positive: "#00b050",
     Informative: "#4067e5",
     Black: "#232326",
-    Negativesubtle: "#ffefef",
-    Warningsubtle: "#fff4d5",
-    Positivesubtle: "#ebf9eb",
-    Informativesubtle: "#f0f4ff",
+    Negativesubtle: "#ffe5e5",
+    Warningsubtle: "#ffecbc",
+    Positivesubtle: "#dff3df",
+    Informativesubtle: "#e6edfe",
     Neutralsubtle: "#e5e5ea",
     Overlay: "lch(13.8 2.09 286 / 0.24)"
   },
@@ -632,11 +648,15 @@ export const Alias = {
       Disabled: "#afdef8"
     },
     Positive: {
-      Default: "#07a04d",
+      Default: "#138246",
+      Hover: "#00b050",
+      Active: "#138246",
       Disabled: "#b7dfba"
     },
     Negative: {
-      Default: "#d0343a",
+      Default: "#b82329",
+      Hover: "#d63c42",
+      Active: "#b82329",
       Disabled: "#f9c6c6"
     }
   },
@@ -668,7 +688,7 @@ export const Alias = {
   Typography: {
     Heading: {
       Xxxl: "700 2.25rem/2.625rem 'Nunito Sans'",
-      Xxl: "800 1.75rem/2rem 'Nunito Sans'",
+      Xxl: "800 1.625rem/2rem 'Nunito Sans'",
       Xl: "700 1.5rem/1.875rem 'Nunito Sans'",
       L: "700 1.25rem/1.625rem 'Nunito Sans'",
       M: "700 1.125rem/1.5rem 'Nunito Sans'",
@@ -770,7 +790,7 @@ export const Alias = {
       },
       6: {
         Primary: "#05a2c2",
-        Inactive: "#aadee6",
+        Inactive: "#c4eaef",
         Transparent: "lch(61 38.6 224 / 0.2)"
       },
       7: {
@@ -825,7 +845,7 @@ export const Alias = {
       },
       17: {
         Primary: "#0c7792",
-        Inactive: "#aadee6",
+        Inactive: "#c4eaef",
         Transparent: "lch(45.7 30.9 228 / 0.2)"
       },
       18: {
@@ -887,7 +907,7 @@ export const Alias = {
     }
   },
   Radius: {
-    Default: "0rem"
+    Default: "0"
   }
 };
 
@@ -933,7 +953,7 @@ export const Content = {
 
 export const Border = {
   Normal: "#d6d6dd",
-  Neutral: "#343438",
+  Neutral: "#a3a3ab",
   Negative: "#d63c42",
   Warning: "#fecb34",
   Positive: "#00b050",
@@ -949,10 +969,10 @@ export const Background = {
   Positive: "#00b050",
   Informative: "#4067e5",
   Black: "#232326",
-  Negativesubtle: "#ffefef",
-  Warningsubtle: "#fff4d5",
-  Positivesubtle: "#ebf9eb",
-  Informativesubtle: "#f0f4ff",
+  Negativesubtle: "#ffe5e5",
+  Warningsubtle: "#ffecbc",
+  Positivesubtle: "#dff3df",
+  Informativesubtle: "#e6edfe",
   Neutralsubtle: "#e5e5ea",
   Overlay: "lch(13.8 2.09 286 / 0.24)"
 };
@@ -975,11 +995,15 @@ export const Action = {
     Disabled: "#afdef8"
   },
   Positive: {
-    Default: "#07a04d",
+    Default: "#138246",
+    Hover: "#00b050",
+    Active: "#138246",
     Disabled: "#b7dfba"
   },
   Negative: {
-    Default: "#d0343a",
+    Default: "#b82329",
+    Hover: "#d63c42",
+    Active: "#b82329",
     Disabled: "#f9c6c6"
   }
 };
@@ -1014,7 +1038,7 @@ export const Elevation = {
 export const Typography = {
   Heading: {
     Xxxl: "700 2.25rem/2.625rem 'Nunito Sans'",
-    Xxl: "800 1.75rem/2rem 'Nunito Sans'",
+    Xxl: "800 1.625rem/2rem 'Nunito Sans'",
     Xl: "700 1.5rem/1.875rem 'Nunito Sans'",
     L: "700 1.25rem/1.625rem 'Nunito Sans'",
     M: "700 1.125rem/1.5rem 'Nunito Sans'",
@@ -1118,7 +1142,7 @@ export const Chart = {
     },
     6: {
       Primary: "#05a2c2",
-      Inactive: "#aadee6",
+      Inactive: "#c4eaef",
       Transparent: "lch(61 38.6 224 / 0.2)"
     },
     7: {
@@ -1173,7 +1197,7 @@ export const Chart = {
     },
     17: {
       Primary: "#0c7792",
-      Inactive: "#aadee6",
+      Inactive: "#c4eaef",
       Transparent: "lch(45.7 30.9 228 / 0.2)"
     },
     18: {
@@ -1236,7 +1260,7 @@ export const Chart = {
 };
 
 export const Radius = {
-  Default: "0rem"
+  Default: "0"
 };
 
 export const Component = {
@@ -1338,6 +1362,31 @@ export const Component = {
       Loading: {
         Background: "#232326"
       }
+    },
+    Danger: {
+      Default: {
+        Background: "#b82329",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Hover: {
+        Background: "#d63c42",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Pressed: {
+        Background: "#b82329",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Disabled: {
+        Background: "#f9c6c6",
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
+      },
+      Loading: {
+        Background: "#b82329"
+      }
     }
   },
   Container: {
@@ -1346,14 +1395,21 @@ export const Component = {
   },
   Table: {
     HeaderFilled: {
-      Background: "#343438",
-      Text: "#ffffff",
-      Icon: "#ffffff"
+      Background: "#e5e5ea",
+      Text: "#343438",
+      Icon: "#3d3d42",
+      Border: "#a3a3ab"
     },
     HeaderOutlined: {
-      Border: "#343438",
+      Border: "#a3a3ab",
       Text: "#343438",
       Icon: "#3d3d42"
+    },
+    HeaderNested: {
+      Background: "#e5e5ea",
+      Text: "#343438",
+      Icon: "#3d3d42",
+      Border: "#a3a3ab"
     },
     Row: {
       Border: "#d6d6dd",
@@ -1595,60 +1651,131 @@ export const Component = {
   },
   Badge: {
     Informative: {
-      Background: "lch(36.7 58.2 286 / 0.12)",
-      Text: "#3451b2"
+      Subtle: {
+        Background: "lch(36.7 58.2 286 / 0.12)",
+        Text: "#3451b2"
+      },
+      Accent: {
+        Background: "#3451b2",
+        Text: "#ffffff"
+      }
     },
     Neutral: {
-      Background: "lch(34.6 3.66 286 / 0.12)",
-      Text: "#515157"
+      Subtle: {
+        Background: "lch(34.6 3.66 286 / 0.12)",
+        Text: "#515157"
+      },
+      Accent: {
+        Background: "#515157",
+        Text: "#ffffff"
+      }
     },
     Warning: {
-      Background: "lch(67.2 71.6 80.1 / 0.12)",
-      Text: "#c25d05"
+      Subtle: {
+        Background: "lch(67.2 71.6 80.1 / 0.12)",
+        Text: "#c25d05"
+      },
+      Accent: {
+        Background: "#c25d05",
+        Text: "#ffffff"
+      }
     },
     Negative: {
-      Background: "lch(41.2 69 32.4 / 0.12)",
-      Text: "#b82329"
+      Subtle: {
+        Background: "lch(41.2 69 32.4 / 0.12)",
+        Text: "#b82329"
+      },
+      Accent: {
+        Background: "#b82329",
+        Text: "#ffffff"
+      }
     },
     Positive: {
-      Background: "lch(47.6 47.7 150 / 0.12)",
-      Text: "#138246"
+      Subtle: {
+        Background: "lch(47.6 47.7 150 / 0.12)",
+        Text: "#138246"
+      },
+      Accent: {
+        Background: "#138246",
+        Text: "#ffffff"
+      }
     },
     Important: {
-      Background: "lch(38.2 75 307 / 0.12)",
-      Text: "#753bbd"
+      Subtle: {
+        Background: "lch(38.2 75 307 / 0.12)",
+        Text: "#753bbd"
+      },
+      Accent: {
+        Background: "#753bbd",
+        Text: "#ffffff"
+      }
     },
     Violet: {
-      Background: "lch(36.2 62.1 298 / 0.12)",
-      Text: "#5746af"
+      Subtle: {
+        Background: "lch(36.2 62.1 298 / 0.12)",
+        Text: "#5746af"
+      },
+      Accent: {
+        Background: "#5746af",
+        Text: "#ffffff"
+      }
     },
     Pink: {
-      Background: "lch(47.1 72.1 347 / 0.12)",
-      Text: "#cd1d8d"
+      Subtle: {
+        Background: "lch(47.1 72.1 347 / 0.12)",
+        Text: "#cd1d8d"
+      },
+      Accent: {
+        Background: "#cd1d8d",
+        Text: "#ffffff"
+      }
     }
   },
   Breadcrumb: {
     Divider: "#d6d6dd",
     AppTitle: {
-      Text: "#0174bc"
+      Text: {
+        Default: "#343438",
+        Hover: "#009cde"
+      }
     },
-    Default: {
-      Text: "#0174bc"
+    Normal: {
+      Text: {
+        Default: "#343438",
+        Hover: "#009cde"
+      }
     },
     Truncated: {
-      Text: "#0174bc"
+      Text: {
+        Default: "#343438",
+        Hover: "#009cde"
+      }
     },
     LastItem: {
-      Text: "#343438"
+      Text: "#696970"
     },
     Collapsed: {
       Background: "#e5e5ea",
-      Text: "#343438",
-      Icon: "#3d3d42"
+      Text: {
+        Default: "#343438",
+        Hover: "#009cde",
+        Active: "#0174bc"
+      },
+      Icon: {
+        Default: "#3d3d42",
+        Hover: "#009cde"
+      }
     },
     WithDropdown: {
-      Text: "#0174bc",
-      Icon: "#3d3d42"
+      Text: {
+        Default: "#343438",
+        Hover: "#009cde",
+        Active: "#0174bc"
+      },
+      Icon: {
+        Default: "#3d3d42",
+        Hover: "#009cde"
+      }
     }
   },
   Card: {
@@ -2036,11 +2163,17 @@ export const Component = {
     Border: "#3d3d42",
     Icon: {
       Default: "#d6d6dd",
-      Hover: "#ffffff"
+      Hover: "#ffffff",
+      Active: "#5bb3ea"
     },
     Text: {
       Default: "#d6d6dd",
       Hover: "#ffffff"
+    },
+    Badge: {
+      Background: "#d63c42",
+      Text: "#ffffff",
+      Icon: "#ffffff"
     },
     Search: {
       Background: "#3d3d42",
@@ -2052,14 +2185,21 @@ export const Component = {
         Default: "#d6d6dd",
         Active: "#ffffff",
         Hover: "#ffffff"
+      },
+      Border: {
+        Default: "#3d3d42",
+        Hover: "#696970",
+        Active: "#a3a3ab"
       }
     }
   },
   GlobalFooter: {
-    Background: "#232326",
-    Text: {
-      Default: "#d6d6dd",
-      Hover: "#ffffff"
+    Background: "#f7f7fa",
+    Border: "#d6d6dd",
+    Text: "#343438",
+    Link: {
+      Default: "#0174bc",
+      Hover: "#009cde"
     }
   },
   GroupSelect: {
@@ -2339,65 +2479,65 @@ export const Component = {
     Text: "#343438",
     Icon: "#3d3d42",
     Informative: {
-      Background: "#f0f4ff",
+      Background: "#e6edfe",
       Border: "#4067e5",
       StatusIcon: "#4067e5"
     },
     Tip: {
-      Background: "#f0f4ff",
+      Background: "#e6edfe",
       Border: "#4067e5",
       StatusIcon: "#4067e5"
     },
     Warning: {
-      Background: "#fff4d5",
+      Background: "#ffecbc",
       Border: "#fecb34",
       StatusIcon: "#fecb34"
     },
     Success: {
-      Background: "#ebf9eb",
+      Background: "#dff3df",
       Border: "#00b050",
       StatusIcon: "#00b050"
     },
     Error: {
-      Background: "#ffefef",
+      Background: "#ffe5e5",
       Border: "#d63c42",
       StatusIcon: "#d63c42"
     },
     Secondary: {
       Background: "#e5e5ea",
-      Border: "#343438",
-      StatusIcon: "#3d3d42"
+      Border: "#a3a3ab",
+      StatusIcon: "#696970"
     }
   },
   NotificationToast: {
     Text: "#343438",
     Icon: "#3d3d42",
     Informative: {
-      Background: "#f0f4ff",
+      Background: "#e6edfe",
       IconBackground: "#4067e5",
       Border: "#4067e5",
       StatusIcon: "#ffffff"
     },
     Tip: {
-      Background: "#f0f4ff",
+      Background: "#e6edfe",
       IconBackground: "#4067e5",
       Border: "#4067e5",
       StatusIcon: "#ffffff"
     },
     Warning: {
-      Background: "#fff4d5",
+      Background: "#ffecbc",
       IconBackground: "#fecb34",
       Border: "#fecb34",
       StatusIcon: "#3d3d42"
     },
     Success: {
-      Background: "#ebf9eb",
+      Background: "#dff3df",
       IconBackground: "#00b050",
       Border: "#00b050",
       StatusIcon: "#ffffff"
     },
     Error: {
-      Background: "#ffefef",
+      Background: "#ffe5e5",
       IconBackground: "#d63c42",
       Border: "#d63c42",
       StatusIcon: "#ffffff"
@@ -2610,6 +2750,7 @@ export const Component = {
     }
   },
   SegmentedButton: {
+    Divider: "#ffffff",
     Default: {
       Background: "#ffffff",
       Border: "#0174bc",
@@ -2637,6 +2778,12 @@ export const Component = {
     Active: {
       Background: "#0174bc",
       Border: "#0174bc",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    ActiveHover: {
+      Background: "#009cde",
+      Border: "#009cde",
       Text: "#ffffff",
       Icon: "#ffffff"
     }
@@ -2853,7 +3000,7 @@ export const Component = {
       }
     },
     Error: {
-      Background: "#ffefef",
+      Background: "#ffe5e5",
       Border: "#d63c42",
       Text: "#343438",
       Icon: {
@@ -3378,7 +3525,7 @@ export const Component = {
       Icon: "#a3a3ab"
     },
     ActivePositive: {
-      Background: "#07a04d",
+      Background: "#138246",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
@@ -3388,12 +3535,12 @@ export const Component = {
       Icon: "#a3a3ab"
     },
     ActiveNegative: {
-      Background: "#d0343a",
+      Background: "#b82329",
       Text: "#ffffff",
       Icon: "#ffffff"
     },
     DisabledNeutral: {
-      Background: "#c2c2ca",
+      Background: "#e5e5ea",
       Text: "#a3a3ab",
       Icon: "#a3a3ab"
     },
@@ -3528,6 +3675,31 @@ export const Button = {
     Loading: {
       Background: "#232326"
     }
+  },
+  Danger: {
+    Default: {
+      Background: "#b82329",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Hover: {
+      Background: "#d63c42",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Pressed: {
+      Background: "#b82329",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Disabled: {
+      Background: "#f9c6c6",
+      Text: "#a3a3ab",
+      Icon: "#a3a3ab"
+    },
+    Loading: {
+      Background: "#b82329"
+    }
   }
 };
 
@@ -3538,14 +3710,21 @@ export const Container = {
 
 export const Table = {
   HeaderFilled: {
-    Background: "#343438",
-    Text: "#ffffff",
-    Icon: "#ffffff"
+    Background: "#e5e5ea",
+    Text: "#343438",
+    Icon: "#3d3d42",
+    Border: "#a3a3ab"
   },
   HeaderOutlined: {
-    Border: "#343438",
+    Border: "#a3a3ab",
     Text: "#343438",
     Icon: "#3d3d42"
+  },
+  HeaderNested: {
+    Background: "#e5e5ea",
+    Text: "#343438",
+    Icon: "#3d3d42",
+    Border: "#a3a3ab"
   },
   Row: {
     Border: "#d6d6dd",
@@ -3792,61 +3971,132 @@ export const Appbar = {
 
 export const Badge = {
   Informative: {
-    Background: "lch(36.7 58.2 286 / 0.12)",
-    Text: "#3451b2"
+    Subtle: {
+      Background: "lch(36.7 58.2 286 / 0.12)",
+      Text: "#3451b2"
+    },
+    Accent: {
+      Background: "#3451b2",
+      Text: "#ffffff"
+    }
   },
   Neutral: {
-    Background: "lch(34.6 3.66 286 / 0.12)",
-    Text: "#515157"
+    Subtle: {
+      Background: "lch(34.6 3.66 286 / 0.12)",
+      Text: "#515157"
+    },
+    Accent: {
+      Background: "#515157",
+      Text: "#ffffff"
+    }
   },
   Warning: {
-    Background: "lch(67.2 71.6 80.1 / 0.12)",
-    Text: "#c25d05"
+    Subtle: {
+      Background: "lch(67.2 71.6 80.1 / 0.12)",
+      Text: "#c25d05"
+    },
+    Accent: {
+      Background: "#c25d05",
+      Text: "#ffffff"
+    }
   },
   Negative: {
-    Background: "lch(41.2 69 32.4 / 0.12)",
-    Text: "#b82329"
+    Subtle: {
+      Background: "lch(41.2 69 32.4 / 0.12)",
+      Text: "#b82329"
+    },
+    Accent: {
+      Background: "#b82329",
+      Text: "#ffffff"
+    }
   },
   Positive: {
-    Background: "lch(47.6 47.7 150 / 0.12)",
-    Text: "#138246"
+    Subtle: {
+      Background: "lch(47.6 47.7 150 / 0.12)",
+      Text: "#138246"
+    },
+    Accent: {
+      Background: "#138246",
+      Text: "#ffffff"
+    }
   },
   Important: {
-    Background: "lch(38.2 75 307 / 0.12)",
-    Text: "#753bbd"
+    Subtle: {
+      Background: "lch(38.2 75 307 / 0.12)",
+      Text: "#753bbd"
+    },
+    Accent: {
+      Background: "#753bbd",
+      Text: "#ffffff"
+    }
   },
   Violet: {
-    Background: "lch(36.2 62.1 298 / 0.12)",
-    Text: "#5746af"
+    Subtle: {
+      Background: "lch(36.2 62.1 298 / 0.12)",
+      Text: "#5746af"
+    },
+    Accent: {
+      Background: "#5746af",
+      Text: "#ffffff"
+    }
   },
   Pink: {
-    Background: "lch(47.1 72.1 347 / 0.12)",
-    Text: "#cd1d8d"
+    Subtle: {
+      Background: "lch(47.1 72.1 347 / 0.12)",
+      Text: "#cd1d8d"
+    },
+    Accent: {
+      Background: "#cd1d8d",
+      Text: "#ffffff"
+    }
   }
 };
 
 export const Breadcrumb = {
   Divider: "#d6d6dd",
   AppTitle: {
-    Text: "#0174bc"
+    Text: {
+      Default: "#343438",
+      Hover: "#009cde"
+    }
   },
-  Default: {
-    Text: "#0174bc"
+  Normal: {
+    Text: {
+      Default: "#343438",
+      Hover: "#009cde"
+    }
   },
   Truncated: {
-    Text: "#0174bc"
+    Text: {
+      Default: "#343438",
+      Hover: "#009cde"
+    }
   },
   LastItem: {
-    Text: "#343438"
+    Text: "#696970"
   },
   Collapsed: {
     Background: "#e5e5ea",
-    Text: "#343438",
-    Icon: "#3d3d42"
+    Text: {
+      Default: "#343438",
+      Hover: "#009cde",
+      Active: "#0174bc"
+    },
+    Icon: {
+      Default: "#3d3d42",
+      Hover: "#009cde"
+    }
   },
   WithDropdown: {
-    Text: "#0174bc",
-    Icon: "#3d3d42"
+    Text: {
+      Default: "#343438",
+      Hover: "#009cde",
+      Active: "#0174bc"
+    },
+    Icon: {
+      Default: "#3d3d42",
+      Hover: "#009cde"
+    }
   }
 };
 
@@ -4247,11 +4497,17 @@ export const GlobalHeader = {
   Border: "#3d3d42",
   Icon: {
     Default: "#d6d6dd",
-    Hover: "#ffffff"
+    Hover: "#ffffff",
+    Active: "#5bb3ea"
   },
   Text: {
     Default: "#d6d6dd",
     Hover: "#ffffff"
+  },
+  Badge: {
+    Background: "#d63c42",
+    Text: "#ffffff",
+    Icon: "#ffffff"
   },
   Search: {
     Background: "#3d3d42",
@@ -4263,15 +4519,22 @@ export const GlobalHeader = {
       Default: "#d6d6dd",
       Active: "#ffffff",
       Hover: "#ffffff"
+    },
+    Border: {
+      Default: "#3d3d42",
+      Hover: "#696970",
+      Active: "#a3a3ab"
     }
   }
 };
 
 export const GlobalFooter = {
-  Background: "#232326",
-  Text: {
-    Default: "#d6d6dd",
-    Hover: "#ffffff"
+  Background: "#f7f7fa",
+  Border: "#d6d6dd",
+  Text: "#343438",
+  Link: {
+    Default: "#0174bc",
+    Hover: "#009cde"
   }
 };
 
@@ -4559,34 +4822,34 @@ export const NotificationBanner = {
   Text: "#343438",
   Icon: "#3d3d42",
   Informative: {
-    Background: "#f0f4ff",
+    Background: "#e6edfe",
     Border: "#4067e5",
     StatusIcon: "#4067e5"
   },
   Tip: {
-    Background: "#f0f4ff",
+    Background: "#e6edfe",
     Border: "#4067e5",
     StatusIcon: "#4067e5"
   },
   Warning: {
-    Background: "#fff4d5",
+    Background: "#ffecbc",
     Border: "#fecb34",
     StatusIcon: "#fecb34"
   },
   Success: {
-    Background: "#ebf9eb",
+    Background: "#dff3df",
     Border: "#00b050",
     StatusIcon: "#00b050"
   },
   Error: {
-    Background: "#ffefef",
+    Background: "#ffe5e5",
     Border: "#d63c42",
     StatusIcon: "#d63c42"
   },
   Secondary: {
     Background: "#e5e5ea",
-    Border: "#343438",
-    StatusIcon: "#3d3d42"
+    Border: "#a3a3ab",
+    StatusIcon: "#696970"
   }
 };
 
@@ -4594,31 +4857,31 @@ export const NotificationToast = {
   Text: "#343438",
   Icon: "#3d3d42",
   Informative: {
-    Background: "#f0f4ff",
+    Background: "#e6edfe",
     IconBackground: "#4067e5",
     Border: "#4067e5",
     StatusIcon: "#ffffff"
   },
   Tip: {
-    Background: "#f0f4ff",
+    Background: "#e6edfe",
     IconBackground: "#4067e5",
     Border: "#4067e5",
     StatusIcon: "#ffffff"
   },
   Warning: {
-    Background: "#fff4d5",
+    Background: "#ffecbc",
     IconBackground: "#fecb34",
     Border: "#fecb34",
     StatusIcon: "#3d3d42"
   },
   Success: {
-    Background: "#ebf9eb",
+    Background: "#dff3df",
     IconBackground: "#00b050",
     Border: "#00b050",
     StatusIcon: "#ffffff"
   },
   Error: {
-    Background: "#ffefef",
+    Background: "#ffe5e5",
     IconBackground: "#d63c42",
     Border: "#d63c42",
     StatusIcon: "#ffffff"
@@ -4838,6 +5101,7 @@ export const Search = {
 };
 
 export const SegmentedButton = {
+  Divider: "#ffffff",
   Default: {
     Background: "#ffffff",
     Border: "#0174bc",
@@ -4865,6 +5129,12 @@ export const SegmentedButton = {
   Active: {
     Background: "#0174bc",
     Border: "#0174bc",
+    Text: "#ffffff",
+    Icon: "#ffffff"
+  },
+  ActiveHover: {
+    Background: "#009cde",
+    Border: "#009cde",
     Text: "#ffffff",
     Icon: "#ffffff"
   }
@@ -5087,7 +5357,7 @@ export const Tag = {
     }
   },
   Error: {
-    Background: "#ffefef",
+    Background: "#ffe5e5",
     Border: "#d63c42",
     Text: "#343438",
     Icon: {
@@ -5622,7 +5892,7 @@ export const SegmentedStatusButton = {
     Icon: "#a3a3ab"
   },
   ActivePositive: {
-    Background: "#07a04d",
+    Background: "#138246",
     Text: "#ffffff",
     Icon: "#ffffff"
   },
@@ -5632,12 +5902,12 @@ export const SegmentedStatusButton = {
     Icon: "#a3a3ab"
   },
   ActiveNegative: {
-    Background: "#d0343a",
+    Background: "#b82329",
     Text: "#ffffff",
     Icon: "#ffffff"
   },
   DisabledNeutral: {
-    Background: "#c2c2ca",
+    Background: "#e5e5ea",
     Text: "#a3a3ab",
     Icon: "#a3a3ab"
   },

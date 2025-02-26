@@ -135,7 +135,7 @@
         "description": "Border color for static ui elements and components"
       },
       "neutral": {
-        "value": "{global.color.neutrals.100}",
+        "value": "{global.color.neutrals.50}",
         "type": "color"
       },
       "negative": {

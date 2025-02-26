@@ -20,6 +20,7 @@ $token-global-color-brand-20: #e1f4ff;
 $token-global-color-brand-30: #ceedfe;
 $token-global-color-brand-40: #afdef8;
 $token-global-color-brand-50: #96cff0;
+$token-global-color-brand-55: #7dcdff;
 $token-global-color-brand-60: #5bb3ea;
 $token-global-color-brand-70: #009cde; // Akamai Blue
 $token-global-color-brand-80: #108ad6;
@@ -105,8 +106,8 @@ $token-global-color-teal-100: #10302b;
 $token-global-color-cyan-5: #f2fcfd;
 $token-global-color-cyan-10: #e7f9fb;
 $token-global-color-cyan-20: #d8f3f6;
-$token-global-color-cyan-30: #aadee6;
-$token-global-color-cyan-40: #84cdda;
+$token-global-color-cyan-30: #c4eaef;
+$token-global-color-cyan-40: #aadee6;
 $token-global-color-cyan-50: #84cdda;
 $token-global-color-cyan-60: #3db9cf;
 $token-global-color-cyan-70: #05a2c2;
@@ -180,16 +181,23 @@ $token-global-color-brown-80: #8c795d;
 $token-global-color-brown-90: #776750;
 $token-global-color-brown-100: #3b352b;
 $token-global-color-gradient-default: linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%); // Default gradient
-$token-global-spacing-0: 0rem;
-$token-global-spacing-10: 0.125rem; // 2px
-$token-global-spacing-20: 0.25rem; // 4px
-$token-global-spacing-30: 0.375rem; // 6px
-$token-global-spacing-40: 0.5rem; // 8px
-$token-global-spacing-50: 0.75rem; // 12px
-$token-global-spacing-60: 1rem; // 16px
-$token-global-spacing-70: 1.5rem; // 24px
-$token-global-spacing-80: 2rem; // 32px
-$token-global-spacing-90: 3rem; // 48px
+$token-global-spacing-s0: 0;
+$token-global-spacing-s2: 2px;
+$token-global-spacing-s4: 4px;
+$token-global-spacing-s6: 6px;
+$token-global-spacing-s8: 8px;
+$token-global-spacing-s12: 12px;
+$token-global-spacing-s16: 16px;
+$token-global-spacing-s20: 20px;
+$token-global-spacing-s24: 24px;
+$token-global-spacing-s28: 28px;
+$token-global-spacing-s32: 32px;
+$token-global-spacing-s36: 36px;
+$token-global-spacing-s40: 40px;
+$token-global-spacing-s48: 48px;
+$token-global-spacing-s64: 64px;
+$token-global-spacing-s72: 72px;
+$token-global-spacing-s96: 96px;
 $token-global-font-font-family-brand: 'Nunito Sans';
 $token-global-font-font-family-code: 'Fira Code';
 $token-global-font-font-weight-semibold: 600;
@@ -204,7 +212,7 @@ $token-global-font-font-size-s: 1rem; // 16px
 $token-global-font-font-size-m: 1.125rem; // 18px
 $token-global-font-font-size-l: 1.25rem; // 20px
 $token-global-font-font-size-xl: 1.5rem; // 24px
-$token-global-font-font-size-xxl: 1.75rem; // 28px
+$token-global-font-font-size-xxl: 1.625rem; // 26px
 $token-global-font-font-size-xxxl: 2.25rem; // 36px
 $token-global-font-line-height-xxxs: 1rem; // 16px
 $token-global-font-line-height-xxs: 1.125rem; // 18px
@@ -216,7 +224,7 @@ $token-global-font-line-height-xl: 2rem; // 32px
 $token-global-font-line-height-xxl: 2.375rem; // 38px
 $token-global-font-line-height-xxxl: 2.625rem; // 42px
 $token-global-font-textcase-uppercase: uppercase;
-$token-global-border-radius-none: 0rem;
+$token-global-border-radius-none: 0;
 $token-alias-content-text-base: #ffffff; // Use as color for text on a dark surface
 $token-alias-content-text-negative: #b82329; // Use to indicate error messages
 $token-alias-content-text-warning: #fecb34;
@@ -241,7 +249,7 @@ $token-alias-content-icon-primary-disabled: #a3a3ab; // Use only as a disabled s
 $token-alias-content-icon-secondary-default: #696970; // Secondary icon color (placeholder, etc)
 $token-alias-content-icon-secondary-disabled: #a3a3ab; // Use only as a disabled state for a secondary icon color
 $token-alias-border-normal: #d6d6dd; // Border color for static ui elements and components
-$token-alias-border-neutral: #343438;
+$token-alias-border-neutral: #a3a3ab;
 $token-alias-border-negative: #d63c42; // Use only for borders to indicate an error state
 $token-alias-border-warning: #fecb34; // Use only for borders to indicate a warning state
 $token-alias-border-positive: #00b050; // Use only for borders to indicate a success state
@@ -254,10 +262,10 @@ $token-alias-background-warning: #fecb34;
 $token-alias-background-positive: #00b050;
 $token-alias-background-informative: #4067e5;
 $token-alias-background-black: #232326; // Use only for a global header and global footer background
-$token-alias-background-negativesubtle: #ffefef;
-$token-alias-background-warningsubtle: #fff4d5;
-$token-alias-background-positivesubtle: #ebf9eb;
-$token-alias-background-informativesubtle: #f0f4ff;
+$token-alias-background-negativesubtle: #ffe5e5;
+$token-alias-background-warningsubtle: #ffecbc;
+$token-alias-background-positivesubtle: #dff3df;
+$token-alias-background-informativesubtle: #e6edfe;
 $token-alias-background-neutralsubtle: #e5e5ea;
 $token-alias-background-overlay: lch(13.8 2.09 286 / 0.24); // Page dimming when the modal component is active
 $token-alias-action-base: #ffffff;
@@ -270,9 +278,13 @@ $token-alias-action-primary-disabled: #e5e5ea;
 $token-alias-action-secondary-hover: #edf8ff;
 $token-alias-action-secondary-disabled: #c2c2ca;
 $token-alias-action-tertiary-disabled: #afdef8;
-$token-alias-action-positive-default: #07a04d;
+$token-alias-action-positive-default: #138246;
+$token-alias-action-positive-hover: #00b050;
+$token-alias-action-positive-active: #138246;
 $token-alias-action-positive-disabled: #b7dfba;
-$token-alias-action-negative-default: #d0343a;
+$token-alias-action-negative-default: #b82329;
+$token-alias-action-negative-hover: #d63c42;
+$token-alias-action-negative-active: #b82329;
 $token-alias-action-negative-disabled: #f9c6c6;
 $token-alias-interaction-border-default: #83838c; // Default inputs border
 $token-alias-interaction-border-hover: #3d3d42;
@@ -292,7 +304,7 @@ $token-alias-elevation-s: 0 2px 8px 0 rgba(58,59,63,0.18); // Default shadow for
 $token-alias-elevation-s-inverted: 0 -2px 8px 0 rgba(58,59,63,0.18); // Inverted shadow for elements that appear above the component
 $token-alias-elevation-l: 0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08); // Shadow for modals
 $token-alias-typography-heading-xxxl: 700 2.25rem/2.625rem 'Nunito Sans'; // Promo banners, KPIs
-$token-alias-typography-heading-xxl: 800 1.75rem/2rem 'Nunito Sans'; // Main titles - h1
+$token-alias-typography-heading-xxl: 800 1.625rem/2rem 'Nunito Sans'; // Main titles - h1
 $token-alias-typography-heading-xl: 700 1.5rem/1.875rem 'Nunito Sans'; // Second level title - h2
 $token-alias-typography-heading-l: 700 1.25rem/1.625rem 'Nunito Sans'; // Third level title - h3
 $token-alias-typography-heading-m: 700 1.125rem/1.5rem 'Nunito Sans'; // Drawer, modal title - h4
@@ -351,7 +363,7 @@ $token-alias-chart-categorical-5-primary: #d63c42;
 $token-alias-chart-categorical-5-inactive: #fdd8d8;
 $token-alias-chart-categorical-5-transparent: lch(50.1 69.5 29.4 / 0.2);
 $token-alias-chart-categorical-6-primary: #05a2c2;
-$token-alias-chart-categorical-6-inactive: #aadee6;
+$token-alias-chart-categorical-6-inactive: #c4eaef;
 $token-alias-chart-categorical-6-transparent: lch(61 38.6 224 / 0.2);
 $token-alias-chart-categorical-7-primary: #e043a7;
 $token-alias-chart-categorical-7-inactive: #f9d8ec;
@@ -384,7 +396,7 @@ $token-alias-chart-categorical-16-primary: #eb9091;
 $token-alias-chart-categorical-16-inactive: #fdd8d8;
 $token-alias-chart-categorical-16-transparent: lch(69.6 38.4 22.9 / 0.2);
 $token-alias-chart-categorical-17-primary: #0c7792;
-$token-alias-chart-categorical-17-inactive: #aadee6;
+$token-alias-chart-categorical-17-inactive: #c4eaef;
 $token-alias-chart-categorical-17-transparent: lch(45.7 30.9 228 / 0.2);
 $token-alias-chart-categorical-18-primary: #e38ec3;
 $token-alias-chart-categorical-18-inactive: #f9d8ec;
@@ -424,7 +436,7 @@ $token-alias-chart-monochromatic-danger-100: #381316;
 $token-alias-chart-status-negative: #d63c42;
 $token-alias-chart-status-warning: #fecb34;
 $token-alias-chart-status-positive: #00b050;
-$token-alias-radius-default: 0rem; // Default border radius value
+$token-alias-radius-default: 0; // Default border radius value
 $token-component-button-primary-default-background: #0174bc;
 $token-component-button-primary-default-text: #ffffff;
 $token-component-button-primary-default-icon: #ffffff;
@@ -477,14 +489,32 @@ $token-component-button-launch-disabled-background: #e5e5ea; // This component t
 $token-component-button-launch-disabled-text: #a3a3ab; // This component token is considered unstable and in development.
 $token-component-button-launch-disabled-icon: #a3a3ab; // This component token is considered unstable and in development.
 $token-component-button-launch-loading-background: #232326; // This component token is considered unstable and in development.
+$token-component-button-danger-default-background: #b82329;
+$token-component-button-danger-default-text: #ffffff;
+$token-component-button-danger-default-icon: #ffffff;
+$token-component-button-danger-hover-background: #d63c42;
+$token-component-button-danger-hover-text: #ffffff;
+$token-component-button-danger-hover-icon: #ffffff;
+$token-component-button-danger-pressed-background: #b82329;
+$token-component-button-danger-pressed-text: #ffffff;
+$token-component-button-danger-pressed-icon: #ffffff;
+$token-component-button-danger-disabled-background: #f9c6c6;
+$token-component-button-danger-disabled-text: #a3a3ab;
+$token-component-button-danger-disabled-icon: #a3a3ab;
+$token-component-button-danger-loading-background: #b82329;
 $token-component-container-background: #ffffff;
 $token-component-container-border: #d6d6dd;
-$token-component-table-header-filled-background: #343438;
-$token-component-table-header-filled-text: #ffffff;
-$token-component-table-header-filled-icon: #ffffff;
-$token-component-table-header-outlined-border: #343438;
+$token-component-table-header-filled-background: #e5e5ea;
+$token-component-table-header-filled-text: #343438;
+$token-component-table-header-filled-icon: #3d3d42;
+$token-component-table-header-filled-border: #a3a3ab;
+$token-component-table-header-outlined-border: #a3a3ab;
 $token-component-table-header-outlined-text: #343438;
 $token-component-table-header-outlined-icon: #3d3d42;
+$token-component-table-header-nested-background: #e5e5ea;
+$token-component-table-header-nested-text: #343438;
+$token-component-table-header-nested-icon: #3d3d42;
+$token-component-table-header-nested-border: #a3a3ab;
 $token-component-table-row-border: #d6d6dd;
 $token-component-table-row-icon-default: #3d3d42;
 $token-component-table-row-icon-disabled: #a3a3ab;
@@ -622,32 +652,57 @@ $token-component-appbar-border: #d6d6dd;
 $token-component-appbar-text: #343438;
 $token-component-appbar-icon: #3d3d42;
 $token-component-appbar-top-gradient: linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%);
-$token-component-badge-informative-background: lch(36.7 58.2 286 / 0.12);
-$token-component-badge-informative-text: #3451b2;
-$token-component-badge-neutral-background: lch(34.6 3.66 286 / 0.12);
-$token-component-badge-neutral-text: #515157;
-$token-component-badge-warning-background: lch(67.2 71.6 80.1 / 0.12);
-$token-component-badge-warning-text: #c25d05;
-$token-component-badge-negative-background: lch(41.2 69 32.4 / 0.12);
-$token-component-badge-negative-text: #b82329;
-$token-component-badge-positive-background: lch(47.6 47.7 150 / 0.12);
-$token-component-badge-positive-text: #138246;
-$token-component-badge-important-background: lch(38.2 75 307 / 0.12);
-$token-component-badge-important-text: #753bbd;
-$token-component-badge-violet-background: lch(36.2 62.1 298 / 0.12);
-$token-component-badge-violet-text: #5746af;
-$token-component-badge-pink-background: lch(47.1 72.1 347 / 0.12);
-$token-component-badge-pink-text: #cd1d8d;
+$token-component-badge-informative-subtle-background: lch(36.7 58.2 286 / 0.12);
+$token-component-badge-informative-subtle-text: #3451b2;
+$token-component-badge-informative-accent-background: #3451b2;
+$token-component-badge-informative-accent-text: #ffffff;
+$token-component-badge-neutral-subtle-background: lch(34.6 3.66 286 / 0.12);
+$token-component-badge-neutral-subtle-text: #515157;
+$token-component-badge-neutral-accent-background: #515157;
+$token-component-badge-neutral-accent-text: #ffffff;
+$token-component-badge-warning-subtle-background: lch(67.2 71.6 80.1 / 0.12);
+$token-component-badge-warning-subtle-text: #c25d05;
+$token-component-badge-warning-accent-background: #c25d05;
+$token-component-badge-warning-accent-text: #ffffff;
+$token-component-badge-negative-subtle-background: lch(41.2 69 32.4 / 0.12);
+$token-component-badge-negative-subtle-text: #b82329;
+$token-component-badge-negative-accent-background: #b82329;
+$token-component-badge-negative-accent-text: #ffffff;
+$token-component-badge-positive-subtle-background: lch(47.6 47.7 150 / 0.12);
+$token-component-badge-positive-subtle-text: #138246;
+$token-component-badge-positive-accent-background: #138246;
+$token-component-badge-positive-accent-text: #ffffff;
+$token-component-badge-important-subtle-background: lch(38.2 75 307 / 0.12);
+$token-component-badge-important-subtle-text: #753bbd;
+$token-component-badge-important-accent-background: #753bbd;
+$token-component-badge-important-accent-text: #ffffff;
+$token-component-badge-violet-subtle-background: lch(36.2 62.1 298 / 0.12);
+$token-component-badge-violet-subtle-text: #5746af;
+$token-component-badge-violet-accent-background: #5746af;
+$token-component-badge-violet-accent-text: #ffffff;
+$token-component-badge-pink-subtle-background: lch(47.1 72.1 347 / 0.12);
+$token-component-badge-pink-subtle-text: #cd1d8d;
+$token-component-badge-pink-accent-background: #cd1d8d;
+$token-component-badge-pink-accent-text: #ffffff;
 $token-component-breadcrumb-divider: #d6d6dd;
-$token-component-breadcrumb-app-title-text: #0174bc;
-$token-component-breadcrumb-default-text: #0174bc;
-$token-component-breadcrumb-truncated-text: #0174bc;
-$token-component-breadcrumb-last-item-text: #343438;
+$token-component-breadcrumb-app-title-text-default: #343438;
+$token-component-breadcrumb-app-title-text-hover: #009cde;
+$token-component-breadcrumb-normal-text-default: #343438;
+$token-component-breadcrumb-normal-text-hover: #009cde;
+$token-component-breadcrumb-truncated-text-default: #343438;
+$token-component-breadcrumb-truncated-text-hover: #009cde;
+$token-component-breadcrumb-last-item-text: #696970;
 $token-component-breadcrumb-collapsed-background: #e5e5ea;
-$token-component-breadcrumb-collapsed-text: #343438;
-$token-component-breadcrumb-collapsed-icon: #3d3d42;
-$token-component-breadcrumb-with-dropdown-text: #0174bc;
-$token-component-breadcrumb-with-dropdown-icon: #3d3d42;
+$token-component-breadcrumb-collapsed-text-default: #343438;
+$token-component-breadcrumb-collapsed-text-hover: #009cde;
+$token-component-breadcrumb-collapsed-text-active: #0174bc;
+$token-component-breadcrumb-collapsed-icon-default: #3d3d42;
+$token-component-breadcrumb-collapsed-icon-hover: #009cde;
+$token-component-breadcrumb-with-dropdown-text-default: #343438;
+$token-component-breadcrumb-with-dropdown-text-hover: #009cde;
+$token-component-breadcrumb-with-dropdown-text-active: #0174bc;
+$token-component-breadcrumb-with-dropdown-icon-default: #3d3d42;
+$token-component-breadcrumb-with-dropdown-icon-hover: #009cde;
 $token-component-card-background: #ffffff;
 $token-component-card-border: #d6d6dd;
 $token-component-card-text: #343438;
@@ -868,17 +923,26 @@ $token-component-global-header-background: #232326;
 $token-component-global-header-border: #3d3d42;
 $token-component-global-header-icon-default: #d6d6dd;
 $token-component-global-header-icon-hover: #ffffff;
+$token-component-global-header-icon-active: #5bb3ea;
 $token-component-global-header-text-default: #d6d6dd;
 $token-component-global-header-text-hover: #ffffff;
+$token-component-global-header-badge-background: #d63c42;
+$token-component-global-header-badge-text: #ffffff;
+$token-component-global-header-badge-icon: #ffffff;
 $token-component-global-header-search-background: #3d3d42;
 $token-component-global-header-search-text-placeholder: #d6d6dd;
 $token-component-global-header-search-text-filled: #ffffff;
 $token-component-global-header-search-icon-default: #d6d6dd;
 $token-component-global-header-search-icon-active: #ffffff;
 $token-component-global-header-search-icon-hover: #ffffff;
-$token-component-global-footer-background: #232326;
-$token-component-global-footer-text-default: #d6d6dd;
-$token-component-global-footer-text-hover: #ffffff;
+$token-component-global-header-search-border-default: #3d3d42;
+$token-component-global-header-search-border-hover: #696970;
+$token-component-global-header-search-border-active: #a3a3ab;
+$token-component-global-footer-background: #f7f7fa;
+$token-component-global-footer-border: #d6d6dd;
+$token-component-global-footer-text: #343438;
+$token-component-global-footer-link-default: #0174bc;
+$token-component-global-footer-link-hover: #009cde;
 $token-component-group-select-field-default-background: #ffffff;
 $token-component-group-select-field-default-border: #83838c;
 $token-component-group-select-field-default-text: #696970;
@@ -1036,43 +1100,43 @@ $token-component-modal-text-default: #343438;
 $token-component-modal-text-description: #696970;
 $token-component-notification-banner-text: #343438;
 $token-component-notification-banner-icon: #3d3d42;
-$token-component-notification-banner-informative-background: #f0f4ff;
+$token-component-notification-banner-informative-background: #e6edfe;
 $token-component-notification-banner-informative-border: #4067e5;
 $token-component-notification-banner-informative-status-icon: #4067e5;
-$token-component-notification-banner-tip-background: #f0f4ff;
+$token-component-notification-banner-tip-background: #e6edfe;
 $token-component-notification-banner-tip-border: #4067e5;
 $token-component-notification-banner-tip-status-icon: #4067e5;
-$token-component-notification-banner-warning-background: #fff4d5;
+$token-component-notification-banner-warning-background: #ffecbc;
 $token-component-notification-banner-warning-border: #fecb34;
 $token-component-notification-banner-warning-status-icon: #fecb34;
-$token-component-notification-banner-success-background: #ebf9eb;
+$token-component-notification-banner-success-background: #dff3df;
 $token-component-notification-banner-success-border: #00b050;
 $token-component-notification-banner-success-status-icon: #00b050;
-$token-component-notification-banner-error-background: #ffefef;
+$token-component-notification-banner-error-background: #ffe5e5;
 $token-component-notification-banner-error-border: #d63c42;
 $token-component-notification-banner-error-status-icon: #d63c42;
 $token-component-notification-banner-secondary-background: #e5e5ea;
-$token-component-notification-banner-secondary-border: #343438;
-$token-component-notification-banner-secondary-status-icon: #3d3d42;
+$token-component-notification-banner-secondary-border: #a3a3ab;
+$token-component-notification-banner-secondary-status-icon: #696970;
 $token-component-notification-toast-text: #343438;
 $token-component-notification-toast-icon: #3d3d42;
-$token-component-notification-toast-informative-background: #f0f4ff;
+$token-component-notification-toast-informative-background: #e6edfe;
 $token-component-notification-toast-informative-icon-background: #4067e5;
 $token-component-notification-toast-informative-border: #4067e5;
 $token-component-notification-toast-informative-status-icon: #ffffff;
-$token-component-notification-toast-tip-background: #f0f4ff;
+$token-component-notification-toast-tip-background: #e6edfe;
 $token-component-notification-toast-tip-icon-background: #4067e5;
 $token-component-notification-toast-tip-border: #4067e5;
 $token-component-notification-toast-tip-status-icon: #ffffff;
-$token-component-notification-toast-warning-background: #fff4d5;
+$token-component-notification-toast-warning-background: #ffecbc;
 $token-component-notification-toast-warning-icon-background: #fecb34;
 $token-component-notification-toast-warning-border: #fecb34;
 $token-component-notification-toast-warning-status-icon: #3d3d42;
-$token-component-notification-toast-success-background: #ebf9eb;
+$token-component-notification-toast-success-background: #dff3df;
 $token-component-notification-toast-success-icon-background: #00b050;
 $token-component-notification-toast-success-border: #00b050;
 $token-component-notification-toast-success-status-icon: #ffffff;
-$token-component-notification-toast-error-background: #ffefef;
+$token-component-notification-toast-error-background: #ffe5e5;
 $token-component-notification-toast-error-icon-background: #d63c42;
 $token-component-notification-toast-error-border: #d63c42;
 $token-component-notification-toast-error-status-icon: #ffffff;
@@ -1204,6 +1268,7 @@ $token-component-search-focus-text: #343438;
 $token-component-search-focus-icon: #3d3d42;
 $token-component-search-focus-hint-text: #696970;
 $token-component-search-focus-search-icon: #696970;
+$token-component-segmented-button-divider: #ffffff; // A divider for multi-selected items
 $token-component-segmented-button-default-background: #ffffff;
 $token-component-segmented-button-default-border: #0174bc;
 $token-component-segmented-button-default-text: #0174bc;
@@ -1224,6 +1289,10 @@ $token-component-segmented-button-active-background: #0174bc;
 $token-component-segmented-button-active-border: #0174bc;
 $token-component-segmented-button-active-text: #ffffff;
 $token-component-segmented-button-active-icon: #ffffff;
+$token-component-segmented-button-active-hover-background: #009cde;
+$token-component-segmented-button-active-hover-border: #009cde;
+$token-component-segmented-button-active-hover-text: #ffffff;
+$token-component-segmented-button-active-hover-icon: #ffffff;
 $token-component-side-navigation-icon: #3d3d42;
 $token-component-side-navigation-border: #d6d6dd;
 $token-component-side-navigation-background-default: #f7f7fa;
@@ -1352,7 +1421,7 @@ $token-component-tag-focus-text: #343438;
 $token-component-tag-focus-icon-default: #3d3d42;
 $token-component-tag-focus-icon-hover: #009cde;
 $token-component-tag-focus-icon-active: #0174bc;
-$token-component-tag-error-background: #ffefef;
+$token-component-tag-error-background: #ffe5e5;
 $token-component-tag-error-border: #d63c42;
 $token-component-tag-error-text: #343438;
 $token-component-tag-error-icon-default: #3d3d42;
@@ -1657,16 +1726,16 @@ $token-component-segmented-status-button-disabled-icon: #a3a3ab;
 $token-component-segmented-status-button-disabled-positive-background: #b7dfba;
 $token-component-segmented-status-button-disabled-positive-text: #a3a3ab;
 $token-component-segmented-status-button-disabled-positive-icon: #a3a3ab;
-$token-component-segmented-status-button-active-positive-background: #07a04d;
+$token-component-segmented-status-button-active-positive-background: #138246;
 $token-component-segmented-status-button-active-positive-text: #ffffff;
 $token-component-segmented-status-button-active-positive-icon: #ffffff;
 $token-component-segmented-status-button-disabled-negative-background: #f9c6c6;
 $token-component-segmented-status-button-disabled-negative-text: #a3a3ab;
 $token-component-segmented-status-button-disabled-negative-icon: #a3a3ab;
-$token-component-segmented-status-button-active-negative-background: #d0343a;
+$token-component-segmented-status-button-active-negative-background: #b82329;
 $token-component-segmented-status-button-active-negative-text: #ffffff;
 $token-component-segmented-status-button-active-negative-icon: #ffffff;
-$token-component-segmented-status-button-disabled-neutral-background: #c2c2ca;
+$token-component-segmented-status-button-disabled-neutral-background: #e5e5ea;
 $token-component-segmented-status-button-disabled-neutral-text: #a3a3ab;
 $token-component-segmented-status-button-disabled-neutral-icon: #a3a3ab;
 $token-component-segmented-status-button-active-neutral-background: #83838c;

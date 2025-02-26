@@ -1,8 +1,12 @@
 import type { Config } from "style-dictionary/types";
-
+import StyleDictionary from "style-dictionary";
 import type { StyleDictionaryOptions } from '../types.ts';
-import { expandTypesMap } from '@tokens-studio/sd-transforms';
+import { spacingPxToRem } from '../transforms/spacingPxToRem.ts';
+
 const PREFIX = 'token';
+
+// Register the custom transformer
+StyleDictionary.registerTransform(spacingPxToRem);
 
 export function getStyleDictionaryConfig(
   options: StyleDictionaryOptions
@@ -30,7 +34,7 @@ export function getStyleDictionaryConfig(
     platforms: {
       js: {
         transformGroup: 'tokens-studio',
-        transforms: ['name/pascal', 'color/hex', 'shadow/css/shorthand', 'typography/css/shorthand'],
+        transforms: ['name/pascal', 'color/hex', 'shadow/css/shorthand', 'typography/css/shorthand', 'size/spacingPxToRem'],
         buildPath,
         prefix: `${PREFIX}-`,
         files: [

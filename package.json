@@ -1,6 +1,6 @@
 {
   "name": "@linode/design-language-system",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "type": "module",
   "module": "dist/index.js",
   "exports": {
@@ -28,7 +28,8 @@
     "clean": "rm -rf dist",
     "generate": "yarn clean && ts-node --esm style-dictionary/build.ts",
     "storybook": "storybook dev -p 6007",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "build-storybook": "storybook build"
   },
   "repository": {
@@ -54,6 +55,7 @@
     "@storybook/react-vite": "^8.4.7",
     "@storybook/test": "^8.4.7",
     "@storybook/theming": "^8.4.7",
+    "@testing-library/dom": "^10.4.0",
     "@tokens-studio/sd-transforms": "1.2.0",
     "@types/node": "^18.16.1",
     "@types/react": "^18.3.5",
@@ -79,7 +81,8 @@
     "ts-node": "^10.9.2",
     "tsup": "^8.3.0",
     "typescript": "^5.6.2",
-    "vite": "^6.0.7"
+    "vite": "^6.1.1",
+    "vitest": "^3.0.7"
   },
   "resolutions": {
     "cookie": "^0.7.0",

@@ -21,6 +21,7 @@ export const TokenGlobalColorBrand20 = "#e1f4ff";
 export const TokenGlobalColorBrand30 = "#ceedfe";
 export const TokenGlobalColorBrand40 = "#afdef8";
 export const TokenGlobalColorBrand50 = "#96cff0";
+export const TokenGlobalColorBrand55 = "#7dcdff";
 export const TokenGlobalColorBrand60 = "#5bb3ea";
 export const TokenGlobalColorBrand70 = "#009cde"; // Akamai Blue
 export const TokenGlobalColorBrand80 = "#108ad6";
@@ -106,8 +107,8 @@ export const TokenGlobalColorTeal100 = "#10302b";
 export const TokenGlobalColorCyan5 = "#f2fcfd";
 export const TokenGlobalColorCyan10 = "#e7f9fb";
 export const TokenGlobalColorCyan20 = "#d8f3f6";
-export const TokenGlobalColorCyan30 = "#aadee6";
-export const TokenGlobalColorCyan40 = "#84cdda";
+export const TokenGlobalColorCyan30 = "#c4eaef";
+export const TokenGlobalColorCyan40 = "#aadee6";
 export const TokenGlobalColorCyan50 = "#84cdda";
 export const TokenGlobalColorCyan60 = "#3db9cf";
 export const TokenGlobalColorCyan70 = "#05a2c2";
@@ -180,17 +181,25 @@ export const TokenGlobalColorBrown70 = "#978365";
 export const TokenGlobalColorBrown80 = "#8c795d";
 export const TokenGlobalColorBrown90 = "#776750";
 export const TokenGlobalColorBrown100 = "#3b352b";
-export const TokenGlobalColorGradientDefault = "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"; // Default gradient
-export const TokenGlobalSpacing0 = "0rem";
-export const TokenGlobalSpacing10 = "0.125rem"; // 2px
-export const TokenGlobalSpacing20 = "0.25rem"; // 4px
-export const TokenGlobalSpacing30 = "0.375rem"; // 6px
-export const TokenGlobalSpacing40 = "0.5rem"; // 8px
-export const TokenGlobalSpacing50 = "0.75rem"; // 12px
-export const TokenGlobalSpacing60 = "1rem"; // 16px
-export const TokenGlobalSpacing70 = "1.5rem"; // 24px
-export const TokenGlobalSpacing80 = "2rem"; // 32px
-export const TokenGlobalSpacing90 = "3rem"; // 48px
+export const TokenGlobalColorGradientDefault =
+  "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)"; // Default gradient
+export const TokenGlobalSpacingS0 = "0";
+export const TokenGlobalSpacingS2 = "0.125rem";
+export const TokenGlobalSpacingS4 = "0.25rem";
+export const TokenGlobalSpacingS6 = "0.375rem";
+export const TokenGlobalSpacingS8 = "0.5rem";
+export const TokenGlobalSpacingS12 = "0.75rem";
+export const TokenGlobalSpacingS16 = "1rem";
+export const TokenGlobalSpacingS20 = "1.25rem";
+export const TokenGlobalSpacingS24 = "1.5rem";
+export const TokenGlobalSpacingS28 = "1.75rem";
+export const TokenGlobalSpacingS32 = "2rem";
+export const TokenGlobalSpacingS36 = "2.25rem";
+export const TokenGlobalSpacingS40 = "2.5rem";
+export const TokenGlobalSpacingS48 = "3rem";
+export const TokenGlobalSpacingS64 = "4rem";
+export const TokenGlobalSpacingS72 = "4.5rem";
+export const TokenGlobalSpacingS96 = "6rem";
 export const TokenGlobalFontFontFamilyBrand = "'Nunito Sans'";
 export const TokenGlobalFontFontFamilyCode = "'Fira Code'";
 export const TokenGlobalFontFontWeightSemibold = "600";
@@ -205,7 +214,7 @@ export const TokenGlobalFontFontSizeS = "1rem"; // 16px
 export const TokenGlobalFontFontSizeM = "1.125rem"; // 18px
 export const TokenGlobalFontFontSizeL = "1.25rem"; // 20px
 export const TokenGlobalFontFontSizeXl = "1.5rem"; // 24px
-export const TokenGlobalFontFontSizeXxl = "1.75rem"; // 28px
+export const TokenGlobalFontFontSizeXxl = "1.625rem"; // 26px
 export const TokenGlobalFontFontSizeXxxl = "2.25rem"; // 36px
 export const TokenGlobalFontLineHeightXxxs = "1rem"; // 16px
 export const TokenGlobalFontLineHeightXxs = "1.125rem"; // 18px
@@ -217,7 +226,7 @@ export const TokenGlobalFontLineHeightXl = "2rem"; // 32px
 export const TokenGlobalFontLineHeightXxl = "2.375rem"; // 38px
 export const TokenGlobalFontLineHeightXxxl = "2.625rem"; // 42px
 export const TokenGlobalFontTextcaseUppercase = "uppercase";
-export const TokenGlobalBorderRadiusNone = "0rem";
+export const TokenGlobalBorderRadiusNone = "0";
 export const TokenAliasContentTextBase = "#ffffff"; // Use as color for text on a dark surface
 export const TokenAliasContentTextNegative = "#b82329"; // Use to indicate error messages
 export const TokenAliasContentTextWarning = "#fecb34";
@@ -242,7 +251,7 @@ export const TokenAliasContentIconPrimaryDisabled = "#a3a3ab"; // Use only as a 
 export const TokenAliasContentIconSecondaryDefault = "#696970"; // Secondary icon color (placeholder, etc)
 export const TokenAliasContentIconSecondaryDisabled = "#a3a3ab"; // Use only as a disabled state for a secondary icon color
 export const TokenAliasBorderNormal = "#d6d6dd"; // Border color for static ui elements and components
-export const TokenAliasBorderNeutral = "#343438";
+export const TokenAliasBorderNeutral = "#a3a3ab";
 export const TokenAliasBorderNegative = "#d63c42"; // Use only for borders to indicate an error state
 export const TokenAliasBorderWarning = "#fecb34"; // Use only for borders to indicate a warning state
 export const TokenAliasBorderPositive = "#00b050"; // Use only for borders to indicate a success state
@@ -255,10 +264,10 @@ export const TokenAliasBackgroundWarning = "#fecb34";
 export const TokenAliasBackgroundPositive = "#00b050";
 export const TokenAliasBackgroundInformative = "#4067e5";
 export const TokenAliasBackgroundBlack = "#232326"; // Use only for a global header and global footer background
-export const TokenAliasBackgroundNegativesubtle = "#ffefef";
-export const TokenAliasBackgroundWarningsubtle = "#fff4d5";
-export const TokenAliasBackgroundPositivesubtle = "#ebf9eb";
-export const TokenAliasBackgroundInformativesubtle = "#f0f4ff";
+export const TokenAliasBackgroundNegativesubtle = "#ffe5e5";
+export const TokenAliasBackgroundWarningsubtle = "#ffecbc";
+export const TokenAliasBackgroundPositivesubtle = "#dff3df";
+export const TokenAliasBackgroundInformativesubtle = "#e6edfe";
 export const TokenAliasBackgroundNeutralsubtle = "#e5e5ea";
 export const TokenAliasBackgroundOverlay = "lch(13.8 2.09 286 / 0.24)"; // Page dimming when the modal component is active
 export const TokenAliasActionBase = "#ffffff";
@@ -271,9 +280,13 @@ export const TokenAliasActionPrimaryDisabled = "#e5e5ea";
 export const TokenAliasActionSecondaryHover = "#edf8ff";
 export const TokenAliasActionSecondaryDisabled = "#c2c2ca";
 export const TokenAliasActionTertiaryDisabled = "#afdef8";
-export const TokenAliasActionPositiveDefault = "#07a04d";
+export const TokenAliasActionPositiveDefault = "#138246";
+export const TokenAliasActionPositiveHover = "#00b050";
+export const TokenAliasActionPositiveActive = "#138246";
 export const TokenAliasActionPositiveDisabled = "#b7dfba";
-export const TokenAliasActionNegativeDefault = "#d0343a";
+export const TokenAliasActionNegativeDefault = "#b82329";
+export const TokenAliasActionNegativeHover = "#d63c42";
+export const TokenAliasActionNegativeActive = "#b82329";
 export const TokenAliasActionNegativeDisabled = "#f9c6c6";
 export const TokenAliasInteractionBorderDefault = "#83838c"; // Default inputs border
 export const TokenAliasInteractionBorderHover = "#3d3d42";
@@ -283,7 +296,7 @@ export const TokenAliasInteractionBorderDisabled = "#c2c2ca";
 export const TokenAliasInteractionBackgroundPrimary = "#ffffff"; // Default component background color
 export const TokenAliasInteractionBackgroundSecondary = "#f7f7fa";
 export const TokenAliasInteractionBackgroundTertiary = "#edf8ff";
-export const TokenAliasInteractionBackgroundElevated = "#edf8ff"; // Calendar range background, table row hover 
+export const TokenAliasInteractionBackgroundElevated = "#edf8ff"; // Calendar range background, table row hover
 export const TokenAliasInteractionBackgroundAccent = "#ceedfe";
 export const TokenAliasInteractionBackgroundActive = "#0174bc";
 export const TokenAliasInteractionBackgroundDisabled = "#ededf2";
@@ -291,32 +304,51 @@ export const TokenAliasInteractionBackgroundRangeHover = "#ceedfe"; // Hover col
 export const TokenAliasInteractionBackgroundActiveDateHover = "#108ad6"; // Hover color for an active calendar date
 export const TokenAliasElevationS = "0 2px 8px 0 rgba(58,59,63,0.18)"; // Default shadow for components, like notification banners, dropdowns, popups;
 export const TokenAliasElevationSInverted = "0 -2px 8px 0 rgba(58,59,63,0.18)"; // Inverted shadow for elements that appear above the component
-export const TokenAliasElevationL = "0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08)"; // Shadow for modals
-export const TokenAliasTypographyHeadingXxxl = "700 2.25rem/2.625rem 'Nunito Sans'"; // Promo banners, KPIs
-export const TokenAliasTypographyHeadingXxl = "800 1.75rem/2rem 'Nunito Sans'"; // Main titles - h1
-export const TokenAliasTypographyHeadingXl = "700 1.5rem/1.875rem 'Nunito Sans'"; // Second level title - h2
-export const TokenAliasTypographyHeadingL = "700 1.25rem/1.625rem 'Nunito Sans'"; // Third level title - h3
+export const TokenAliasElevationL =
+  "0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08)"; // Shadow for modals
+export const TokenAliasTypographyHeadingXxxl =
+  "700 2.25rem/2.625rem 'Nunito Sans'"; // Promo banners, KPIs
+export const TokenAliasTypographyHeadingXxl = "800 1.625rem/2rem 'Nunito Sans'"; // Main titles - h1
+export const TokenAliasTypographyHeadingXl =
+  "700 1.5rem/1.875rem 'Nunito Sans'"; // Second level title - h2
+export const TokenAliasTypographyHeadingL =
+  "700 1.25rem/1.625rem 'Nunito Sans'"; // Third level title - h3
 export const TokenAliasTypographyHeadingM = "700 1.125rem/1.5rem 'Nunito Sans'"; // Drawer, modal title - h4
 export const TokenAliasTypographyHeadingS = "700 1rem/1.25rem 'Nunito Sans'"; // Advanced search, bars, master switch titles - h5
-export const TokenAliasTypographyHeadingXs = "700 0.875rem/1.125rem 'Nunito Sans'"; // Low level headings - h6
-export const TokenAliasTypographyHeadingOverline = "800 0.75rem/1rem 'Nunito Sans'"; // Custom labels for content blocks
+export const TokenAliasTypographyHeadingXs =
+  "700 0.875rem/1.125rem 'Nunito Sans'"; // Low level headings - h6
+export const TokenAliasTypographyHeadingOverline =
+  "800 0.75rem/1rem 'Nunito Sans'"; // Custom labels for content blocks
 export const TokenAliasTypographyHeadingOverlineLetterSpacing = "0.023rem"; // Overline letter spacing
 export const TokenAliasTypographyHeadingOverlineTextCase = "uppercase"; // Overline text case
-export const TokenAliasTypographyBodyRegular = "400 0.875rem/1.25rem 'Nunito Sans'"; // Main body text
-export const TokenAliasTypographyBodySemibold = "600 0.875rem/1.25rem 'Nunito Sans'"; // Light emphasis
-export const TokenAliasTypographyBodyBold = "700 0.875rem/1.25rem 'Nunito Sans'"; // Emphasis
-export const TokenAliasTypographyBodyExtrabold = "800 0.875rem/1.25rem 'Nunito Sans'"; // Max emphasis
-export const TokenAliasTypographyBodyList = "400 0.875rem/1.25rem 'Nunito Sans'"; // For list items
-export const TokenAliasTypographyBodyItalic = "400 0.875rem/1.25rem 'Nunito Sans'";
-export const TokenAliasTypographyLabelSemiboldL = "600 1rem/1.25rem 'Nunito Sans'"; // Large tabs
-export const TokenAliasTypographyLabelSemiboldS = "600 0.875rem/1rem 'Nunito Sans'"; // Large buttons, list, segmented buttons, side navigation, small tables
-export const TokenAliasTypographyLabelSemiboldXs = "600 0.75rem/1rem 'Nunito Sans'"; // Small buttons, tags, warning message under field
+export const TokenAliasTypographyBodyRegular =
+  "400 0.875rem/1.25rem 'Nunito Sans'"; // Main body text
+export const TokenAliasTypographyBodySemibold =
+  "600 0.875rem/1.25rem 'Nunito Sans'"; // Light emphasis
+export const TokenAliasTypographyBodyBold =
+  "700 0.875rem/1.25rem 'Nunito Sans'"; // Emphasis
+export const TokenAliasTypographyBodyExtrabold =
+  "800 0.875rem/1.25rem 'Nunito Sans'"; // Max emphasis
+export const TokenAliasTypographyBodyList =
+  "400 0.875rem/1.25rem 'Nunito Sans'"; // For list items
+export const TokenAliasTypographyBodyItalic =
+  "400 0.875rem/1.25rem 'Nunito Sans'";
+export const TokenAliasTypographyLabelSemiboldL =
+  "600 1rem/1.25rem 'Nunito Sans'"; // Large tabs
+export const TokenAliasTypographyLabelSemiboldS =
+  "600 0.875rem/1rem 'Nunito Sans'"; // Large buttons, list, segmented buttons, side navigation, small tables
+export const TokenAliasTypographyLabelSemiboldXs =
+  "600 0.75rem/1rem 'Nunito Sans'"; // Small buttons, tags, warning message under field
 export const TokenAliasTypographyLabelBoldL = "700 1rem/1.25rem 'Nunito Sans'"; // Card, content panel, vertical stepper
 export const TokenAliasTypographyLabelBoldS = "700 0.875rem/1rem 'Nunito Sans'"; // Field labels, table header, date&time pickers
-export const TokenAliasTypographyLabelBoldXs = "700 0.75rem/0.875rem 'Nunito Sans'"; // Badge number
-export const TokenAliasTypographyLabelRegularS = "400 0.875rem/1rem 'Nunito Sans'"; // Field entered text, dropdown item, table cell, pagination
-export const TokenAliasTypographyLabelRegularXs = "400 0.75rem/1rem 'Nunito Sans'"; // Optional text, small dropdown item
-export const TokenAliasTypographyLabelRegularPlaceholder = "400 0.875rem/1rem 'Nunito Sans'";
+export const TokenAliasTypographyLabelBoldXs =
+  "700 0.75rem/0.875rem 'Nunito Sans'"; // Badge number
+export const TokenAliasTypographyLabelRegularS =
+  "400 0.875rem/1rem 'Nunito Sans'"; // Field entered text, dropdown item, table cell, pagination
+export const TokenAliasTypographyLabelRegularXs =
+  "400 0.75rem/1rem 'Nunito Sans'"; // Optional text, small dropdown item
+export const TokenAliasTypographyLabelRegularPlaceholder =
+  "400 0.875rem/1rem 'Nunito Sans'";
 export const TokenAliasTypographyCode = "400 0.813rem/1.25rem 'Fira Code'"; // Code samples
 export const TokenAliasAccentDisabled = "#c2c2ca";
 export const TokenAliasAccentInfoPrimary = "#3451b2";
@@ -338,21 +370,25 @@ export const TokenAliasAccentVioletSecondary = "lch(36.2 62.1 298 / 0.12)";
 export const TokenAliasChartNeutral = "#d6d6dd";
 export const TokenAliasChartCategorical1Primary = "#4067e5";
 export const TokenAliasChartCategorical1Inactive = "#d9e2fc";
-export const TokenAliasChartCategorical1Transparent = "lch(46.5 72.3 286 / 0.2)";
+export const TokenAliasChartCategorical1Transparent =
+  "lch(46.5 72.3 286 / 0.2)";
 export const TokenAliasChartCategorical2Primary = "#fe9933";
 export const TokenAliasChartCategorical2Inactive = "#ffe1c3";
 export const TokenAliasChartCategorical2Transparent = "lch(72.9 74.2 63 / 0.2)";
 export const TokenAliasChartCategorical3Primary = "#12a594";
 export const TokenAliasChartCategorical3Inactive = "#c7ebe5";
-export const TokenAliasChartCategorical3Transparent = "lch(60.7 39.7 183 / 0.2)";
+export const TokenAliasChartCategorical3Transparent =
+  "lch(60.7 39.7 183 / 0.2)";
 export const TokenAliasChartCategorical4Primary = "#ab4aba";
 export const TokenAliasChartCategorical4Inactive = "#f3d9f4";
-export const TokenAliasChartCategorical4Transparent = "lch(48.2 66.6 322 / 0.2)";
+export const TokenAliasChartCategorical4Transparent =
+  "lch(48.2 66.6 322 / 0.2)";
 export const TokenAliasChartCategorical5Primary = "#d63c42";
 export const TokenAliasChartCategorical5Inactive = "#fdd8d8";
-export const TokenAliasChartCategorical5Transparent = "lch(50.1 69.5 29.4 / 0.2)";
+export const TokenAliasChartCategorical5Transparent =
+  "lch(50.1 69.5 29.4 / 0.2)";
 export const TokenAliasChartCategorical6Primary = "#05a2c2";
-export const TokenAliasChartCategorical6Inactive = "#aadee6";
+export const TokenAliasChartCategorical6Inactive = "#c4eaef";
 export const TokenAliasChartCategorical6Transparent = "lch(61 38.6 224 / 0.2)";
 export const TokenAliasChartCategorical7Primary = "#e043a7";
 export const TokenAliasChartCategorical7Inactive = "#f9d8ec";
@@ -368,40 +404,52 @@ export const TokenAliasChartCategorical10Inactive = "#d7f2b0";
 export const TokenAliasChartCategorical10Transparent = "lch(79 79.1 118 / 0.2)";
 export const TokenAliasChartCategorical11Primary = "#696970";
 export const TokenAliasChartCategorical11Inactive = "#d6d6dd";
-export const TokenAliasChartCategorical11Transparent = "lch(44.6 4.09 286 / 0.2)";
+export const TokenAliasChartCategorical11Transparent =
+  "lch(44.6 4.09 286 / 0.2)";
 export const TokenAliasChartCategorical12Primary = "#8da4ef";
 export const TokenAliasChartCategorical12Inactive = "#d9e2fc";
-export const TokenAliasChartCategorical12Transparent = "lch(67.9 41.2 278 / 0.2)";
+export const TokenAliasChartCategorical12Transparent =
+  "lch(67.9 41.2 278 / 0.2)";
 export const TokenAliasChartCategorical13Primary = "#c25d05";
 export const TokenAliasChartCategorical13Inactive = "#ffe1c3";
-export const TokenAliasChartCategorical13Transparent = "lch(51.7 70.9 57.2 / 0.2)";
+export const TokenAliasChartCategorical13Transparent =
+  "lch(51.7 70.9 57.2 / 0.2)";
 export const TokenAliasChartCategorical14Primary = "#067a6f";
 export const TokenAliasChartCategorical14Inactive = "#c7ebe5";
-export const TokenAliasChartCategorical14Transparent = "lch(45.6 31.8 185 / 0.2)";
+export const TokenAliasChartCategorical14Transparent =
+  "lch(45.6 31.8 185 / 0.2)";
 export const TokenAliasChartCategorical15Primary = "#cf91d8";
 export const TokenAliasChartCategorical15Inactive = "#f3d9f4";
-export const TokenAliasChartCategorical15Transparent = "lch(68.3 42.4 321 / 0.2)";
+export const TokenAliasChartCategorical15Transparent =
+  "lch(68.3 42.4 321 / 0.2)";
 export const TokenAliasChartCategorical16Primary = "#eb9091";
 export const TokenAliasChartCategorical16Inactive = "#fdd8d8";
-export const TokenAliasChartCategorical16Transparent = "lch(69.6 38.4 22.9 / 0.2)";
+export const TokenAliasChartCategorical16Transparent =
+  "lch(69.6 38.4 22.9 / 0.2)";
 export const TokenAliasChartCategorical17Primary = "#0c7792";
-export const TokenAliasChartCategorical17Inactive = "#aadee6";
-export const TokenAliasChartCategorical17Transparent = "lch(45.7 30.9 228 / 0.2)";
+export const TokenAliasChartCategorical17Inactive = "#c4eaef";
+export const TokenAliasChartCategorical17Transparent =
+  "lch(45.7 30.9 228 / 0.2)";
 export const TokenAliasChartCategorical18Primary = "#e38ec3";
 export const TokenAliasChartCategorical18Inactive = "#f9d8ec";
-export const TokenAliasChartCategorical18Transparent = "lch(69.3 40.8 341 / 0.2)";
+export const TokenAliasChartCategorical18Transparent =
+  "lch(69.3 40.8 341 / 0.2)";
 export const TokenAliasChartCategorical19Primary = "#97cf9c";
 export const TokenAliasChartCategorical19Inactive = "#ceebcf";
-export const TokenAliasChartCategorical19Transparent = "lch(78.2 32.7 144 / 0.2)";
+export const TokenAliasChartCategorical19Transparent =
+  "lch(78.2 32.7 144 / 0.2)";
 export const TokenAliasChartCategorical20Primary = "#aa99ec";
 export const TokenAliasChartCategorical20Inactive = "#e4defc";
-export const TokenAliasChartCategorical20Transparent = "lch(67.2 44.6 296 / 0.2)";
+export const TokenAliasChartCategorical20Transparent =
+  "lch(67.2 44.6 296 / 0.2)";
 export const TokenAliasChartCategorical21Primary = "#94ba2c";
 export const TokenAliasChartCategorical21Inactive = "#d7f2b0";
-export const TokenAliasChartCategorical21Transparent = "lch(70.8 67.7 114 / 0.2)";
+export const TokenAliasChartCategorical21Transparent =
+  "lch(70.8 67.7 114 / 0.2)";
 export const TokenAliasChartCategorical22Primary = "#3d3d42";
 export const TokenAliasChartCategorical22Inactive = "#d6d6dd";
-export const TokenAliasChartCategorical22Transparent = "lch(25.9 3.2 286 / 0.2)";
+export const TokenAliasChartCategorical22Transparent =
+  "lch(25.9 3.2 286 / 0.2)";
 export const TokenAliasChartMonochromaticDefault5 = "#f8faff";
 export const TokenAliasChartMonochromaticDefault10 = "#f0f4ff";
 export const TokenAliasChartMonochromaticDefault20 = "#e6edfe";
@@ -425,7 +473,7 @@ export const TokenAliasChartMonochromaticDanger100 = "#381316";
 export const TokenAliasChartStatusNegative = "#d63c42";
 export const TokenAliasChartStatusWarning = "#fecb34";
 export const TokenAliasChartStatusPositive = "#00b050";
-export const TokenAliasRadiusDefault = "0rem"; // Default border radius value
+export const TokenAliasRadiusDefault = "0"; // Default border radius value
 export const TokenComponentButtonPrimaryDefaultBackground = "#0174bc";
 export const TokenComponentButtonPrimaryDefaultText = "#ffffff";
 export const TokenComponentButtonPrimaryDefaultIcon = "#ffffff";
@@ -478,14 +526,32 @@ export const TokenComponentButtonLaunchDisabledBackground = "#e5e5ea"; // This c
 export const TokenComponentButtonLaunchDisabledText = "#a3a3ab"; // This component token is considered unstable and in development.
 export const TokenComponentButtonLaunchDisabledIcon = "#a3a3ab"; // This component token is considered unstable and in development.
 export const TokenComponentButtonLaunchLoadingBackground = "#232326"; // This component token is considered unstable and in development.
+export const TokenComponentButtonDangerDefaultBackground = "#b82329";
+export const TokenComponentButtonDangerDefaultText = "#ffffff";
+export const TokenComponentButtonDangerDefaultIcon = "#ffffff";
+export const TokenComponentButtonDangerHoverBackground = "#d63c42";
+export const TokenComponentButtonDangerHoverText = "#ffffff";
+export const TokenComponentButtonDangerHoverIcon = "#ffffff";
+export const TokenComponentButtonDangerPressedBackground = "#b82329";
+export const TokenComponentButtonDangerPressedText = "#ffffff";
+export const TokenComponentButtonDangerPressedIcon = "#ffffff";
+export const TokenComponentButtonDangerDisabledBackground = "#f9c6c6";
+export const TokenComponentButtonDangerDisabledText = "#a3a3ab";
+export const TokenComponentButtonDangerDisabledIcon = "#a3a3ab";
+export const TokenComponentButtonDangerLoadingBackground = "#b82329";
 export const TokenComponentContainerBackground = "#ffffff";
 export const TokenComponentContainerBorder = "#d6d6dd";
-export const TokenComponentTableHeaderFilledBackground = "#343438";
-export const TokenComponentTableHeaderFilledText = "#ffffff";
-export const TokenComponentTableHeaderFilledIcon = "#ffffff";
-export const TokenComponentTableHeaderOutlinedBorder = "#343438";
+export const TokenComponentTableHeaderFilledBackground = "#e5e5ea";
+export const TokenComponentTableHeaderFilledText = "#343438";
+export const TokenComponentTableHeaderFilledIcon = "#3d3d42";
+export const TokenComponentTableHeaderFilledBorder = "#a3a3ab";
+export const TokenComponentTableHeaderOutlinedBorder = "#a3a3ab";
 export const TokenComponentTableHeaderOutlinedText = "#343438";
 export const TokenComponentTableHeaderOutlinedIcon = "#3d3d42";
+export const TokenComponentTableHeaderNestedBackground = "#e5e5ea";
+export const TokenComponentTableHeaderNestedText = "#343438";
+export const TokenComponentTableHeaderNestedIcon = "#3d3d42";
+export const TokenComponentTableHeaderNestedBorder = "#a3a3ab";
 export const TokenComponentTableRowBorder = "#d6d6dd";
 export const TokenComponentTableRowIconDefault = "#3d3d42";
 export const TokenComponentTableRowIconDisabled = "#a3a3ab";
@@ -543,13 +609,17 @@ export const TokenComponentSplitMenuButtonPrimaryDefaultBackground = "#0174bc";
 export const TokenComponentSplitMenuButtonPrimaryDefaultBorder = "#0174bc";
 export const TokenComponentSplitMenuButtonPrimaryDefaultText = "#ffffff";
 export const TokenComponentSplitMenuButtonPrimaryDefaultIcon = "#ffffff";
-export const TokenComponentSplitMenuButtonPrimaryHoverLeftBackgroundLeft = "#009cde";
-export const TokenComponentSplitMenuButtonPrimaryHoverLeftBackgroundRight = "#0174bc";
+export const TokenComponentSplitMenuButtonPrimaryHoverLeftBackgroundLeft =
+  "#009cde";
+export const TokenComponentSplitMenuButtonPrimaryHoverLeftBackgroundRight =
+  "#0174bc";
 export const TokenComponentSplitMenuButtonPrimaryHoverLeftBorder = "#009cde";
 export const TokenComponentSplitMenuButtonPrimaryHoverLeftText = "#ffffff";
 export const TokenComponentSplitMenuButtonPrimaryHoverLeftIcon = "#ffffff";
-export const TokenComponentSplitMenuButtonPrimaryHoverRightBackgroundLeft = "#0174bc";
-export const TokenComponentSplitMenuButtonPrimaryHoverRightBackgroundRight = "#009cde";
+export const TokenComponentSplitMenuButtonPrimaryHoverRightBackgroundLeft =
+  "#0174bc";
+export const TokenComponentSplitMenuButtonPrimaryHoverRightBackgroundRight =
+  "#009cde";
 export const TokenComponentSplitMenuButtonPrimaryHoverRightBorder = "#009cde";
 export const TokenComponentSplitMenuButtonPrimaryHoverRightText = "#ffffff";
 export const TokenComponentSplitMenuButtonPrimaryHoverRightIcon = "#ffffff";
@@ -561,48 +631,65 @@ export const TokenComponentSplitMenuButtonPrimaryDisabledBackground = "#e5e5ea";
 export const TokenComponentSplitMenuButtonPrimaryDisabledBorder = "#e5e5ea";
 export const TokenComponentSplitMenuButtonPrimaryDisabledText = "#a3a3ab";
 export const TokenComponentSplitMenuButtonPrimaryDisabledIcon = "#a3a3ab";
-export const TokenComponentSplitMenuButtonPrimaryLoadingBackgroundLeft = "#0174bc";
-export const TokenComponentSplitMenuButtonPrimaryLoadingBackgroundRight = "#0174bc";
+export const TokenComponentSplitMenuButtonPrimaryLoadingBackgroundLeft =
+  "#0174bc";
+export const TokenComponentSplitMenuButtonPrimaryLoadingBackgroundRight =
+  "#0174bc";
 export const TokenComponentSplitMenuButtonPrimaryLoadingBorder = "#0174bc";
 export const TokenComponentSplitMenuButtonPrimaryLoadingIcon = "#ffffff";
-export const TokenComponentSplitMenuButtonSecondaryDefaultBackground = "#ffffff";
+export const TokenComponentSplitMenuButtonSecondaryDefaultBackground =
+  "#ffffff";
 export const TokenComponentSplitMenuButtonSecondaryDefaultBorder = "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryDefaultText = "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryDefaultIcon = "#0174bc";
-export const TokenComponentSplitMenuButtonSecondaryHoverLeftBackgroundLeft = "#edf8ff";
-export const TokenComponentSplitMenuButtonSecondaryHoverLeftBackgroundRight = "#ffffff";
-export const TokenComponentSplitMenuButtonSecondaryHoverLeftBorderLeft = "#009cde";
-export const TokenComponentSplitMenuButtonSecondaryHoverLeftBorderRight = "#0174bc";
+export const TokenComponentSplitMenuButtonSecondaryHoverLeftBackgroundLeft =
+  "#edf8ff";
+export const TokenComponentSplitMenuButtonSecondaryHoverLeftBackgroundRight =
+  "#ffffff";
+export const TokenComponentSplitMenuButtonSecondaryHoverLeftBorderLeft =
+  "#009cde";
+export const TokenComponentSplitMenuButtonSecondaryHoverLeftBorderRight =
+  "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryHoverLeftText = "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryHoverLeftIcon = "#0174bc";
-export const TokenComponentSplitMenuButtonSecondaryHoverRightBackgroundLeft = "#ffffff";
-export const TokenComponentSplitMenuButtonSecondaryHoverRightBackgroundRight = "#edf8ff";
-export const TokenComponentSplitMenuButtonSecondaryHoverRightBorderLeft = "#0174bc";
-export const TokenComponentSplitMenuButtonSecondaryHoverRightBorderRight = "#009cde";
+export const TokenComponentSplitMenuButtonSecondaryHoverRightBackgroundLeft =
+  "#ffffff";
+export const TokenComponentSplitMenuButtonSecondaryHoverRightBackgroundRight =
+  "#edf8ff";
+export const TokenComponentSplitMenuButtonSecondaryHoverRightBorderLeft =
+  "#0174bc";
+export const TokenComponentSplitMenuButtonSecondaryHoverRightBorderRight =
+  "#009cde";
 export const TokenComponentSplitMenuButtonSecondaryHoverRightText = "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryHoverRightIcon = "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryActiveBackground = "#ffffff";
 export const TokenComponentSplitMenuButtonSecondaryActiveBorder = "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryActiveText = "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryActiveIcon = "#0174bc";
-export const TokenComponentSplitMenuButtonSecondaryDisabledBackground = "#ffffff";
+export const TokenComponentSplitMenuButtonSecondaryDisabledBackground =
+  "#ffffff";
 export const TokenComponentSplitMenuButtonSecondaryDisabledBorder = "#c2c2ca";
 export const TokenComponentSplitMenuButtonSecondaryDisabledText = "#a3a3ab";
 export const TokenComponentSplitMenuButtonSecondaryDisabledIcon = "#a3a3ab";
-export const TokenComponentSplitMenuButtonSecondaryLoadingBackground = "#ffffff";
+export const TokenComponentSplitMenuButtonSecondaryLoadingBackground =
+  "#ffffff";
 export const TokenComponentSplitMenuButtonSecondaryLoadingBorder = "#0174bc";
 export const TokenComponentSplitMenuButtonSecondaryLoadingIcon = "#0174bc";
 export const TokenComponentSplitMenuButtonLaunchDefaultBackground = "#232326";
 export const TokenComponentSplitMenuButtonLaunchDefaultBorder = "#232326";
 export const TokenComponentSplitMenuButtonLaunchDefaultText = "#ffffff";
 export const TokenComponentSplitMenuButtonLaunchDefaultIcon = "#ffffff";
-export const TokenComponentSplitMenuButtonLaunchHoverLeftBackgroundLeft = "#343438";
-export const TokenComponentSplitMenuButtonLaunchHoverLeftBackgroundRight = "#232326";
+export const TokenComponentSplitMenuButtonLaunchHoverLeftBackgroundLeft =
+  "#343438";
+export const TokenComponentSplitMenuButtonLaunchHoverLeftBackgroundRight =
+  "#232326";
 export const TokenComponentSplitMenuButtonLaunchHoverLeftBorder = "#343438";
 export const TokenComponentSplitMenuButtonLaunchHoverLeftText = "#ffffff";
 export const TokenComponentSplitMenuButtonLaunchHoverLeftIcon = "#ffffff";
-export const TokenComponentSplitMenuButtonLaunchHoverRightBackgroundLeft = "#232326";
-export const TokenComponentSplitMenuButtonLaunchHoverRightBackgroundRight = "#343438";
+export const TokenComponentSplitMenuButtonLaunchHoverRightBackgroundLeft =
+  "#232326";
+export const TokenComponentSplitMenuButtonLaunchHoverRightBackgroundRight =
+  "#343438";
 export const TokenComponentSplitMenuButtonLaunchHoverRightBorder = "#343438";
 export const TokenComponentSplitMenuButtonLaunchHoverRightText = "#ffffff";
 export const TokenComponentSplitMenuButtonLaunchHoverRightIcon = "#ffffff";
@@ -614,41 +701,77 @@ export const TokenComponentSplitMenuButtonLaunchDisabledBackground = "#e5e5ea";
 export const TokenComponentSplitMenuButtonLaunchDisabledBorder = "#e5e5ea";
 export const TokenComponentSplitMenuButtonLaunchDisabledText = "#a3a3ab";
 export const TokenComponentSplitMenuButtonLaunchDisabledIcon = "#a3a3ab";
-export const TokenComponentSplitMenuButtonLaunchLoadingBackgroundLeft = "#232326";
-export const TokenComponentSplitMenuButtonLaunchLoadingBackgroundRight = "#232326";
+export const TokenComponentSplitMenuButtonLaunchLoadingBackgroundLeft =
+  "#232326";
+export const TokenComponentSplitMenuButtonLaunchLoadingBackgroundRight =
+  "#232326";
 export const TokenComponentSplitMenuButtonLaunchLoadingBorder = "#232326";
 export const TokenComponentSplitMenuButtonLaunchLoadingIcon = "#ffffff";
 export const TokenComponentAppbarBackground = "#f7f7fa";
 export const TokenComponentAppbarBorder = "#d6d6dd";
 export const TokenComponentAppbarText = "#343438";
 export const TokenComponentAppbarIcon = "#3d3d42";
-export const TokenComponentAppbarTopGradient = "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)";
-export const TokenComponentBadgeInformativeBackground = "lch(36.7 58.2 286 / 0.12)";
-export const TokenComponentBadgeInformativeText = "#3451b2";
-export const TokenComponentBadgeNeutralBackground = "lch(34.6 3.66 286 / 0.12)";
-export const TokenComponentBadgeNeutralText = "#515157";
-export const TokenComponentBadgeWarningBackground = "lch(67.2 71.6 80.1 / 0.12)";
-export const TokenComponentBadgeWarningText = "#c25d05";
-export const TokenComponentBadgeNegativeBackground = "lch(41.2 69 32.4 / 0.12)";
-export const TokenComponentBadgeNegativeText = "#b82329";
-export const TokenComponentBadgePositiveBackground = "lch(47.6 47.7 150 / 0.12)";
-export const TokenComponentBadgePositiveText = "#138246";
-export const TokenComponentBadgeImportantBackground = "lch(38.2 75 307 / 0.12)";
-export const TokenComponentBadgeImportantText = "#753bbd";
-export const TokenComponentBadgeVioletBackground = "lch(36.2 62.1 298 / 0.12)";
-export const TokenComponentBadgeVioletText = "#5746af";
-export const TokenComponentBadgePinkBackground = "lch(47.1 72.1 347 / 0.12)";
-export const TokenComponentBadgePinkText = "#cd1d8d";
+export const TokenComponentAppbarTopGradient =
+  "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)";
+export const TokenComponentBadgeInformativeSubtleBackground =
+  "lch(36.7 58.2 286 / 0.12)";
+export const TokenComponentBadgeInformativeSubtleText = "#3451b2";
+export const TokenComponentBadgeInformativeAccentBackground = "#3451b2";
+export const TokenComponentBadgeInformativeAccentText = "#ffffff";
+export const TokenComponentBadgeNeutralSubtleBackground =
+  "lch(34.6 3.66 286 / 0.12)";
+export const TokenComponentBadgeNeutralSubtleText = "#515157";
+export const TokenComponentBadgeNeutralAccentBackground = "#515157";
+export const TokenComponentBadgeNeutralAccentText = "#ffffff";
+export const TokenComponentBadgeWarningSubtleBackground =
+  "lch(67.2 71.6 80.1 / 0.12)";
+export const TokenComponentBadgeWarningSubtleText = "#c25d05";
+export const TokenComponentBadgeWarningAccentBackground = "#c25d05";
+export const TokenComponentBadgeWarningAccentText = "#ffffff";
+export const TokenComponentBadgeNegativeSubtleBackground =
+  "lch(41.2 69 32.4 / 0.12)";
+export const TokenComponentBadgeNegativeSubtleText = "#b82329";
+export const TokenComponentBadgeNegativeAccentBackground = "#b82329";
+export const TokenComponentBadgeNegativeAccentText = "#ffffff";
+export const TokenComponentBadgePositiveSubtleBackground =
+  "lch(47.6 47.7 150 / 0.12)";
+export const TokenComponentBadgePositiveSubtleText = "#138246";
+export const TokenComponentBadgePositiveAccentBackground = "#138246";
+export const TokenComponentBadgePositiveAccentText = "#ffffff";
+export const TokenComponentBadgeImportantSubtleBackground =
+  "lch(38.2 75 307 / 0.12)";
+export const TokenComponentBadgeImportantSubtleText = "#753bbd";
+export const TokenComponentBadgeImportantAccentBackground = "#753bbd";
+export const TokenComponentBadgeImportantAccentText = "#ffffff";
+export const TokenComponentBadgeVioletSubtleBackground =
+  "lch(36.2 62.1 298 / 0.12)";
+export const TokenComponentBadgeVioletSubtleText = "#5746af";
+export const TokenComponentBadgeVioletAccentBackground = "#5746af";
+export const TokenComponentBadgeVioletAccentText = "#ffffff";
+export const TokenComponentBadgePinkSubtleBackground =
+  "lch(47.1 72.1 347 / 0.12)";
+export const TokenComponentBadgePinkSubtleText = "#cd1d8d";
+export const TokenComponentBadgePinkAccentBackground = "#cd1d8d";
+export const TokenComponentBadgePinkAccentText = "#ffffff";
 export const TokenComponentBreadcrumbDivider = "#d6d6dd";
-export const TokenComponentBreadcrumbAppTitleText = "#0174bc";
-export const TokenComponentBreadcrumbDefaultText = "#0174bc";
-export const TokenComponentBreadcrumbTruncatedText = "#0174bc";
-export const TokenComponentBreadcrumbLastItemText = "#343438";
+export const TokenComponentBreadcrumbAppTitleTextDefault = "#343438";
+export const TokenComponentBreadcrumbAppTitleTextHover = "#009cde";
+export const TokenComponentBreadcrumbNormalTextDefault = "#343438";
+export const TokenComponentBreadcrumbNormalTextHover = "#009cde";
+export const TokenComponentBreadcrumbTruncatedTextDefault = "#343438";
+export const TokenComponentBreadcrumbTruncatedTextHover = "#009cde";
+export const TokenComponentBreadcrumbLastItemText = "#696970";
 export const TokenComponentBreadcrumbCollapsedBackground = "#e5e5ea";
-export const TokenComponentBreadcrumbCollapsedText = "#343438";
-export const TokenComponentBreadcrumbCollapsedIcon = "#3d3d42";
-export const TokenComponentBreadcrumbWithDropdownText = "#0174bc";
-export const TokenComponentBreadcrumbWithDropdownIcon = "#3d3d42";
+export const TokenComponentBreadcrumbCollapsedTextDefault = "#343438";
+export const TokenComponentBreadcrumbCollapsedTextHover = "#009cde";
+export const TokenComponentBreadcrumbCollapsedTextActive = "#0174bc";
+export const TokenComponentBreadcrumbCollapsedIconDefault = "#3d3d42";
+export const TokenComponentBreadcrumbCollapsedIconHover = "#009cde";
+export const TokenComponentBreadcrumbWithDropdownTextDefault = "#343438";
+export const TokenComponentBreadcrumbWithDropdownTextHover = "#009cde";
+export const TokenComponentBreadcrumbWithDropdownTextActive = "#0174bc";
+export const TokenComponentBreadcrumbWithDropdownIconDefault = "#3d3d42";
+export const TokenComponentBreadcrumbWithDropdownIconHover = "#009cde";
 export const TokenComponentCardBackground = "#ffffff";
 export const TokenComponentCardBorder = "#d6d6dd";
 export const TokenComponentCardText = "#343438";
@@ -824,7 +947,8 @@ export const TokenComponentDateRangeInputActivePeriodBorder = "#3d3d42";
 export const TokenComponentDateRangeInputActivePeriodText = "#343438";
 export const TokenComponentDateRangeInputActivePeriodIcon = "#3d3d42";
 export const TokenComponentDateRangeInputActivePeriodHintText = "#696970";
-export const TokenComponentDateRangeInputActivePeriodActiveItemBackground = "#edf8ff";
+export const TokenComponentDateRangeInputActivePeriodActiveItemBackground =
+  "#edf8ff";
 export const TokenComponentDateRangeInputActivePeriodActiveItemText = "#696970";
 export const TokenComponentDateRangeInputFilledBackground = "#ffffff";
 export const TokenComponentDateRangeInputFilledBorder = "#83838c";
@@ -869,17 +993,26 @@ export const TokenComponentGlobalHeaderBackground = "#232326";
 export const TokenComponentGlobalHeaderBorder = "#3d3d42";
 export const TokenComponentGlobalHeaderIconDefault = "#d6d6dd";
 export const TokenComponentGlobalHeaderIconHover = "#ffffff";
+export const TokenComponentGlobalHeaderIconActive = "#5bb3ea";
 export const TokenComponentGlobalHeaderTextDefault = "#d6d6dd";
 export const TokenComponentGlobalHeaderTextHover = "#ffffff";
+export const TokenComponentGlobalHeaderBadgeBackground = "#d63c42";
+export const TokenComponentGlobalHeaderBadgeText = "#ffffff";
+export const TokenComponentGlobalHeaderBadgeIcon = "#ffffff";
 export const TokenComponentGlobalHeaderSearchBackground = "#3d3d42";
 export const TokenComponentGlobalHeaderSearchTextPlaceholder = "#d6d6dd";
 export const TokenComponentGlobalHeaderSearchTextFilled = "#ffffff";
 export const TokenComponentGlobalHeaderSearchIconDefault = "#d6d6dd";
 export const TokenComponentGlobalHeaderSearchIconActive = "#ffffff";
 export const TokenComponentGlobalHeaderSearchIconHover = "#ffffff";
-export const TokenComponentGlobalFooterBackground = "#232326";
-export const TokenComponentGlobalFooterTextDefault = "#d6d6dd";
-export const TokenComponentGlobalFooterTextHover = "#ffffff";
+export const TokenComponentGlobalHeaderSearchBorderDefault = "#3d3d42";
+export const TokenComponentGlobalHeaderSearchBorderHover = "#696970";
+export const TokenComponentGlobalHeaderSearchBorderActive = "#a3a3ab";
+export const TokenComponentGlobalFooterBackground = "#f7f7fa";
+export const TokenComponentGlobalFooterBorder = "#d6d6dd";
+export const TokenComponentGlobalFooterText = "#343438";
+export const TokenComponentGlobalFooterLinkDefault = "#0174bc";
+export const TokenComponentGlobalFooterLinkHover = "#009cde";
 export const TokenComponentGroupSelectFieldDefaultBackground = "#ffffff";
 export const TokenComponentGroupSelectFieldDefaultBorder = "#83838c";
 export const TokenComponentGroupSelectFieldDefaultText = "#696970";
@@ -941,7 +1074,8 @@ export const TokenComponentKpiBarItemNeutralDefaultText = "#696970";
 export const TokenComponentKpiBarItemNeutralDefaultIcon = "#515157";
 export const TokenComponentKpiBarItemNeutralHoverLabel = "#515157";
 export const TokenComponentKpiBarItemNeutralHoverText = "#696970";
-export const TokenComponentKpiBarItemNeutralHoverBackground = "lch(34.6 3.66 286 / 0.12)";
+export const TokenComponentKpiBarItemNeutralHoverBackground =
+  "lch(34.6 3.66 286 / 0.12)";
 export const TokenComponentKpiBarItemNeutralHoverIcon = "#515157";
 export const TokenComponentKpiBarItemNeutralActiveLabel = "#515157";
 export const TokenComponentKpiBarItemNeutralActiveText = "#343438";
@@ -955,7 +1089,8 @@ export const TokenComponentKpiBarItemGreenDefaultLabel = "#138246";
 export const TokenComponentKpiBarItemGreenDefaultText = "#696970";
 export const TokenComponentKpiBarItemGreenHoverLabel = "#138246";
 export const TokenComponentKpiBarItemGreenHoverText = "#696970";
-export const TokenComponentKpiBarItemGreenHoverBackground = "lch(47.6 47.7 150 / 0.12)";
+export const TokenComponentKpiBarItemGreenHoverBackground =
+  "lch(47.6 47.7 150 / 0.12)";
 export const TokenComponentKpiBarItemGreenActiveLabel = "#138246";
 export const TokenComponentKpiBarItemGreenActiveText = "#343438";
 export const TokenComponentKpiBarItemGreenActiveBorder = "#138246";
@@ -966,7 +1101,8 @@ export const TokenComponentKpiBarItemOrangeDefaultLabel = "#c25d05";
 export const TokenComponentKpiBarItemOrangeDefaultText = "#696970";
 export const TokenComponentKpiBarItemOrangeHoverLabel = "#c25d05";
 export const TokenComponentKpiBarItemOrangeHoverText = "#696970";
-export const TokenComponentKpiBarItemOrangeHoverBackground = "lch(67.2 71.6 80.1 / 0.12)";
+export const TokenComponentKpiBarItemOrangeHoverBackground =
+  "lch(67.2 71.6 80.1 / 0.12)";
 export const TokenComponentKpiBarItemOrangeActiveLabel = "#c25d05";
 export const TokenComponentKpiBarItemOrangeActiveText = "#343438";
 export const TokenComponentKpiBarItemOrangeActiveBorder = "#c25d05";
@@ -977,7 +1113,8 @@ export const TokenComponentKpiBarItemPurpleDefaultLabel = "#753bbd";
 export const TokenComponentKpiBarItemPurpleDefaultText = "#696970";
 export const TokenComponentKpiBarItemPurpleHoverLabel = "#753bbd";
 export const TokenComponentKpiBarItemPurpleHoverText = "#696970";
-export const TokenComponentKpiBarItemPurpleHoverBackground = "lch(38.2 75 307 / 0.12)";
+export const TokenComponentKpiBarItemPurpleHoverBackground =
+  "lch(38.2 75 307 / 0.12)";
 export const TokenComponentKpiBarItemPurpleActiveLabel = "#753bbd";
 export const TokenComponentKpiBarItemPurpleActiveText = "#343438";
 export const TokenComponentKpiBarItemPurpleActiveBorder = "#753bbd";
@@ -988,7 +1125,8 @@ export const TokenComponentKpiBarItemRedDefaultLabel = "#b82329";
 export const TokenComponentKpiBarItemRedDefaultText = "#696970";
 export const TokenComponentKpiBarItemRedHoverLabel = "#b82329";
 export const TokenComponentKpiBarItemRedHoverText = "#696970";
-export const TokenComponentKpiBarItemRedHoverBackground = "lch(41.2 69 32.4 / 0.12)";
+export const TokenComponentKpiBarItemRedHoverBackground =
+  "lch(41.2 69 32.4 / 0.12)";
 export const TokenComponentKpiBarItemRedActiveLabel = "#b82329";
 export const TokenComponentKpiBarItemRedActiveText = "#343438";
 export const TokenComponentKpiBarItemRedActiveBorder = "#b82329";
@@ -999,7 +1137,8 @@ export const TokenComponentKpiBarItemUltramarineDefaultLabel = "#3451b2";
 export const TokenComponentKpiBarItemUltramarineDefaultText = "#696970";
 export const TokenComponentKpiBarItemUltramarineHoverLabel = "#3451b2";
 export const TokenComponentKpiBarItemUltramarineHoverText = "#696970";
-export const TokenComponentKpiBarItemUltramarineHoverBackground = "lch(36.7 58.2 286 / 0.12)";
+export const TokenComponentKpiBarItemUltramarineHoverBackground =
+  "lch(36.7 58.2 286 / 0.12)";
 export const TokenComponentKpiBarItemUltramarineActiveLabel = "#3451b2";
 export const TokenComponentKpiBarItemUltramarineActiveText = "#343438";
 export const TokenComponentKpiBarItemUltramarineActiveBorder = "#3451b2";
@@ -1010,7 +1149,8 @@ export const TokenComponentKpiBarItemPinkDefaultLabel = "#cd1d8d";
 export const TokenComponentKpiBarItemPinkDefaultText = "#696970";
 export const TokenComponentKpiBarItemPinkHoverLabel = "#cd1d8d";
 export const TokenComponentKpiBarItemPinkHoverText = "#696970";
-export const TokenComponentKpiBarItemPinkHoverBackground = "lch(47.1 72.1 347 / 0.12)";
+export const TokenComponentKpiBarItemPinkHoverBackground =
+  "lch(47.1 72.1 347 / 0.12)";
 export const TokenComponentKpiBarItemPinkActiveLabel = "#cd1d8d";
 export const TokenComponentKpiBarItemPinkActiveText = "#343438";
 export const TokenComponentKpiBarItemPinkActiveBorder = "#cd1d8d";
@@ -1037,43 +1177,44 @@ export const TokenComponentModalTextDefault = "#343438";
 export const TokenComponentModalTextDescription = "#696970";
 export const TokenComponentNotificationBannerText = "#343438";
 export const TokenComponentNotificationBannerIcon = "#3d3d42";
-export const TokenComponentNotificationBannerInformativeBackground = "#f0f4ff";
+export const TokenComponentNotificationBannerInformativeBackground = "#e6edfe";
 export const TokenComponentNotificationBannerInformativeBorder = "#4067e5";
 export const TokenComponentNotificationBannerInformativeStatusIcon = "#4067e5";
-export const TokenComponentNotificationBannerTipBackground = "#f0f4ff";
+export const TokenComponentNotificationBannerTipBackground = "#e6edfe";
 export const TokenComponentNotificationBannerTipBorder = "#4067e5";
 export const TokenComponentNotificationBannerTipStatusIcon = "#4067e5";
-export const TokenComponentNotificationBannerWarningBackground = "#fff4d5";
+export const TokenComponentNotificationBannerWarningBackground = "#ffecbc";
 export const TokenComponentNotificationBannerWarningBorder = "#fecb34";
 export const TokenComponentNotificationBannerWarningStatusIcon = "#fecb34";
-export const TokenComponentNotificationBannerSuccessBackground = "#ebf9eb";
+export const TokenComponentNotificationBannerSuccessBackground = "#dff3df";
 export const TokenComponentNotificationBannerSuccessBorder = "#00b050";
 export const TokenComponentNotificationBannerSuccessStatusIcon = "#00b050";
-export const TokenComponentNotificationBannerErrorBackground = "#ffefef";
+export const TokenComponentNotificationBannerErrorBackground = "#ffe5e5";
 export const TokenComponentNotificationBannerErrorBorder = "#d63c42";
 export const TokenComponentNotificationBannerErrorStatusIcon = "#d63c42";
 export const TokenComponentNotificationBannerSecondaryBackground = "#e5e5ea";
-export const TokenComponentNotificationBannerSecondaryBorder = "#343438";
-export const TokenComponentNotificationBannerSecondaryStatusIcon = "#3d3d42";
+export const TokenComponentNotificationBannerSecondaryBorder = "#a3a3ab";
+export const TokenComponentNotificationBannerSecondaryStatusIcon = "#696970";
 export const TokenComponentNotificationToastText = "#343438";
 export const TokenComponentNotificationToastIcon = "#3d3d42";
-export const TokenComponentNotificationToastInformativeBackground = "#f0f4ff";
-export const TokenComponentNotificationToastInformativeIconBackground = "#4067e5";
+export const TokenComponentNotificationToastInformativeBackground = "#e6edfe";
+export const TokenComponentNotificationToastInformativeIconBackground =
+  "#4067e5";
 export const TokenComponentNotificationToastInformativeBorder = "#4067e5";
 export const TokenComponentNotificationToastInformativeStatusIcon = "#ffffff";
-export const TokenComponentNotificationToastTipBackground = "#f0f4ff";
+export const TokenComponentNotificationToastTipBackground = "#e6edfe";
 export const TokenComponentNotificationToastTipIconBackground = "#4067e5";
 export const TokenComponentNotificationToastTipBorder = "#4067e5";
 export const TokenComponentNotificationToastTipStatusIcon = "#ffffff";
-export const TokenComponentNotificationToastWarningBackground = "#fff4d5";
+export const TokenComponentNotificationToastWarningBackground = "#ffecbc";
 export const TokenComponentNotificationToastWarningIconBackground = "#fecb34";
 export const TokenComponentNotificationToastWarningBorder = "#fecb34";
 export const TokenComponentNotificationToastWarningStatusIcon = "#3d3d42";
-export const TokenComponentNotificationToastSuccessBackground = "#ebf9eb";
+export const TokenComponentNotificationToastSuccessBackground = "#dff3df";
 export const TokenComponentNotificationToastSuccessIconBackground = "#00b050";
 export const TokenComponentNotificationToastSuccessBorder = "#00b050";
 export const TokenComponentNotificationToastSuccessStatusIcon = "#ffffff";
-export const TokenComponentNotificationToastErrorBackground = "#ffefef";
+export const TokenComponentNotificationToastErrorBackground = "#ffe5e5";
 export const TokenComponentNotificationToastErrorIconBackground = "#d63c42";
 export const TokenComponentNotificationToastErrorBorder = "#d63c42";
 export const TokenComponentNotificationToastErrorStatusIcon = "#ffffff";
@@ -1099,7 +1240,8 @@ export const TokenComponentProgressBarTextLinkHover = "#009cde";
 export const TokenComponentProgressBarStatusLineDefault = "#e5e5ea";
 export const TokenComponentProgressBarStatusLineSuccess = "#00b050";
 export const TokenComponentProgressBarStatusLineError = "#d63c42";
-export const TokenComponentProgressBarStatusLineInProgress = "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)";
+export const TokenComponentProgressBarStatusLineInProgress =
+  "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)";
 export const TokenComponentNumericSpinnerDefaultBackground = "#ffffff";
 export const TokenComponentNumericSpinnerDefaultBorder = "#83838c";
 export const TokenComponentNumericSpinnerDefaultText = "#696970";
@@ -1205,6 +1347,7 @@ export const TokenComponentSearchFocusText = "#343438";
 export const TokenComponentSearchFocusIcon = "#3d3d42";
 export const TokenComponentSearchFocusHintText = "#696970";
 export const TokenComponentSearchFocusSearchIcon = "#696970";
+export const TokenComponentSegmentedButtonDivider = "#ffffff"; // A divider for multi-selected items
 export const TokenComponentSegmentedButtonDefaultBackground = "#ffffff";
 export const TokenComponentSegmentedButtonDefaultBorder = "#0174bc";
 export const TokenComponentSegmentedButtonDefaultText = "#0174bc";
@@ -1225,6 +1368,10 @@ export const TokenComponentSegmentedButtonActiveBackground = "#0174bc";
 export const TokenComponentSegmentedButtonActiveBorder = "#0174bc";
 export const TokenComponentSegmentedButtonActiveText = "#ffffff";
 export const TokenComponentSegmentedButtonActiveIcon = "#ffffff";
+export const TokenComponentSegmentedButtonActiveHoverBackground = "#009cde";
+export const TokenComponentSegmentedButtonActiveHoverBorder = "#009cde";
+export const TokenComponentSegmentedButtonActiveHoverText = "#ffffff";
+export const TokenComponentSegmentedButtonActiveHoverIcon = "#ffffff";
 export const TokenComponentSideNavigationIcon = "#3d3d42";
 export const TokenComponentSideNavigationBorder = "#d6d6dd";
 export const TokenComponentSideNavigationBackgroundDefault = "#f7f7fa";
@@ -1233,19 +1380,22 @@ export const TokenComponentSideNavigationDefaultMenuItemBackground = "#f7f7fa";
 export const TokenComponentSideNavigationDefaultMenuItemIcon = "#3d3d42";
 export const TokenComponentSideNavigationDefaultMenuItemText = "#343438";
 export const TokenComponentSideNavigationDefaultMenuItemLabelText = "#343438";
-export const TokenComponentSideNavigationDefaultMenuItemLabelBackground = "#f7f7fa";
+export const TokenComponentSideNavigationDefaultMenuItemLabelBackground =
+  "#f7f7fa";
 export const TokenComponentSideNavigationDefaultMenuItemLabelBorder = "#d6d6dd";
 export const TokenComponentSideNavigationHoverMenuItemBackground = "#edf8ff";
 export const TokenComponentSideNavigationHoverMenuItemIcon = "#3d3d42";
 export const TokenComponentSideNavigationHoverMenuItemText = "#343438";
 export const TokenComponentSideNavigationHoverMenuItemLabelText = "#343438";
-export const TokenComponentSideNavigationHoverMenuItemLabelBackground = "#f7f7fa";
+export const TokenComponentSideNavigationHoverMenuItemLabelBackground =
+  "#f7f7fa";
 export const TokenComponentSideNavigationHoverMenuItemLabelBorder = "#d6d6dd";
 export const TokenComponentSideNavigationSelectedMenuItemBackground = "#ceedfe";
 export const TokenComponentSideNavigationSelectedMenuItemIcon = "#3d3d42";
 export const TokenComponentSideNavigationSelectedMenuItemText = "#343438";
 export const TokenComponentSideNavigationSelectedMenuItemLabelText = "#ffffff";
-export const TokenComponentSideNavigationSelectedMenuItemLabelBackground = "#0174bc";
+export const TokenComponentSideNavigationSelectedMenuItemLabelBackground =
+  "#0174bc";
 export const TokenComponentSelectDefaultBackground = "#ffffff";
 export const TokenComponentSelectDefaultBorder = "#83838c";
 export const TokenComponentSelectDefaultText = "#696970";
@@ -1353,7 +1503,7 @@ export const TokenComponentTagFocusText = "#343438";
 export const TokenComponentTagFocusIconDefault = "#3d3d42";
 export const TokenComponentTagFocusIconHover = "#009cde";
 export const TokenComponentTagFocusIconActive = "#0174bc";
-export const TokenComponentTagErrorBackground = "#ffefef";
+export const TokenComponentTagErrorBackground = "#ffe5e5";
 export const TokenComponentTagErrorBorder = "#d63c42";
 export const TokenComponentTagErrorText = "#343438";
 export const TokenComponentTagErrorIconDefault = "#3d3d42";
@@ -1582,19 +1732,25 @@ export const TokenComponentWidgetUploadDisabledIcon = "#a3a3ab";
 export const TokenComponentWidgetUploadDisabledText = "#a3a3ab";
 export const TokenComponentStepperHorizontalLine = "#d6d6dd";
 export const TokenComponentStepperHorizontalPastItemCircleBorder = "#0174bc";
-export const TokenComponentStepperHorizontalPastItemCircleBackgroundDefault = "#edf8ff";
-export const TokenComponentStepperHorizontalPastItemCircleBackgroundHover = "#0174bc";
-export const TokenComponentStepperHorizontalPastItemCircleIconDefault = "#0174bc";
+export const TokenComponentStepperHorizontalPastItemCircleBackgroundDefault =
+  "#edf8ff";
+export const TokenComponentStepperHorizontalPastItemCircleBackgroundHover =
+  "#0174bc";
+export const TokenComponentStepperHorizontalPastItemCircleIconDefault =
+  "#0174bc";
 export const TokenComponentStepperHorizontalPastItemCircleIconHover = "#ffffff";
-export const TokenComponentStepperHorizontalPastItemCircleTextDefault = "#0174bc";
+export const TokenComponentStepperHorizontalPastItemCircleTextDefault =
+  "#0174bc";
 export const TokenComponentStepperHorizontalPastItemCircleTextHover = "#ffffff";
 export const TokenComponentStepperHorizontalPastItemTextDefault = "#343438";
 export const TokenComponentStepperHorizontalPastItemTextHover = "#0174bc";
-export const TokenComponentStepperHorizontalCurrentItemCircleBackground = "#0174bc";
+export const TokenComponentStepperHorizontalCurrentItemCircleBackground =
+  "#0174bc";
 export const TokenComponentStepperHorizontalCurrentItemCircleText = "#ffffff";
 export const TokenComponentStepperHorizontalCurrentItemTextDefault = "#343438";
 export const TokenComponentStepperHorizontalCurrentItemTextHover = "#0174bc";
-export const TokenComponentStepperHorizontalFutureItemCircleBackground = "#ffffff";
+export const TokenComponentStepperHorizontalFutureItemCircleBackground =
+  "#ffffff";
 export const TokenComponentStepperHorizontalFutureItemCircleBorder = "#d6d6dd";
 export const TokenComponentStepperHorizontalFutureItemCircleText = "#a3a3ab";
 export const TokenComponentStepperHorizontalFutureItemCircleIcon = "#a3a3ab";
@@ -1609,16 +1765,19 @@ export const TokenComponentStepperVerticalPastItemCircleIcon = "#0174bc";
 export const TokenComponentStepperVerticalPastItemTextDefault = "#343438";
 export const TokenComponentStepperVerticalPastItemTextHover = "#0174bc";
 export const TokenComponentStepperVerticalCurrentItemIcon = "#0174bc";
-export const TokenComponentStepperVerticalCurrentItemCircleBackground = "#0174bc";
+export const TokenComponentStepperVerticalCurrentItemCircleBackground =
+  "#0174bc";
 export const TokenComponentStepperVerticalCurrentItemCircleText = "#ffffff";
 export const TokenComponentStepperVerticalCurrentItemTextDefault = "#343438";
 export const TokenComponentStepperVerticalCurrentItemTextHover = "#0174bc";
-export const TokenComponentStepperVerticalFutureItemCircleBackground = "#ffffff";
+export const TokenComponentStepperVerticalFutureItemCircleBackground =
+  "#ffffff";
 export const TokenComponentStepperVerticalFutureItemCircleBorder = "#83838c";
 export const TokenComponentStepperVerticalFutureItemCircleText = "#696970";
 export const TokenComponentStepperVerticalFutureItemTextDefault = "#343438";
 export const TokenComponentStepperVerticalFutureItemTextHover = "#0174bc";
-export const TokenComponentStepperVerticalDisabledItemCircleBackground = "#ffffff";
+export const TokenComponentStepperVerticalDisabledItemCircleBackground =
+  "#ffffff";
 export const TokenComponentStepperVerticalDisabledItemCircleBorder = "#d6d6dd";
 export const TokenComponentStepperVerticalDisabledItemCircleText = "#a3a3ab";
 export const TokenComponentStepperVerticalDisabledItemCircleIcon = "#a3a3ab";
@@ -1626,11 +1785,14 @@ export const TokenComponentStepperVerticalDisabledItemText = "#a3a3ab";
 export const TokenComponentAdvancedSearchFilterIconDefaultIcon = "#3d3d42";
 export const TokenComponentAdvancedSearchFilterIconHoverIcon = "#009cde";
 export const TokenComponentAdvancedSearchFilterIconAppliedIcon = "#0174bc";
-export const TokenComponentAdvancedSearchFilterIconAppliedBadgeBackground = "#d63c42";
+export const TokenComponentAdvancedSearchFilterIconAppliedBadgeBackground =
+  "#d63c42";
 export const TokenComponentAdvancedSearchFilterIconAppliedBadgeText = "#ffffff";
 export const TokenComponentAdvancedSearchFilterIconDisabledIcon = "#a3a3ab";
-export const TokenComponentAdvancedSearchFilterIconDisabledBadgeBackground = "#83838c";
-export const TokenComponentAdvancedSearchFilterIconDisabledBadgeText = "#ffffff";
+export const TokenComponentAdvancedSearchFilterIconDisabledBadgeBackground =
+  "#83838c";
+export const TokenComponentAdvancedSearchFilterIconDisabledBadgeText =
+  "#ffffff";
 export const TokenComponentAdvancedSearchFilterAreaBackground = "#f7f7fa";
 export const TokenComponentAdvancedSearchFilterAreaBorder = "#d6d6dd";
 export const TokenComponentAdvancedSearchFilterAreaTextDefault = "#343438";
@@ -1655,22 +1817,32 @@ export const TokenComponentSegmentedStatusButtonDisabledBackground = "#ffffff";
 export const TokenComponentSegmentedStatusButtonDisabledBorder = "#c2c2ca";
 export const TokenComponentSegmentedStatusButtonDisabledText = "#a3a3ab";
 export const TokenComponentSegmentedStatusButtonDisabledIcon = "#a3a3ab";
-export const TokenComponentSegmentedStatusButtonDisabledPositiveBackground = "#b7dfba";
-export const TokenComponentSegmentedStatusButtonDisabledPositiveText = "#a3a3ab";
-export const TokenComponentSegmentedStatusButtonDisabledPositiveIcon = "#a3a3ab";
-export const TokenComponentSegmentedStatusButtonActivePositiveBackground = "#07a04d";
+export const TokenComponentSegmentedStatusButtonDisabledPositiveBackground =
+  "#b7dfba";
+export const TokenComponentSegmentedStatusButtonDisabledPositiveText =
+  "#a3a3ab";
+export const TokenComponentSegmentedStatusButtonDisabledPositiveIcon =
+  "#a3a3ab";
+export const TokenComponentSegmentedStatusButtonActivePositiveBackground =
+  "#138246";
 export const TokenComponentSegmentedStatusButtonActivePositiveText = "#ffffff";
 export const TokenComponentSegmentedStatusButtonActivePositiveIcon = "#ffffff";
-export const TokenComponentSegmentedStatusButtonDisabledNegativeBackground = "#f9c6c6";
-export const TokenComponentSegmentedStatusButtonDisabledNegativeText = "#a3a3ab";
-export const TokenComponentSegmentedStatusButtonDisabledNegativeIcon = "#a3a3ab";
-export const TokenComponentSegmentedStatusButtonActiveNegativeBackground = "#d0343a";
+export const TokenComponentSegmentedStatusButtonDisabledNegativeBackground =
+  "#f9c6c6";
+export const TokenComponentSegmentedStatusButtonDisabledNegativeText =
+  "#a3a3ab";
+export const TokenComponentSegmentedStatusButtonDisabledNegativeIcon =
+  "#a3a3ab";
+export const TokenComponentSegmentedStatusButtonActiveNegativeBackground =
+  "#b82329";
 export const TokenComponentSegmentedStatusButtonActiveNegativeText = "#ffffff";
 export const TokenComponentSegmentedStatusButtonActiveNegativeIcon = "#ffffff";
-export const TokenComponentSegmentedStatusButtonDisabledNeutralBackground = "#c2c2ca";
+export const TokenComponentSegmentedStatusButtonDisabledNeutralBackground =
+  "#e5e5ea";
 export const TokenComponentSegmentedStatusButtonDisabledNeutralText = "#a3a3ab";
 export const TokenComponentSegmentedStatusButtonDisabledNeutralIcon = "#a3a3ab";
-export const TokenComponentSegmentedStatusButtonActiveNeutralBackground = "#83838c";
+export const TokenComponentSegmentedStatusButtonActiveNeutralBackground =
+  "#83838c";
 export const TokenComponentSegmentedStatusButtonActiveNeutralText = "#ffffff";
 export const TokenComponentSegmentedStatusButtonActiveNeutralIcon = "#ffffff";
 export const TokenComponentLinkSelectDefaultText = "#0174bc";
