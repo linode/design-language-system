@@ -12,7 +12,7 @@ export const spacingPxToRem = {
 
     // Handle pixel values
     if (typeof token.value === 'string' && token.value.endsWith('px')) {
-      const pxValue = parseFloat(token.value.replace('px', ''));
+      const pxValue = parseFloat(token.value.slice(0, -2));
       return `${pxValue / baseFont}rem`;
     }
 
