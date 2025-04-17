@@ -314,10 +314,8 @@
       "component.tag.readOnly.icon": "db239060382b1dd85b5d51b942be9d6aaaace315",
       "component.table.headerFilled.background": "553ddfac275e009d5b476939bd30443ce669876f",
       "component.table.headerFilled.text": "48e1c39be57e6f08b23d5dcad72a5b11a11224b7",
-      "component.table.headerFilled.icon": "8f83adeb76710292010f699d6a09407523bc7641",
       "component.table.headerOutlined.border": "80baca34134b2d7fb69bd74d8e234695acf98ab0",
       "component.table.headerOutlined.text": "8b3e21f373e189824633fad8bd922e0847480165",
-      "component.table.headerOutlined.icon": "c4e46c298c67628a69dfa74088dceec97181a825",
       "component.table.row.border": "7b93ce5e98c6b235d977a2cf7da00501726792ef",
       "component.table.row.icon.default": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b",
       "component.table.row.icon.disabled": "6bde3dcf5a1f8f012cc80da769020327773273bd",
@@ -1426,7 +1424,9 @@
       "global.spacing.s6": "48d9b54b347f14ee8e80923f3e339646d4d9f6a6",
       "global.spacing.s8": "8d89ea39ab3c5b23ebe86dfc26cbac13468ff90d",
       "global.spacing.s12": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
-      "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7"
+      "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
+      "component.table.headerFilled.icon.default": "8f83adeb76710292010f699d6a09407523bc7641",
+      "component.table.headerOutlined.icon.default": "c4e46c298c67628a69dfa74088dceec97181a825"
     },
     "group": "Core"
   },
@@ -1746,10 +1746,8 @@
       "component.tag.readOnly.icon": "db239060382b1dd85b5d51b942be9d6aaaace315",
       "component.table.headerFilled.background": "553ddfac275e009d5b476939bd30443ce669876f",
       "component.table.headerFilled.text": "48e1c39be57e6f08b23d5dcad72a5b11a11224b7",
-      "component.table.headerFilled.icon": "8f83adeb76710292010f699d6a09407523bc7641",
       "component.table.headerOutlined.border": "80baca34134b2d7fb69bd74d8e234695acf98ab0",
       "component.table.headerOutlined.text": "8b3e21f373e189824633fad8bd922e0847480165",
-      "component.table.headerOutlined.icon": "c4e46c298c67628a69dfa74088dceec97181a825",
       "component.table.row.border": "7b93ce5e98c6b235d977a2cf7da00501726792ef",
       "component.table.row.icon.default": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b",
       "component.table.row.icon.disabled": "6bde3dcf5a1f8f012cc80da769020327773273bd",
@@ -2859,7 +2857,9 @@
       "global.spacing.s6": "48d9b54b347f14ee8e80923f3e339646d4d9f6a6",
       "global.spacing.s8": "8d89ea39ab3c5b23ebe86dfc26cbac13468ff90d",
       "global.spacing.s12": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
-      "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7"
+      "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
+      "component.table.headerFilled.icon.default": "8f83adeb76710292010f699d6a09407523bc7641",
+      "component.table.headerOutlined.icon.default": "c4e46c298c67628a69dfa74088dceec97181a825"
     },
     "group": "Core"
   },
@@ -3179,10 +3179,8 @@
       "component.tag.readOnly.icon": "db239060382b1dd85b5d51b942be9d6aaaace315",
       "component.table.headerFilled.background": "553ddfac275e009d5b476939bd30443ce669876f",
       "component.table.headerFilled.text": "48e1c39be57e6f08b23d5dcad72a5b11a11224b7",
-      "component.table.headerFilled.icon": "8f83adeb76710292010f699d6a09407523bc7641",
       "component.table.headerOutlined.border": "80baca34134b2d7fb69bd74d8e234695acf98ab0",
       "component.table.headerOutlined.text": "8b3e21f373e189824633fad8bd922e0847480165",
-      "component.table.headerOutlined.icon": "c4e46c298c67628a69dfa74088dceec97181a825",
       "component.table.row.border": "7b93ce5e98c6b235d977a2cf7da00501726792ef",
       "component.table.row.icon.default": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b",
       "component.table.row.icon.disabled": "6bde3dcf5a1f8f012cc80da769020327773273bd",
@@ -4292,7 +4290,9 @@
       "global.spacing.s6": "48d9b54b347f14ee8e80923f3e339646d4d9f6a6",
       "global.spacing.s8": "8d89ea39ab3c5b23ebe86dfc26cbac13468ff90d",
       "global.spacing.s12": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
-      "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7"
+      "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
+      "component.table.headerFilled.icon.default": "8f83adeb76710292010f699d6a09407523bc7641",
+      "component.table.headerOutlined.icon.default": "c4e46c298c67628a69dfa74088dceec97181a825"
     },
     "group": "Core"
   },
@@ -4613,10 +4613,8 @@
       "component.tag.readOnly.icon": "db239060382b1dd85b5d51b942be9d6aaaace315",
       "component.table.headerFilled.background": "553ddfac275e009d5b476939bd30443ce669876f",
       "component.table.headerFilled.text": "48e1c39be57e6f08b23d5dcad72a5b11a11224b7",
-      "component.table.headerFilled.icon": "8f83adeb76710292010f699d6a09407523bc7641",
       "component.table.headerOutlined.border": "80baca34134b2d7fb69bd74d8e234695acf98ab0",
       "component.table.headerOutlined.text": "8b3e21f373e189824633fad8bd922e0847480165",
-      "component.table.headerOutlined.icon": "c4e46c298c67628a69dfa74088dceec97181a825",
       "component.table.row.border": "7b93ce5e98c6b235d977a2cf7da00501726792ef",
       "component.table.row.icon.default": "e38c693bceab2ba83594f60b733b0f4f51c2fa7b",
       "component.table.row.icon.disabled": "6bde3dcf5a1f8f012cc80da769020327773273bd",
@@ -5726,7 +5724,9 @@
       "global.spacing.s6": "48d9b54b347f14ee8e80923f3e339646d4d9f6a6",
       "global.spacing.s8": "8d89ea39ab3c5b23ebe86dfc26cbac13468ff90d",
       "global.spacing.s12": "f6c9215142ffde6f9fd40c69af86baf84fa006e0",
-      "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7"
+      "global.spacing.s16": "6666b8e43bf3acd2074fc625f082f833994c5ad7",
+      "component.table.headerFilled.icon.default": "8f83adeb76710292010f699d6a09407523bc7641",
+      "component.table.headerOutlined.icon.default": "c4e46c298c67628a69dfa74088dceec97181a825"
     },
     "group": "Core"
   }
