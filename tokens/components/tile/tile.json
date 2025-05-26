@@ -59,7 +59,7 @@
       },
       "disabled": {
         "background": {
-          "value": "{alias.interaction.background.disabled}",
+          "value": "{alias.interaction.background.primary}",
           "type": "color"
         },
         "border": {
