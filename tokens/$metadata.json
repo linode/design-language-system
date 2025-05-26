@@ -61,6 +61,7 @@
     "components/tooltip/tooltip",
     "components/tree/tree",
     "components/widgets/upload",
-    "components/widgets/download"
+    "components/widgets/download",
+    "components/tile/tile"
   ]
 }
