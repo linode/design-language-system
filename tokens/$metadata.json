@@ -57,11 +57,11 @@
     "components/tagInput/tagInput",
     "components/textArea/textArea",
     "components/textField/textField",
+    "components/tile/tile",
     "components/timePicker/timePicker",
     "components/tooltip/tooltip",
     "components/tree/tree",
     "components/widgets/upload",
-    "components/widgets/download",
-    "components/tile/tile"
+    "components/widgets/download"
   ]
 }
