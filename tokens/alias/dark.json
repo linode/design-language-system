@@ -208,40 +208,45 @@
           "type": "color",
           "description": "Default component background color"
         },
+        "primaryHover": {
+          "value": "{global.color.neutrals.80}",
+          "type": "color",
+          "description": "Calendar range background, table row hover "
+        },
+        "primaryActive": {
+          "value": "{global.color.neutrals.80}",
+          "type": "color",
+          "description": "Calendar range background, table row hover "
+        },
         "secondary": {
           "value": "{global.color.neutrals.100}",
+          "type": "color"
+        },
+        "secondaryHover": {
+          "value": "{global.color.neutrals.70}",
+          "type": "color",
+          "description": "Hover color for a calendar date range"
+        },
+        "secondaryActive": {
+          "value": "{global.color.brand.60}",
           "type": "color"
         },
         "tertiary": {
           "value": "{global.color.neutrals.90}",
           "type": "color"
         },
-        "elevated": {
-          "value": "{global.color.neutrals.80}",
+        "tertiaryHover": {
+          "value": "{global.color.brand.50}",
           "type": "color",
-          "description": "Calendar range background, table row hover "
+          "description": "Hover color for an active calendar date"
         },
-        "accent": {
-          "value": "{global.color.brand.60}",
-          "type": "color"
-        },
-        "active": {
+        "tertiaryActive": {
           "value": "{global.color.brand.60}",
           "type": "color"
         },
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
-        },
-        "rangeHover": {
-          "value": "{global.color.neutrals.70}",
-          "type": "color",
-          "description": "Hover color for a calendar date range"
-        },
-        "activeDateHover": {
-          "value": "{global.color.brand.50}",
-          "type": "color",
-          "description": "Hover color for an active calendar date"
         }
       }
     },

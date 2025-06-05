@@ -347,40 +347,45 @@
           "type": "color",
           "description": "Default component background color"
         },
+        "primaryHover": {
+          "value": "{global.color.brand.10}",
+          "type": "color",
+          "description": "Calendar range background, table row hover "
+        },
+        "primaryActive": {
+          "value": "{global.color.brand.30}",
+          "type": "color",
+          "description": "Active/selected backgrounds"
+        },
         "secondary": {
           "value": "{global.color.neutrals.5}",
+          "type": "color"
+        },
+        "secondaryHover": {
+          "value": "{global.color.brand.30}",
+          "type": "color",
+          "description": "Hover color for a calendar date range"
+        },
+        "secondaryActive": {
+          "value": "{global.color.brand.30}",
           "type": "color"
         },
         "tertiary": {
           "value": "{global.color.brand.10}",
           "type": "color"
         },
-        "elevated": {
-          "value": "{global.color.brand.10}",
+        "tertiaryHover": {
+          "value": "{global.color.brand.80}",
           "type": "color",
-          "description": "Calendar range background, table row hover "
+          "description": "Hover color for an active calendar date"
         },
-        "accent": {
-          "value": "{global.color.brand.30}",
-          "type": "color"
-        },
-        "active": {
+        "tertiaryActive": {
           "value": "{global.color.brand.90}",
           "type": "color"
         },
         "disabled": {
           "value": "{global.color.neutrals.10}",
           "type": "color"
-        },
-        "rangeHover": {
-          "value": "{global.color.brand.30}",
-          "type": "color",
-          "description": "Hover color for a calendar date range"
-        },
-        "activeDateHover": {
-          "value": "{global.color.brand.80}",
-          "type": "color",
-          "description": "Hover color for an active calendar date"
         }
       }
     },
