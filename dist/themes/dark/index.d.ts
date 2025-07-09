@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-02-24
+   * Generated on 2025-07-09
    */
   export interface GlobalTypes {
   Color: {
