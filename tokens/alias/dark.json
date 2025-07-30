@@ -533,6 +533,32 @@
           }
         ],
         "type": "boxShadow"
+      },
+      "drawer": {
+        "right": {
+          "value": {
+            "x": "-16",
+            "y": "0",
+            "blur": "32",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.18)",
+            "type": "dropShadow"
+          },
+          "type": "boxShadow",
+          "description": "Dark mode elevation for a drawer that appears from the right side of the screen"
+        },
+        "left": {
+          "value": {
+            "x": "16",
+            "y": "0",
+            "blur": "32",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.18)",
+            "type": "innerShadow"
+          },
+          "type": "boxShadow",
+          "description": "Dark mode elevation for a drawer that appears from the left side of the screen"
+        }
       }
     },
     "chart": {

@@ -435,6 +435,32 @@
         ],
         "type": "boxShadow",
         "description": "Shadow for modals"
+      },
+      "drawer": {
+        "right": {
+          "value": {
+            "x": "-16",
+            "y": "0",
+            "blur": "32",
+            "spread": "0",
+            "color": "rgba(61,61,66,0.18)",
+            "type": "dropShadow"
+          },
+          "type": "boxShadow",
+          "description": "Elevation for a drawer that appears from the right side of the screen"
+        },
+        "left": {
+          "value": {
+            "x": "16",
+            "y": "0",
+            "blur": "32",
+            "spread": "0",
+            "color": "rgba(61,61,66,0.18)",
+            "type": "innerShadow"
+          },
+          "type": "boxShadow",
+          "description": "Elevation for a drawer that appears from the left side of the screen"
+        }
       }
     },
     "typography": {
