@@ -18,7 +18,7 @@
                 "type": "color"
               },
               "hover": {
-                "value": "{alias.interaction.background.active}",
+                "value": "{alias.interaction.background.tertiaryActive}",
                 "type": "color"
               }
             },
@@ -57,7 +57,7 @@
         "currentItem": {
           "circle": {
             "background": {
-              "value": "{alias.interaction.background.active}",
+              "value": "{alias.interaction.background.tertiaryActive}",
               "type": "color"
             },
             "text": {
@@ -151,7 +151,7 @@
           },
           "circle": {
             "background": {
-              "value": "{alias.interaction.background.active}",
+              "value": "{alias.interaction.background.tertiaryActive}",
               "type": "color"
             },
             "text": {

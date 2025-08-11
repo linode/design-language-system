@@ -110,7 +110,7 @@
             "type": "color"
           },
           "hover": {
-            "value": "{alias.interaction.background.elevated}",
+            "value": "{alias.interaction.background.primaryHover}",
             "type": "color"
           }
         },

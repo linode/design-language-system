@@ -294,17 +294,20 @@
   --token-alias-interaction-border-error: #d63c42;
   --token-alias-interaction-border-disabled: #c2c2ca;
   --token-alias-interaction-background-primary: #ffffff; /* Default component background color */
+  --token-alias-interaction-background-primary-hover: #edf8ff; /* Calendar range background, table row hover  */
+  --token-alias-interaction-background-primary-active: #ceedfe; /* Active/selected backgrounds */
   --token-alias-interaction-background-secondary: #f7f7fa;
+  --token-alias-interaction-background-secondary-hover: #ceedfe; /* Hover color for a calendar date range */
+  --token-alias-interaction-background-secondary-active: #ceedfe;
   --token-alias-interaction-background-tertiary: #edf8ff;
-  --token-alias-interaction-background-elevated: #edf8ff; /* Calendar range background, table row hover  */
-  --token-alias-interaction-background-accent: #ceedfe;
-  --token-alias-interaction-background-active: #0174bc;
+  --token-alias-interaction-background-tertiary-hover: #108ad6; /* Hover color for an active calendar date */
+  --token-alias-interaction-background-tertiary-active: #0174bc;
   --token-alias-interaction-background-disabled: #ededf2;
-  --token-alias-interaction-background-range-hover: #ceedfe; /* Hover color for a calendar date range */
-  --token-alias-interaction-background-active-date-hover: #108ad6; /* Hover color for an active calendar date */
   --token-alias-elevation-s: 0 2px 8px 0 rgba(58,59,63,0.18); /* Default shadow for components, like notification banners, dropdowns, popups; */
   --token-alias-elevation-s-inverted: 0 -2px 8px 0 rgba(58,59,63,0.18); /* Inverted shadow for elements that appear above the component */
   --token-alias-elevation-l: 0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08); /* Shadow for modals */
+  --token-alias-elevation-drawer-right: -16px 0 32px 0 rgba(61,61,66,0.18); /* Elevation for a drawer that appears from the right side of the screen */
+  --token-alias-elevation-drawer-left: inset 16px 0 32px 0 rgba(61,61,66,0.18); /* Elevation for a drawer that appears from the left side of the screen */
   --token-alias-typography-heading-xxxl: 700 2.25rem/2.625rem 'Nunito Sans'; /* Promo banners, KPIs */
   --token-alias-typography-heading-xxl: 800 1.625rem/2rem 'Nunito Sans'; /* Main titles - h1 */
   --token-alias-typography-heading-xl: 700 1.5rem/1.875rem 'Nunito Sans'; /* Second level title - h2 */
@@ -508,15 +511,21 @@
   --token-component-container-border: #d6d6dd;
   --token-component-table-header-filled-background: #e5e5ea;
   --token-component-table-header-filled-text: #343438;
-  --token-component-table-header-filled-icon: #3d3d42;
   --token-component-table-header-filled-border: #a3a3ab;
+  --token-component-table-header-filled-icon-default: #696970;
+  --token-component-table-header-filled-icon-hover: #009cde;
+  --token-component-table-header-filled-icon-active: #0174bc;
   --token-component-table-header-outlined-border: #a3a3ab;
   --token-component-table-header-outlined-text: #343438;
-  --token-component-table-header-outlined-icon: #3d3d42;
+  --token-component-table-header-outlined-icon-default: #696970;
+  --token-component-table-header-outlined-icon-hover: #009cde;
+  --token-component-table-header-outlined-icon-active: #0174bc;
   --token-component-table-header-nested-background: #e5e5ea;
   --token-component-table-header-nested-text: #343438;
-  --token-component-table-header-nested-icon: #3d3d42;
   --token-component-table-header-nested-border: #a3a3ab;
+  --token-component-table-header-nested-icon-default: #696970;
+  --token-component-table-header-nested-icon-hover: #009cde;
+  --token-component-table-header-nested-icon-active: #0174bc;
   --token-component-table-row-border: #d6d6dd;
   --token-component-table-row-icon-default: #3d3d42;
   --token-component-table-row-icon-disabled: #a3a3ab;
@@ -1754,4 +1763,19 @@
   --token-component-link-select-focus-text: #0174bc;
   --token-component-link-select-focus-icon: #3d3d42;
   --token-component-link-select-read-only-text: #343438;
+  --token-component-tile-info-icon-default: #696970;
+  --token-component-tile-info-icon-hover: #009cde;
+  --token-component-tile-info-icon-active: #0174bc;
+  --token-component-tile-default-background: #ffffff;
+  --token-component-tile-default-border: #83838c;
+  --token-component-tile-default-text: #343438;
+  --token-component-tile-hover-background: #ffffff;
+  --token-component-tile-hover-border: #3d3d42;
+  --token-component-tile-hover-text: #343438;
+  --token-component-tile-selected-background: #edf8ff;
+  --token-component-tile-selected-border: #0174bc;
+  --token-component-tile-selected-text: #343438;
+  --token-component-tile-disabled-background: #ffffff;
+  --token-component-tile-disabled-border: #c2c2ca;
+  --token-component-tile-disabled-text: #a3a3ab;
 }
