@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-07-09
+   * Generated on 2025-08-11
    */
   export const Global = {
   Color: {
@@ -670,20 +670,25 @@ export const Alias = {
     },
     Background: {
       Primary: "#343438",
+      PrimaryHover: "#515157",
+      PrimaryActive: "#515157",
       Secondary: "#343438",
+      SecondaryHover: "#696970",
+      SecondaryActive: "#5bb3ea",
       Tertiary: "#3d3d42",
-      Elevated: "#515157",
-      Accent: "#5bb3ea",
-      Active: "#5bb3ea",
-      Disabled: "#515157",
-      RangeHover: "#696970",
-      ActiveDateHover: "#96cff0"
+      TertiaryHover: "#96cff0",
+      TertiaryActive: "#5bb3ea",
+      Disabled: "#515157"
     }
   },
   Elevation: {
     S: "0 2px 8px 0 rgba(0,0,0,0.18)",
     SInverted: "0 -2px 8px 0 rgba(0,0,0,0.18)",
-    L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)"
+    L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)",
+    Drawer: {
+      Right: "-16px 0 32px 0 rgba(0,0,0,0.18)",
+      Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)"
+    }
   },
   Typography: {
     Heading: {
@@ -1018,21 +1023,26 @@ export const Interaction = {
   },
   Background: {
     Primary: "#343438",
+    PrimaryHover: "#515157",
+    PrimaryActive: "#515157",
     Secondary: "#343438",
+    SecondaryHover: "#696970",
+    SecondaryActive: "#5bb3ea",
     Tertiary: "#3d3d42",
-    Elevated: "#515157",
-    Accent: "#5bb3ea",
-    Active: "#5bb3ea",
-    Disabled: "#515157",
-    RangeHover: "#696970",
-    ActiveDateHover: "#96cff0"
+    TertiaryHover: "#96cff0",
+    TertiaryActive: "#5bb3ea",
+    Disabled: "#515157"
   }
 };
 
 export const Elevation = {
   S: "0 2px 8px 0 rgba(0,0,0,0.18)",
   SInverted: "0 -2px 8px 0 rgba(0,0,0,0.18)",
-  L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)"
+  L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)",
+  Drawer: {
+    Right: "-16px 0 32px 0 rgba(0,0,0,0.18)",
+    Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)"
+  }
 };
 
 export const Typography = {
@@ -1397,19 +1407,31 @@ export const Component = {
     HeaderFilled: {
       Background: "#515157",
       Text: "#ffffff",
-      Icon: "#ffffff",
-      Border: "#a3a3ab"
+      Border: "#a3a3ab",
+      Icon: {
+        Default: "#a3a3ab",
+        Hover: "#96cff0",
+        Active: "#7dcdff"
+      }
     },
     HeaderOutlined: {
       Border: "#a3a3ab",
       Text: "#ffffff",
-      Icon: "#ffffff"
+      Icon: {
+        Default: "#a3a3ab",
+        Hover: "#96cff0",
+        Active: "#7dcdff"
+      }
     },
     HeaderNested: {
       Background: "#515157",
       Text: "#ffffff",
-      Icon: "#ffffff",
-      Border: "#a3a3ab"
+      Border: "#a3a3ab",
+      Icon: {
+        Default: "#a3a3ab",
+        Hover: "#96cff0",
+        Active: "#7dcdff"
+      }
     },
     Row: {
       Border: "#515157",
@@ -3574,6 +3596,33 @@ export const Component = {
     ReadOnly: {
       Text: "#ffffff"
     }
+  },
+  Tile: {
+    InfoIcon: {
+      Default: "#a3a3ab",
+      Hover: "#96cff0",
+      Active: "#7dcdff"
+    },
+    Default: {
+      Background: "#343438",
+      Border: "#696970",
+      Text: "#ffffff"
+    },
+    Hover: {
+      Background: "#343438",
+      Border: "#c2c2ca",
+      Text: "#ffffff"
+    },
+    Selected: {
+      Background: "#3d3d42",
+      Border: "#5bb3ea",
+      Text: "#ffffff"
+    },
+    Disabled: {
+      Background: "#343438",
+      Border: "#515157",
+      Text: "#83838c"
+    }
   }
 };
 
@@ -3712,19 +3761,31 @@ export const Table = {
   HeaderFilled: {
     Background: "#515157",
     Text: "#ffffff",
-    Icon: "#ffffff",
-    Border: "#a3a3ab"
+    Border: "#a3a3ab",
+    Icon: {
+      Default: "#a3a3ab",
+      Hover: "#96cff0",
+      Active: "#7dcdff"
+    }
   },
   HeaderOutlined: {
     Border: "#a3a3ab",
     Text: "#ffffff",
-    Icon: "#ffffff"
+    Icon: {
+      Default: "#a3a3ab",
+      Hover: "#96cff0",
+      Active: "#7dcdff"
+    }
   },
   HeaderNested: {
     Background: "#515157",
     Text: "#ffffff",
-    Icon: "#ffffff",
-    Border: "#a3a3ab"
+    Border: "#a3a3ab",
+    Icon: {
+      Default: "#a3a3ab",
+      Hover: "#96cff0",
+      Active: "#7dcdff"
+    }
   },
   Row: {
     Border: "#515157",
@@ -5943,4 +6004,31 @@ export const LinkSelect = {
     Text: "#ffffff"
   }
 };
-      
+
+export const Tile = {
+  InfoIcon: {
+    Default: "#a3a3ab",
+    Hover: "#96cff0",
+    Active: "#7dcdff"
+  },
+  Default: {
+    Background: "#343438",
+    Border: "#696970",
+    Text: "#ffffff"
+  },
+  Hover: {
+    Background: "#343438",
+    Border: "#c2c2ca",
+    Text: "#ffffff"
+  },
+  Selected: {
+    Background: "#3d3d42",
+    Border: "#5bb3ea",
+    Text: "#ffffff"
+  },
+  Disabled: {
+    Background: "#343438",
+    Border: "#515157",
+    Text: "#83838c"
+  }
+};
