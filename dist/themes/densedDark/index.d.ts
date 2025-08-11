@@ -6180,4 +6180,3 @@ export interface TileTypes {
 }
 
 declare const Tile: TileTypes;
-      

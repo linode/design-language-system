@@ -6032,4 +6032,3 @@ export const Tile = {
     Text: "#83838c"
   }
 };
-      
