@@ -77,10 +77,10 @@
           }
         },
         "activePeriod": {
-                  "background": {
-          "value": "{alias.interaction.background.secondaryActive}",
-          "type": "color"
-        },
+          "background": {
+            "value": "{alias.interaction.background.secondaryActive}",
+            "type": "color"
+          },
           "text": {
             "value": "{global.color.neutrals.100}",
             "type": "color"
