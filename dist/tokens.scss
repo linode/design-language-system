@@ -306,6 +306,8 @@ $token-alias-elevation-s-inverted: 0 -2px 8px 0 rgba(58,59,63,0.18); // Inverted
 $token-alias-elevation-l: 0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08); // Shadow for modals
 $token-alias-elevation-drawer-right: -16px 0 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the right side of the screen
 $token-alias-elevation-drawer-left: inset 16px 0 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the left side of the screen
+$token-alias-elevation-drawer-top: inset 0 16px 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the top side of the screen
+$token-alias-elevation-drawer-bottom: inset 0 -16px 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the bottom side of the screen
 $token-alias-typography-heading-xxxl: 700 2.25rem/2.625rem 'Nunito Sans'; // Promo banners, KPIs
 $token-alias-typography-heading-xxl: 800 1.625rem/2rem 'Nunito Sans'; // Main titles - h1
 $token-alias-typography-heading-xl: 700 1.5rem/1.875rem 'Nunito Sans'; // Second level title - h2
@@ -1776,3 +1778,9 @@ $token-component-tile-selected-text: #343438;
 $token-component-tile-disabled-background: #ffffff;
 $token-component-tile-disabled-border: #c2c2ca;
 $token-component-tile-disabled-text: #a3a3ab;
+$token-component-filter-tag-label: #696970;
+$token-component-filter-tag-item: #343438;
+$token-component-filter-tag-clear-all-default: #696970;
+$token-component-filter-tag-clear-all-hover: #009cde;
+$token-component-filter-tag-icon-defaul: #3d3d42;
+$token-component-filter-tag-icon-hover: #009cde;
