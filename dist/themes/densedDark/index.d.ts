@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-08-11
+   * Generated on 2025-09-05
    */
   export interface GlobalTypes {
   Color: {
@@ -697,7 +697,9 @@ export interface AliasTypes {
     L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)",
     Drawer: {
       Right: "-16px 0 32px 0 rgba(0,0,0,0.18)",
-      Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)"
+      Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)",
+      Top: "inset 0 16px 32px 0 rgba(0,0,0,0.18)",
+      Bottom: "inset 0 -16px 32px 0 rgba(0,0,0,0.18)"
     }
   },
   Typography: {
@@ -1063,7 +1065,9 @@ export interface ElevationTypes {
   L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)",
   Drawer: {
     Right: "-16px 0 32px 0 rgba(0,0,0,0.18)",
-    Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)"
+    Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)",
+    Top: "inset 0 16px 32px 0 rgba(0,0,0,0.18)",
+    Bottom: "inset 0 -16px 32px 0 rgba(0,0,0,0.18)"
   }
 }
 
@@ -3655,6 +3659,20 @@ export interface ComponentTypes {
       Border: "#515157",
       Text: "#83838c"
     }
+  },
+  Filter: {
+    Tag: {
+      Label: "#a3a3ab",
+      Item: "#ffffff",
+      ClearAll: {
+        Default: "#a3a3ab",
+        Hover: "#96cff0"
+      },
+      Icon: {
+        Defaul: "#ffffff",
+        Hover: "#96cff0"
+      }
+    }
   }
 }
 
@@ -6180,3 +6198,21 @@ export interface TileTypes {
 }
 
 declare const Tile: TileTypes;
+
+export interface FilterTypes {
+  Tag: {
+    Label: "#a3a3ab",
+    Item: "#ffffff",
+    ClearAll: {
+      Default: "#a3a3ab",
+      Hover: "#96cff0"
+    },
+    Icon: {
+      Defaul: "#ffffff",
+      Hover: "#96cff0"
+    }
+  }
+}
+
+declare const Filter: FilterTypes;
+      
