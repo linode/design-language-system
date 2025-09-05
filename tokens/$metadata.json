@@ -28,6 +28,7 @@
     "components/divider/divider",
     "components/drawer/drawer",
     "components/dropdown/dropdown",
+    "components/filter/filter",
     "components/globals/header",
     "components/globals/footer",
     "components/groupSelect/groupSelect",

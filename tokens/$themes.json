@@ -63,7 +63,8 @@
       "components/advancedSearch/advancedSearch": "enabled",
       "components/button/segmentedStatusButton": "enabled",
       "components/select/linkSelect": "enabled",
-      "components/tile/tile": "enabled"
+      "components/tile/tile": "enabled",
+      "components/filter/filter": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4:3",
     "$figmaModeId": "4:0",
@@ -1832,7 +1833,8 @@
       "components/advancedSearch/advancedSearch": "enabled",
       "components/button/segmentedStatusButton": "enabled",
       "components/select/linkSelect": "enabled",
-      "components/tile/tile": "enabled"
+      "components/tile/tile": "enabled",
+      "components/filter/filter": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4:3",
     "$figmaModeId": "4:1",
@@ -3601,7 +3603,8 @@
       "components/advancedSearch/advancedSearch": "enabled",
       "components/button/segmentedStatusButton": "enabled",
       "components/select/linkSelect": "enabled",
-      "components/tile/tile": "enabled"
+      "components/tile/tile": "enabled",
+      "components/filter/filter": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4:3",
     "$figmaModeId": "4:2",
@@ -5371,7 +5374,8 @@
       "components/advancedSearch/advancedSearch": "enabled",
       "components/button/segmentedStatusButton": "enabled",
       "components/select/linkSelect": "enabled",
-      "components/tile/tile": "enabled"
+      "components/tile/tile": "enabled",
+      "components/filter/filter": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4:3",
     "$figmaModeId": "4:3",

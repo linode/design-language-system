@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-08-11
+   * Generated on 2025-09-05
    */
   export const Global = {
   Color: {
@@ -687,7 +687,9 @@ export const Alias = {
     L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)",
     Drawer: {
       Right: "-16px 0 32px 0 rgba(0,0,0,0.18)",
-      Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)"
+      Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)",
+      Top: "inset 0 16px 32px 0 rgba(0,0,0,0.18)",
+      Bottom: "inset 0 -16px 32px 0 rgba(0,0,0,0.18)"
     }
   },
   Typography: {
@@ -1041,7 +1043,9 @@ export const Elevation = {
   L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)",
   Drawer: {
     Right: "-16px 0 32px 0 rgba(0,0,0,0.18)",
-    Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)"
+    Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)",
+    Top: "inset 0 16px 32px 0 rgba(0,0,0,0.18)",
+    Bottom: "inset 0 -16px 32px 0 rgba(0,0,0,0.18)"
   }
 };
 
@@ -3623,6 +3627,20 @@ export const Component = {
       Border: "#515157",
       Text: "#83838c"
     }
+  },
+  Filter: {
+    Tag: {
+      Label: "#a3a3ab",
+      Item: "#ffffff",
+      ClearAll: {
+        Default: "#a3a3ab",
+        Hover: "#96cff0"
+      },
+      Icon: {
+        Defaul: "#ffffff",
+        Hover: "#96cff0"
+      }
+    }
   }
 };
 
@@ -6032,3 +6050,19 @@ export const Tile = {
     Text: "#83838c"
   }
 };
+
+export const Filter = {
+  Tag: {
+    Label: "#a3a3ab",
+    Item: "#ffffff",
+    ClearAll: {
+      Default: "#a3a3ab",
+      Hover: "#96cff0"
+    },
+    Icon: {
+      Defaul: "#ffffff",
+      Hover: "#96cff0"
+    }
+  }
+};
+      

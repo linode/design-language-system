@@ -310,6 +310,10 @@ export const TokenAliasElevationL =
 export const TokenAliasElevationDrawerRight = "-16px 0 32px 0 rgba(0,0,0,0.18)"; // Dark mode elevation for a drawer that appears from the right side of the screen
 export const TokenAliasElevationDrawerLeft =
   "inset 16px 0 32px 0 rgba(0,0,0,0.18)"; // Dark mode elevation for a drawer that appears from the left side of the screen
+export const TokenAliasElevationDrawerTop =
+  "inset 0 16px 32px 0 rgba(0,0,0,0.18)"; // Dark mode elevation for a drawer that appears from the top side of the screen
+export const TokenAliasElevationDrawerBottom =
+  "inset 0 -16px 32px 0 rgba(0,0,0,0.18)"; // Dark mode elevation for a drawer that appears from the bottom side of the screen
 export const TokenAliasTypographyHeadingXxxl =
   "700 2.25rem/2.625rem 'Nunito Sans'"; // Promo banners, KPIs
 export const TokenAliasTypographyHeadingXxl = "800 1.625rem/2rem 'Nunito Sans'"; // Main titles - h1
@@ -1881,3 +1885,9 @@ export const TokenComponentTileSelectedText = "#ffffff";
 export const TokenComponentTileDisabledBackground = "#343438";
 export const TokenComponentTileDisabledBorder = "#515157";
 export const TokenComponentTileDisabledText = "#83838c";
+export const TokenComponentFilterTagLabel = "#a3a3ab";
+export const TokenComponentFilterTagItem = "#ffffff";
+export const TokenComponentFilterTagClearAllDefault = "#a3a3ab";
+export const TokenComponentFilterTagClearAllHover = "#96cff0";
+export const TokenComponentFilterTagIconDefaul = "#ffffff";
+export const TokenComponentFilterTagIconHover = "#96cff0";
