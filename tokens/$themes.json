@@ -3545,7 +3545,6 @@
     "selectedTokenSets": {
       "global/global": "enabled",
       "alias/light": "enabled",
-      "alias/densedLight": "enabled",
       "components/button/button": "enabled",
       "components/container/container": "enabled",
       "components/table/table": "enabled",
@@ -5316,7 +5315,6 @@
       "global/global": "enabled",
       "alias/light": "enabled",
       "alias/dark": "enabled",
-      "alias/densedDark": "enabled",
       "components/button/button": "enabled",
       "components/container/container": "enabled",
       "components/table/table": "enabled",

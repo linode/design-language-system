@@ -2,9 +2,7 @@
   "tokenSetOrder": [
     "global/global",
     "alias/light",
-    "alias/densedLight",
     "alias/dark",
-    "alias/densedDark",
     "components/advancedSearch/advancedSearch",
     "components/bars/appbar",
     "components/badge/badge",

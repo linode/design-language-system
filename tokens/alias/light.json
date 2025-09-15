@@ -92,6 +92,11 @@
           "type": "color",
           "description": "Use only for icons to indicate an info state"
         },
+        "recommendation": {
+          "value": "{global.color.teal.70}",
+          "type": "color",
+          "description": "Use only for icons to indicate a recommendation state"
+        },
         "primary": {
           "default": {
             "value": "{global.color.neutrals.90}",
@@ -157,6 +162,11 @@
         "value": "{global.color.ultramarine.70}",
         "type": "color",
         "description": "Use only for borders to indicate an info state"
+      },
+      "recommendation": {
+        "value": "{global.color.teal.70}",
+        "type": "color",
+        "description": "Use only for borders to indicate a recommendation state"
       }
     },
     "background": {
@@ -210,6 +220,10 @@
       },
       "informativesubtle": {
         "value": "{global.color.ultramarine.20}",
+        "type": "color"
+      },
+      "recommendationsubtle": {
+        "value": "{global.color.teal.20}",
         "type": "color"
       },
       "neutralsubtle": {
@@ -856,6 +870,25 @@
         },
         "secondary": {
           "value": "{global.color.purple.90}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "recommendation": {
+        "primary": {
+          "value": "{global.color.teal.90}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.teal.90}",
           "type": "color",
           "$extensions": {
             "studio.tokens": {
