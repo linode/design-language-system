@@ -51,6 +51,7 @@
     "components/stepper/stepper",
     "components/switch/switch",
     "components/tabs/tabs",
+    "components/tabs/containerTabs",
     "components/table/table",
     "components/tagInput/tag",
     "components/tagInput/tagInput",

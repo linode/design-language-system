@@ -289,6 +289,10 @@
         }
       },
       "tertiary": {
+        "default": {
+          "value": "{global.color.neutrals.40}",
+          "type": "color"
+        },
         "disabled": {
           "value": "{global.color.brand.40}",
           "type": "color"
@@ -390,11 +394,22 @@
         },
         "tertiaryHover": {
           "value": "{global.color.brand.80}",
-          "type": "color",
-          "description": "Hover color for an active calendar date"
+          "type": "color"
         },
         "tertiaryActive": {
           "value": "{global.color.brand.90}",
+          "type": "color"
+        },
+        "neutral": {
+          "value": "{global.color.neutrals.white}",
+          "type": "color"
+        },
+        "neutralHover": {
+          "value": "{global.color.neutrals.5}",
+          "type": "color"
+        },
+        "neutralActive": {
+          "value": "{global.color.neutrals.white}",
           "type": "color"
         },
         "disabled": {

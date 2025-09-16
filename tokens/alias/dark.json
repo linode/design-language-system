@@ -256,6 +256,18 @@
           "value": "{global.color.brand.60}",
           "type": "color"
         },
+        "neutral": {
+          "value": "{global.color.neutrals.100}",
+          "type": "color"
+        },
+        "neutralHover": {
+          "value": "{global.color.neutrals.90}",
+          "type": "color"
+        },
+        "neutralActive": {
+          "value": "{global.color.neutrals.90}",
+          "type": "color"
+        },
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
@@ -301,6 +313,10 @@
         }
       },
       "tertiary": {
+        "default": {
+          "value": "{global.color.neutrals.60}",
+          "type": "color"
+        },
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
