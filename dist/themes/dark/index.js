@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-09-05
+   * Generated on 2025-09-22
    */
   export const Global = {
   Color: {
@@ -594,6 +594,7 @@ export const Alias = {
       Warning: "#edb016",
       Positive: "#65ba75",
       Informative: "#8da4ef",
+      Recommendation: "#53b9ab",
       Primary: {
         Default: "#ffffff",
         Hover: "#96cff0",
@@ -612,7 +613,8 @@ export const Alias = {
     Negative: "#eb9091",
     Warning: "#edb016",
     Positive: "#65ba75",
-    Informative: "#8da4ef"
+    Informative: "#8da4ef",
+    Recommendation: "#53b9ab"
   },
   Background: {
     Normal: "#3d3d42",
@@ -627,6 +629,7 @@ export const Alias = {
     Warningsubtle: "#515157",
     Positivesubtle: "#515157",
     Informativesubtle: "#515157",
+    Recommendationsubtle: "#515157",
     Neutralsubtle: "#515157",
     Overlay: "lch(13.8 2.09 286 / 0.84)"
   },
@@ -645,6 +648,7 @@ export const Alias = {
       Disabled: "#515157"
     },
     Tertiary: {
+      Default: "#83838c",
       Disabled: "#515157"
     },
     Positive: {
@@ -678,6 +682,9 @@ export const Alias = {
       Tertiary: "#3d3d42",
       TertiaryHover: "#96cff0",
       TertiaryActive: "#5bb3ea",
+      Neutral: "#343438",
+      NeutralHover: "#3d3d42",
+      NeutralActive: "#3d3d42",
       Disabled: "#515157"
     }
   },
@@ -757,6 +764,10 @@ export const Alias = {
     Important: {
       Primary: "#d3b4ed",
       Secondary: "lch(77.5 31.1 309 / 0.12)"
+    },
+    Recommendation: {
+      Primary: "#8dcec3",
+      Secondary: "lch(78.2 23.3 184 / 0.12)"
     },
     Pink: {
       Primary: "#ecadd4",
@@ -945,6 +956,7 @@ export const Content = {
     Warning: "#edb016",
     Positive: "#65ba75",
     Informative: "#8da4ef",
+    Recommendation: "#53b9ab",
     Primary: {
       Default: "#ffffff",
       Hover: "#96cff0",
@@ -964,7 +976,8 @@ export const Border = {
   Negative: "#eb9091",
   Warning: "#edb016",
   Positive: "#65ba75",
-  Informative: "#8da4ef"
+  Informative: "#8da4ef",
+  Recommendation: "#53b9ab"
 };
 
 export const Background = {
@@ -980,6 +993,7 @@ export const Background = {
   Warningsubtle: "#515157",
   Positivesubtle: "#515157",
   Informativesubtle: "#515157",
+  Recommendationsubtle: "#515157",
   Neutralsubtle: "#515157",
   Overlay: "lch(13.8 2.09 286 / 0.84)"
 };
@@ -999,6 +1013,7 @@ export const Action = {
     Disabled: "#515157"
   },
   Tertiary: {
+    Default: "#83838c",
     Disabled: "#515157"
   },
   Positive: {
@@ -1033,6 +1048,9 @@ export const Interaction = {
     Tertiary: "#3d3d42",
     TertiaryHover: "#96cff0",
     TertiaryActive: "#5bb3ea",
+    Neutral: "#343438",
+    NeutralHover: "#3d3d42",
+    NeutralActive: "#3d3d42",
     Disabled: "#515157"
   }
 };
@@ -1115,6 +1133,10 @@ export const Accent = {
   Important: {
     Primary: "#d3b4ed",
     Secondary: "lch(77.5 31.1 309 / 0.12)"
+  },
+  Recommendation: {
+    Primary: "#8dcec3",
+    Secondary: "lch(78.2 23.3 184 / 0.12)"
   },
   Pink: {
     Primary: "#ecadd4",
@@ -1332,6 +1354,36 @@ export const Component = {
       Loading: {
         Background: "#3d3d42",
         Border: "#5bb3ea"
+      }
+    },
+    Tertiary: {
+      Default: {
+        Background: "#3d3d42",
+        Border: "#83838c",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Hover: {
+        Background: "#515157",
+        Border: "#96cff0",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Pressed: {
+        Background: "#3d3d42",
+        Border: "#83838c",
+        Text: "#ffffff",
+        Icon: "#ffffff"
+      },
+      Disabled: {
+        Background: "#3d3d42",
+        Border: "#515157",
+        Text: "#83838c",
+        Icon: "#83838c"
+      },
+      Loading: {
+        Background: "#3d3d42",
+        Border: "#83838c"
       }
     },
     Link: {
@@ -1733,6 +1785,16 @@ export const Component = {
       },
       Accent: {
         Background: "#d3b4ed",
+        Text: "#343438"
+      }
+    },
+    Recommendation: {
+      Subtle: {
+        Background: "lch(78.2 23.3 184 / 0.12)",
+        Text: "#8dcec3"
+      },
+      Accent: {
+        Background: "#8dcec3",
         Text: "#343438"
       }
     },
@@ -2528,6 +2590,11 @@ export const Component = {
       Background: "#515157",
       Border: "#eb9091",
       StatusIcon: "#eb9091"
+    },
+    Recommendation: {
+      Background: "#515157",
+      Border: "#53b9ab",
+      StatusIcon: "#53b9ab"
     },
     Secondary: {
       Background: "#515157",
@@ -3641,6 +3708,118 @@ export const Component = {
         Hover: "#96cff0"
       }
     }
+  },
+  ContainerTab: {
+    Border: "#515157",
+    Default: {
+      Background: "#343438",
+      Label: "#ffffff",
+      Description: "#a3a3ab"
+    },
+    Hover: {
+      Background: "#3d3d42",
+      Label: "#ffffff",
+      Description: "#a3a3ab"
+    },
+    Active: {
+      Background: "#3d3d42",
+      Border: "#5bb3ea",
+      Label: "#ffffff",
+      Description: "#a3a3ab"
+    },
+    Disabled: {
+      Background: "#515157",
+      Label: "#83838c",
+      Description: "#83838c"
+    },
+    InfoIcon: {
+      Default: "#a3a3ab",
+      Hover: "#96cff0",
+      Active: "#7dcdff"
+    }
+  },
+  KpiWidget: {
+    InfoIcon: {
+      Default: "#a3a3ab",
+      Hover: "#96cff0",
+      Active: "#7dcdff"
+    },
+    Progress: {
+      Positive: {
+        Text: "#00b050",
+        Icon: "#65ba75",
+        Background: "#515157"
+      },
+      Negative: {
+        Text: "#eb9091",
+        Icon: "#eb9091",
+        Background: "#515157"
+      }
+    },
+    Chart: {
+      AverageLine: "#a3a3ab",
+      Neutral: {
+        Line: "#696970",
+        Background: "lch(44.6 4.09 286 / 0.2)"
+      },
+      Negative: {
+        Line: "#d63c42",
+        Background: "lch(50.1 69.5 29.4 / 0.2)"
+      },
+      Positive: {
+        Line: "#00b050",
+        Background: "lch(63 67 146 / 0.2)"
+      },
+      Warning: {
+        Line: "#c25d05",
+        Background: "lch(51.7 70.9 57.2 / 0.2)"
+      },
+      Info: {
+        Line: "#4067e5",
+        Background: "lch(46.5 72.3 286 / 0.2)"
+      },
+      Combined: {
+        LinePrimary: "#4067e5",
+        BackgroundPrimary: "lch(46.5 72.3 286 / 0.2)",
+        LineSecondary: "#fe9933",
+        BackgroundSeconday: "lch(46.5 72.3 286 / 0.2)"
+      }
+    },
+    Neutral: {
+      Background: "#3d3d42",
+      Border: "#515157",
+      Label: "#ffffff",
+      Kpi: "#ffffff",
+      Description: "#a3a3ab"
+    },
+    Positive: {
+      Background: "#3d3d42",
+      Border: "#515157",
+      Label: "#ffffff",
+      Kpi: "#00b050",
+      Description: "#a3a3ab"
+    },
+    Negative: {
+      Background: "#3d3d42",
+      Border: "#515157",
+      Label: "#ffffff",
+      Kpi: "#eb9091",
+      Description: "#a3a3ab"
+    },
+    Warning: {
+      Background: "#3d3d42",
+      Border: "#515157",
+      Label: "#ffffff",
+      Kpi: "#c25d05",
+      Description: "#a3a3ab"
+    },
+    Info: {
+      Background: "#3d3d42",
+      Border: "#515157",
+      Label: "#ffffff",
+      Kpi: "#4067e5",
+      Description: "#a3a3ab"
+    }
   }
 };
 
@@ -3698,6 +3877,36 @@ export const Button = {
     Loading: {
       Background: "#3d3d42",
       Border: "#5bb3ea"
+    }
+  },
+  Tertiary: {
+    Default: {
+      Background: "#3d3d42",
+      Border: "#83838c",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Hover: {
+      Background: "#515157",
+      Border: "#96cff0",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Pressed: {
+      Background: "#3d3d42",
+      Border: "#83838c",
+      Text: "#ffffff",
+      Icon: "#ffffff"
+    },
+    Disabled: {
+      Background: "#3d3d42",
+      Border: "#515157",
+      Text: "#83838c",
+      Icon: "#83838c"
+    },
+    Loading: {
+      Background: "#3d3d42",
+      Border: "#83838c"
     }
   },
   Link: {
@@ -4106,6 +4315,16 @@ export const Badge = {
     },
     Accent: {
       Background: "#d3b4ed",
+      Text: "#343438"
+    }
+  },
+  Recommendation: {
+    Subtle: {
+      Background: "lch(78.2 23.3 184 / 0.12)",
+      Text: "#8dcec3"
+    },
+    Accent: {
+      Background: "#8dcec3",
       Text: "#343438"
     }
   },
@@ -4924,6 +5143,11 @@ export const NotificationBanner = {
     Background: "#515157",
     Border: "#eb9091",
     StatusIcon: "#eb9091"
+  },
+  Recommendation: {
+    Background: "#515157",
+    Border: "#53b9ab",
+    StatusIcon: "#53b9ab"
   },
   Secondary: {
     Background: "#515157",
@@ -6063,6 +6287,120 @@ export const Filter = {
       Defaul: "#ffffff",
       Hover: "#96cff0"
     }
+  }
+};
+
+export const ContainerTab = {
+  Border: "#515157",
+  Default: {
+    Background: "#343438",
+    Label: "#ffffff",
+    Description: "#a3a3ab"
+  },
+  Hover: {
+    Background: "#3d3d42",
+    Label: "#ffffff",
+    Description: "#a3a3ab"
+  },
+  Active: {
+    Background: "#3d3d42",
+    Border: "#5bb3ea",
+    Label: "#ffffff",
+    Description: "#a3a3ab"
+  },
+  Disabled: {
+    Background: "#515157",
+    Label: "#83838c",
+    Description: "#83838c"
+  },
+  InfoIcon: {
+    Default: "#a3a3ab",
+    Hover: "#96cff0",
+    Active: "#7dcdff"
+  }
+};
+
+export const KpiWidget = {
+  InfoIcon: {
+    Default: "#a3a3ab",
+    Hover: "#96cff0",
+    Active: "#7dcdff"
+  },
+  Progress: {
+    Positive: {
+      Text: "#00b050",
+      Icon: "#65ba75",
+      Background: "#515157"
+    },
+    Negative: {
+      Text: "#eb9091",
+      Icon: "#eb9091",
+      Background: "#515157"
+    }
+  },
+  Chart: {
+    AverageLine: "#a3a3ab",
+    Neutral: {
+      Line: "#696970",
+      Background: "lch(44.6 4.09 286 / 0.2)"
+    },
+    Negative: {
+      Line: "#d63c42",
+      Background: "lch(50.1 69.5 29.4 / 0.2)"
+    },
+    Positive: {
+      Line: "#00b050",
+      Background: "lch(63 67 146 / 0.2)"
+    },
+    Warning: {
+      Line: "#c25d05",
+      Background: "lch(51.7 70.9 57.2 / 0.2)"
+    },
+    Info: {
+      Line: "#4067e5",
+      Background: "lch(46.5 72.3 286 / 0.2)"
+    },
+    Combined: {
+      LinePrimary: "#4067e5",
+      BackgroundPrimary: "lch(46.5 72.3 286 / 0.2)",
+      LineSecondary: "#fe9933",
+      BackgroundSeconday: "lch(46.5 72.3 286 / 0.2)"
+    }
+  },
+  Neutral: {
+    Background: "#3d3d42",
+    Border: "#515157",
+    Label: "#ffffff",
+    Kpi: "#ffffff",
+    Description: "#a3a3ab"
+  },
+  Positive: {
+    Background: "#3d3d42",
+    Border: "#515157",
+    Label: "#ffffff",
+    Kpi: "#00b050",
+    Description: "#a3a3ab"
+  },
+  Negative: {
+    Background: "#3d3d42",
+    Border: "#515157",
+    Label: "#ffffff",
+    Kpi: "#eb9091",
+    Description: "#a3a3ab"
+  },
+  Warning: {
+    Background: "#3d3d42",
+    Border: "#515157",
+    Label: "#ffffff",
+    Kpi: "#c25d05",
+    Description: "#a3a3ab"
+  },
+  Info: {
+    Background: "#3d3d42",
+    Border: "#515157",
+    Label: "#ffffff",
+    Kpi: "#4067e5",
+    Description: "#a3a3ab"
   }
 };
       

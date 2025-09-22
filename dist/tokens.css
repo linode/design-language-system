@@ -244,6 +244,7 @@
   --token-alias-content-icon-warning: #fecb34; /* Use only for icons to indicate a warning state */
   --token-alias-content-icon-positive: #00b050; /* Use only for icons to indicate a success state */
   --token-alias-content-icon-informative: #4067e5; /* Use only for icons to indicate an info state */
+  --token-alias-content-icon-recommendation: #12a594; /* Use only for icons to indicate a recommendation state */
   --token-alias-content-icon-primary-default: #3d3d42; /* Default color for icons */
   --token-alias-content-icon-primary-hover: #009cde; /* Use only as a hover state for icons */
   --token-alias-content-icon-primary-active: #0174bc; /* Use only as a selected/active state for icons */
@@ -256,6 +257,7 @@
   --token-alias-border-warning: #fecb34; /* Use only for borders to indicate a warning state */
   --token-alias-border-positive: #00b050; /* Use only for borders to indicate a success state */
   --token-alias-border-informative: #4067e5; /* Use only for borders to indicate an info state */
+  --token-alias-border-recommendation: #12a594; /* Use only for borders to indicate a recommendation state */
   --token-alias-background-normal: #ffffff; /* Primary background color */
   --token-alias-background-neutral: #f7f7fa; /* Page background color */
   --token-alias-background-base: #343438; /* Tooltip background */
@@ -268,6 +270,7 @@
   --token-alias-background-warningsubtle: #ffecbc;
   --token-alias-background-positivesubtle: #dff3df;
   --token-alias-background-informativesubtle: #e6edfe;
+  --token-alias-background-recommendationsubtle: #d9f3ee;
   --token-alias-background-neutralsubtle: #e5e5ea;
   --token-alias-background-overlay: lch(13.8 2.09 286 / 0.24); /* Page dimming when the modal component is active */
   --token-alias-action-base: #ffffff;
@@ -279,6 +282,7 @@
   --token-alias-action-primary-disabled: #e5e5ea;
   --token-alias-action-secondary-hover: #edf8ff;
   --token-alias-action-secondary-disabled: #c2c2ca;
+  --token-alias-action-tertiary-default: #c2c2ca;
   --token-alias-action-tertiary-disabled: #afdef8;
   --token-alias-action-positive-default: #138246;
   --token-alias-action-positive-hover: #00b050;
@@ -300,8 +304,11 @@
   --token-alias-interaction-background-secondary-hover: #ceedfe; /* Hover color for a calendar date range */
   --token-alias-interaction-background-secondary-active: #ceedfe;
   --token-alias-interaction-background-tertiary: #edf8ff;
-  --token-alias-interaction-background-tertiary-hover: #108ad6; /* Hover color for an active calendar date */
+  --token-alias-interaction-background-tertiary-hover: #108ad6;
   --token-alias-interaction-background-tertiary-active: #0174bc;
+  --token-alias-interaction-background-neutral: #ffffff;
+  --token-alias-interaction-background-neutral-hover: #f7f7fa;
+  --token-alias-interaction-background-neutral-active: #ffffff;
   --token-alias-interaction-background-disabled: #ededf2;
   --token-alias-elevation-s: 0 2px 8px 0 rgba(58,59,63,0.18); /* Default shadow for components, like notification banners, dropdowns, popups; */
   --token-alias-elevation-s-inverted: 0 -2px 8px 0 rgba(58,59,63,0.18); /* Inverted shadow for elements that appear above the component */
@@ -349,6 +356,8 @@
   --token-alias-accent-positive-secondary: lch(47.6 47.7 150 / 0.12);
   --token-alias-accent-important-primary: #753bbd;
   --token-alias-accent-important-secondary: lch(38.2 75 307 / 0.12);
+  --token-alias-accent-recommendation-primary: #067a6f;
+  --token-alias-accent-recommendation-secondary: lch(45.6 31.8 185 / 0.12);
   --token-alias-accent-pink-primary: #cd1d8d;
   --token-alias-accent-pink-secondary: lch(47.1 72.1 347 / 0.12);
   --token-alias-accent-violet-primary: #5746af;
@@ -475,6 +484,24 @@
   --token-component-button-secondary-disabled-icon: #a3a3ab;
   --token-component-button-secondary-loading-background: #ffffff;
   --token-component-button-secondary-loading-border: #0174bc;
+  --token-component-button-tertiary-default-background: #ffffff;
+  --token-component-button-tertiary-default-border: #c2c2ca;
+  --token-component-button-tertiary-default-text: #343438;
+  --token-component-button-tertiary-default-icon: #3d3d42;
+  --token-component-button-tertiary-hover-background: #edf8ff;
+  --token-component-button-tertiary-hover-border: #009cde;
+  --token-component-button-tertiary-hover-text: #343438;
+  --token-component-button-tertiary-hover-icon: #3d3d42;
+  --token-component-button-tertiary-pressed-background: #ffffff;
+  --token-component-button-tertiary-pressed-border: #c2c2ca;
+  --token-component-button-tertiary-pressed-text: #343438;
+  --token-component-button-tertiary-pressed-icon: #3d3d42;
+  --token-component-button-tertiary-disabled-background: #ffffff;
+  --token-component-button-tertiary-disabled-border: #c2c2ca;
+  --token-component-button-tertiary-disabled-text: #a3a3ab;
+  --token-component-button-tertiary-disabled-icon: #a3a3ab;
+  --token-component-button-tertiary-loading-background: #ffffff;
+  --token-component-button-tertiary-loading-border: #c2c2ca;
   --token-component-button-link-default-text: #0174bc;
   --token-component-button-link-default-icon: #0174bc;
   --token-component-button-link-hover-text: #009cde;
@@ -689,6 +716,10 @@
   --token-component-badge-important-subtle-text: #753bbd;
   --token-component-badge-important-accent-background: #753bbd;
   --token-component-badge-important-accent-text: #ffffff;
+  --token-component-badge-recommendation-subtle-background: lch(45.6 31.8 185 / 0.12);
+  --token-component-badge-recommendation-subtle-text: #067a6f;
+  --token-component-badge-recommendation-accent-background: #067a6f;
+  --token-component-badge-recommendation-accent-text: #ffffff;
   --token-component-badge-violet-subtle-background: lch(36.2 62.1 298 / 0.12);
   --token-component-badge-violet-subtle-text: #5746af;
   --token-component-badge-violet-accent-background: #5746af;
@@ -1128,6 +1159,9 @@
   --token-component-notification-banner-error-background: #ffe5e5;
   --token-component-notification-banner-error-border: #d63c42;
   --token-component-notification-banner-error-status-icon: #d63c42;
+  --token-component-notification-banner-recommendation-background: #d9f3ee;
+  --token-component-notification-banner-recommendation-border: #12a594;
+  --token-component-notification-banner-recommendation-status-icon: #12a594;
   --token-component-notification-banner-secondary-background: #e5e5ea;
   --token-component-notification-banner-secondary-border: #a3a3ab;
   --token-component-notification-banner-secondary-status-icon: #696970;
@@ -1786,4 +1820,70 @@
   --token-component-filter-tag-clear-all-hover: #009cde;
   --token-component-filter-tag-icon-defaul: #3d3d42;
   --token-component-filter-tag-icon-hover: #009cde;
+  --token-component-container-tab-border: #d6d6dd;
+  --token-component-container-tab-default-background: #ffffff;
+  --token-component-container-tab-default-label: #343438;
+  --token-component-container-tab-default-description: #696970;
+  --token-component-container-tab-hover-background: #f7f7fa;
+  --token-component-container-tab-hover-label: #343438;
+  --token-component-container-tab-hover-description: #696970;
+  --token-component-container-tab-active-background: #ffffff;
+  --token-component-container-tab-active-border: #0174bc;
+  --token-component-container-tab-active-label: #343438;
+  --token-component-container-tab-active-description: #696970;
+  --token-component-container-tab-disabled-background: #ededf2;
+  --token-component-container-tab-disabled-label: #a3a3ab;
+  --token-component-container-tab-disabled-description: #a3a3ab;
+  --token-component-container-tab-info-icon-default: #696970;
+  --token-component-container-tab-info-icon-hover: #009cde;
+  --token-component-container-tab-info-icon-active: #0174bc;
+  --token-component-kpi-widget-info-icon-default: #696970;
+  --token-component-kpi-widget-info-icon-hover: #009cde;
+  --token-component-kpi-widget-info-icon-active: #0174bc;
+  --token-component-kpi-widget-progress-positive-text: #00b050;
+  --token-component-kpi-widget-progress-positive-icon: #00b050;
+  --token-component-kpi-widget-progress-positive-background: #dff3df;
+  --token-component-kpi-widget-progress-negative-text: #b82329;
+  --token-component-kpi-widget-progress-negative-icon: #d63c42;
+  --token-component-kpi-widget-progress-negative-background: #ffe5e5;
+  --token-component-kpi-widget-chart-average-line: #a3a3ab;
+  --token-component-kpi-widget-chart-neutral-line: #696970;
+  --token-component-kpi-widget-chart-neutral-background: lch(44.6 4.09 286 / 0.2);
+  --token-component-kpi-widget-chart-negative-line: #d63c42;
+  --token-component-kpi-widget-chart-negative-background: lch(50.1 69.5 29.4 / 0.2);
+  --token-component-kpi-widget-chart-positive-line: #00b050;
+  --token-component-kpi-widget-chart-positive-background: lch(63 67 146 / 0.2);
+  --token-component-kpi-widget-chart-warning-line: #c25d05;
+  --token-component-kpi-widget-chart-warning-background: lch(51.7 70.9 57.2 / 0.2);
+  --token-component-kpi-widget-chart-info-line: #4067e5;
+  --token-component-kpi-widget-chart-info-background: lch(46.5 72.3 286 / 0.2);
+  --token-component-kpi-widget-chart-combined-line-primary: #4067e5;
+  --token-component-kpi-widget-chart-combined-background-primary: lch(46.5 72.3 286 / 0.2);
+  --token-component-kpi-widget-chart-combined-line-secondary: #fe9933;
+  --token-component-kpi-widget-chart-combined-background-seconday: lch(46.5 72.3 286 / 0.2);
+  --token-component-kpi-widget-neutral-background: #ffffff;
+  --token-component-kpi-widget-neutral-border: #d6d6dd;
+  --token-component-kpi-widget-neutral-label: #343438;
+  --token-component-kpi-widget-neutral-kpi: #343438;
+  --token-component-kpi-widget-neutral-description: #696970;
+  --token-component-kpi-widget-positive-background: #ffffff;
+  --token-component-kpi-widget-positive-border: #d6d6dd;
+  --token-component-kpi-widget-positive-label: #343438;
+  --token-component-kpi-widget-positive-kpi: #00b050;
+  --token-component-kpi-widget-positive-description: #696970;
+  --token-component-kpi-widget-negative-background: #ffffff;
+  --token-component-kpi-widget-negative-border: #d6d6dd;
+  --token-component-kpi-widget-negative-label: #343438;
+  --token-component-kpi-widget-negative-kpi: #b82329;
+  --token-component-kpi-widget-negative-description: #696970;
+  --token-component-kpi-widget-warning-background: #ffffff;
+  --token-component-kpi-widget-warning-border: #d6d6dd;
+  --token-component-kpi-widget-warning-label: #343438;
+  --token-component-kpi-widget-warning-kpi: #c25d05;
+  --token-component-kpi-widget-warning-description: #696970;
+  --token-component-kpi-widget-info-background: #ffffff;
+  --token-component-kpi-widget-info-border: #d6d6dd;
+  --token-component-kpi-widget-info-label: #343438;
+  --token-component-kpi-widget-info-kpi: #4067e5;
+  --token-component-kpi-widget-info-description: #696970;
 }
