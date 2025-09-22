@@ -15,12 +15,6 @@
       ],
       "themes/dark": [
         "./dist/themes/dark/index.d.ts"
-      ],
-      "themes/densedDark": [
-        "./dist/themes/densedDark/index.d.ts"
-      ],
-      "themes/densedLight": [
-        "./dist/themes/densedLight/index.d.ts"
       ]
     }
   },
