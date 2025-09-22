@@ -32,6 +32,7 @@
     "components/groupSelect/groupSelect",
     "components/inlineEdit/inlineEdit",
     "components/kpiBar/kpiBar",
+    "components/kpiWidget/kpiWidget",
     "components/label/label",
     "components/list/list",
     "components/masterSwitch/masterSwitch",

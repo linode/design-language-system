@@ -65,7 +65,8 @@
       "components/select/linkSelect": "enabled",
       "components/tile/tile": "enabled",
       "components/filter/filter": "enabled",
-      "components/tabs/containerTabs": "enabled"
+      "components/tabs/containerTabs": "enabled",
+      "components/kpiWidget/kpiWidget": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4:3",
     "$figmaModeId": "4:0",
@@ -1836,7 +1837,8 @@
       "components/select/linkSelect": "enabled",
       "components/tile/tile": "enabled",
       "components/filter/filter": "enabled",
-      "components/tabs/containerTabs": "enabled"
+      "components/tabs/containerTabs": "enabled",
+      "components/kpiWidget/kpiWidget": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4:3",
     "$figmaModeId": "4:1",
@@ -3606,7 +3608,8 @@
       "components/select/linkSelect": "enabled",
       "components/tile/tile": "enabled",
       "components/filter/filter": "enabled",
-      "components/tabs/containerTabs": "enabled"
+      "components/tabs/containerTabs": "enabled",
+      "components/kpiWidget/kpiWidget": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4:3",
     "$figmaModeId": "4:2",
@@ -5377,7 +5380,8 @@
       "components/select/linkSelect": "enabled",
       "components/tile/tile": "enabled",
       "components/filter/filter": "enabled",
-      "components/tabs/containerTabs": "enabled"
+      "components/tabs/containerTabs": "enabled",
+      "components/kpiWidget/kpiWidget": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:4:3",
     "$figmaModeId": "4:3",
