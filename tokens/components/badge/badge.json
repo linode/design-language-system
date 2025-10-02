@@ -133,6 +133,28 @@
           }
         }
       },
+      "recommendation": {
+        "subtle": {
+          "background": {
+            "value": "{alias.accent.recommendation.secondary}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.accent.recommendation.primary}",
+            "type": "color"
+          }
+        },
+        "accent": {
+          "background": {
+            "value": "{alias.accent.recommendation.primary}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          }
+        }
+      },
       "violet": {
         "subtle": {
           "background": {

@@ -92,6 +92,11 @@
           "type": "color",
           "description": "Use only for icons to indicate an info state"
         },
+        "recommendation": {
+          "value": "{global.color.teal.70}",
+          "type": "color",
+          "description": "Use only for icons to indicate a recommendation state"
+        },
         "primary": {
           "default": {
             "value": "{global.color.neutrals.90}",
@@ -157,6 +162,11 @@
         "value": "{global.color.ultramarine.70}",
         "type": "color",
         "description": "Use only for borders to indicate an info state"
+      },
+      "recommendation": {
+        "value": "{global.color.teal.70}",
+        "type": "color",
+        "description": "Use only for borders to indicate a recommendation state"
       }
     },
     "background": {
@@ -210,6 +220,10 @@
       },
       "informativesubtle": {
         "value": "{global.color.ultramarine.20}",
+        "type": "color"
+      },
+      "recommendationsubtle": {
+        "value": "{global.color.teal.20}",
         "type": "color"
       },
       "neutralsubtle": {
@@ -275,6 +289,10 @@
         }
       },
       "tertiary": {
+        "default": {
+          "value": "{global.color.neutrals.40}",
+          "type": "color"
+        },
         "disabled": {
           "value": "{global.color.brand.40}",
           "type": "color"
@@ -376,11 +394,22 @@
         },
         "tertiaryHover": {
           "value": "{global.color.brand.80}",
-          "type": "color",
-          "description": "Hover color for an active calendar date"
+          "type": "color"
         },
         "tertiaryActive": {
           "value": "{global.color.brand.90}",
+          "type": "color"
+        },
+        "neutral": {
+          "value": "{global.color.neutrals.white}",
+          "type": "color"
+        },
+        "neutralHover": {
+          "value": "{global.color.neutrals.5}",
+          "type": "color"
+        },
+        "neutralActive": {
+          "value": "{global.color.neutrals.white}",
           "type": "color"
         },
         "disabled": {
@@ -856,6 +885,25 @@
         },
         "secondary": {
           "value": "{global.color.purple.90}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "recommendation": {
+        "primary": {
+          "value": "{global.color.teal.90}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.teal.90}",
           "type": "color",
           "$extensions": {
             "studio.tokens": {
