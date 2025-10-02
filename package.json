@@ -1,6 +1,6 @@
 {
   "name": "@linode/design-language-system",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "type": "module",
   "module": "dist/index.js",
   "exports": {
@@ -15,12 +15,6 @@
       ],
       "themes/dark": [
         "./dist/themes/dark/index.d.ts"
-      ],
-      "themes/densedDark": [
-        "./dist/themes/densedDark/index.d.ts"
-      ],
-      "themes/densedLight": [
-        "./dist/themes/densedLight/index.d.ts"
       ]
     }
   },

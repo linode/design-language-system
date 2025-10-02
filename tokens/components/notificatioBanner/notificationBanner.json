@@ -79,6 +79,20 @@
           "type": "color"
         }
       },
+      "recommendation": {
+        "background": {
+          "value": "{alias.background.recommendationsubtle}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.recommendation}",
+          "type": "color"
+        },
+        "statusIcon": {
+          "value": "{alias.content.icon.recommendation}",
+          "type": "color"
+        }
+      },
       "secondary": {
         "background": {
           "value": "{alias.background.neutralsubtle}",

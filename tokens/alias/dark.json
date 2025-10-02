@@ -69,6 +69,10 @@
           "value": "{global.color.ultramarine.60}",
           "type": "color"
         },
+        "recommendation": {
+          "value": "{global.color.teal.60}",
+          "type": "color"
+        },
         "primary": {
           "default": {
             "value": "{global.color.neutrals.white}",
@@ -126,6 +130,10 @@
       "informative": {
         "value": "{global.color.ultramarine.60}",
         "type": "color"
+      },
+      "recommendation": {
+        "value": "{global.color.teal.60}",
+        "type": "color"
       }
     },
     "background": {
@@ -152,6 +160,10 @@
         "type": "color"
       },
       "informativesubtle": {
+        "value": "{global.color.neutrals.80}",
+        "type": "color"
+      },
+      "recommendationsubtle": {
         "value": "{global.color.neutrals.80}",
         "type": "color"
       },
@@ -244,6 +256,18 @@
           "value": "{global.color.brand.60}",
           "type": "color"
         },
+        "neutral": {
+          "value": "{global.color.neutrals.100}",
+          "type": "color"
+        },
+        "neutralHover": {
+          "value": "{global.color.neutrals.90}",
+          "type": "color"
+        },
+        "neutralActive": {
+          "value": "{global.color.neutrals.90}",
+          "type": "color"
+        },
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
@@ -289,6 +313,10 @@
         }
       },
       "tertiary": {
+        "default": {
+          "value": "{global.color.neutrals.60}",
+          "type": "color"
+        },
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
@@ -438,6 +466,25 @@
         },
         "secondary": {
           "value": "{global.color.purple.50}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.12",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "recommendation": {
+        "primary": {
+          "value": "{global.color.teal.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{global.color.teal.50}",
           "type": "color",
           "$extensions": {
             "studio.tokens": {

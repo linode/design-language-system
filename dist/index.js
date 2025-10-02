@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-09-05
+   * Generated on 2025-09-22
    */
   export const Global = {
   Color: {
@@ -594,6 +594,7 @@ export const Alias = {
       Warning: "#fecb34",
       Positive: "#00b050",
       Informative: "#4067e5",
+      Recommendation: "#12a594",
       Primary: {
         Default: "#3d3d42",
         Hover: "#009cde",
@@ -612,7 +613,8 @@ export const Alias = {
     Negative: "#d63c42",
     Warning: "#fecb34",
     Positive: "#00b050",
-    Informative: "#4067e5"
+    Informative: "#4067e5",
+    Recommendation: "#12a594"
   },
   Background: {
     Normal: "#ffffff",
@@ -627,6 +629,7 @@ export const Alias = {
     Warningsubtle: "#ffecbc",
     Positivesubtle: "#dff3df",
     Informativesubtle: "#e6edfe",
+    Recommendationsubtle: "#d9f3ee",
     Neutralsubtle: "#e5e5ea",
     Overlay: "lch(13.8 2.09 286 / 0.24)"
   },
@@ -645,6 +648,7 @@ export const Alias = {
       Disabled: "#c2c2ca"
     },
     Tertiary: {
+      Default: "#c2c2ca",
       Disabled: "#afdef8"
     },
     Positive: {
@@ -678,6 +682,9 @@ export const Alias = {
       Tertiary: "#edf8ff",
       TertiaryHover: "#108ad6",
       TertiaryActive: "#0174bc",
+      Neutral: "#ffffff",
+      NeutralHover: "#f7f7fa",
+      NeutralActive: "#ffffff",
       Disabled: "#ededf2"
     }
   },
@@ -757,6 +764,10 @@ export const Alias = {
     Important: {
       Primary: "#753bbd",
       Secondary: "lch(38.2 75 307 / 0.12)"
+    },
+    Recommendation: {
+      Primary: "#067a6f",
+      Secondary: "lch(45.6 31.8 185 / 0.12)"
     },
     Pink: {
       Primary: "#cd1d8d",
@@ -945,6 +956,7 @@ export const Content = {
     Warning: "#fecb34",
     Positive: "#00b050",
     Informative: "#4067e5",
+    Recommendation: "#12a594",
     Primary: {
       Default: "#3d3d42",
       Hover: "#009cde",
@@ -964,7 +976,8 @@ export const Border = {
   Negative: "#d63c42",
   Warning: "#fecb34",
   Positive: "#00b050",
-  Informative: "#4067e5"
+  Informative: "#4067e5",
+  Recommendation: "#12a594"
 };
 
 export const Background = {
@@ -980,6 +993,7 @@ export const Background = {
   Warningsubtle: "#ffecbc",
   Positivesubtle: "#dff3df",
   Informativesubtle: "#e6edfe",
+  Recommendationsubtle: "#d9f3ee",
   Neutralsubtle: "#e5e5ea",
   Overlay: "lch(13.8 2.09 286 / 0.24)"
 };
@@ -999,6 +1013,7 @@ export const Action = {
     Disabled: "#c2c2ca"
   },
   Tertiary: {
+    Default: "#c2c2ca",
     Disabled: "#afdef8"
   },
   Positive: {
@@ -1033,6 +1048,9 @@ export const Interaction = {
     Tertiary: "#edf8ff",
     TertiaryHover: "#108ad6",
     TertiaryActive: "#0174bc",
+    Neutral: "#ffffff",
+    NeutralHover: "#f7f7fa",
+    NeutralActive: "#ffffff",
     Disabled: "#ededf2"
   }
 };
@@ -1115,6 +1133,10 @@ export const Accent = {
   Important: {
     Primary: "#753bbd",
     Secondary: "lch(38.2 75 307 / 0.12)"
+  },
+  Recommendation: {
+    Primary: "#067a6f",
+    Secondary: "lch(45.6 31.8 185 / 0.12)"
   },
   Pink: {
     Primary: "#cd1d8d",
@@ -1332,6 +1354,36 @@ export const Component = {
       Loading: {
         Background: "#ffffff",
         Border: "#0174bc"
+      }
+    },
+    Tertiary: {
+      Default: {
+        Background: "#ffffff",
+        Border: "#c2c2ca",
+        Text: "#343438",
+        Icon: "#3d3d42"
+      },
+      Hover: {
+        Background: "#edf8ff",
+        Border: "#009cde",
+        Text: "#343438",
+        Icon: "#3d3d42"
+      },
+      Pressed: {
+        Background: "#ffffff",
+        Border: "#c2c2ca",
+        Text: "#343438",
+        Icon: "#3d3d42"
+      },
+      Disabled: {
+        Background: "#ffffff",
+        Border: "#c2c2ca",
+        Text: "#a3a3ab",
+        Icon: "#a3a3ab"
+      },
+      Loading: {
+        Background: "#ffffff",
+        Border: "#c2c2ca"
       }
     },
     Link: {
@@ -1733,6 +1785,16 @@ export const Component = {
       },
       Accent: {
         Background: "#753bbd",
+        Text: "#ffffff"
+      }
+    },
+    Recommendation: {
+      Subtle: {
+        Background: "lch(45.6 31.8 185 / 0.12)",
+        Text: "#067a6f"
+      },
+      Accent: {
+        Background: "#067a6f",
         Text: "#ffffff"
       }
     },
@@ -2528,6 +2590,11 @@ export const Component = {
       Background: "#ffe5e5",
       Border: "#d63c42",
       StatusIcon: "#d63c42"
+    },
+    Recommendation: {
+      Background: "#d9f3ee",
+      Border: "#12a594",
+      StatusIcon: "#12a594"
     },
     Secondary: {
       Background: "#e5e5ea",
@@ -3641,6 +3708,118 @@ export const Component = {
         Hover: "#009cde"
       }
     }
+  },
+  ContainerTab: {
+    Border: "#d6d6dd",
+    Default: {
+      Background: "#ffffff",
+      Label: "#343438",
+      Description: "#696970"
+    },
+    Hover: {
+      Background: "#f7f7fa",
+      Label: "#343438",
+      Description: "#696970"
+    },
+    Active: {
+      Background: "#ffffff",
+      Border: "#0174bc",
+      Label: "#343438",
+      Description: "#696970"
+    },
+    Disabled: {
+      Background: "#ededf2",
+      Label: "#a3a3ab",
+      Description: "#a3a3ab"
+    },
+    InfoIcon: {
+      Default: "#696970",
+      Hover: "#009cde",
+      Active: "#0174bc"
+    }
+  },
+  KpiWidget: {
+    InfoIcon: {
+      Default: "#696970",
+      Hover: "#009cde",
+      Active: "#0174bc"
+    },
+    Progress: {
+      Positive: {
+        Text: "#00b050",
+        Icon: "#00b050",
+        Background: "#dff3df"
+      },
+      Negative: {
+        Text: "#b82329",
+        Icon: "#d63c42",
+        Background: "#ffe5e5"
+      }
+    },
+    Chart: {
+      AverageLine: "#a3a3ab",
+      Neutral: {
+        Line: "#696970",
+        Background: "lch(44.6 4.09 286 / 0.2)"
+      },
+      Negative: {
+        Line: "#d63c42",
+        Background: "lch(50.1 69.5 29.4 / 0.2)"
+      },
+      Positive: {
+        Line: "#00b050",
+        Background: "lch(63 67 146 / 0.2)"
+      },
+      Warning: {
+        Line: "#c25d05",
+        Background: "lch(51.7 70.9 57.2 / 0.2)"
+      },
+      Info: {
+        Line: "#4067e5",
+        Background: "lch(46.5 72.3 286 / 0.2)"
+      },
+      Combined: {
+        LinePrimary: "#4067e5",
+        BackgroundPrimary: "lch(46.5 72.3 286 / 0.2)",
+        LineSecondary: "#fe9933",
+        BackgroundSeconday: "lch(46.5 72.3 286 / 0.2)"
+      }
+    },
+    Neutral: {
+      Background: "#ffffff",
+      Border: "#d6d6dd",
+      Label: "#343438",
+      Kpi: "#343438",
+      Description: "#696970"
+    },
+    Positive: {
+      Background: "#ffffff",
+      Border: "#d6d6dd",
+      Label: "#343438",
+      Kpi: "#00b050",
+      Description: "#696970"
+    },
+    Negative: {
+      Background: "#ffffff",
+      Border: "#d6d6dd",
+      Label: "#343438",
+      Kpi: "#b82329",
+      Description: "#696970"
+    },
+    Warning: {
+      Background: "#ffffff",
+      Border: "#d6d6dd",
+      Label: "#343438",
+      Kpi: "#c25d05",
+      Description: "#696970"
+    },
+    Info: {
+      Background: "#ffffff",
+      Border: "#d6d6dd",
+      Label: "#343438",
+      Kpi: "#4067e5",
+      Description: "#696970"
+    }
   }
 };
 
@@ -3698,6 +3877,36 @@ export const Button = {
     Loading: {
       Background: "#ffffff",
       Border: "#0174bc"
+    }
+  },
+  Tertiary: {
+    Default: {
+      Background: "#ffffff",
+      Border: "#c2c2ca",
+      Text: "#343438",
+      Icon: "#3d3d42"
+    },
+    Hover: {
+      Background: "#edf8ff",
+      Border: "#009cde",
+      Text: "#343438",
+      Icon: "#3d3d42"
+    },
+    Pressed: {
+      Background: "#ffffff",
+      Border: "#c2c2ca",
+      Text: "#343438",
+      Icon: "#3d3d42"
+    },
+    Disabled: {
+      Background: "#ffffff",
+      Border: "#c2c2ca",
+      Text: "#a3a3ab",
+      Icon: "#a3a3ab"
+    },
+    Loading: {
+      Background: "#ffffff",
+      Border: "#c2c2ca"
     }
   },
   Link: {
@@ -4106,6 +4315,16 @@ export const Badge = {
     },
     Accent: {
       Background: "#753bbd",
+      Text: "#ffffff"
+    }
+  },
+  Recommendation: {
+    Subtle: {
+      Background: "lch(45.6 31.8 185 / 0.12)",
+      Text: "#067a6f"
+    },
+    Accent: {
+      Background: "#067a6f",
       Text: "#ffffff"
     }
   },
@@ -4924,6 +5143,11 @@ export const NotificationBanner = {
     Background: "#ffe5e5",
     Border: "#d63c42",
     StatusIcon: "#d63c42"
+  },
+  Recommendation: {
+    Background: "#d9f3ee",
+    Border: "#12a594",
+    StatusIcon: "#12a594"
   },
   Secondary: {
     Background: "#e5e5ea",
@@ -6063,6 +6287,120 @@ export const Filter = {
       Defaul: "#3d3d42",
       Hover: "#009cde"
     }
+  }
+};
+
+export const ContainerTab = {
+  Border: "#d6d6dd",
+  Default: {
+    Background: "#ffffff",
+    Label: "#343438",
+    Description: "#696970"
+  },
+  Hover: {
+    Background: "#f7f7fa",
+    Label: "#343438",
+    Description: "#696970"
+  },
+  Active: {
+    Background: "#ffffff",
+    Border: "#0174bc",
+    Label: "#343438",
+    Description: "#696970"
+  },
+  Disabled: {
+    Background: "#ededf2",
+    Label: "#a3a3ab",
+    Description: "#a3a3ab"
+  },
+  InfoIcon: {
+    Default: "#696970",
+    Hover: "#009cde",
+    Active: "#0174bc"
+  }
+};
+
+export const KpiWidget = {
+  InfoIcon: {
+    Default: "#696970",
+    Hover: "#009cde",
+    Active: "#0174bc"
+  },
+  Progress: {
+    Positive: {
+      Text: "#00b050",
+      Icon: "#00b050",
+      Background: "#dff3df"
+    },
+    Negative: {
+      Text: "#b82329",
+      Icon: "#d63c42",
+      Background: "#ffe5e5"
+    }
+  },
+  Chart: {
+    AverageLine: "#a3a3ab",
+    Neutral: {
+      Line: "#696970",
+      Background: "lch(44.6 4.09 286 / 0.2)"
+    },
+    Negative: {
+      Line: "#d63c42",
+      Background: "lch(50.1 69.5 29.4 / 0.2)"
+    },
+    Positive: {
+      Line: "#00b050",
+      Background: "lch(63 67 146 / 0.2)"
+    },
+    Warning: {
+      Line: "#c25d05",
+      Background: "lch(51.7 70.9 57.2 / 0.2)"
+    },
+    Info: {
+      Line: "#4067e5",
+      Background: "lch(46.5 72.3 286 / 0.2)"
+    },
+    Combined: {
+      LinePrimary: "#4067e5",
+      BackgroundPrimary: "lch(46.5 72.3 286 / 0.2)",
+      LineSecondary: "#fe9933",
+      BackgroundSeconday: "lch(46.5 72.3 286 / 0.2)"
+    }
+  },
+  Neutral: {
+    Background: "#ffffff",
+    Border: "#d6d6dd",
+    Label: "#343438",
+    Kpi: "#343438",
+    Description: "#696970"
+  },
+  Positive: {
+    Background: "#ffffff",
+    Border: "#d6d6dd",
+    Label: "#343438",
+    Kpi: "#00b050",
+    Description: "#696970"
+  },
+  Negative: {
+    Background: "#ffffff",
+    Border: "#d6d6dd",
+    Label: "#343438",
+    Kpi: "#b82329",
+    Description: "#696970"
+  },
+  Warning: {
+    Background: "#ffffff",
+    Border: "#d6d6dd",
+    Label: "#343438",
+    Kpi: "#c25d05",
+    Description: "#696970"
+  },
+  Info: {
+    Background: "#ffffff",
+    Border: "#d6d6dd",
+    Label: "#343438",
+    Kpi: "#4067e5",
+    Description: "#696970"
   }
 };
       
