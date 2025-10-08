@@ -601,7 +601,7 @@
             "blur": "32",
             "spread": "0",
             "color": "rgba(0,0,0,0.18)",
-            "type": "innerShadow"
+            "type": "dropShadow"
           },
           "type": "boxShadow",
           "description": "Dark mode elevation for a drawer that appears from the left side of the screen"
@@ -613,7 +613,7 @@
             "blur": "32",
             "spread": "0",
             "color": "rgba(0,0,0,0.18)",
-            "type": "innerShadow"
+            "type": "dropShadow"
           },
           "type": "boxShadow",
           "description": "Dark mode elevation for a drawer that appears from the top side of the screen"
@@ -625,7 +625,7 @@
             "blur": "32",
             "spread": "0",
             "color": "rgba(0,0,0,0.18)",
-            "type": "innerShadow"
+            "type": "dropShadow"
           },
           "type": "boxShadow",
           "description": "Dark mode elevation for a drawer that appears from the bottom side of the screen"
