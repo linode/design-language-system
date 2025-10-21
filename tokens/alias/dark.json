@@ -212,6 +212,10 @@
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
+        },
+        "light": {
+          "value": "{global.color.neutrals.80}",
+          "type": "color"
         }
       },
       "background": {

@@ -357,6 +357,10 @@
         "disabled": {
           "value": "{global.color.neutrals.40}",
           "type": "color"
+        },
+        "light": {
+          "value": "{global.color.neutrals.30}",
+          "type": "color"
         }
       },
       "background": {
