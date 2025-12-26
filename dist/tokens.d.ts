@@ -272,10 +272,10 @@ export const TokenAliasBackgroundPositivesubtle = "#dff3df";
 export const TokenAliasBackgroundInformativesubtle = "#e6edfe";
 export const TokenAliasBackgroundRecommendationsubtle = "#d9f3ee";
 export const TokenAliasBackgroundNeutralsubtle = "#e5e5ea";
-export const TokenAliasBackgroundOverlay = "lch(13.8 2.09 286 / 0.24)"; // Page dimming when the modal component is active
+export const TokenAliasBackgroundOverlay = "lch(13.805 2.0915 285.76 / 0.24)"; // Page dimming when the modal component is active
 export const TokenAliasActionBase = "#ffffff";
 export const TokenAliasActionNeutral = "#83838c";
-export const TokenAliasActionWhite50 = "#ffffff"; // Transparent disabled switcher circle
+export const TokenAliasActionWhite50 = "#ffffff80"; // Transparent disabled switcher circle
 export const TokenAliasActionPrimaryDefault = "#0174bc"; // Brand action color
 export const TokenAliasActionPrimaryHover = "#009cde";
 export const TokenAliasActionPrimaryActive = "#0174bc";
@@ -368,107 +368,119 @@ export const TokenAliasTypographyLabelRegularPlaceholder =
 export const TokenAliasTypographyCode = "400 0.813rem/1.25rem 'Fira Code'"; // Code samples
 export const TokenAliasAccentDisabled = "#c2c2ca";
 export const TokenAliasAccentInfoPrimary = "#3451b2";
-export const TokenAliasAccentInfoSecondary = "lch(36.7 58.2 286 / 0.12)";
+export const TokenAliasAccentInfoSecondary = "lch(36.671 58.169 285.69 / 0.12)";
 export const TokenAliasAccentNeutralPrimary = "#515157";
-export const TokenAliasAccentNeutralSecondary = "lch(34.6 3.66 286 / 0.12)";
+export const TokenAliasAccentNeutralSecondary =
+  "lch(34.615 3.6643 285.77 / 0.12)";
 export const TokenAliasAccentWarningPrimary = "#c25d05";
-export const TokenAliasAccentWarningSecondary = "lch(67.2 71.6 80.1 / 0.12)";
+export const TokenAliasAccentWarningSecondary =
+  "lch(67.201 71.604 80.131 / 0.12)";
 export const TokenAliasAccentNegativePrimary = "#b82329";
-export const TokenAliasAccentNegativeSecondary = "lch(41.2 69 32.4 / 0.12)";
+export const TokenAliasAccentNegativeSecondary =
+  "lch(41.222 69.027 32.445 / 0.12)";
 export const TokenAliasAccentPositivePrimary = "#138246";
-export const TokenAliasAccentPositiveSecondary = "lch(47.6 47.7 150 / 0.12)";
+export const TokenAliasAccentPositiveSecondary =
+  "lch(47.648 47.7 150.09 / 0.12)";
 export const TokenAliasAccentImportantPrimary = "#753bbd";
-export const TokenAliasAccentImportantSecondary = "lch(38.2 75 307 / 0.12)";
+export const TokenAliasAccentImportantSecondary =
+  "lch(38.16 75.004 307.23 / 0.12)";
 export const TokenAliasAccentRecommendationPrimary = "#067a6f";
 export const TokenAliasAccentRecommendationSecondary =
-  "lch(45.6 31.8 185 / 0.12)";
+  "lch(45.574 31.781 184.56 / 0.12)";
 export const TokenAliasAccentPinkPrimary = "#cd1d8d";
-export const TokenAliasAccentPinkSecondary = "lch(47.1 72.1 347 / 0.12)";
+export const TokenAliasAccentPinkSecondary = "lch(47.077 72.07 347.23 / 0.12)";
 export const TokenAliasAccentVioletPrimary = "#5746af";
-export const TokenAliasAccentVioletSecondary = "lch(36.2 62.1 298 / 0.12)";
+export const TokenAliasAccentVioletSecondary =
+  "lch(36.195 62.077 297.92 / 0.12)";
 export const TokenAliasChartNeutral = "#d6d6dd";
 export const TokenAliasChartCategorical1Primary = "#4067e5";
 export const TokenAliasChartCategorical1Inactive = "#d9e2fc";
 export const TokenAliasChartCategorical1Transparent =
-  "lch(46.5 72.3 286 / 0.2)";
+  "lch(46.464 72.283 286.08 / 0.2)";
 export const TokenAliasChartCategorical2Primary = "#fe9933";
 export const TokenAliasChartCategorical2Inactive = "#ffe1c3";
-export const TokenAliasChartCategorical2Transparent = "lch(72.9 74.2 63 / 0.2)";
+export const TokenAliasChartCategorical2Transparent =
+  "lch(72.95 74.236 63.044 / 0.2)";
 export const TokenAliasChartCategorical3Primary = "#12a594";
 export const TokenAliasChartCategorical3Inactive = "#c7ebe5";
 export const TokenAliasChartCategorical3Transparent =
-  "lch(60.7 39.7 183 / 0.2)";
+  "lch(60.696 39.714 182.53 / 0.2)";
 export const TokenAliasChartCategorical4Primary = "#ab4aba";
 export const TokenAliasChartCategorical4Inactive = "#f3d9f4";
 export const TokenAliasChartCategorical4Transparent =
-  "lch(48.2 66.6 322 / 0.2)";
+  "lch(48.193 66.568 321.51 / 0.2)";
 export const TokenAliasChartCategorical5Primary = "#d63c42";
 export const TokenAliasChartCategorical5Inactive = "#fdd8d8";
 export const TokenAliasChartCategorical5Transparent =
-  "lch(50.1 69.5 29.4 / 0.2)";
+  "lch(50.134 69.481 29.393 / 0.2)";
 export const TokenAliasChartCategorical6Primary = "#05a2c2";
 export const TokenAliasChartCategorical6Inactive = "#c4eaef";
-export const TokenAliasChartCategorical6Transparent = "lch(61 38.6 224 / 0.2)";
+export const TokenAliasChartCategorical6Transparent =
+  "lch(60.963 38.642 224.4 / 0.2)";
 export const TokenAliasChartCategorical7Primary = "#e043a7";
 export const TokenAliasChartCategorical7Inactive = "#f9d8ec";
-export const TokenAliasChartCategorical7Transparent = "lch(55 70 344 / 0.2)";
+export const TokenAliasChartCategorical7Transparent =
+  "lch(55.022 69.994 344.27 / 0.2)";
 export const TokenAliasChartCategorical8Primary = "#00b050";
 export const TokenAliasChartCategorical8Inactive = "#ceebcf";
-export const TokenAliasChartCategorical8Transparent = "lch(63 67 146 / 0.2)";
+export const TokenAliasChartCategorical8Transparent =
+  "lch(63.019 66.989 146.01 / 0.2)";
 export const TokenAliasChartCategorical9Primary = "#7259d6";
 export const TokenAliasChartCategorical9Inactive = "#e4defc";
-export const TokenAliasChartCategorical9Transparent = "lch(45.6 71 299 / 0.2)";
+export const TokenAliasChartCategorical9Transparent =
+  "lch(45.609 70.996 298.92 / 0.2)";
 export const TokenAliasChartCategorical10Primary = "#99d52a";
 export const TokenAliasChartCategorical10Inactive = "#d7f2b0";
-export const TokenAliasChartCategorical10Transparent = "lch(79 79.1 118 / 0.2)";
+export const TokenAliasChartCategorical10Transparent =
+  "lch(79 79.053 117.95 / 0.2)";
 export const TokenAliasChartCategorical11Primary = "#696970";
 export const TokenAliasChartCategorical11Inactive = "#d6d6dd";
 export const TokenAliasChartCategorical11Transparent =
-  "lch(44.6 4.09 286 / 0.2)";
+  "lch(44.592 4.0869 285.74 / 0.2)";
 export const TokenAliasChartCategorical12Primary = "#8da4ef";
 export const TokenAliasChartCategorical12Inactive = "#d9e2fc";
 export const TokenAliasChartCategorical12Transparent =
-  "lch(67.9 41.2 278 / 0.2)";
+  "lch(67.852 41.156 278.36 / 0.2)";
 export const TokenAliasChartCategorical13Primary = "#c25d05";
 export const TokenAliasChartCategorical13Inactive = "#ffe1c3";
 export const TokenAliasChartCategorical13Transparent =
-  "lch(51.7 70.9 57.2 / 0.2)";
+  "lch(51.678 70.892 57.163 / 0.2)";
 export const TokenAliasChartCategorical14Primary = "#067a6f";
 export const TokenAliasChartCategorical14Inactive = "#c7ebe5";
 export const TokenAliasChartCategorical14Transparent =
-  "lch(45.6 31.8 185 / 0.2)";
+  "lch(45.574 31.781 184.56 / 0.2)";
 export const TokenAliasChartCategorical15Primary = "#cf91d8";
 export const TokenAliasChartCategorical15Inactive = "#f3d9f4";
 export const TokenAliasChartCategorical15Transparent =
-  "lch(68.3 42.4 321 / 0.2)";
+  "lch(68.273 42.449 320.69 / 0.2)";
 export const TokenAliasChartCategorical16Primary = "#eb9091";
 export const TokenAliasChartCategorical16Inactive = "#fdd8d8";
 export const TokenAliasChartCategorical16Transparent =
-  "lch(69.6 38.4 22.9 / 0.2)";
+  "lch(69.608 38.423 22.866 / 0.2)";
 export const TokenAliasChartCategorical17Primary = "#0c7792";
 export const TokenAliasChartCategorical17Inactive = "#c4eaef";
 export const TokenAliasChartCategorical17Transparent =
-  "lch(45.7 30.9 228 / 0.2)";
+  "lch(45.701 30.931 227.96 / 0.2)";
 export const TokenAliasChartCategorical18Primary = "#e38ec3";
 export const TokenAliasChartCategorical18Inactive = "#f9d8ec";
 export const TokenAliasChartCategorical18Transparent =
-  "lch(69.3 40.8 341 / 0.2)";
+  "lch(69.32 40.765 340.77 / 0.2)";
 export const TokenAliasChartCategorical19Primary = "#97cf9c";
 export const TokenAliasChartCategorical19Inactive = "#ceebcf";
 export const TokenAliasChartCategorical19Transparent =
-  "lch(78.2 32.7 144 / 0.2)";
+  "lch(78.246 32.732 143.69 / 0.2)";
 export const TokenAliasChartCategorical20Primary = "#aa99ec";
 export const TokenAliasChartCategorical20Inactive = "#e4defc";
 export const TokenAliasChartCategorical20Transparent =
-  "lch(67.2 44.6 296 / 0.2)";
+  "lch(67.175 44.604 296.48 / 0.2)";
 export const TokenAliasChartCategorical21Primary = "#94ba2c";
 export const TokenAliasChartCategorical21Inactive = "#d7f2b0";
 export const TokenAliasChartCategorical21Transparent =
-  "lch(70.8 67.7 114 / 0.2)";
+  "lch(70.831 67.728 113.9 / 0.2)";
 export const TokenAliasChartCategorical22Primary = "#3d3d42";
 export const TokenAliasChartCategorical22Inactive = "#d6d6dd";
 export const TokenAliasChartCategorical22Transparent =
-  "lch(25.9 3.2 286 / 0.2)";
+  "lch(25.904 3.2013 285.8 / 0.2)";
 export const TokenAliasChartMonochromaticDefault5 = "#f8faff";
 export const TokenAliasChartMonochromaticDefault10 = "#f0f4ff";
 export const TokenAliasChartMonochromaticDefault20 = "#e6edfe";
@@ -757,47 +769,47 @@ export const TokenComponentAppbarIcon = "#3d3d42";
 export const TokenComponentAppbarTopGradient =
   "linear-gradient(270deg, #00b050 0%, #12a594 51%, #009cde 100%)";
 export const TokenComponentBadgeInformativeSubtleBackground =
-  "lch(36.7 58.2 286 / 0.12)";
+  "lch(36.671 58.169 285.69 / 0.12)";
 export const TokenComponentBadgeInformativeSubtleText = "#3451b2";
 export const TokenComponentBadgeInformativeAccentBackground = "#3451b2";
 export const TokenComponentBadgeInformativeAccentText = "#ffffff";
 export const TokenComponentBadgeNeutralSubtleBackground =
-  "lch(34.6 3.66 286 / 0.12)";
+  "lch(34.615 3.6643 285.77 / 0.12)";
 export const TokenComponentBadgeNeutralSubtleText = "#515157";
 export const TokenComponentBadgeNeutralAccentBackground = "#515157";
 export const TokenComponentBadgeNeutralAccentText = "#ffffff";
 export const TokenComponentBadgeWarningSubtleBackground =
-  "lch(67.2 71.6 80.1 / 0.12)";
+  "lch(67.201 71.604 80.131 / 0.12)";
 export const TokenComponentBadgeWarningSubtleText = "#c25d05";
 export const TokenComponentBadgeWarningAccentBackground = "#c25d05";
 export const TokenComponentBadgeWarningAccentText = "#ffffff";
 export const TokenComponentBadgeNegativeSubtleBackground =
-  "lch(41.2 69 32.4 / 0.12)";
+  "lch(41.222 69.027 32.445 / 0.12)";
 export const TokenComponentBadgeNegativeSubtleText = "#b82329";
 export const TokenComponentBadgeNegativeAccentBackground = "#b82329";
 export const TokenComponentBadgeNegativeAccentText = "#ffffff";
 export const TokenComponentBadgePositiveSubtleBackground =
-  "lch(47.6 47.7 150 / 0.12)";
+  "lch(47.648 47.7 150.09 / 0.12)";
 export const TokenComponentBadgePositiveSubtleText = "#138246";
 export const TokenComponentBadgePositiveAccentBackground = "#138246";
 export const TokenComponentBadgePositiveAccentText = "#ffffff";
 export const TokenComponentBadgeImportantSubtleBackground =
-  "lch(38.2 75 307 / 0.12)";
+  "lch(38.16 75.004 307.23 / 0.12)";
 export const TokenComponentBadgeImportantSubtleText = "#753bbd";
 export const TokenComponentBadgeImportantAccentBackground = "#753bbd";
 export const TokenComponentBadgeImportantAccentText = "#ffffff";
 export const TokenComponentBadgeRecommendationSubtleBackground =
-  "lch(45.6 31.8 185 / 0.12)";
+  "lch(45.574 31.781 184.56 / 0.12)";
 export const TokenComponentBadgeRecommendationSubtleText = "#067a6f";
 export const TokenComponentBadgeRecommendationAccentBackground = "#067a6f";
 export const TokenComponentBadgeRecommendationAccentText = "#ffffff";
 export const TokenComponentBadgeVioletSubtleBackground =
-  "lch(36.2 62.1 298 / 0.12)";
+  "lch(36.195 62.077 297.92 / 0.12)";
 export const TokenComponentBadgeVioletSubtleText = "#5746af";
 export const TokenComponentBadgeVioletAccentBackground = "#5746af";
 export const TokenComponentBadgeVioletAccentText = "#ffffff";
 export const TokenComponentBadgePinkSubtleBackground =
-  "lch(47.1 72.1 347 / 0.12)";
+  "lch(47.077 72.07 347.23 / 0.12)";
 export const TokenComponentBadgePinkSubtleText = "#cd1d8d";
 export const TokenComponentBadgePinkAccentBackground = "#cd1d8d";
 export const TokenComponentBadgePinkAccentText = "#ffffff";
@@ -1123,7 +1135,7 @@ export const TokenComponentKpiBarItemNeutralDefaultIcon = "#515157";
 export const TokenComponentKpiBarItemNeutralHoverLabel = "#515157";
 export const TokenComponentKpiBarItemNeutralHoverText = "#696970";
 export const TokenComponentKpiBarItemNeutralHoverBackground =
-  "lch(34.6 3.66 286 / 0.12)";
+  "lch(34.615 3.6643 285.77 / 0.12)";
 export const TokenComponentKpiBarItemNeutralHoverIcon = "#515157";
 export const TokenComponentKpiBarItemNeutralActiveLabel = "#515157";
 export const TokenComponentKpiBarItemNeutralActiveText = "#343438";
@@ -1138,7 +1150,7 @@ export const TokenComponentKpiBarItemGreenDefaultText = "#696970";
 export const TokenComponentKpiBarItemGreenHoverLabel = "#138246";
 export const TokenComponentKpiBarItemGreenHoverText = "#696970";
 export const TokenComponentKpiBarItemGreenHoverBackground =
-  "lch(47.6 47.7 150 / 0.12)";
+  "lch(47.648 47.7 150.09 / 0.12)";
 export const TokenComponentKpiBarItemGreenActiveLabel = "#138246";
 export const TokenComponentKpiBarItemGreenActiveText = "#343438";
 export const TokenComponentKpiBarItemGreenActiveBorder = "#138246";
@@ -1150,7 +1162,7 @@ export const TokenComponentKpiBarItemOrangeDefaultText = "#696970";
 export const TokenComponentKpiBarItemOrangeHoverLabel = "#c25d05";
 export const TokenComponentKpiBarItemOrangeHoverText = "#696970";
 export const TokenComponentKpiBarItemOrangeHoverBackground =
-  "lch(67.2 71.6 80.1 / 0.12)";
+  "lch(67.201 71.604 80.131 / 0.12)";
 export const TokenComponentKpiBarItemOrangeActiveLabel = "#c25d05";
 export const TokenComponentKpiBarItemOrangeActiveText = "#343438";
 export const TokenComponentKpiBarItemOrangeActiveBorder = "#c25d05";
@@ -1162,7 +1174,7 @@ export const TokenComponentKpiBarItemPurpleDefaultText = "#696970";
 export const TokenComponentKpiBarItemPurpleHoverLabel = "#753bbd";
 export const TokenComponentKpiBarItemPurpleHoverText = "#696970";
 export const TokenComponentKpiBarItemPurpleHoverBackground =
-  "lch(38.2 75 307 / 0.12)";
+  "lch(38.16 75.004 307.23 / 0.12)";
 export const TokenComponentKpiBarItemPurpleActiveLabel = "#753bbd";
 export const TokenComponentKpiBarItemPurpleActiveText = "#343438";
 export const TokenComponentKpiBarItemPurpleActiveBorder = "#753bbd";
@@ -1174,7 +1186,7 @@ export const TokenComponentKpiBarItemRedDefaultText = "#696970";
 export const TokenComponentKpiBarItemRedHoverLabel = "#b82329";
 export const TokenComponentKpiBarItemRedHoverText = "#696970";
 export const TokenComponentKpiBarItemRedHoverBackground =
-  "lch(41.2 69 32.4 / 0.12)";
+  "lch(41.222 69.027 32.445 / 0.12)";
 export const TokenComponentKpiBarItemRedActiveLabel = "#b82329";
 export const TokenComponentKpiBarItemRedActiveText = "#343438";
 export const TokenComponentKpiBarItemRedActiveBorder = "#b82329";
@@ -1186,7 +1198,7 @@ export const TokenComponentKpiBarItemUltramarineDefaultText = "#696970";
 export const TokenComponentKpiBarItemUltramarineHoverLabel = "#3451b2";
 export const TokenComponentKpiBarItemUltramarineHoverText = "#696970";
 export const TokenComponentKpiBarItemUltramarineHoverBackground =
-  "lch(36.7 58.2 286 / 0.12)";
+  "lch(36.671 58.169 285.69 / 0.12)";
 export const TokenComponentKpiBarItemUltramarineActiveLabel = "#3451b2";
 export const TokenComponentKpiBarItemUltramarineActiveText = "#343438";
 export const TokenComponentKpiBarItemUltramarineActiveBorder = "#3451b2";
@@ -1198,7 +1210,7 @@ export const TokenComponentKpiBarItemPinkDefaultText = "#696970";
 export const TokenComponentKpiBarItemPinkHoverLabel = "#cd1d8d";
 export const TokenComponentKpiBarItemPinkHoverText = "#696970";
 export const TokenComponentKpiBarItemPinkHoverBackground =
-  "lch(47.1 72.1 347 / 0.12)";
+  "lch(47.077 72.07 347.23 / 0.12)";
 export const TokenComponentKpiBarItemPinkActiveLabel = "#cd1d8d";
 export const TokenComponentKpiBarItemPinkActiveText = "#343438";
 export const TokenComponentKpiBarItemPinkActiveBorder = "#cd1d8d";
@@ -1512,7 +1524,7 @@ export const TokenComponentSwitchActiveFocusCircle = "#ffffff";
 export const TokenComponentSwitchActiveFocusText = "#343438";
 export const TokenComponentSwitchActiveDisabledBackground = "#afdef8";
 export const TokenComponentSwitchActiveDisabledIcon = "#a3a3ab";
-export const TokenComponentSwitchActiveDisabledCircle = "#ffffff";
+export const TokenComponentSwitchActiveDisabledCircle = "#ffffff80";
 export const TokenComponentSwitchActiveDisabledText = "#a3a3ab";
 export const TokenComponentSwitchInactiveDefaultBackground = "#83838c";
 export const TokenComponentSwitchInactiveDefaultCircle = "#ffffff";
@@ -1524,7 +1536,7 @@ export const TokenComponentSwitchInactiveFocusBackground = "#83838c";
 export const TokenComponentSwitchInactiveFocusCircle = "#ffffff";
 export const TokenComponentSwitchInactiveFocusText = "#343438";
 export const TokenComponentSwitchInactiveDisabledBackground = "#e5e5ea";
-export const TokenComponentSwitchInactiveDisabledCircle = "#ffffff";
+export const TokenComponentSwitchInactiveDisabledCircle = "#ffffff80";
 export const TokenComponentSwitchInactiveDisabledText = "#a3a3ab";
 export const TokenComponentTabDefaultText = "#343438";
 export const TokenComponentTabDefaultIcon = "#3d3d42";
@@ -1959,25 +1971,25 @@ export const TokenComponentKpiWidgetProgressNegativeBackground = "#ffe5e5";
 export const TokenComponentKpiWidgetChartAverageLine = "#a3a3ab";
 export const TokenComponentKpiWidgetChartNeutralLine = "#696970";
 export const TokenComponentKpiWidgetChartNeutralBackground =
-  "lch(44.6 4.09 286 / 0.2)";
+  "lch(44.592 4.0869 285.74 / 0.2)";
 export const TokenComponentKpiWidgetChartNegativeLine = "#d63c42";
 export const TokenComponentKpiWidgetChartNegativeBackground =
-  "lch(50.1 69.5 29.4 / 0.2)";
+  "lch(50.134 69.481 29.393 / 0.2)";
 export const TokenComponentKpiWidgetChartPositiveLine = "#00b050";
 export const TokenComponentKpiWidgetChartPositiveBackground =
-  "lch(63 67 146 / 0.2)";
+  "lch(63.019 66.989 146.01 / 0.2)";
 export const TokenComponentKpiWidgetChartWarningLine = "#c25d05";
 export const TokenComponentKpiWidgetChartWarningBackground =
-  "lch(51.7 70.9 57.2 / 0.2)";
+  "lch(51.678 70.892 57.163 / 0.2)";
 export const TokenComponentKpiWidgetChartInfoLine = "#4067e5";
 export const TokenComponentKpiWidgetChartInfoBackground =
-  "lch(46.5 72.3 286 / 0.2)";
+  "lch(46.464 72.283 286.08 / 0.2)";
 export const TokenComponentKpiWidgetChartCombinedLinePrimary = "#4067e5";
 export const TokenComponentKpiWidgetChartCombinedBackgroundPrimary =
-  "lch(46.5 72.3 286 / 0.2)";
+  "lch(46.464 72.283 286.08 / 0.2)";
 export const TokenComponentKpiWidgetChartCombinedLineSecondary = "#fe9933";
 export const TokenComponentKpiWidgetChartCombinedBackgroundSeconday =
-  "lch(46.5 72.3 286 / 0.2)";
+  "lch(46.464 72.283 286.08 / 0.2)";
 export const TokenComponentKpiWidgetNeutralBackground = "#ffffff";
 export const TokenComponentKpiWidgetNeutralBorder = "#d6d6dd";
 export const TokenComponentKpiWidgetNeutralLabel = "#343438";
