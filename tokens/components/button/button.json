@@ -149,6 +149,90 @@
           }
         }
       },
+      "tertiary": {
+        "default": {
+          "background": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.tertiary.default}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background": {
+            "value": "{alias.action.secondary.hover}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.primary.hover}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
+          }
+        },
+        "pressed": {
+          "background": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.tertiary.default}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.default}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.secondary.disabled}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.disabled}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          }
+        },
+        "loading": {
+          "background": {
+            "value": "{alias.action.base}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{alias.action.tertiary.default}",
+            "type": "color"
+          }
+        }
+      },
       "link": {
         "default": {
           "text": {
@@ -187,6 +271,147 @@
           },
           "icon": {
             "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          }
+        }
+      },
+      "launch": {
+        "default": {
+          "background": {
+            "value": "{global.color.neutrals.black}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          },
+          "icon": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          }
+        },
+        "hover": {
+          "background": {
+            "value": "{global.color.neutrals.100}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          },
+          "icon": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          }
+        },
+        "pressed": {
+          "background": {
+            "value": "{global.color.neutrals.black}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          },
+          "text": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          },
+          "icon": {
+            "value": "{global.color.neutrals.white}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{global.color.neutrals.20}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          },
+          "text": {
+            "value": "{global.color.neutrals.50}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          },
+          "icon": {
+            "value": "{global.color.neutrals.50}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          }
+        },
+        "loading": {
+          "background": {
+            "value": "{global.color.neutrals.black}",
+            "type": "color",
+            "description": "This component token is considered unstable and in development."
+          }
+        }
+      },
+      "danger": {
+        "default": {
+          "background": {
+            "value": "{alias.action.negative.default}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background": {
+            "value": "{alias.action.negative.hover}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "pressed": {
+          "background": {
+            "value": "{alias.action.negative.active}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.base}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.base}",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "background": {
+            "value": "{alias.action.negative.disabled}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{alias.content.text.primary.disabled}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.primary.disabled}",
+            "type": "color"
+          }
+        },
+        "loading": {
+          "background": {
+            "value": "{alias.action.negative.active}",
             "type": "color"
           }
         }

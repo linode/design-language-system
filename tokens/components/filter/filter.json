@@ -1,0 +1,36 @@
+{
+  "component": {
+    "filter": {
+      "tag": {
+        "label": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        },
+        "item": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "clearAll": {
+          "default": {
+            "value": "{alias.content.text.secondary.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.content.text.link.hover}",
+            "type": "color"
+          }
+        },
+        "icon": {
+          "defaul": {
+            "value": "{alias.content.icon.primary.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.content.icon.primary.hover}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

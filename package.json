@@ -1,6 +1,6 @@
 {
   "name": "@linode/design-language-system",
-  "version": "2.6.1",
+  "version": "5.3.0",
   "type": "module",
   "module": "dist/index.js",
   "exports": {
@@ -15,21 +15,14 @@
       ],
       "themes/dark": [
         "./dist/themes/dark/index.d.ts"
-      ],
-      "themes/densedDark": [
-        "./dist/themes/densedDark/index.d.ts"
-      ],
-      "themes/densedLight": [
-        "./dist/themes/densedLight/index.d.ts"
       ]
     }
   },
   "scripts": {
     "clean": "rm -rf dist",
     "generate": "yarn clean && ts-node --esm style-dictionary/build.ts",
-    "storybook": "storybook dev -p 6007",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-storybook": "storybook build"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "repository": {
     "type": "git",
@@ -45,47 +38,29 @@
     "url": "https://github.com/linode/design-language-system/issues"
   },
   "homepage": "https://github.com/linode/design-language-system#readme",
-  "dependencies": {
-    "@tokens-studio/sd-transforms": "1.2.0",
-    "react": "^17.0.2",
-    "react-copy-to-clipboard": "^5.1.0",
-    "react-dom": "^17.0.2",
-    "style-dictionary": "4.0.1"
-  },
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.1.10",
-    "@storybook/addon-interactions": "^8.1.10",
-    "@storybook/addon-links": "^8.1.11",
-    "@storybook/blocks": "^8.1.10",
-    "@storybook/react": "^8.1.10",
-    "@storybook/react-vite": "^8.1.10",
-    "@storybook/test": "^8.1.10",
-    "@storybook/theming": "^8.1.10",
-    "@types/node": "^18.16.1",
-    "@types/react": "^17.0.27",
-    "@types/react-copy-to-clipboard": "^5",
-    "@types/react-dom": "^17.0.9",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.59.9",
-    "@vitejs/plugin-react-swc": "^3.7.0",
-    "eslint": "^8.0.1",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-config-standard-with-typescript": "^34.0.1",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-storybook": "^0.8.0",
-    "prettier": "^2.8.8",
-    "storybook": "^8.1.10",
-    "terser": "^5.17.1",
-    "ts-node": "^10.9.1",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.4",
-    "vite": "^5.1.4"
+    "@testing-library/dom": "^10.4.1",
+    "@tokens-studio/sd-transforms": "^2.0.3",
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.50.1",
+    "@typescript-eslint/parser": "^8.50.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-n": "^17.23.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-promise": "^7.2.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.7.4",
+    "style-dictionary": "^5.1.1",
+    "terser": "^5.44.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vitest": "^4.0.16"
   },
   "volta": {
-    "node": "18.14.1"
+    "node": "22.0.0"
   },
   "packageManager": "yarn@4.1.1"
 }

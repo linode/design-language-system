@@ -3,16 +3,30 @@
     "table": {
       "headerFilled": {
         "background": {
-          "value": "{global.color.neutrals.100}",
+          "value": "{alias.background.neutralsubtle}",
           "type": "color"
         },
         "text": {
-          "value": "{global.color.neutrals.white}",
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.neutral}",
           "type": "color"
         },
         "icon": {
-          "value": "{global.color.neutrals.white}",
-          "type": "color"
+          "default": {
+            "value": "{alias.content.icon.secondary.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.content.icon.primary.hover}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{alias.content.icon.primary.active}",
+            "type": "color"
+          }
         }
       },
       "headerOutlined": {
@@ -25,8 +39,46 @@
           "type": "color"
         },
         "icon": {
-          "value": "{alias.content.icon.primary.default}",
+          "default": {
+            "value": "{alias.content.icon.secondary.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.content.icon.primary.hover}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{alias.content.icon.primary.active}",
+            "type": "color"
+          }
+        }
+      },
+      "headerNested": {
+        "background": {
+          "value": "{alias.background.neutralsubtle}",
           "type": "color"
+        },
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.neutral}",
+          "type": "color"
+        },
+        "icon": {
+          "default": {
+            "value": "{alias.content.icon.secondary.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.content.icon.primary.hover}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{alias.content.icon.primary.active}",
+            "type": "color"
+          }
         }
       },
       "row": {
@@ -58,7 +110,7 @@
             "type": "color"
           },
           "hover": {
-            "value": "{alias.interaction.background.elevated}",
+            "value": "{alias.interaction.background.primaryHover}",
             "type": "color"
           }
         },

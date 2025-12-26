@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "18.14"
+          node-version: "18.18.0"
           registry-url: https://registry.npmjs.org/
 
       - run: yarn install --frozen-lockfile
       - run: yarn run generate
-      - uses: JS-DevTools/npm-publish@v2
+      - uses: JS-DevTools/npm-publish@v3
         with:
           access: public
           dry-run: false

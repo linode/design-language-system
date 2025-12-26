@@ -29,18 +29,40 @@
           "type": "color"
         },
         "background": {
-          "value": "{alias.interaction.background.active}",
-          "type": "color"
+          "default": {
+            "value": "{alias.interaction.background.tertiaryActive}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.interaction.background.tertiaryHover}",
+            "type": "color"
+          }
         }
       },
       "hoverItem": {
         "background": {
-          "value": "{alias.interaction.background.elevated}",
+          "value": "{alias.interaction.background.primaryHover}",
           "type": "color"
         },
         "text": {
           "value": "{alias.content.text.primary.default}",
           "type": "color"
+        }
+      },
+      "dateRange": {
+        "text": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "background": {
+          "default": {
+            "value": "{alias.interaction.background.primaryHover}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{alias.interaction.background.secondaryHover}",
+            "type": "color"
+          }
         }
       },
       "presetArea": {
@@ -56,7 +78,7 @@
         },
         "activePeriod": {
           "background": {
-            "value": "{alias.interaction.background.accent}",
+            "value": "{alias.interaction.background.secondaryActive}",
             "type": "color"
           },
           "text": {

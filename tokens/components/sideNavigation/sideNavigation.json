@@ -77,7 +77,7 @@
       },
       "selectedMenuItem": {
         "background": {
-          "value": "{alias.interaction.background.accent}",
+          "value": "{alias.interaction.background.secondaryActive}",
           "type": "color"
         },
         "icon": {

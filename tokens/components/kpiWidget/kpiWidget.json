@@ -1,0 +1,234 @@
+{
+  "component": {
+    "kpiWidget": {
+      "infoIcon": {
+        "default": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{alias.content.icon.primary.hover}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{alias.content.icon.primary.active}",
+          "type": "color"
+        }
+      },
+      "progress": {
+        "positive": {
+          "text": {
+            "value": "{alias.content.text.positive}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.positive}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.background.positivesubtle}",
+            "type": "color"
+          }
+        },
+        "negative": {
+          "text": {
+            "value": "{alias.content.text.negative}",
+            "type": "color"
+          },
+          "icon": {
+            "value": "{alias.content.icon.negative}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.background.negativesubtle}",
+            "type": "color"
+          }
+        }
+      },
+      "chart": {
+        "averageLine": {
+          "value": "{alias.border.neutral}",
+          "type": "color"
+        },
+        "neutral": {
+          "line": {
+            "value": "{alias.chart.categorical.11.primary}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.chart.categorical.11.transparent}",
+            "type": "color"
+          }
+        },
+        "negative": {
+          "line": {
+            "value": "{alias.chart.categorical.5.primary}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.chart.categorical.5.transparent}",
+            "type": "color"
+          }
+        },
+        "positive": {
+          "line": {
+            "value": "{alias.chart.categorical.8.primary}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.chart.categorical.8.transparent}",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "line": {
+            "value": "{alias.chart.categorical.13.primary}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.chart.categorical.13.transparent}",
+            "type": "color"
+          }
+        },
+        "info": {
+          "line": {
+            "value": "{alias.chart.categorical.1.primary}",
+            "type": "color"
+          },
+          "background": {
+            "value": "{alias.chart.categorical.1.transparent}",
+            "type": "color"
+          }
+        },
+        "combined": {
+          "linePrimary": {
+            "value": "{alias.chart.categorical.1.primary}",
+            "type": "color"
+          },
+          "backgroundPrimary": {
+            "value": "{alias.chart.categorical.1.transparent}",
+            "type": "color"
+          },
+          "lineSecondary": {
+            "value": "{alias.chart.categorical.2.primary}",
+            "type": "color"
+          },
+          "backgroundSeconday": {
+            "value": "{alias.chart.categorical.1.transparent}",
+            "type": "color"
+          }
+        }
+      },
+      "neutral": {
+        "background": {
+          "value": "{alias.background.normal}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.normal}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "kpi": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        }
+      },
+      "positive": {
+        "background": {
+          "value": "{alias.background.normal}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.normal}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "kpi": {
+          "value": "{alias.content.text.positive}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        }
+      },
+      "negative": {
+        "background": {
+          "value": "{alias.background.normal}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.normal}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "kpi": {
+          "value": "{alias.content.text.negative}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        }
+      },
+      "warning": {
+        "background": {
+          "value": "{alias.background.normal}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.normal}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "kpi": {
+          "value": "{alias.chart.categorical.13.primary}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        }
+      },
+      "info": {
+        "background": {
+          "value": "{alias.background.normal}",
+          "type": "color"
+        },
+        "border": {
+          "value": "{alias.border.normal}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{alias.content.text.primary.default}",
+          "type": "color"
+        },
+        "kpi": {
+          "value": "{alias.content.text.informative}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{alias.content.text.secondary.default}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
