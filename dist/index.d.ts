@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-09-22
+   * Generated on 2025-12-26
    */
   export interface GlobalTypes {
   Color: {
@@ -641,12 +641,12 @@ export interface AliasTypes {
     Informativesubtle: "#e6edfe",
     Recommendationsubtle: "#d9f3ee",
     Neutralsubtle: "#e5e5ea",
-    Overlay: "lch(13.8 2.09 286 / 0.24)"
+    Overlay: "lch(13.805 2.0915 285.76 / 0.24)"
   },
   Action: {
     Base: "#ffffff",
     Neutral: "#83838c",
-    White50: "#ffffff",
+    White50: "#ffffff80",
     Primary: {
       Default: "#0174bc",
       Hover: "#009cde",
@@ -753,39 +753,39 @@ export interface AliasTypes {
     Disabled: "#c2c2ca",
     Info: {
       Primary: "#3451b2",
-      Secondary: "lch(36.7 58.2 286 / 0.12)"
+      Secondary: "lch(36.671 58.169 285.69 / 0.12)"
     },
     Neutral: {
       Primary: "#515157",
-      Secondary: "lch(34.6 3.66 286 / 0.12)"
+      Secondary: "lch(34.615 3.6643 285.77 / 0.12)"
     },
     Warning: {
       Primary: "#c25d05",
-      Secondary: "lch(67.2 71.6 80.1 / 0.12)"
+      Secondary: "lch(67.201 71.604 80.131 / 0.12)"
     },
     Negative: {
       Primary: "#b82329",
-      Secondary: "lch(41.2 69 32.4 / 0.12)"
+      Secondary: "lch(41.222 69.027 32.445 / 0.12)"
     },
     Positive: {
       Primary: "#138246",
-      Secondary: "lch(47.6 47.7 150 / 0.12)"
+      Secondary: "lch(47.648 47.7 150.09 / 0.12)"
     },
     Important: {
       Primary: "#753bbd",
-      Secondary: "lch(38.2 75 307 / 0.12)"
+      Secondary: "lch(38.16 75.004 307.23 / 0.12)"
     },
     Recommendation: {
       Primary: "#067a6f",
-      Secondary: "lch(45.6 31.8 185 / 0.12)"
+      Secondary: "lch(45.574 31.781 184.56 / 0.12)"
     },
     Pink: {
       Primary: "#cd1d8d",
-      Secondary: "lch(47.1 72.1 347 / 0.12)"
+      Secondary: "lch(47.077 72.07 347.23 / 0.12)"
     },
     Violet: {
       Primary: "#5746af",
-      Secondary: "lch(36.2 62.1 298 / 0.12)"
+      Secondary: "lch(36.195 62.077 297.92 / 0.12)"
     }
   },
   Chart: {
@@ -794,112 +794,112 @@ export interface AliasTypes {
       1: {
         Primary: "#4067e5",
         Inactive: "#d9e2fc",
-        Transparent: "lch(46.5 72.3 286 / 0.2)"
+        Transparent: "lch(46.464 72.283 286.08 / 0.2)"
       },
       2: {
         Primary: "#fe9933",
         Inactive: "#ffe1c3",
-        Transparent: "lch(72.9 74.2 63 / 0.2)"
+        Transparent: "lch(72.95 74.236 63.044 / 0.2)"
       },
       3: {
         Primary: "#12a594",
         Inactive: "#c7ebe5",
-        Transparent: "lch(60.7 39.7 183 / 0.2)"
+        Transparent: "lch(60.696 39.714 182.53 / 0.2)"
       },
       4: {
         Primary: "#ab4aba",
         Inactive: "#f3d9f4",
-        Transparent: "lch(48.2 66.6 322 / 0.2)"
+        Transparent: "lch(48.193 66.568 321.51 / 0.2)"
       },
       5: {
         Primary: "#d63c42",
         Inactive: "#fdd8d8",
-        Transparent: "lch(50.1 69.5 29.4 / 0.2)"
+        Transparent: "lch(50.134 69.481 29.393 / 0.2)"
       },
       6: {
         Primary: "#05a2c2",
         Inactive: "#c4eaef",
-        Transparent: "lch(61 38.6 224 / 0.2)"
+        Transparent: "lch(60.963 38.642 224.4 / 0.2)"
       },
       7: {
         Primary: "#e043a7",
         Inactive: "#f9d8ec",
-        Transparent: "lch(55 70 344 / 0.2)"
+        Transparent: "lch(55.022 69.994 344.27 / 0.2)"
       },
       8: {
         Primary: "#00b050",
         Inactive: "#ceebcf",
-        Transparent: "lch(63 67 146 / 0.2)"
+        Transparent: "lch(63.019 66.989 146.01 / 0.2)"
       },
       9: {
         Primary: "#7259d6",
         Inactive: "#e4defc",
-        Transparent: "lch(45.6 71 299 / 0.2)"
+        Transparent: "lch(45.609 70.996 298.92 / 0.2)"
       },
       10: {
         Primary: "#99d52a",
         Inactive: "#d7f2b0",
-        Transparent: "lch(79 79.1 118 / 0.2)"
+        Transparent: "lch(79 79.053 117.95 / 0.2)"
       },
       11: {
         Primary: "#696970",
         Inactive: "#d6d6dd",
-        Transparent: "lch(44.6 4.09 286 / 0.2)"
+        Transparent: "lch(44.592 4.0869 285.74 / 0.2)"
       },
       12: {
         Primary: "#8da4ef",
         Inactive: "#d9e2fc",
-        Transparent: "lch(67.9 41.2 278 / 0.2)"
+        Transparent: "lch(67.852 41.156 278.36 / 0.2)"
       },
       13: {
         Primary: "#c25d05",
         Inactive: "#ffe1c3",
-        Transparent: "lch(51.7 70.9 57.2 / 0.2)"
+        Transparent: "lch(51.678 70.892 57.163 / 0.2)"
       },
       14: {
         Primary: "#067a6f",
         Inactive: "#c7ebe5",
-        Transparent: "lch(45.6 31.8 185 / 0.2)"
+        Transparent: "lch(45.574 31.781 184.56 / 0.2)"
       },
       15: {
         Primary: "#cf91d8",
         Inactive: "#f3d9f4",
-        Transparent: "lch(68.3 42.4 321 / 0.2)"
+        Transparent: "lch(68.273 42.449 320.69 / 0.2)"
       },
       16: {
         Primary: "#eb9091",
         Inactive: "#fdd8d8",
-        Transparent: "lch(69.6 38.4 22.9 / 0.2)"
+        Transparent: "lch(69.608 38.423 22.866 / 0.2)"
       },
       17: {
         Primary: "#0c7792",
         Inactive: "#c4eaef",
-        Transparent: "lch(45.7 30.9 228 / 0.2)"
+        Transparent: "lch(45.701 30.931 227.96 / 0.2)"
       },
       18: {
         Primary: "#e38ec3",
         Inactive: "#f9d8ec",
-        Transparent: "lch(69.3 40.8 341 / 0.2)"
+        Transparent: "lch(69.32 40.765 340.77 / 0.2)"
       },
       19: {
         Primary: "#97cf9c",
         Inactive: "#ceebcf",
-        Transparent: "lch(78.2 32.7 144 / 0.2)"
+        Transparent: "lch(78.246 32.732 143.69 / 0.2)"
       },
       20: {
         Primary: "#aa99ec",
         Inactive: "#e4defc",
-        Transparent: "lch(67.2 44.6 296 / 0.2)"
+        Transparent: "lch(67.175 44.604 296.48 / 0.2)"
       },
       21: {
         Primary: "#94ba2c",
         Inactive: "#d7f2b0",
-        Transparent: "lch(70.8 67.7 114 / 0.2)"
+        Transparent: "lch(70.831 67.728 113.9 / 0.2)"
       },
       22: {
         Primary: "#3d3d42",
         Inactive: "#d6d6dd",
-        Transparent: "lch(25.9 3.2 286 / 0.2)"
+        Transparent: "lch(25.904 3.2013 285.8 / 0.2)"
       }
     },
     Monochromatic: {
@@ -1011,7 +1011,7 @@ export interface BackgroundTypes {
   Informativesubtle: "#e6edfe",
   Recommendationsubtle: "#d9f3ee",
   Neutralsubtle: "#e5e5ea",
-  Overlay: "lch(13.8 2.09 286 / 0.24)"
+  Overlay: "lch(13.805 2.0915 285.76 / 0.24)"
 }
 
 declare const Background: BackgroundTypes;
@@ -1019,7 +1019,7 @@ declare const Background: BackgroundTypes;
 export interface ActionTypes {
   Base: "#ffffff",
   Neutral: "#83838c",
-  White50: "#ffffff",
+  White50: "#ffffff80",
   Primary: {
     Default: "#0174bc",
     Hover: "#009cde",
@@ -1138,39 +1138,39 @@ export interface AccentTypes {
   Disabled: "#c2c2ca",
   Info: {
     Primary: "#3451b2",
-    Secondary: "lch(36.7 58.2 286 / 0.12)"
+    Secondary: "lch(36.671 58.169 285.69 / 0.12)"
   },
   Neutral: {
     Primary: "#515157",
-    Secondary: "lch(34.6 3.66 286 / 0.12)"
+    Secondary: "lch(34.615 3.6643 285.77 / 0.12)"
   },
   Warning: {
     Primary: "#c25d05",
-    Secondary: "lch(67.2 71.6 80.1 / 0.12)"
+    Secondary: "lch(67.201 71.604 80.131 / 0.12)"
   },
   Negative: {
     Primary: "#b82329",
-    Secondary: "lch(41.2 69 32.4 / 0.12)"
+    Secondary: "lch(41.222 69.027 32.445 / 0.12)"
   },
   Positive: {
     Primary: "#138246",
-    Secondary: "lch(47.6 47.7 150 / 0.12)"
+    Secondary: "lch(47.648 47.7 150.09 / 0.12)"
   },
   Important: {
     Primary: "#753bbd",
-    Secondary: "lch(38.2 75 307 / 0.12)"
+    Secondary: "lch(38.16 75.004 307.23 / 0.12)"
   },
   Recommendation: {
     Primary: "#067a6f",
-    Secondary: "lch(45.6 31.8 185 / 0.12)"
+    Secondary: "lch(45.574 31.781 184.56 / 0.12)"
   },
   Pink: {
     Primary: "#cd1d8d",
-    Secondary: "lch(47.1 72.1 347 / 0.12)"
+    Secondary: "lch(47.077 72.07 347.23 / 0.12)"
   },
   Violet: {
     Primary: "#5746af",
-    Secondary: "lch(36.2 62.1 298 / 0.12)"
+    Secondary: "lch(36.195 62.077 297.92 / 0.12)"
   }
 }
 
@@ -1182,112 +1182,112 @@ export interface ChartTypes {
     1: {
       Primary: "#4067e5",
       Inactive: "#d9e2fc",
-      Transparent: "lch(46.5 72.3 286 / 0.2)"
+      Transparent: "lch(46.464 72.283 286.08 / 0.2)"
     },
     2: {
       Primary: "#fe9933",
       Inactive: "#ffe1c3",
-      Transparent: "lch(72.9 74.2 63 / 0.2)"
+      Transparent: "lch(72.95 74.236 63.044 / 0.2)"
     },
     3: {
       Primary: "#12a594",
       Inactive: "#c7ebe5",
-      Transparent: "lch(60.7 39.7 183 / 0.2)"
+      Transparent: "lch(60.696 39.714 182.53 / 0.2)"
     },
     4: {
       Primary: "#ab4aba",
       Inactive: "#f3d9f4",
-      Transparent: "lch(48.2 66.6 322 / 0.2)"
+      Transparent: "lch(48.193 66.568 321.51 / 0.2)"
     },
     5: {
       Primary: "#d63c42",
       Inactive: "#fdd8d8",
-      Transparent: "lch(50.1 69.5 29.4 / 0.2)"
+      Transparent: "lch(50.134 69.481 29.393 / 0.2)"
     },
     6: {
       Primary: "#05a2c2",
       Inactive: "#c4eaef",
-      Transparent: "lch(61 38.6 224 / 0.2)"
+      Transparent: "lch(60.963 38.642 224.4 / 0.2)"
     },
     7: {
       Primary: "#e043a7",
       Inactive: "#f9d8ec",
-      Transparent: "lch(55 70 344 / 0.2)"
+      Transparent: "lch(55.022 69.994 344.27 / 0.2)"
     },
     8: {
       Primary: "#00b050",
       Inactive: "#ceebcf",
-      Transparent: "lch(63 67 146 / 0.2)"
+      Transparent: "lch(63.019 66.989 146.01 / 0.2)"
     },
     9: {
       Primary: "#7259d6",
       Inactive: "#e4defc",
-      Transparent: "lch(45.6 71 299 / 0.2)"
+      Transparent: "lch(45.609 70.996 298.92 / 0.2)"
     },
     10: {
       Primary: "#99d52a",
       Inactive: "#d7f2b0",
-      Transparent: "lch(79 79.1 118 / 0.2)"
+      Transparent: "lch(79 79.053 117.95 / 0.2)"
     },
     11: {
       Primary: "#696970",
       Inactive: "#d6d6dd",
-      Transparent: "lch(44.6 4.09 286 / 0.2)"
+      Transparent: "lch(44.592 4.0869 285.74 / 0.2)"
     },
     12: {
       Primary: "#8da4ef",
       Inactive: "#d9e2fc",
-      Transparent: "lch(67.9 41.2 278 / 0.2)"
+      Transparent: "lch(67.852 41.156 278.36 / 0.2)"
     },
     13: {
       Primary: "#c25d05",
       Inactive: "#ffe1c3",
-      Transparent: "lch(51.7 70.9 57.2 / 0.2)"
+      Transparent: "lch(51.678 70.892 57.163 / 0.2)"
     },
     14: {
       Primary: "#067a6f",
       Inactive: "#c7ebe5",
-      Transparent: "lch(45.6 31.8 185 / 0.2)"
+      Transparent: "lch(45.574 31.781 184.56 / 0.2)"
     },
     15: {
       Primary: "#cf91d8",
       Inactive: "#f3d9f4",
-      Transparent: "lch(68.3 42.4 321 / 0.2)"
+      Transparent: "lch(68.273 42.449 320.69 / 0.2)"
     },
     16: {
       Primary: "#eb9091",
       Inactive: "#fdd8d8",
-      Transparent: "lch(69.6 38.4 22.9 / 0.2)"
+      Transparent: "lch(69.608 38.423 22.866 / 0.2)"
     },
     17: {
       Primary: "#0c7792",
       Inactive: "#c4eaef",
-      Transparent: "lch(45.7 30.9 228 / 0.2)"
+      Transparent: "lch(45.701 30.931 227.96 / 0.2)"
     },
     18: {
       Primary: "#e38ec3",
       Inactive: "#f9d8ec",
-      Transparent: "lch(69.3 40.8 341 / 0.2)"
+      Transparent: "lch(69.32 40.765 340.77 / 0.2)"
     },
     19: {
       Primary: "#97cf9c",
       Inactive: "#ceebcf",
-      Transparent: "lch(78.2 32.7 144 / 0.2)"
+      Transparent: "lch(78.246 32.732 143.69 / 0.2)"
     },
     20: {
       Primary: "#aa99ec",
       Inactive: "#e4defc",
-      Transparent: "lch(67.2 44.6 296 / 0.2)"
+      Transparent: "lch(67.175 44.604 296.48 / 0.2)"
     },
     21: {
       Primary: "#94ba2c",
       Inactive: "#d7f2b0",
-      Transparent: "lch(70.8 67.7 114 / 0.2)"
+      Transparent: "lch(70.831 67.728 113.9 / 0.2)"
     },
     22: {
       Primary: "#3d3d42",
       Inactive: "#d6d6dd",
-      Transparent: "lch(25.9 3.2 286 / 0.2)"
+      Transparent: "lch(25.904 3.2013 285.8 / 0.2)"
     }
   },
   Monochromatic: {
@@ -1762,7 +1762,7 @@ export interface ComponentTypes {
   Badge: {
     Informative: {
       Subtle: {
-        Background: "lch(36.7 58.2 286 / 0.12)",
+        Background: "lch(36.671 58.169 285.69 / 0.12)",
         Text: "#3451b2"
       },
       Accent: {
@@ -1772,7 +1772,7 @@ export interface ComponentTypes {
     },
     Neutral: {
       Subtle: {
-        Background: "lch(34.6 3.66 286 / 0.12)",
+        Background: "lch(34.615 3.6643 285.77 / 0.12)",
         Text: "#515157"
       },
       Accent: {
@@ -1782,7 +1782,7 @@ export interface ComponentTypes {
     },
     Warning: {
       Subtle: {
-        Background: "lch(67.2 71.6 80.1 / 0.12)",
+        Background: "lch(67.201 71.604 80.131 / 0.12)",
         Text: "#c25d05"
       },
       Accent: {
@@ -1792,7 +1792,7 @@ export interface ComponentTypes {
     },
     Negative: {
       Subtle: {
-        Background: "lch(41.2 69 32.4 / 0.12)",
+        Background: "lch(41.222 69.027 32.445 / 0.12)",
         Text: "#b82329"
       },
       Accent: {
@@ -1802,7 +1802,7 @@ export interface ComponentTypes {
     },
     Positive: {
       Subtle: {
-        Background: "lch(47.6 47.7 150 / 0.12)",
+        Background: "lch(47.648 47.7 150.09 / 0.12)",
         Text: "#138246"
       },
       Accent: {
@@ -1812,7 +1812,7 @@ export interface ComponentTypes {
     },
     Important: {
       Subtle: {
-        Background: "lch(38.2 75 307 / 0.12)",
+        Background: "lch(38.16 75.004 307.23 / 0.12)",
         Text: "#753bbd"
       },
       Accent: {
@@ -1822,7 +1822,7 @@ export interface ComponentTypes {
     },
     Recommendation: {
       Subtle: {
-        Background: "lch(45.6 31.8 185 / 0.12)",
+        Background: "lch(45.574 31.781 184.56 / 0.12)",
         Text: "#067a6f"
       },
       Accent: {
@@ -1832,7 +1832,7 @@ export interface ComponentTypes {
     },
     Violet: {
       Subtle: {
-        Background: "lch(36.2 62.1 298 / 0.12)",
+        Background: "lch(36.195 62.077 297.92 / 0.12)",
         Text: "#5746af"
       },
       Accent: {
@@ -1842,7 +1842,7 @@ export interface ComponentTypes {
     },
     Pink: {
       Subtle: {
-        Background: "lch(47.1 72.1 347 / 0.12)",
+        Background: "lch(47.077 72.07 347.23 / 0.12)",
         Text: "#cd1d8d"
       },
       Accent: {
@@ -2419,7 +2419,7 @@ export interface ComponentTypes {
         Hover: {
           Label: "#515157",
           Text: "#696970",
-          Background: "lch(34.6 3.66 286 / 0.12)",
+          Background: "lch(34.615 3.6643 285.77 / 0.12)",
           Icon: "#515157"
         },
         Active: {
@@ -2443,7 +2443,7 @@ export interface ComponentTypes {
         Hover: {
           Label: "#138246",
           Text: "#696970",
-          Background: "lch(47.6 47.7 150 / 0.12)"
+          Background: "lch(47.648 47.7 150.09 / 0.12)"
         },
         Active: {
           Label: "#138246",
@@ -2464,7 +2464,7 @@ export interface ComponentTypes {
         Hover: {
           Label: "#c25d05",
           Text: "#696970",
-          Background: "lch(67.2 71.6 80.1 / 0.12)"
+          Background: "lch(67.201 71.604 80.131 / 0.12)"
         },
         Active: {
           Label: "#c25d05",
@@ -2485,7 +2485,7 @@ export interface ComponentTypes {
         Hover: {
           Label: "#753bbd",
           Text: "#696970",
-          Background: "lch(38.2 75 307 / 0.12)"
+          Background: "lch(38.16 75.004 307.23 / 0.12)"
         },
         Active: {
           Label: "#753bbd",
@@ -2506,7 +2506,7 @@ export interface ComponentTypes {
         Hover: {
           Label: "#b82329",
           Text: "#696970",
-          Background: "lch(41.2 69 32.4 / 0.12)"
+          Background: "lch(41.222 69.027 32.445 / 0.12)"
         },
         Active: {
           Label: "#b82329",
@@ -2527,7 +2527,7 @@ export interface ComponentTypes {
         Hover: {
           Label: "#3451b2",
           Text: "#696970",
-          Background: "lch(36.7 58.2 286 / 0.12)"
+          Background: "lch(36.671 58.169 285.69 / 0.12)"
         },
         Active: {
           Label: "#3451b2",
@@ -2548,7 +2548,7 @@ export interface ComponentTypes {
         Hover: {
           Label: "#cd1d8d",
           Text: "#696970",
-          Background: "lch(47.1 72.1 347 / 0.12)"
+          Background: "lch(47.077 72.07 347.23 / 0.12)"
         },
         Active: {
           Label: "#cd1d8d",
@@ -3044,7 +3044,7 @@ export interface ComponentTypes {
       Disabled: {
         Background: "#afdef8",
         Icon: "#a3a3ab",
-        Circle: "#ffffff",
+        Circle: "#ffffff80",
         Text: "#a3a3ab"
       }
     },
@@ -3066,7 +3066,7 @@ export interface ComponentTypes {
       },
       Disabled: {
         Background: "#e5e5ea",
-        Circle: "#ffffff",
+        Circle: "#ffffff80",
         Text: "#a3a3ab"
       }
     }
@@ -3792,29 +3792,29 @@ export interface ComponentTypes {
       AverageLine: "#a3a3ab",
       Neutral: {
         Line: "#696970",
-        Background: "lch(44.6 4.09 286 / 0.2)"
+        Background: "lch(44.592 4.0869 285.74 / 0.2)"
       },
       Negative: {
         Line: "#d63c42",
-        Background: "lch(50.1 69.5 29.4 / 0.2)"
+        Background: "lch(50.134 69.481 29.393 / 0.2)"
       },
       Positive: {
         Line: "#00b050",
-        Background: "lch(63 67 146 / 0.2)"
+        Background: "lch(63.019 66.989 146.01 / 0.2)"
       },
       Warning: {
         Line: "#c25d05",
-        Background: "lch(51.7 70.9 57.2 / 0.2)"
+        Background: "lch(51.678 70.892 57.163 / 0.2)"
       },
       Info: {
         Line: "#4067e5",
-        Background: "lch(46.5 72.3 286 / 0.2)"
+        Background: "lch(46.464 72.283 286.08 / 0.2)"
       },
       Combined: {
         LinePrimary: "#4067e5",
-        BackgroundPrimary: "lch(46.5 72.3 286 / 0.2)",
+        BackgroundPrimary: "lch(46.464 72.283 286.08 / 0.2)",
         LineSecondary: "#fe9933",
-        BackgroundSeconday: "lch(46.5 72.3 286 / 0.2)"
+        BackgroundSeconday: "lch(46.464 72.283 286.08 / 0.2)"
       }
     },
     Neutral: {
@@ -4308,7 +4308,7 @@ declare const Appbar: AppbarTypes;
 export interface BadgeTypes {
   Informative: {
     Subtle: {
-      Background: "lch(36.7 58.2 286 / 0.12)",
+      Background: "lch(36.671 58.169 285.69 / 0.12)",
       Text: "#3451b2"
     },
     Accent: {
@@ -4318,7 +4318,7 @@ export interface BadgeTypes {
   },
   Neutral: {
     Subtle: {
-      Background: "lch(34.6 3.66 286 / 0.12)",
+      Background: "lch(34.615 3.6643 285.77 / 0.12)",
       Text: "#515157"
     },
     Accent: {
@@ -4328,7 +4328,7 @@ export interface BadgeTypes {
   },
   Warning: {
     Subtle: {
-      Background: "lch(67.2 71.6 80.1 / 0.12)",
+      Background: "lch(67.201 71.604 80.131 / 0.12)",
       Text: "#c25d05"
     },
     Accent: {
@@ -4338,7 +4338,7 @@ export interface BadgeTypes {
   },
   Negative: {
     Subtle: {
-      Background: "lch(41.2 69 32.4 / 0.12)",
+      Background: "lch(41.222 69.027 32.445 / 0.12)",
       Text: "#b82329"
     },
     Accent: {
@@ -4348,7 +4348,7 @@ export interface BadgeTypes {
   },
   Positive: {
     Subtle: {
-      Background: "lch(47.6 47.7 150 / 0.12)",
+      Background: "lch(47.648 47.7 150.09 / 0.12)",
       Text: "#138246"
     },
     Accent: {
@@ -4358,7 +4358,7 @@ export interface BadgeTypes {
   },
   Important: {
     Subtle: {
-      Background: "lch(38.2 75 307 / 0.12)",
+      Background: "lch(38.16 75.004 307.23 / 0.12)",
       Text: "#753bbd"
     },
     Accent: {
@@ -4368,7 +4368,7 @@ export interface BadgeTypes {
   },
   Recommendation: {
     Subtle: {
-      Background: "lch(45.6 31.8 185 / 0.12)",
+      Background: "lch(45.574 31.781 184.56 / 0.12)",
       Text: "#067a6f"
     },
     Accent: {
@@ -4378,7 +4378,7 @@ export interface BadgeTypes {
   },
   Violet: {
     Subtle: {
-      Background: "lch(36.2 62.1 298 / 0.12)",
+      Background: "lch(36.195 62.077 297.92 / 0.12)",
       Text: "#5746af"
     },
     Accent: {
@@ -4388,7 +4388,7 @@ export interface BadgeTypes {
   },
   Pink: {
     Subtle: {
-      Background: "lch(47.1 72.1 347 / 0.12)",
+      Background: "lch(47.077 72.07 347.23 / 0.12)",
       Text: "#cd1d8d"
     },
     Accent: {
@@ -5019,7 +5019,7 @@ export interface KpiBarTypes {
       Hover: {
         Label: "#515157",
         Text: "#696970",
-        Background: "lch(34.6 3.66 286 / 0.12)",
+        Background: "lch(34.615 3.6643 285.77 / 0.12)",
         Icon: "#515157"
       },
       Active: {
@@ -5043,7 +5043,7 @@ export interface KpiBarTypes {
       Hover: {
         Label: "#138246",
         Text: "#696970",
-        Background: "lch(47.6 47.7 150 / 0.12)"
+        Background: "lch(47.648 47.7 150.09 / 0.12)"
       },
       Active: {
         Label: "#138246",
@@ -5064,7 +5064,7 @@ export interface KpiBarTypes {
       Hover: {
         Label: "#c25d05",
         Text: "#696970",
-        Background: "lch(67.2 71.6 80.1 / 0.12)"
+        Background: "lch(67.201 71.604 80.131 / 0.12)"
       },
       Active: {
         Label: "#c25d05",
@@ -5085,7 +5085,7 @@ export interface KpiBarTypes {
       Hover: {
         Label: "#753bbd",
         Text: "#696970",
-        Background: "lch(38.2 75 307 / 0.12)"
+        Background: "lch(38.16 75.004 307.23 / 0.12)"
       },
       Active: {
         Label: "#753bbd",
@@ -5106,7 +5106,7 @@ export interface KpiBarTypes {
       Hover: {
         Label: "#b82329",
         Text: "#696970",
-        Background: "lch(41.2 69 32.4 / 0.12)"
+        Background: "lch(41.222 69.027 32.445 / 0.12)"
       },
       Active: {
         Label: "#b82329",
@@ -5127,7 +5127,7 @@ export interface KpiBarTypes {
       Hover: {
         Label: "#3451b2",
         Text: "#696970",
-        Background: "lch(36.7 58.2 286 / 0.12)"
+        Background: "lch(36.671 58.169 285.69 / 0.12)"
       },
       Active: {
         Label: "#3451b2",
@@ -5148,7 +5148,7 @@ export interface KpiBarTypes {
       Hover: {
         Label: "#cd1d8d",
         Text: "#696970",
-        Background: "lch(47.1 72.1 347 / 0.12)"
+        Background: "lch(47.077 72.07 347.23 / 0.12)"
       },
       Active: {
         Label: "#cd1d8d",
@@ -5695,7 +5695,7 @@ export interface SwitchTypes {
     Disabled: {
       Background: "#afdef8",
       Icon: "#a3a3ab",
-      Circle: "#ffffff",
+      Circle: "#ffffff80",
       Text: "#a3a3ab"
     }
   },
@@ -5717,7 +5717,7 @@ export interface SwitchTypes {
     },
     Disabled: {
       Background: "#e5e5ea",
-      Circle: "#ffffff",
+      Circle: "#ffffff80",
       Text: "#a3a3ab"
     }
   }
@@ -6494,29 +6494,29 @@ export interface KpiWidgetTypes {
     AverageLine: "#a3a3ab",
     Neutral: {
       Line: "#696970",
-      Background: "lch(44.6 4.09 286 / 0.2)"
+      Background: "lch(44.592 4.0869 285.74 / 0.2)"
     },
     Negative: {
       Line: "#d63c42",
-      Background: "lch(50.1 69.5 29.4 / 0.2)"
+      Background: "lch(50.134 69.481 29.393 / 0.2)"
     },
     Positive: {
       Line: "#00b050",
-      Background: "lch(63 67 146 / 0.2)"
+      Background: "lch(63.019 66.989 146.01 / 0.2)"
     },
     Warning: {
       Line: "#c25d05",
-      Background: "lch(51.7 70.9 57.2 / 0.2)"
+      Background: "lch(51.678 70.892 57.163 / 0.2)"
     },
     Info: {
       Line: "#4067e5",
-      Background: "lch(46.5 72.3 286 / 0.2)"
+      Background: "lch(46.464 72.283 286.08 / 0.2)"
     },
     Combined: {
       LinePrimary: "#4067e5",
-      BackgroundPrimary: "lch(46.5 72.3 286 / 0.2)",
+      BackgroundPrimary: "lch(46.464 72.283 286.08 / 0.2)",
       LineSecondary: "#fe9933",
-      BackgroundSeconday: "lch(46.5 72.3 286 / 0.2)"
+      BackgroundSeconday: "lch(46.464 72.283 286.08 / 0.2)"
     }
   },
   Neutral: {
