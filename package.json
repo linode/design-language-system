@@ -20,7 +20,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "generate": "yarn clean && ts-node --esm style-dictionary/build.ts",
+    "generate": "yarn clean && tsx style-dictionary/build.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -55,6 +55,7 @@
     "terser": "^5.44.1",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "^7.3.0",
     "vitest": "^4.0.16"

@@ -8,7 +8,7 @@ You can contribute by [opening an issue](https://github.com/linode/design-langua
 
 ### Prerequisites
 
-- Node.js 18.18.0 (managed via [Volta](https://volta.sh/))
+- Node.js 22.0.0 (managed via [Volta](https://volta.sh/))
 - Yarn 4.1.1
 
 ### Installation
@@ -22,10 +22,6 @@ You can contribute by [opening an issue](https://github.com/linode/design-langua
 4. Generate the design tokens:
    ```bash
    yarn generate
-   ```
-5. (Optional) View tokens in Storybook:
-   ```bash
-   yarn storybook
    ```
 
 ## Development Workflow
