@@ -5,6 +5,8 @@
   "module": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
+    "./tokens": "./dist/tokens.js",
+    "./themes/*/tokens": "./dist/themes/*/tokens.js",
     "./*": "./dist/*/index.js",
     "./themes/*": "./dist/themes/*/index.js"
   },
