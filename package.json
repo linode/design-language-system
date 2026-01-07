@@ -1,10 +1,12 @@
 {
   "name": "@linode/design-language-system",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "type": "module",
   "module": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
+    "./tokens": "./dist/tokens.js",
+    "./themes/*/tokens": "./dist/themes/*/tokens.js",
     "./*": "./dist/*/index.js",
     "./themes/*": "./dist/themes/*/index.js"
   },
