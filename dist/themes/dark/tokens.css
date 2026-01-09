@@ -12,6 +12,7 @@
   --token-global-color-neutrals-60: #83838c; /** Default field border */
   --token-global-color-neutrals-70: #696970; /** Color for text placeholder and hints */
   --token-global-color-neutrals-80: #515157;
+  --token-global-color-neutrals-85: #47474d; /** Hover color for interactive backgrounds in dark mode */
   --token-global-color-neutrals-90: #3d3d42; /** Default icon color, hover color for fields border */
   --token-global-color-neutrals-100: #343438; /** Default text color */
   --token-global-color-neutrals-black: #232326; /** Global header and footer */
@@ -297,8 +298,9 @@
   --token-alias-interaction-border-focus: #5bb3ea;
   --token-alias-interaction-border-error: #eb9091;
   --token-alias-interaction-border-disabled: #515157;
+  --token-alias-interaction-border-light: #515157;
   --token-alias-interaction-background-primary: #343438; /** Default component background color */
-  --token-alias-interaction-background-primary-hover: #515157; /** Calendar range background, table row hover  */
+  --token-alias-interaction-background-primary-hover: #47474d; /** Calendar range background, table row hover  */
   --token-alias-interaction-background-primary-active: #515157; /** Calendar range background, table row hover  */
   --token-alias-interaction-background-secondary: #343438;
   --token-alias-interaction-background-secondary-hover: #696970; /** Hover color for a calendar date range */
@@ -314,9 +316,9 @@
   --token-alias-elevation-s-inverted: 0 -2px 8px 0 rgba(0,0,0,0.18); /** Inverted shadow for elements that appear above the component */
   --token-alias-elevation-l: 0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08); /** Shadow for modals */
   --token-alias-elevation-drawer-right: -16px 0 32px 0 rgba(0,0,0,0.18); /** Dark mode elevation for a drawer that appears from the right side of the screen */
-  --token-alias-elevation-drawer-left: inset 16px 0 32px 0 rgba(0,0,0,0.18); /** Dark mode elevation for a drawer that appears from the left side of the screen */
-  --token-alias-elevation-drawer-top: inset 0 16px 32px 0 rgba(0,0,0,0.18); /** Dark mode elevation for a drawer that appears from the top side of the screen */
-  --token-alias-elevation-drawer-bottom: inset 0 -16px 32px 0 rgba(0,0,0,0.18); /** Dark mode elevation for a drawer that appears from the bottom side of the screen */
+  --token-alias-elevation-drawer-left: 16px 0 32px 0 rgba(0,0,0,0.18); /** Dark mode elevation for a drawer that appears from the left side of the screen */
+  --token-alias-elevation-drawer-top: 0 16px 32px 0 rgba(0,0,0,0.18); /** Dark mode elevation for a drawer that appears from the top side of the screen */
+  --token-alias-elevation-drawer-bottom: 0 -16px 32px 0 rgba(0,0,0,0.18); /** Dark mode elevation for a drawer that appears from the bottom side of the screen */
   --token-alias-typography-heading-xxxl: 700 2.25rem/2.625rem 'Nunito Sans'; /** Promo banners, KPIs */
   --token-alias-typography-heading-xxl: 800 1.625rem/2rem 'Nunito Sans'; /** Main titles - h1 */
   --token-alias-typography-heading-xl: 700 1.5rem/1.875rem 'Nunito Sans'; /** Second level title - h2 */
@@ -561,7 +563,7 @@
   --token-component-table-row-icon-hover: #96cff0;
   --token-component-table-row-background-default: #3d3d42;
   --token-component-table-row-background-zebra: #343438;
-  --token-component-table-row-background-hover: #515157;
+  --token-component-table-row-background-hover: #47474d;
   --token-component-table-row-text-default: #ffffff;
   --token-component-table-row-text-placeholder: #a3a3ab;
   --token-component-table-row-text-link: #7dcdff;
@@ -810,10 +812,10 @@
   --token-component-calendar-selected-item-text: #343438;
   --token-component-calendar-selected-item-background-default: #5bb3ea;
   --token-component-calendar-selected-item-background-hover: #96cff0;
-  --token-component-calendar-hover-item-background: #515157;
+  --token-component-calendar-hover-item-background: #47474d;
   --token-component-calendar-hover-item-text: #ffffff;
   --token-component-calendar-date-range-text: #ffffff;
-  --token-component-calendar-date-range-background-default: #515157;
+  --token-component-calendar-date-range-background-default: #47474d;
   --token-component-calendar-date-range-background-hover: #696970;
   --token-component-calendar-preset-area-background: #343438;
   --token-component-calendar-preset-area-hover-period-background: #3d3d42;
@@ -954,7 +956,8 @@
   --token-component-drawer-text: #ffffff;
   --token-component-drawer-icon-default: #ffffff;
   --token-component-drawer-icon-disabled: #83838c;
-  --token-component-dropdown-icon-default: #ffffff;
+  --token-component-dropdown-icon-primary: #ffffff;
+  --token-component-dropdown-icon-secondary: #a3a3ab;
   --token-component-dropdown-icon-disabled: #83838c;
   --token-component-dropdown-text-default: #ffffff;
   --token-component-dropdown-text-link: #7dcdff;
@@ -962,7 +965,9 @@
   --token-component-dropdown-text-disabled: #83838c;
   --token-component-dropdown-background-default: #343438;
   --token-component-dropdown-background-hover: #3d3d42;
-  --token-component-dropdown-background-category: #343438;
+  --token-component-dropdown-background-selected: #515157;
+  --token-component-dropdown-background-category: #3d3d42;
+  --token-component-dropdown-border-default: #515157;
   --token-component-global-header-background: #232326;
   --token-component-global-header-border: #3d3d42;
   --token-component-global-header-icon-default: #d6d6dd;

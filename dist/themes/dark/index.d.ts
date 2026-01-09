@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-12-26
+   * Generated on 2026-01-09
    */
   export interface GlobalTypes {
   Color: {
@@ -15,6 +15,7 @@
       60: "#83838c",
       70: "#696970",
       80: "#515157",
+      85: "#47474d",
       90: "#3d3d42",
       100: "#343438",
       Black: "#232326",
@@ -297,6 +298,7 @@ export interface ColorTypes {
     60: "#83838c",
     70: "#696970",
     80: "#515157",
+    85: "#47474d",
     90: "#3d3d42",
     100: "#343438",
     Black: "#232326",
@@ -680,11 +682,12 @@ export interface AliasTypes {
       Hover: "#c2c2ca",
       Focus: "#5bb3ea",
       Error: "#eb9091",
-      Disabled: "#515157"
+      Disabled: "#515157",
+      Light: "#515157"
     },
     Background: {
       Primary: "#343438",
-      PrimaryHover: "#515157",
+      PrimaryHover: "#47474d",
       PrimaryActive: "#515157",
       Secondary: "#343438",
       SecondaryHover: "#696970",
@@ -704,9 +707,9 @@ export interface AliasTypes {
     L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)",
     Drawer: {
       Right: "-16px 0 32px 0 rgba(0,0,0,0.18)",
-      Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)",
-      Top: "inset 0 16px 32px 0 rgba(0,0,0,0.18)",
-      Bottom: "inset 0 -16px 32px 0 rgba(0,0,0,0.18)"
+      Left: "16px 0 32px 0 rgba(0,0,0,0.18)",
+      Top: "0 16px 32px 0 rgba(0,0,0,0.18)",
+      Bottom: "0 -16px 32px 0 rgba(0,0,0,0.18)"
     }
   },
   Typography: {
@@ -1056,11 +1059,12 @@ export interface InteractionTypes {
     Hover: "#c2c2ca",
     Focus: "#5bb3ea",
     Error: "#eb9091",
-    Disabled: "#515157"
+    Disabled: "#515157",
+    Light: "#515157"
   },
   Background: {
     Primary: "#343438",
-    PrimaryHover: "#515157",
+    PrimaryHover: "#47474d",
     PrimaryActive: "#515157",
     Secondary: "#343438",
     SecondaryHover: "#696970",
@@ -1083,9 +1087,9 @@ export interface ElevationTypes {
   L: "0 16px 32px 0 rgba(0,0,0,0.18), 0 4px 8px 0 rgba(0,0,0,0.08)",
   Drawer: {
     Right: "-16px 0 32px 0 rgba(0,0,0,0.18)",
-    Left: "inset 16px 0 32px 0 rgba(0,0,0,0.18)",
-    Top: "inset 0 16px 32px 0 rgba(0,0,0,0.18)",
-    Bottom: "inset 0 -16px 32px 0 rgba(0,0,0,0.18)"
+    Left: "16px 0 32px 0 rgba(0,0,0,0.18)",
+    Top: "0 16px 32px 0 rgba(0,0,0,0.18)",
+    Bottom: "0 -16px 32px 0 rgba(0,0,0,0.18)"
   }
 }
 
@@ -1531,7 +1535,7 @@ export interface ComponentTypes {
       Background: {
         Default: "#3d3d42",
         Zebra: "#343438",
-        Hover: "#515157"
+        Hover: "#47474d"
       },
       Text: {
         Default: "#ffffff",
@@ -2011,13 +2015,13 @@ export interface ComponentTypes {
       }
     },
     HoverItem: {
-      Background: "#515157",
+      Background: "#47474d",
       Text: "#ffffff"
     },
     DateRange: {
       Text: "#ffffff",
       Background: {
-        Default: "#515157",
+        Default: "#47474d",
         Hover: "#696970"
       }
     },
@@ -2263,7 +2267,8 @@ export interface ComponentTypes {
   },
   Dropdown: {
     Icon: {
-      Default: "#ffffff",
+      Primary: "#ffffff",
+      Secondary: "#a3a3ab",
       Disabled: "#83838c"
     },
     Text: {
@@ -2275,7 +2280,11 @@ export interface ComponentTypes {
     Background: {
       Default: "#343438",
       Hover: "#3d3d42",
-      Category: "#343438"
+      Selected: "#515157",
+      Category: "#3d3d42"
+    },
+    Border: {
+      Default: "#515157"
     }
   },
   GlobalHeader: {
@@ -4062,7 +4071,7 @@ export interface TableTypes {
     Background: {
       Default: "#3d3d42",
       Zebra: "#343438",
-      Hover: "#515157"
+      Hover: "#47474d"
     },
     Text: {
       Default: "#ffffff",
@@ -4572,13 +4581,13 @@ export interface CalendarTypes {
     }
   },
   HoverItem: {
-    Background: "#515157",
+    Background: "#47474d",
     Text: "#ffffff"
   },
   DateRange: {
     Text: "#ffffff",
     Background: {
-      Default: "#515157",
+      Default: "#47474d",
       Hover: "#696970"
     }
   },
@@ -4848,7 +4857,8 @@ declare const Drawer: DrawerTypes;
 
 export interface DropdownTypes {
   Icon: {
-    Default: "#ffffff",
+    Primary: "#ffffff",
+    Secondary: "#a3a3ab",
     Disabled: "#83838c"
   },
   Text: {
@@ -4860,7 +4870,11 @@ export interface DropdownTypes {
   Background: {
     Default: "#343438",
     Hover: "#3d3d42",
-    Category: "#343438"
+    Selected: "#515157",
+    Category: "#3d3d42"
+  },
+  Border: {
+    Default: "#515157"
   }
 }
 
