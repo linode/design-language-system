@@ -225,7 +225,7 @@
           "description": "Default component background color"
         },
         "primaryHover": {
-          "value": "{global.color.neutrals.80}",
+          "value": "{global.color.neutrals.85}",
           "type": "color",
           "description": "Calendar range background, table row hover "
         },
