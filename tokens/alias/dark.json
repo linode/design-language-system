@@ -212,6 +212,10 @@
         "disabled": {
           "value": "{global.color.neutrals.80}",
           "type": "color"
+        },
+        "light": {
+          "value": "{global.color.neutrals.80}",
+          "type": "color"
         }
       },
       "background": {
@@ -221,7 +225,7 @@
           "description": "Default component background color"
         },
         "primaryHover": {
-          "value": "{global.color.neutrals.80}",
+          "value": "{global.color.neutrals.85}",
           "type": "color",
           "description": "Calendar range background, table row hover "
         },
@@ -601,7 +605,7 @@
             "blur": "32",
             "spread": "0",
             "color": "rgba(0,0,0,0.18)",
-            "type": "innerShadow"
+            "type": "dropShadow"
           },
           "type": "boxShadow",
           "description": "Dark mode elevation for a drawer that appears from the left side of the screen"
@@ -613,7 +617,7 @@
             "blur": "32",
             "spread": "0",
             "color": "rgba(0,0,0,0.18)",
-            "type": "innerShadow"
+            "type": "dropShadow"
           },
           "type": "boxShadow",
           "description": "Dark mode elevation for a drawer that appears from the top side of the screen"
@@ -625,7 +629,7 @@
             "blur": "32",
             "spread": "0",
             "color": "rgba(0,0,0,0.18)",
-            "type": "innerShadow"
+            "type": "dropShadow"
           },
           "type": "boxShadow",
           "description": "Dark mode elevation for a drawer that appears from the bottom side of the screen"

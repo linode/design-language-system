@@ -2,8 +2,12 @@
   "component": {
     "dropdown": {
       "icon": {
-        "default": {
+        "primary": {
           "value": "{alias.content.icon.primary.default}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{alias.content.icon.secondary.default}",
           "type": "color"
         },
         "disabled": {
@@ -38,8 +42,18 @@
           "value": "{alias.interaction.background.tertiary}",
           "type": "color"
         },
+        "selected": {
+          "value": "{alias.interaction.background.primaryActive}",
+          "type": "color"
+        },
         "category": {
-          "value": "{alias.interaction.background.secondary}",
+          "value": "{alias.interaction.background.neutralHover}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{alias.border.normal}",
           "type": "color"
         }
       }
