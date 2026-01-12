@@ -11,6 +11,7 @@ export const TokenGlobalColorNeutrals50 = "#a3a3ab";
 export const TokenGlobalColorNeutrals60 = "#83838c"; // Default field border
 export const TokenGlobalColorNeutrals70 = "#696970"; // Color for text placeholder and hints
 export const TokenGlobalColorNeutrals80 = "#515157";
+export const TokenGlobalColorNeutrals85 = "#47474d"; // Hover color for interactive backgrounds in dark mode
 export const TokenGlobalColorNeutrals90 = "#3d3d42"; // Default icon color, hover color for fields border
 export const TokenGlobalColorNeutrals100 = "#343438"; // Default text color
 export const TokenGlobalColorNeutralsBlack = "#232326"; // Global header and footer
@@ -297,6 +298,7 @@ export const TokenAliasInteractionBorderHover = "#3d3d42";
 export const TokenAliasInteractionBorderFocus = "#0174bc";
 export const TokenAliasInteractionBorderError = "#d63c42";
 export const TokenAliasInteractionBorderDisabled = "#c2c2ca";
+export const TokenAliasInteractionBorderLight = "#d6d6dd";
 export const TokenAliasInteractionBackgroundPrimary = "#ffffff"; // Default component background color
 export const TokenAliasInteractionBackgroundPrimaryHover = "#edf8ff"; // Calendar range background, table row hover
 export const TokenAliasInteractionBackgroundPrimaryActive = "#ceedfe"; // Active/selected backgrounds
@@ -317,11 +319,10 @@ export const TokenAliasElevationL =
 export const TokenAliasElevationDrawerRight =
   "-16px 0 32px 0 rgba(61,61,66,0.18)"; // Elevation for a drawer that appears from the right side of the screen
 export const TokenAliasElevationDrawerLeft =
-  "inset 16px 0 32px 0 rgba(61,61,66,0.18)"; // Elevation for a drawer that appears from the left side of the screen
-export const TokenAliasElevationDrawerTop =
-  "inset 0 16px 32px 0 rgba(61,61,66,0.18)"; // Elevation for a drawer that appears from the top side of the screen
+  "16px 0 32px 0 rgba(61,61,66,0.18)"; // Elevation for a drawer that appears from the left side of the screen
+export const TokenAliasElevationDrawerTop = "0 16px 32px 0 rgba(61,61,66,0.18)"; // Elevation for a drawer that appears from the top side of the screen
 export const TokenAliasElevationDrawerBottom =
-  "inset 0 -16px 32px 0 rgba(61,61,66,0.18)"; // Elevation for a drawer that appears from the bottom side of the screen
+  "0 -16px 32px 0 rgba(61,61,66,0.18)"; // Elevation for a drawer that appears from the bottom side of the screen
 export const TokenAliasTypographyHeadingXxxl =
   "700 2.25rem/2.625rem 'Nunito Sans'"; // Promo banners, KPIs
 export const TokenAliasTypographyHeadingXxl = "800 1.625rem/2rem 'Nunito Sans'"; // Main titles - h1
@@ -1040,7 +1041,8 @@ export const TokenComponentDrawerBackground = "#ffffff";
 export const TokenComponentDrawerText = "#343438";
 export const TokenComponentDrawerIconDefault = "#3d3d42";
 export const TokenComponentDrawerIconDisabled = "#a3a3ab";
-export const TokenComponentDropdownIconDefault = "#3d3d42";
+export const TokenComponentDropdownIconPrimary = "#3d3d42";
+export const TokenComponentDropdownIconSecondary = "#696970";
 export const TokenComponentDropdownIconDisabled = "#a3a3ab";
 export const TokenComponentDropdownTextDefault = "#343438";
 export const TokenComponentDropdownTextLink = "#0174bc";
@@ -1048,7 +1050,9 @@ export const TokenComponentDropdownTextDescription = "#696970";
 export const TokenComponentDropdownTextDisabled = "#a3a3ab";
 export const TokenComponentDropdownBackgroundDefault = "#ffffff";
 export const TokenComponentDropdownBackgroundHover = "#edf8ff";
+export const TokenComponentDropdownBackgroundSelected = "#ceedfe";
 export const TokenComponentDropdownBackgroundCategory = "#f7f7fa";
+export const TokenComponentDropdownBorderDefault = "#d6d6dd";
 export const TokenComponentGlobalHeaderBackground = "#232326";
 export const TokenComponentGlobalHeaderBorder = "#3d3d42";
 export const TokenComponentGlobalHeaderIconDefault = "#d6d6dd";

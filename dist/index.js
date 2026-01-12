@@ -1,7 +1,7 @@
 
   /**
    * Do not edit directly
-   * Generated on 2025-12-26
+   * Generated on 2026-01-09
    */
   export const Global = {
   Color: {
@@ -15,6 +15,7 @@
       60: "#83838c",
       70: "#696970",
       80: "#515157",
+      85: "#47474d",
       90: "#3d3d42",
       100: "#343438",
       Black: "#232326",
@@ -295,6 +296,7 @@ export const Color = {
     60: "#83838c",
     70: "#696970",
     80: "#515157",
+    85: "#47474d",
     90: "#3d3d42",
     100: "#343438",
     Black: "#232326",
@@ -670,7 +672,8 @@ export const Alias = {
       Hover: "#3d3d42",
       Focus: "#0174bc",
       Error: "#d63c42",
-      Disabled: "#c2c2ca"
+      Disabled: "#c2c2ca",
+      Light: "#d6d6dd"
     },
     Background: {
       Primary: "#ffffff",
@@ -694,9 +697,9 @@ export const Alias = {
     L: "0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08)",
     Drawer: {
       Right: "-16px 0 32px 0 rgba(61,61,66,0.18)",
-      Left: "inset 16px 0 32px 0 rgba(61,61,66,0.18)",
-      Top: "inset 0 16px 32px 0 rgba(61,61,66,0.18)",
-      Bottom: "inset 0 -16px 32px 0 rgba(61,61,66,0.18)"
+      Left: "16px 0 32px 0 rgba(61,61,66,0.18)",
+      Top: "0 16px 32px 0 rgba(61,61,66,0.18)",
+      Bottom: "0 -16px 32px 0 rgba(61,61,66,0.18)"
     }
   },
   Typography: {
@@ -1036,7 +1039,8 @@ export const Interaction = {
     Hover: "#3d3d42",
     Focus: "#0174bc",
     Error: "#d63c42",
-    Disabled: "#c2c2ca"
+    Disabled: "#c2c2ca",
+    Light: "#d6d6dd"
   },
   Background: {
     Primary: "#ffffff",
@@ -1061,9 +1065,9 @@ export const Elevation = {
   L: "0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08)",
   Drawer: {
     Right: "-16px 0 32px 0 rgba(61,61,66,0.18)",
-    Left: "inset 16px 0 32px 0 rgba(61,61,66,0.18)",
-    Top: "inset 0 16px 32px 0 rgba(61,61,66,0.18)",
-    Bottom: "inset 0 -16px 32px 0 rgba(61,61,66,0.18)"
+    Left: "16px 0 32px 0 rgba(61,61,66,0.18)",
+    Top: "0 16px 32px 0 rgba(61,61,66,0.18)",
+    Bottom: "0 -16px 32px 0 rgba(61,61,66,0.18)"
   }
 };
 
@@ -2231,7 +2235,8 @@ export const Component = {
   },
   Dropdown: {
     Icon: {
-      Default: "#3d3d42",
+      Primary: "#3d3d42",
+      Secondary: "#696970",
       Disabled: "#a3a3ab"
     },
     Text: {
@@ -2243,7 +2248,11 @@ export const Component = {
     Background: {
       Default: "#ffffff",
       Hover: "#edf8ff",
+      Selected: "#ceedfe",
       Category: "#f7f7fa"
+    },
+    Border: {
+      Default: "#d6d6dd"
     }
   },
   GlobalHeader: {
@@ -4774,7 +4783,8 @@ export const Drawer = {
 
 export const Dropdown = {
   Icon: {
-    Default: "#3d3d42",
+    Primary: "#3d3d42",
+    Secondary: "#696970",
     Disabled: "#a3a3ab"
   },
   Text: {
@@ -4786,7 +4796,11 @@ export const Dropdown = {
   Background: {
     Default: "#ffffff",
     Hover: "#edf8ff",
+    Selected: "#ceedfe",
     Category: "#f7f7fa"
+  },
+  Border: {
+    Default: "#d6d6dd"
   }
 };
 

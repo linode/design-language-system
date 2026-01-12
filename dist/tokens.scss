@@ -10,6 +10,7 @@ $token-global-color-neutrals-50: #a3a3ab;
 $token-global-color-neutrals-60: #83838c; // Default field border
 $token-global-color-neutrals-70: #696970; // Color for text placeholder and hints
 $token-global-color-neutrals-80: #515157;
+$token-global-color-neutrals-85: #47474d; // Hover color for interactive backgrounds in dark mode
 $token-global-color-neutrals-90: #3d3d42; // Default icon color, hover color for fields border
 $token-global-color-neutrals-100: #343438; // Default text color
 $token-global-color-neutrals-black: #232326; // Global header and footer
@@ -295,6 +296,7 @@ $token-alias-interaction-border-hover: #3d3d42;
 $token-alias-interaction-border-focus: #0174bc;
 $token-alias-interaction-border-error: #d63c42;
 $token-alias-interaction-border-disabled: #c2c2ca;
+$token-alias-interaction-border-light: #d6d6dd;
 $token-alias-interaction-background-primary: #ffffff; // Default component background color
 $token-alias-interaction-background-primary-hover: #edf8ff; // Calendar range background, table row hover 
 $token-alias-interaction-background-primary-active: #ceedfe; // Active/selected backgrounds
@@ -312,9 +314,9 @@ $token-alias-elevation-s: 0 2px 8px 0 rgba(58,59,63,0.18); // Default shadow for
 $token-alias-elevation-s-inverted: 0 -2px 8px 0 rgba(58,59,63,0.18); // Inverted shadow for elements that appear above the component
 $token-alias-elevation-l: 0 16px 32px 0 rgba(58,59,63,0.18), 0 4px 8px 0 rgba(58,59,63,0.08); // Shadow for modals
 $token-alias-elevation-drawer-right: -16px 0 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the right side of the screen
-$token-alias-elevation-drawer-left: inset 16px 0 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the left side of the screen
-$token-alias-elevation-drawer-top: inset 0 16px 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the top side of the screen
-$token-alias-elevation-drawer-bottom: inset 0 -16px 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the bottom side of the screen
+$token-alias-elevation-drawer-left: 16px 0 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the left side of the screen
+$token-alias-elevation-drawer-top: 0 16px 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the top side of the screen
+$token-alias-elevation-drawer-bottom: 0 -16px 32px 0 rgba(61,61,66,0.18); // Elevation for a drawer that appears from the bottom side of the screen
 $token-alias-typography-heading-xxxl: 700 2.25rem/2.625rem 'Nunito Sans'; // Promo banners, KPIs
 $token-alias-typography-heading-xxl: 800 1.625rem/2rem 'Nunito Sans'; // Main titles - h1
 $token-alias-typography-heading-xl: 700 1.5rem/1.875rem 'Nunito Sans'; // Second level title - h2
@@ -952,7 +954,8 @@ $token-component-drawer-background: #ffffff;
 $token-component-drawer-text: #343438;
 $token-component-drawer-icon-default: #3d3d42;
 $token-component-drawer-icon-disabled: #a3a3ab;
-$token-component-dropdown-icon-default: #3d3d42;
+$token-component-dropdown-icon-primary: #3d3d42;
+$token-component-dropdown-icon-secondary: #696970;
 $token-component-dropdown-icon-disabled: #a3a3ab;
 $token-component-dropdown-text-default: #343438;
 $token-component-dropdown-text-link: #0174bc;
@@ -960,7 +963,9 @@ $token-component-dropdown-text-description: #696970;
 $token-component-dropdown-text-disabled: #a3a3ab;
 $token-component-dropdown-background-default: #ffffff;
 $token-component-dropdown-background-hover: #edf8ff;
+$token-component-dropdown-background-selected: #ceedfe;
 $token-component-dropdown-background-category: #f7f7fa;
+$token-component-dropdown-border-default: #d6d6dd;
 $token-component-global-header-background: #232326;
 $token-component-global-header-border: #3d3d42;
 $token-component-global-header-icon-default: #d6d6dd;
